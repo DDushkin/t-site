@@ -1,0 +1,41 @@
+doctype html
+html(lang="ru")
+  head
+    title mainpage
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    
+    link(href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css", rel="stylesheet")
+    link(href="css/main.css", rel="stylesheet")
+  body
+    include partials/_header.pug
+    
+    //- main content
+    section.page-availible-head
+      .wrapper
+        .breadcrumbs
+          ul.breadcrumbs__list
+            li.breadcrumbs__item
+            li.breadcrumbs__item
+            li.breadcrumbs__item
+          .breadcrumbs__title-wrap
+            h1.breadcrumbs__title
+    .wrapper
+      .car-card
+        .car-card__description
+          .car-card__titlew
+          .car-card__info
+          .car-card__bodytype
+          .car-card__capacity
+          .car-card__transmission
+          .car-card__gastype
+          .car-card__more
+        .car-card__image
+           
+          
+      
+    
+    //- eof main content
+    
+    include partials/_footer.pug
+    include partials/_scripts.pug

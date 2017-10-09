@@ -1,3 +1,3 @@
-// alert("test");
-// alert('test5');
-console.log("test2");
+$(document).ready(function(){
+  console.log('doc ready');
+});

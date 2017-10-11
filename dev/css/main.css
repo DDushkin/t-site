@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 body {
   font-size: 18px;
   font-family: "Toyota Text", "Roboto", arial, sans-serif;
@@ -6,6 +5,14 @@ body {
 
 .container {
   max-width: 1310px; }
+
+.wrapper {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 1310px;
+  position: relative;
+  display: block;
+  margin: 0 auto; }
 
 .header {
   -webkit-box-sizing: border-box;
@@ -72,14 +79,6 @@ body {
         margin-left: 10px;
         background: url("/img/i-nav-arrow.svg") center no-repeat;
         vertical-align: middle; }
-=======
-.wrapper {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 1310px;
-  position: relative;
-  display: block;
-  margin: 0 auto; }
 
 .page-availible-head {
   -webkit-box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5);
@@ -169,4 +168,3 @@ body {
   letter-spacing: 2.4px;
   color: #CC0033;
   font-weight: bold; }
->>>>>>> 14e77fb55c792a7e8346fb1531ef5b78d05661e5

@@ -49,3 +49,5 @@ gulp.task('watch', ['browser-sync', 'pug', 'sass', 'js'], function (){
   gulp.watch('dev/pug/**/*.pug', ['pug']);
   gulp.watch('dev/js/*.js', ['js']);
 });
+
+gulp.task('default', ['watch']);

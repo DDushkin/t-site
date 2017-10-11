@@ -1,0 +1,73 @@
+body {
+  font-size: 18px;
+  font-family: "Toyota Text", "Roboto", arial, sans-serif;
+  color: #23171A; }
+
+.container {
+  max-width: 1310px; }
+
+.header {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  .header-adress {
+    margin-left: 40px; }
+    .header-adress__icon {
+      vertical-align: middle;
+      margin-right: 18px; }
+    .header-adress__text {
+      vertical-align: middle; }
+
+.top-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 70px;
+  padding: 0 50px;
+  -webkit-box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5);
+  box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5); }
+
+.logo-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.nav {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 70px;
+  margin: 0;
+  padding: 0 50px 0 25px; }
+  .nav__item {
+    list-style: none; }
+    .nav__item__link {
+      text-decoration: none;
+      color: inherit;
+      padding: 0 25px;
+      white-space: nowrap; }
+      .nav__item__link--has-child:after {
+        display: inline-block;
+        content: "";
+        width: 7px;
+        height: 4px;
+        margin-left: 10px;
+        background: url("/img/i-nav-arrow.svg") center no-repeat;
+        vertical-align: middle; }

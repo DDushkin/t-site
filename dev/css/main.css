@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   font-size: 18px;
   font-family: "Toyota Text", "Roboto", arial, sans-serif;
@@ -71,3 +72,101 @@ body {
         margin-left: 10px;
         background: url("/img/i-nav-arrow.svg") center no-repeat;
         vertical-align: middle; }
+=======
+.wrapper {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 1310px;
+  position: relative;
+  display: block;
+  margin: 0 auto; }
+
+.page-availible-head {
+  -webkit-box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5);
+  box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5);
+  overflow: hidden;
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  min-height: 300px;
+  margin-bottom: 0;
+  background-color: #767676;
+  background-image: url(../img/bg-available.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 10;
+  color: white; }
+
+.breadcrumbs {
+  padding-top: 110px; }
+
+.breadcrumbs__list {
+  font-size: 0;
+  text-align: center; }
+
+.breadcrumbs__item {
+  position: relative;
+  display: inline-block;
+  padding-left: 15px;
+  vertical-align: top;
+  line-height: normal;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0.7px; }
+
+.breadcrumbs__item:not(:first-child)::before {
+  position: absolute;
+  top: 6px;
+  left: 5px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  content: '';
+  background: white; }
+
+.breadcrumbs__item:first-child {
+  padding-left: 0; }
+
+.breadcrumbs__title-wrap {
+  padding-top: 15px; }
+
+.breadcrumbs__title {
+  line-height: normal;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 4px;
+  margin: 0; }
+
+.car-card__description {
+  background: #FFFFFF;
+  -webkit-box-shadow: 4px 4px 24px rgba(77, 79, 83, 0.25);
+  box-shadow: 4px 4px 24px rgba(77, 79, 83, 0.25);
+  border-radius: 2px;
+  color: #000000;
+  padding: 50px 20px; }
+
+.car-card__title {
+  line-height: normal;
+  font-size: 24px;
+  letter-spacing: 2.4px;
+  font-weight: bold; }
+
+.car-card__info {
+  padding-top: 10px;
+  line-height: normal;
+  font-size: 18px; }
+
+.car-card__bodytype, .car-card__capacity, .car-card__transmission, .car-card__gastype {
+  padding-top: 10px;
+  line-height: normal;
+  font-size: 18px; }
+
+.car-card__more {
+  padding-top: 35px;
+  line-height: normal;
+  font-size: 24px;
+  letter-spacing: 2.4px;
+  color: #CC0033;
+  font-weight: bold; }
+>>>>>>> 14e77fb55c792a7e8346fb1531ef5b78d05661e5

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   font-size: 18px;
   font-family: "Toyota Text", "Roboto", arial, sans-serif; //TODO: add more fallback fonts
@@ -5,4 +6,12 @@ body {
 }
 .container {
   max-width: 1310px;
+=======
+.wrapper {
+    box-sizing: border-box;
+    width: 1310px;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+>>>>>>> 14e77fb55c792a7e8346fb1531ef5b78d05661e5
 }

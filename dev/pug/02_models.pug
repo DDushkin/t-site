@@ -1,0 +1,31 @@
+doctype html
+html(lang="ua")
+  head
+    title mainpage
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    
+    link(href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css", rel="stylesheet")
+    link(href="css/main.css", rel="stylesheet")
+  body
+    include partials/_header.pug
+    
+    //- main content
+    section.page-models-head
+      .wrapper
+        .breadcrumbs
+          ul.breadcrumbs__list
+            li.breadcrumbs__item Головна
+            li.breadcrumbs__item Модельний ряд
+          .breadcrumbs__title-wrap
+            h1.breadcrumbs__title Модельний ряд Toyota
+    .wrapper
+
+           
+          
+      
+    
+    //- eof main content
+    
+    include partials/_footer.pug
+    include partials/_scripts.pug

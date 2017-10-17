@@ -1,10 +1,10 @@
+html {
+  box-sizing: border-box;
+}
 body {
   font-size: 18px;
   font-family: "Toyota Text", "Roboto", arial, sans-serif; //TODO: add more fallback fonts
   color: $black;
-}
-.container {
-  max-width: 1310px;
 }
 .wrapper {
     box-sizing: border-box;

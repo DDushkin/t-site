@@ -1,5 +1,5 @@
 .page-availible-head{
-  box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5);
+  box-shadow: 0px 0px 14px $shadow50;
   overflow: hidden;
   position: relative;
   max-width: 100%;
@@ -62,15 +62,17 @@
 .car-card{
   margin-top: 100px;
   position: relative;
+  display: flow-root;
+
   &__description{
-    background: #FFFFFF;
-    box-shadow: 4px 4px 24px rgba(77, 79, 83, 0.25);
+    background: white;
+    box-shadow: 4px 4px 24px $shadow25;
     border-radius: 2px;
-    color: #000000;
+    color: $black;
     padding:50px 20px;
-    margin:60px 0 65px;
-    width: calc(100%/12*5);
+    width: percentage(5/12);
     position: absolute;
+    transform: translateY(15%);
   }
   &__title{
     line-height: normal;
@@ -144,7 +146,7 @@
     line-height: normal;
     font-size: 24px;
     letter-spacing: 2.4px;
-    color: #CC0033;
+    color: $red;
     font-weight: bold;
     &:after{
       width: 18px;
@@ -157,10 +159,12 @@
     }
   }
   &__image{
-    background: url(/img/car-card.jpg);
-    box-shadow: 4px 4px 14px rgba(77, 79, 83, 0.25);
+    box-shadow: 4px 4px 14px $shadow25;
     border-radius: 2px;
+    width: percentage(8/12);
     float: right;
-    width: calc(100%/12*7);
+    img{
+      width: 100%;
+    }
   }
 }

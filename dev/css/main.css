@@ -395,9 +395,10 @@ body {
       vertical-align: middle; }
 
 .available-car-info {
-  padding: 100px 0; }
+  padding: 100px 0;
+  display: flow-root; }
   .available-car-info__description {
-    width: 41.66667%;
+    width: 50%;
     background: white;
     -webkit-box-shadow: 4px 4px 24px rgba(77, 79, 83, 0.25);
     box-shadow: 4px 4px 24px rgba(77, 79, 83, 0.25);
@@ -414,7 +415,8 @@ body {
     border-radius: 2px;
     width: 50%;
     max-height: 580px;
-    position: absolute; }
+    position: absolute;
+    z-index: 1; }
     .available-car-info__image img {
       width: 100%;
       -o-object-fit: contain;
@@ -428,6 +430,9 @@ body {
     padding-top: 10px;
     line-height: normal;
     font-size: 18px; }
+  .available-car-info__info_p {
+    display: block;
+    padding-top: 20px; }
   .available-car-info__more {
     padding-top: 20px;
     line-height: normal;
@@ -443,3 +448,15 @@ body {
       margin-left: 10px;
       background: url("/img/i-more-arrow.svg") center no-repeat;
       vertical-align: middle; }
+
+.page-models-testdrive {
+  background: url(/img/bg-testdrive.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 160px 0;
+  color: white; }
+
+.test-drive__title {
+  line-height: normal;
+  font-size: 40px;
+  font-weight: bold; }

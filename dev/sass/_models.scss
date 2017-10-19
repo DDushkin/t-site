@@ -176,8 +176,9 @@
 }
 .available-car-info{
   padding: 100px 0;
+  display: flow-root;
   &__description{
-    width: percentage(5/12);
+    width: percentage(6/12);
     background: white;
     box-shadow: 4px 4px 24px $shadow25;
     border-radius: 2px;
@@ -192,6 +193,7 @@
     width: percentage(6/12);
     max-height: 580px;
     position: absolute;
+    z-index: 1;
     img{
       width: 100%;
       object-fit: contain;
@@ -207,6 +209,10 @@
     padding-top: 10px;
     line-height: normal;
     font-size: 18px;
+  }
+  &__info_p{
+    display: block;
+    padding-top: 20px;
   }
   &__more{
     padding-top: 20px;
@@ -225,4 +231,16 @@
       vertical-align: middle;
     }
   }
+}
+.page-models-testdrive{
+  background: url(/img/bg-testdrive.jpg);
+  background-position: center;
+  background-size: cover;
+  padding:160px 0;
+  color:white;
+}
+.test-drive__title{
+  line-height: normal;
+  font-size: 40px;
+  font-weight: bold;
 }

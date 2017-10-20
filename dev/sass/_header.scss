@@ -22,6 +22,11 @@
   justify-content: space-between;
   height: 70px;
   padding: 0 50px;
+<<<<<<< HEAD
+=======
+  background: linear-gradient(180deg, #F0F2F2 0%, #FFFFFF 100%);
+ box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5);
+>>>>>>> 565e64f04bfb8a851be7c042998ab79035f4f371
 }
 .logo-part {
   display: flex;
@@ -41,6 +46,10 @@ nav {
   height: 70px;
   margin: 0;
   padding: 0 50px 0 25px;
+<<<<<<< HEAD
+=======
+  background: linear-gradient(180deg, #F0F2F2 0%, #FFFFFF 100%);
+>>>>>>> 565e64f04bfb8a851be7c042998ab79035f4f371
   box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5);
 
   &__item {
@@ -81,6 +90,7 @@ nav {
     }
   }
 }
+<<<<<<< HEAD
 
 .nav-badge {
   display: flex;
@@ -142,3 +152,6 @@ nav {
   }
 }
 // eof navigation
+=======
+// eof navigation
+>>>>>>> 565e64f04bfb8a851be7c042998ab79035f4f371

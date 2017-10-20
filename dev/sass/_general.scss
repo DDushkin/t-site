@@ -1,9 +1,13 @@
+html {
+  box-sizing: border-box;
+}
 body {
   font-size: 18px;
   font-family: "Toyota Text", "Roboto", Helvetica, Arial, sans-serif;
   color: $black;
 
 }
+<<<<<<< HEAD
 
 .clearfix:after { //TODO: remove before deploy
   content: "";
@@ -19,6 +23,8 @@ body {
 .container {
   max-width: 1310px;
 }
+=======
+>>>>>>> 565e64f04bfb8a851be7c042998ab79035f4f371
 .wrapper {
     box-sizing: border-box;
     width: 1310px;
@@ -26,6 +32,7 @@ body {
     display: block;
     margin: 0 auto;
 }
+<<<<<<< HEAD
 
 .section-title {
   margin-top: 50px;
@@ -58,3 +65,100 @@ body {
     }
   }
 }
+=======
+.breadcrumbs{
+  padding-top: 110px;
+
+  &__list {
+    font-size: 0;
+    text-align: center;
+  }
+  &__item{
+    position: relative;
+    display: inline-block;
+    padding-left: 15px;
+    vertical-align: top;
+    line-height: normal;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.7px;
+
+    &:not(:first-child)::before {
+      position: absolute;
+      top: 6px;
+      left: 5px;
+      width: 3px;
+      height: 3px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      content: '';
+      background: white;
+    }
+    &:first-child {
+      padding-left: 0;
+    }
+  }
+  &__title{
+    line-height: normal;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 4px;
+    margin: 0;
+
+    &-wrap{
+      padding-top: 15px;
+    }
+  }
+}
+.btn-main{
+  background: #CC0033;
+  box-shadow: 4px 4px 24px rgba(44, 1, 12, 0.3);
+  border-radius: 30px;
+  padding: 15px 40px;
+  display: inline-block;
+}
+.btn-more{
+  line-height: normal;
+  font-size: 24px;
+  letter-spacing: 2.4px;
+  color: $red;
+  font-weight: bold;
+  &:after{
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    content: "";
+    margin-left: 10px;
+    background: url('/img/i-more-arrow.svg') center no-repeat;
+    vertical-align: middle;
+  }
+}
+.ico{
+  &__bodytype{
+    &:before{
+      background: url('/img/i-bodytype.svg') center no-repeat;
+    }
+  }
+  &__capacity{
+    &:before{
+      background: url('/img/i-capacity.svg') center no-repeat;
+    }
+  }
+  &__transmission{
+    &:before{
+      background: url('/img/i-transmission.svg') center no-repeat;
+    }
+  }
+  &__gastype{
+    &:before{
+      background: url('/img/i-gastype.svg') center no-repeat;
+    }
+  }
+  &__path{
+    &:before{
+      background: url('/img/i-path.svg') center no-repeat;
+    }
+  }
+}
+>>>>>>> 565e64f04bfb8a851be7c042998ab79035f4f371

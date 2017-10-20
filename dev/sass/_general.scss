@@ -1,8 +1,21 @@
 body {
   font-size: 18px;
-  font-family: "Toyota Text", "Roboto", arial, sans-serif; //TODO: add more fallback fonts
+  font-family: "Toyota Text", "Roboto", Helvetica, Arial, sans-serif;
   color: $black;
+
 }
+
+.clearfix:after { //TODO: remove before deploy
+  content: "";
+  display: table;
+  clear: both;
+}
+// clearfix usage example:
+// selector {
+//   @extend .clearfix;
+//   your styles
+// }
+
 .container {
   max-width: 1310px;
 }
@@ -12,4 +25,36 @@ body {
     position: relative;
     display: block;
     margin: 0 auto;
+}
+
+.section-title {
+  margin-top: 50px;
+  font-size: 40px;
+  font-family: $f-td, arial, sans-serif;
+  letter-spacing: .1em;
+  line-height: 47px;
+  text-align: center;
+  font-weight: bold;
+
+  @media (max-width: 1024px) {
+    font-size: 26px;
+    letter-spacing: .1em;
+  }
+  
+  //icon
+  &:before { 
+    content: "";
+    display: block;
+    width: 39px;
+    height: 26px;
+    margin: 0 auto 10px;
+    background-image: url("../img/i-toyota.svg");
+    background-size: contain;
+    background-repeat: no-repeat; //TODO: shorthand
+
+    @media (max-width: 1024px) {
+      width: 30px;
+      height: 20px;
+    }
+  }
 }

@@ -1,7 +1,41 @@
+@font-face {
+  font-family: "Toyota Display";
+  src: url("../fonts/woff2/ToyotaDisplay_Rg.woff2"); }
+
+@font-face {
+  font-family: "Toyota Display";
+  src: url("../fonts/woff2/ToyotaDisplay_Bd.woff2");
+  font-weight: bold; }
+
+@font-face {
+  font-family: "Toyota Text";
+  src: url("../fonts/woff2/ToyotaText_Rg.woff2"); }
+
+@font-face {
+  font-family: "Toyota Text";
+  src: url("../fonts/woff2/ToyotaText_It.woff2");
+  font-style: italic; }
+
+@font-face {
+  font-family: "Toyota Text";
+  src: url("../fonts/woff2/ToyotaText_Bd.woff2");
+  font-weight: bold; }
+
+@font-face {
+  font-family: "Toyota Text";
+  src: url("../fonts/woff2/ToyotaText_BdIt.woff2");
+  font-weight: bold;
+  font-style: italic; }
+
 body {
   font-size: 18px;
-  font-family: "Toyota Text", "Roboto", arial, sans-serif;
+  font-family: "Toyota Text", "Roboto", Helvetica, Arial, sans-serif;
   color: #23171A; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
 
 .container {
   max-width: 1310px; }
@@ -14,11 +48,77 @@ body {
   display: block;
   margin: 0 auto; }
 
+.section-title {
+  margin-top: 50px;
+  font-size: 40px;
+  font-family: "Toyota Display", arial, sans-serif;
+  letter-spacing: .1em;
+  line-height: 47px;
+  text-align: center;
+  font-weight: bold; }
+  @media (max-width: 1024px) {
+    .section-title {
+      font-size: 26px;
+      letter-spacing: .1em; } }
+  .section-title:before {
+    content: "";
+    display: block;
+    width: 39px;
+    height: 26px;
+    margin: 0 auto 10px;
+    background-image: url("../img/i-toyota.svg");
+    background-size: contain;
+    background-repeat: no-repeat; }
+    @media (max-width: 1024px) {
+      .section-title:before {
+        width: 30px;
+        height: 20px; } }
+
+.fotorama__nav-wrap {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  z-index: 10; }
+
+.fotorama__dot, .fotorama__nav__frame.fotorama__active .fotorama__dot {
+  width: 10px;
+  height: 10px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #CC0033;
+  background-color: #fff;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s; }
+
+.fotorama__nav__frame.fotorama__active .fotorama__dot {
+  border-color: #fff;
+  position: relative; }
+  .fotorama__nav__frame.fotorama__active .fotorama__dot:after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: #CC0033;
+    border-radius: 50%; }
+
+.fotorama__arr--next {
+  display: inline-block;
+  position: static; }
+
 .header {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
   .header-adress {
-    margin-left: 40px; }
+    margin-left: 40px;
+    font-style: italic;
+    font-size: 14px; }
     .header-adress__icon {
       vertical-align: middle;
       margin-right: 18px; }
@@ -37,9 +137,7 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between;
   height: 70px;
-  padding: 0 50px;
-  -webkit-box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5);
-  box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5); }
+  padding: 0 50px; }
 
 .logo-part {
   display: -webkit-box;
@@ -49,7 +147,10 @@ body {
   -ms-flex-align: center;
   align-items: center; }
 
-.nav {
+nav {
+  position: relative; }
+
+.nav, .nav__nav-secondary {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -63,12 +164,16 @@ body {
   align-items: center;
   height: 70px;
   margin: 0;
-  padding: 0 50px 0 25px; }
+  padding: 0 50px 0 25px;
+  -webkit-box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5);
+  box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5); }
   .nav__item {
     list-style: none; }
+    .nav__item:hover .nav__nav-secondary {
+      max-height: 80px; }
     .nav__item__link {
       text-decoration: none;
-      color: inherit;
+      color: #23171A;
       padding: 0 25px;
       white-space: nowrap; }
       .nav__item__link--has-child:after {
@@ -78,7 +183,76 @@ body {
         height: 4px;
         margin-left: 10px;
         background: url("/img/i-nav-arrow.svg") center no-repeat;
-        vertical-align: middle; }
+        vertical-align: middle;
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s;
+        will-change: transform; }
+      .nav__item__link--has-child:hover:after {
+        -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        transform: rotate(-90deg); }
+
+.nav-badge {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 90px;
+  height: 140px;
+  position: absolute;
+  top: 0;
+  right: 55px;
+  padding: 10px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #fff;
+  z-index: 4; }
+  .nav-badge:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 69px;
+    bottom: 0;
+    left: 0;
+    -webkit-box-shadow: 0px 7px 14px rgba(77, 79, 83, 0.3);
+    box-shadow: 0px 7px 14px rgba(77, 79, 83, 0.3); }
+  .nav-badge img {
+    max-width: 100%;
+    height: auto; }
+  .nav-badge__logo {
+    width: 88%; }
+
+.nav__nav-secondary {
+  max-height: 0;
+  overflow: hidden;
+  background-color: #fff;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  z-index: 3;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all .3s ease-out; }
+  .nav__nav-secondary .nav__item__link:after {
+    display: none; }
 
 .page-availible-head {
   -webkit-box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5);

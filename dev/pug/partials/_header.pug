@@ -5,23 +5,36 @@ header.header
       .header-adress
         img.header-adress__icon(src="/img/i-header-map-pointer.svg", alt="map pointer")
         span.header-adress__text Київ, Харківське шосе, 179
-      
-  ul.nav
-    li.nav__item
-      a.nav__item__link.nav__item__link--has-child(href="#") Автомобілі
-    li.nav__item
-      a.nav__item__link(href="javascript:void(0);") Корпоративним клієнтам
-    li.nav__item
-      a.nav__item__link(href="javascript:void(0);") Акції
-    li.nav__item
-      a.nav__item__link(href="javascript:void(0);") Новини
-    li.nav__item
-      a.nav__item__link.nav__item__link--has-child(href="javascript:void(0);") Сервіс
-    li.nav__item
-      a.nav__item__link.nav__item__link--has-child(href="javascript:void(0);") Послуги
-    li.nav__item
-      a.nav__item__link(href="javascript:void(0);") Запчастини
-    li.nav__item
-      a.nav__item__link(href="javascript:void(0);") Аксесуари
-    li.nav__item
-      a.nav__item__link.nav__item__link--has-child(href="#") Про нас
+  nav
+    ul.nav
+      li.nav__item
+        a.nav__item__link.nav__item__link--has-child(href="#") Автомобілі
+      li.nav__item
+        a.nav__item__link(href="javascript:void(0);") Корпоративним клієнтам
+      li.nav__item
+        a.nav__item__link(href="javascript:void(0);") Акції
+      li.nav__item
+        a.nav__item__link(href="javascript:void(0);") Новини
+      li.nav__item
+        a.nav__item__link.nav__item__link--has-child(href="javascript:void(0);") Сервіс
+        ul.nav__nav-secondary
+          li.nav__item
+            a.nav__item__link(href="javascript:void(0);") Toyota сервіс
+          li.nav__item
+            a.nav__item__link(href="javascript:void(0);") Ремонт і ТО
+          li.nav__item
+            a.nav__item__link(href="javascript:void(0);") Асістанс
+          li.nav__item
+            a.nav__item__link(href="javascript:void(0);") Сервісні компанії
+
+      li.nav__item
+        a.nav__item__link.nav__item__link--has-child(href="javascript:void(0);") Послуги
+      li.nav__item
+        a.nav__item__link(href="javascript:void(0);") Запчастини
+      li.nav__item
+        a.nav__item__link(href="javascript:void(0);") Аксесуари
+      li.nav__item
+        a.nav__item__link.nav__item__link--has-child(href="#") Про нас
+    .nav-badge
+      img.nav-badge__logo(src="img/badge-toyota.png", alt="")
+      img.nav-badge__slogan(src="img/badge-toyota-slogan.jpg", alt="")

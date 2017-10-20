@@ -28,7 +28,7 @@ gulp.task('pug', function(){
 
 gulp.task('js', function(){
   return gulp.src('dev/js/main.js')
-    .pipe(uglify())
+    // .pipe(uglify()) // disable temporary
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('dev/js'))
     .pipe(browserSync.reload({stream: true}))

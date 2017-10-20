@@ -1,0 +1,32 @@
+//TODO: add other formats
+@font-face {
+  font-family: "Toyota Display";
+  src: url("../fonts/woff2/ToyotaDisplay_Rg.woff2");
+}
+@font-face {
+  font-family: "Toyota Display";
+  src: url("../fonts/woff2/ToyotaDisplay_Bd.woff2");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Toyota Text";
+  src: url("../fonts/woff2/ToyotaText_Rg.woff2");
+}
+@font-face {
+  font-family: "Toyota Text";
+  src: url("../fonts/woff2/ToyotaText_It.woff2");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Toyota Text";
+  src: url("../fonts/woff2/ToyotaText_Bd.woff2");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Toyota Text";
+  src: url("../fonts/woff2/ToyotaText_BdIt.woff2");
+  font-weight: bold;
+  font-style: italic;
+}

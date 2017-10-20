@@ -1,8 +1,10 @@
 .header {
   box-sizing: border-box;
-  
+
   &-adress {
     margin-left: 40px;
+    font-style: italic;
+    font-size: 14px;
 
     &__icon {
       vertical-align: middle;
@@ -13,20 +15,24 @@
     }
   }
 }
+// top-bar
 .top-bar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   height: 70px;
   padding: 0 50px;
-  box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5);
 }
 .logo-part {
   display: flex;
   align-items: center;
 }
+// eof top-bar
 
 // navigation
+nav {
+  position: relative;
+}
 .nav {
   position: relative;
   display: flex;
@@ -35,15 +41,23 @@
   height: 70px;
   margin: 0;
   padding: 0 50px 0 25px;
+  box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5);
 
   &__item {
     list-style: none;
+    &:hover {
+      .nav__nav-secondary {
+        max-height: 80px;
+
+      }
+    }
 
     &__link {
       text-decoration: none;
-      color: inherit;
+      color: $black;
       padding: 0 25px;
       white-space: nowrap;
+
 
       &--has-child {
         &:after {
@@ -54,8 +68,76 @@
           margin-left: 10px;
           background: url('/img/i-nav-arrow.svg') center no-repeat;;
           vertical-align: middle;
+          transition: all .3s;
+          will-change: transform;
+        }
+        &:hover {
+
+          &:after {
+            transform: rotate(-90deg);
+          }
         }
       }
+    }
+  }
+}
+
+.nav-badge {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 90px;
+  height: 140px;
+  position: absolute;
+  top: 0;
+  right: 55px;
+  padding: 10px;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #fff;
+  z-index: 4;
+
+  // hack: partial box shadow 
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 69px;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0px 7px 14px rgba(77, 79, 83, 0.3);
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  &__logo {
+    width: 88%;
+  }
+
+}
+
+.nav__nav-secondary {
+  @extend .nav;
+  max-height: 0;
+  overflow: hidden;
+  background-color: #fff;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  z-index: 3;
+  justify-content: center;
+  transition: all .3s ease-out;
+
+  .nav__item__link {
+    &:after{
+      display: none;
     }
   }
 }

@@ -1,0 +1,40 @@
+// fotorama mainpage
+.fotorama__nav-wrap {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  z-index: 10;
+  // display: none;
+}
+.fotorama__dot {
+  width: 10px;
+  height: 10px;
+  box-sizing: border-box;
+  border: 1px solid $red;
+  background-color: #fff;
+  transition: all .3s;
+}
+.fotorama__nav__frame.fotorama__active .fotorama__dot {
+  @extend .fotorama__dot;
+  border-color: #fff;
+  position: relative;
+  &:after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: $red;
+    border-radius: 50%;
+  }
+}
+.fotorama__arr--next {
+  display: inline-block;
+  position: static;
+  margin: 0;
+
+}
+// eof fotorama mainpage

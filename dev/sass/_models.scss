@@ -178,7 +178,7 @@
   padding: 100px 0;
   display: flow-root;
   &__description{
-    width: percentage(6/12);
+    width: 54.8%;
     background: white;
     box-shadow: 4px 4px 24px $shadow25;
     border-radius: 2px;
@@ -190,7 +190,7 @@
   &__image{
     box-shadow: 4px 4px 14px $shadow25;
     border-radius: 2px;
-    width: percentage(6/12);
+    width: 48%;
     max-height: 580px;
     position: absolute;
     z-index: 1;
@@ -216,31 +216,36 @@
   }
   &__more{
     padding-top: 20px;
-    line-height: normal;
-    font-size: 24px;
-    letter-spacing: 2.4px;
-    color: $red;
-    font-weight: bold;
-    &:after{
-      width: 18px;
-      height: 18px;
-      display: inline-block;
-      content: "";
-      margin-left: 10px;
-      background: url('/img/i-more-arrow.svg') center no-repeat;
-      vertical-align: middle;
-    }
   }
 }
 .page-models-testdrive{
   background: url(/img/bg-testdrive.jpg);
-  background-position: center;
+  background-position: left center;
   background-size: cover;
   padding:160px 0;
   color:white;
 }
-.test-drive__title{
-  line-height: normal;
-  font-size: 40px;
-  font-weight: bold;
+.test-drive{
+  &__wrapper{
+    width: calc(50% - 40px);
+    margin: 0 0 0 auto;
+  }
+  &__title{
+    line-height: normal;
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 30px;
+  }
+  &__descr1, &__descr2{
+    padding-bottom: 20px;
+  }
+  &__descr3{
+    padding-bottom: 30px;
+  }
+  &__button-text{
+    font-size: 18px;
+    letter-spacing: 1.8px;
+    color: #FFFFFF;
+
+  }
 }

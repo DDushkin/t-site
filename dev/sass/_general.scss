@@ -13,3 +13,48 @@ body {
     display: block;
     margin: 0 auto;
 }
+.btn-main{
+  background: #CC0033;
+  box-shadow: 4px 4px 24px rgba(44, 1, 12, 0.3);
+  border-radius: 30px;
+  padding: 15px 40px;
+  display: inline-block;
+}
+.btn-more{
+  line-height: normal;
+  font-size: 24px;
+  letter-spacing: 2.4px;
+  color: $red;
+  font-weight: bold;
+  &:after{
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    content: "";
+    margin-left: 10px;
+    background: url('/img/i-more-arrow.svg') center no-repeat;
+    vertical-align: middle;
+  }
+}
+.ico{
+  &__bodytype{
+    &:before{
+      background: url('/img/i-bodytype.svg') center no-repeat;
+    }
+  }
+  &__capacity{
+    &:before{
+      background: url('/img/i-capacity.svg') center no-repeat;
+    }
+  }
+  &__transmission{
+    &:before{
+      background: url('/img/i-transmission.svg') center no-repeat;
+    }
+  }
+  &__gastype{
+    &:before{
+      background: url('/img/i-gastype.svg') center no-repeat;
+    }
+  }
+}

@@ -85,7 +85,7 @@
     line-height: normal;
     font-size: 18px;
   }
-  &__bodytype{
+  &__line{
     padding-top: 10px;
     line-height: normal;
     font-size: 18px;
@@ -95,68 +95,11 @@
       display: inline-block;
       content: "";
       margin-right: 15px;
-      background: url('/img/i-bodytype.svg') center no-repeat;
-      vertical-align: middle;
-    }
-  }
-  &__capacity{
-    padding-top: 10px;
-    line-height: normal;
-    font-size: 18px;
-    &:before{
-      width: 41px;
-      height: 31px;
-      display: inline-block;
-      content: "";
-      margin-right: 15px;
-      background: url('/img/i-capacity.svg') center no-repeat;
-      vertical-align: middle;
-    }
-  }
-  &__transmission{
-    padding-top: 10px;
-    line-height: normal;
-    font-size: 18px;
-    &:before{
-      width: 41px;
-      height: 31px;
-      display: inline-block;
-      content: "";
-      margin-right: 15px;
-      background: url('/img/i-transmission.svg') center no-repeat;
-      vertical-align: middle;
-    }
-  }
-  &__gastype{
-    padding-top: 10px;
-    line-height: normal;
-    font-size: 18px;
-    &:before{
-      width: 41px;
-      height: 31px;
-      display: inline-block;
-      content: "";
-      margin-right: 15px;
-      background: url('/img/i-gastype.svg') center no-repeat;
       vertical-align: middle;
     }
   }
   &__more{
     padding-top: 35px;
-    line-height: normal;
-    font-size: 24px;
-    letter-spacing: 2.4px;
-    color: $red;
-    font-weight: bold;
-    &:after{
-      width: 18px;
-      height: 18px;
-      display: inline-block;
-      content: "";
-      margin-left: 10px;
-      background: url('/img/i-more-arrow.svg') center no-repeat;
-      vertical-align: middle;
-    }
   }
   &__image{
     box-shadow: 4px 4px 14px $shadow25;

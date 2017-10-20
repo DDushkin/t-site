@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @font-face {
   font-family: "Toyota Display";
   src: url("../fonts/woff2/ToyotaDisplay_Rg.woff2"); }
@@ -27,18 +26,16 @@
   src: url("../fonts/woff2/ToyotaText_BdIt.woff2");
   font-weight: bold;
   font-style: italic; }
-=======
+
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
->>>>>>> 565e64f04bfb8a851be7c042998ab79035f4f371
 
 body {
   font-size: 18px;
   font-family: "Toyota Text", "Roboto", Helvetica, Arial, sans-serif;
   color: #23171A; }
 
-<<<<<<< HEAD
 .clearfix:after {
   content: "";
   display: table;
@@ -47,8 +44,6 @@ body {
 .container {
   max-width: 1310px; }
 
-=======
->>>>>>> 565e64f04bfb8a851be7c042998ab79035f4f371
 .wrapper {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -57,7 +52,6 @@ body {
   display: block;
   margin: 0 auto; }
 
-<<<<<<< HEAD
 .section-title {
   margin-top: 50px;
   font-size: 40px;
@@ -84,44 +78,6 @@ body {
         width: 30px;
         height: 20px; } }
 
-.fotorama__nav-wrap {
-  position: absolute;
-  bottom: 40px;
-  left: 0;
-  z-index: 10; }
-
-.fotorama__dot, .fotorama__nav__frame.fotorama__active .fotorama__dot {
-  width: 10px;
-  height: 10px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  border: 1px solid #CC0033;
-  background-color: #fff;
-  -webkit-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s; }
-
-.fotorama__nav__frame.fotorama__active .fotorama__dot {
-  border-color: #fff;
-  position: relative; }
-  .fotorama__nav__frame.fotorama__active .fotorama__dot:after {
-    display: block;
-    content: "";
-    position: absolute;
-    width: 2px;
-    height: 2px;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    background-color: #CC0033;
-    border-radius: 50%; }
-
-.fotorama__arr--next {
-  display: inline-block;
-  position: static; }
-=======
 .breadcrumbs {
   padding-top: 110px; }
   .breadcrumbs__list {
@@ -193,7 +149,45 @@ body {
 
 .ico__path:before {
   background: url("/img/i-path.svg") center no-repeat; }
->>>>>>> 565e64f04bfb8a851be7c042998ab79035f4f371
+
+.fotorama__nav-wrap {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  z-index: 10; }
+
+.fotorama__dot, .fotorama__nav__frame.fotorama__active .fotorama__dot {
+  width: 10px;
+  height: 10px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #CC0033;
+  background-color: #fff;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s; }
+
+.fotorama__nav__frame.fotorama__active .fotorama__dot {
+  border-color: #fff;
+  position: relative; }
+  .fotorama__nav__frame.fotorama__active .fotorama__dot:after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: #CC0033;
+    border-radius: 50%; }
+
+.fotorama__arr--next {
+  display: inline-block;
+  position: static;
+  margin: 0; }
 
 .header {
   -webkit-box-sizing: border-box;
@@ -220,9 +214,6 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between;
   height: 70px;
-<<<<<<< HEAD
-  padding: 0 50px; }
-=======
   padding: 0 50px;
   background: -webkit-gradient(linear, left top, left bottom, from(#F0F2F2), to(#FFFFFF));
   background: -webkit-linear-gradient(top, #F0F2F2 0%, #FFFFFF 100%);
@@ -230,7 +221,6 @@ body {
   background: linear-gradient(180deg, #F0F2F2 0%, #FFFFFF 100%);
   -webkit-box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5);
   box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5); }
->>>>>>> 565e64f04bfb8a851be7c042998ab79035f4f371
 
 .logo-part {
   display: -webkit-box;
@@ -258,13 +248,10 @@ nav {
   height: 70px;
   margin: 0;
   padding: 0 50px 0 25px;
-<<<<<<< HEAD
-=======
   background: -webkit-gradient(linear, left top, left bottom, from(#F0F2F2), to(#FFFFFF));
   background: -webkit-linear-gradient(top, #F0F2F2 0%, #FFFFFF 100%);
   background: -o-linear-gradient(top, #F0F2F2 0%, #FFFFFF 100%);
   background: linear-gradient(180deg, #F0F2F2 0%, #FFFFFF 100%);
->>>>>>> 565e64f04bfb8a851be7c042998ab79035f4f371
   -webkit-box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5);
   box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5); }
   .nav__item {

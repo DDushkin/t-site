@@ -15,6 +15,40 @@ body {
   display: block;
   margin: 0 auto; }
 
+.breadcrumbs {
+  padding-top: 110px; }
+  .breadcrumbs__list {
+    font-size: 0;
+    text-align: center; }
+  .breadcrumbs__item {
+    position: relative;
+    display: inline-block;
+    padding-left: 15px;
+    vertical-align: top;
+    line-height: normal;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.7px; }
+    .breadcrumbs__item:not(:first-child)::before {
+      position: absolute;
+      top: 6px;
+      left: 5px;
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      content: '';
+      background: white; }
+    .breadcrumbs__item:first-child {
+      padding-left: 0; }
+  .breadcrumbs__title {
+    line-height: normal;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 4px;
+    margin: 0; }
+    .breadcrumbs__title-wrap {
+      padding-top: 15px; }
+
 .btn-main {
   background: #CC0033;
   -webkit-box-shadow: 4px 4px 24px rgba(44, 1, 12, 0.3);
@@ -49,6 +83,9 @@ body {
 
 .ico__gastype:before {
   background: url("/img/i-gastype.svg") center no-repeat; }
+
+.ico__path:before {
+  background: url("/img/i-path.svg") center no-repeat; }
 
 .header {
   -webkit-box-sizing: border-box;
@@ -142,40 +179,6 @@ body {
   background-size: cover;
   z-index: 10;
   color: white; }
-
-.breadcrumbs {
-  padding-top: 110px; }
-  .breadcrumbs__list {
-    font-size: 0;
-    text-align: center; }
-  .breadcrumbs__item {
-    position: relative;
-    display: inline-block;
-    padding-left: 15px;
-    vertical-align: top;
-    line-height: normal;
-    font-size: 14px;
-    text-align: center;
-    letter-spacing: 0.7px; }
-    .breadcrumbs__item:not(:first-child)::before {
-      position: absolute;
-      top: 6px;
-      left: 5px;
-      width: 3px;
-      height: 3px;
-      border-radius: 50%;
-      content: '';
-      background: white; }
-    .breadcrumbs__item:first-child {
-      padding-left: 0; }
-  .breadcrumbs__title {
-    line-height: normal;
-    font-size: 40px;
-    text-align: center;
-    letter-spacing: 4px;
-    margin: 0; }
-    .breadcrumbs__title-wrap {
-      padding-top: 15px; }
 
 .car-card {
   margin-top: 100px;
@@ -383,13 +386,13 @@ body {
   padding: 100px 0;
   display: flow-root; }
   .available-car-info__description {
-    width: 54.8%;
+    width: 47%;
     background: white;
     -webkit-box-shadow: 4px 4px 24px rgba(77, 79, 83, 0.25);
     box-shadow: 4px 4px 24px rgba(77, 79, 83, 0.25);
     border-radius: 2px;
     color: #23171A;
-    padding: 50px 35px 50px 115px;
+    padding: 50px 35px 50px 140px;
     float: right;
     -webkit-transform: translateY(15%);
     -ms-transform: translateY(15%);
@@ -399,13 +402,14 @@ body {
     box-shadow: 4px 4px 14px rgba(77, 79, 83, 0.25);
     border-radius: 2px;
     width: 48%;
-    max-height: 580px;
+    max-height: 450px;
     position: absolute;
     z-index: 1; }
     .available-car-info__image img {
       width: 100%;
-      -o-object-fit: contain;
-      object-fit: contain; }
+      -o-object-fit: cover;
+      object-fit: cover;
+      min-height: 450px; }
   .available-car-info__title {
     line-height: normal;
     font-size: 24px;
@@ -426,7 +430,8 @@ body {
   background-position: left center;
   background-size: cover;
   padding: 160px 0;
-  color: white; }
+  color: white;
+  margin-top: 160px; }
 
 .test-drive__wrapper {
   width: calc(50% - 40px);
@@ -448,3 +453,112 @@ body {
   font-size: 18px;
   letter-spacing: 1.8px;
   color: #FFFFFF; }
+
+.page-testdrive-head {
+  -webkit-box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5);
+  box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5);
+  overflow: hidden;
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  min-height: 300px;
+  margin-bottom: 0;
+  background-color: #767676;
+  background-image: url(../img/bg-testdrive-head.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 10;
+  color: white; }
+
+.test-drive-card {
+  padding: 200px 0;
+  display: flow-root; }
+  .test-drive-card__description {
+    width: 47%;
+    background: white;
+    -webkit-box-shadow: 4px 4px 24px rgba(77, 79, 83, 0.25);
+    box-shadow: 4px 4px 24px rgba(77, 79, 83, 0.25);
+    border-radius: 2px;
+    color: #23171A;
+    padding: 50px 35px 50px 140px;
+    float: right;
+    -webkit-transform: translateY(15%);
+    -ms-transform: translateY(15%);
+    transform: translateY(15%); }
+  .test-drive-card__image {
+    -webkit-box-shadow: 4px 4px 14px rgba(77, 79, 83, 0.25);
+    box-shadow: 4px 4px 14px rgba(77, 79, 83, 0.25);
+    border-radius: 2px;
+    width: 48%;
+    max-height: 580px;
+    position: absolute;
+    z-index: 1; }
+    .test-drive-card__image img {
+      width: 100%; }
+  .test-drive-card__title {
+    line-height: normal;
+    font-size: 24px;
+    letter-spacing: 2.4px;
+    font-weight: bold; }
+  .test-drive-card__info {
+    padding-top: 30px;
+    line-height: normal;
+    font-size: 18px; }
+  .test-drive-card_p {
+    display: block;
+    padding-top: 20px; }
+  .test-drive-card__btn {
+    margin-top: 30px;
+    color: white; }
+
+.test-drive-pace {
+  margin-top: 60px;
+  margin-bottom: 100px;
+  position: relative;
+  display: flow-root; }
+  .test-drive-pace__description {
+    background: white;
+    -webkit-box-shadow: 4px 4px 24px rgba(77, 79, 83, 0.25);
+    box-shadow: 4px 4px 24px rgba(77, 79, 83, 0.25);
+    border-radius: 2px;
+    color: #23171A;
+    padding: 70px 20px;
+    width: 41.66667%;
+    position: absolute;
+    -webkit-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(50%); }
+  .test-drive-pace__title {
+    line-height: normal;
+    font-size: 24px;
+    letter-spacing: 2.4px;
+    font-weight: bold; }
+  .test-drive-pace__info {
+    padding-top: 10px;
+    line-height: normal;
+    font-size: 18px; }
+  .test-drive-pace__line {
+    padding-top: 30px;
+    line-height: normal;
+    font-size: 18px;
+    font-style: italic; }
+    .test-drive-pace__line:before {
+      width: 41px;
+      height: 31px;
+      display: inline-block;
+      content: "";
+      margin-right: 15px;
+      vertical-align: middle; }
+  .test-drive-pace__map {
+    -webkit-box-shadow: 4px 4px 14px rgba(77, 79, 83, 0.25);
+    box-shadow: 4px 4px 14px rgba(77, 79, 83, 0.25);
+    border-radius: 2px;
+    width: 66.66667%;
+    max-height: 600px;
+    float: right; }
+    .test-drive-pace__map img {
+      width: 100%;
+      max-height: 600px;
+      -o-object-fit: cover;
+      object-fit: cover; }

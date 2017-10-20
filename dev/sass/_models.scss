@@ -178,12 +178,12 @@
   padding: 100px 0;
   display: flow-root;
   &__description{
-    width: 54.8%;
+    width: 47%;
     background: white;
     box-shadow: 4px 4px 24px $shadow25;
     border-radius: 2px;
     color: $black;
-    padding:50px 35px 50px 115px;
+    padding:50px 35px 50px 140px;
     float:right;
     transform: translateY(15%);
   }
@@ -191,12 +191,13 @@
     box-shadow: 4px 4px 14px $shadow25;
     border-radius: 2px;
     width: 48%;
-    max-height: 580px;
+    max-height: 450px;
     position: absolute;
     z-index: 1;
     img{
       width: 100%;
-      object-fit: contain;
+      object-fit: cover;
+      min-height: 450px;
     }
   }
   &__title{
@@ -224,6 +225,7 @@
   background-size: cover;
   padding:160px 0;
   color:white;
+  margin-top: 160px;
 }
 .test-drive{
   &__wrapper{

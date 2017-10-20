@@ -1,0 +1,114 @@
+.page-testdrive-head{
+  box-shadow: 0px 0px 14px $shadow50;
+  overflow: hidden;
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  min-height: 300px;
+  margin-bottom: 0;
+  background-color: #767676;
+  background-image: url(../img/bg-testdrive-head.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 10;
+  color:white;
+}
+.test-drive-card{
+  padding: 200px 0;
+  display: flow-root;
+  &__description{
+    width: 47%;
+    background: white;
+    box-shadow: 4px 4px 24px $shadow25;
+    border-radius: 2px;
+    color: $black;
+    padding:50px 35px 50px 140px;
+    float:right;
+    transform: translateY(15%);
+  }
+  &__image{
+    box-shadow: 4px 4px 14px $shadow25;
+    border-radius: 2px;
+    width: 48%;
+    max-height: 580px;
+    position: absolute;
+    z-index: 1;
+    img{
+      width: 100%;
+    }
+  }
+  &__title{
+    line-height: normal;
+    font-size: 24px;
+    letter-spacing: 2.4px;
+    font-weight: bold;
+  }
+  &__info{
+    padding-top: 30px;
+    line-height: normal;
+    font-size: 18px;
+  }
+  &_p{
+    display: block;
+    padding-top: 20px;
+  }
+  &__btn{
+    margin-top: 30px;
+    color:white;
+  }
+}
+.test-drive-pace{
+  margin-top: 60px;
+  margin-bottom: 100px;
+  position: relative;
+  display: flow-root;
+
+  &__description{
+    background: white;
+    box-shadow: 4px 4px 24px $shadow25;
+    border-radius: 2px;
+    color: $black;
+    padding:70px 20px;
+    width: percentage(5/12);
+    position: absolute;
+    transform: translateY(50%);
+  }
+  &__title{
+    line-height: normal;
+    font-size: 24px;
+    letter-spacing: 2.4px;
+    font-weight: bold;
+  }
+  &__info{
+    padding-top: 10px;
+    line-height: normal;
+    font-size: 18px;
+  }
+  &__line{
+    padding-top: 30px;
+    line-height: normal;
+    font-size: 18px;
+    font-style: italic;
+    &:before{
+      width: 41px;
+      height: 31px;
+      display: inline-block;
+      content: "";
+      margin-right: 15px;
+      vertical-align: middle;
+    }
+  }
+  &__map{
+    box-shadow: 4px 4px 14px $shadow25;
+    border-radius: 2px;
+    width: percentage(8/12);
+    max-height: 600px;
+    float: right;
+    img{
+      width: 100%;
+      max-height: 600px;
+      object-fit: cover;
+    }
+  }
+}

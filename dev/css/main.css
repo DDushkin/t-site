@@ -184,10 +184,10 @@ body {
     background-color: #CC0033;
     border-radius: 50%; }
 
-.fotorama__arr--next {
+.fotorama__arr {
   display: inline-block;
-  position: static;
-  margin: 0; }
+  vertical-align: middle;
+  position: static; }
 
 .header {
   -webkit-box-sizing: border-box;

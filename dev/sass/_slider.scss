@@ -31,10 +31,17 @@
     border-radius: 50%;
   }
 }
-.fotorama__arr--next {
+.fotorama__arr {
   display: inline-block;
+  vertical-align: middle;
   position: static;
-  margin: 0;
 
 }
+// .fotorama__arr--next {
+//   display: inline-block;
+//   position: static;
+//   margin: 0;
+
+// }
+
 // eof fotorama mainpage

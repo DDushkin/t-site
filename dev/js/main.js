@@ -12,5 +12,6 @@ $(document).ready(function(){
     // transition: "dissolve"
   });
   $(".fotorama__arr--next").appendTo(".fotorama__nav__shaft");
+  $(".fotorama__arr--prev").prependTo(".fotorama__nav__shaft");
 });
  

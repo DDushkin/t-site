@@ -90,11 +90,12 @@ body {
     vertical-align: top;
     line-height: normal;
     font-size: 14px;
+    font-style: italic;
     text-align: center;
     letter-spacing: 0.7px; }
     .breadcrumbs__item:not(:first-child)::before {
       position: absolute;
-      top: 6px;
+      top: 8px;
       left: 5px;
       width: 3px;
       height: 3px;
@@ -103,7 +104,10 @@ body {
       background: white; }
     .breadcrumbs__item:first-child {
       padding-left: 0; }
+    .breadcrumbs__item:last-child {
+      text-decoration: underline; }
   .breadcrumbs__title {
+    font-family: "Toyota Display";
     line-height: normal;
     font-size: 40px;
     text-align: center;
@@ -113,6 +117,7 @@ body {
       padding-top: 15px; }
 
 .btn-main {
+  cursor: pointer;
   background: #CC0033;
   -webkit-box-shadow: 4px 4px 24px rgba(44, 1, 12, 0.3);
   box-shadow: 4px 4px 24px rgba(44, 1, 12, 0.3);
@@ -121,6 +126,8 @@ body {
   display: inline-block; }
 
 .btn-more {
+  cursor: pointer;
+  font-family: "Toyota Display";
   line-height: normal;
   font-size: 24px;
   letter-spacing: 2.4px;
@@ -375,6 +382,7 @@ nav {
     -ms-transform: translateY(15%);
     transform: translateY(15%); }
   .car-card__title {
+    font-family: "Toyota Display";
     line-height: normal;
     font-size: 24px;
     letter-spacing: 2.4px;
@@ -429,6 +437,7 @@ nav {
   margin: 0 auto;
   text-align: center; }
   .filter__title {
+    font-family: "Toyota Display";
     font-size: 24px;
     text-align: center;
     letter-spacing: 2.4px;
@@ -489,6 +498,7 @@ nav {
     padding: 60px 110px;
     border: 3px dashed #B5B7B3; }
     .filter__dragndrop__text {
+      font-family: "Toyota Display";
       line-height: normal;
       font-size: 24px;
       letter-spacing: 2.4px;
@@ -503,11 +513,12 @@ nav {
     float: left;
     width: 33.33333%;
     padding: 40px 0;
-    min-height: 280px; }
+    min-height: 285px; }
   .cars-list__image {
     width: 100%;
     padding-bottom: 20px; }
   .cars-list__title {
+    font-family: "Toyota Display";
     line-height: normal;
     font-size: 24px;
     text-align: center;
@@ -589,6 +600,7 @@ nav {
       object-fit: cover;
       min-height: 450px; }
   .available-car-info__title {
+    font-family: "Toyota Display";
     line-height: normal;
     font-size: 24px;
     letter-spacing: 2.4px;
@@ -616,6 +628,7 @@ nav {
   margin: 0 0 0 auto; }
 
 .test-drive__title {
+  font-family: "Toyota Display";
   line-height: normal;
   font-size: 40px;
   font-weight: bold;
@@ -675,6 +688,7 @@ nav {
     .test-drive-card__image img {
       width: 100%; }
   .test-drive-card__title {
+    font-family: "Toyota Display";
     line-height: normal;
     font-size: 24px;
     letter-spacing: 2.4px;
@@ -704,10 +718,11 @@ nav {
     padding: 70px 20px;
     width: 41.66667%;
     position: absolute;
-    -webkit-transform: translateY(50%);
-    -ms-transform: translateY(50%);
-    transform: translateY(50%); }
+    -webkit-transform: translateY(40%);
+    -ms-transform: translateY(40%);
+    transform: translateY(40%); }
   .test-drive-pace__title {
+    font-family: "Toyota Display";
     line-height: normal;
     font-size: 24px;
     letter-spacing: 2.4px;
@@ -740,3 +755,17 @@ nav {
       max-height: 600px;
       -o-object-fit: cover;
       object-fit: cover; }
+
+.page-testdrive-video {
+  background: -webkit-radial-gradient(50% 50%, 851px, rgba(176, 178, 173, 0.7) 0%, rgba(196, 196, 196, 0) 100%);
+  background: -o-radial-gradient(50% 50%, 851px, rgba(176, 178, 173, 0.7) 0%, rgba(196, 196, 196, 0) 100%);
+  background: radial-gradient(851px at 50% 50%, rgba(176, 178, 173, 0.7) 0%, rgba(196, 196, 196, 0) 100%);
+  -webkit-box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5);
+  box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5);
+  padding: 70px 0 40px;
+  height: 1100px; }
+
+.test-drive-video-main {
+  -webkit-box-shadow: 4px 4px 24px rgba(77, 79, 83, 0.25);
+  box-shadow: 4px 4px 24px rgba(77, 79, 83, 0.25);
+  border-radius: 10px; }

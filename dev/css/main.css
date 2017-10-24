@@ -52,7 +52,7 @@ body {
   display: block;
   margin: 0 auto; }
 
-.cyan-bg {
+.bg-cyan {
   background: url(/img/bg-models-filter.jpg); }
 
 .section-title {
@@ -118,6 +118,16 @@ body {
     margin: 0; }
     .breadcrumbs__title-wrap {
       padding-top: 15px; }
+
+.btn-main-o {
+  border: 3px solid #CC0033;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: 4px 4px 24px rgba(44, 1, 12, 0.3);
+  box-shadow: 4px 4px 24px rgba(44, 1, 12, 0.3);
+  border-radius: 30px;
+  padding: 15px 40px;
+  cursor: pointer; }
 
 .btn-main {
   cursor: pointer;
@@ -227,6 +237,12 @@ body {
 
 .ico__path:before {
   background: url("/img/i-path.svg") center no-repeat; }
+
+.ico__available:before {
+  background: url("/img/i-available-tick.svg") center no-repeat; }
+
+.ico__price:before {
+  background: url("/img/i-price.svg") center no-repeat; }
 
 .toyota-icon-black:before {
   width: 40px;
@@ -442,7 +458,7 @@ nav {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  z-index: 10;
+  z-index: 1;
   color: white; }
 
 .car-card {
@@ -501,7 +517,7 @@ nav {
   width: 100%;
   min-height: 210px;
   margin-bottom: 0;
-  z-index: 10;
+  z-index: 1;
   color: #23171A; }
   .page-models-head .breadcrumbs {
     padding-top: 70px; }
@@ -738,7 +754,7 @@ nav {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  z-index: 10;
+  z-index: 1;
   color: white; }
 
 .test-drive-card {
@@ -926,3 +942,67 @@ nav {
     letter-spacing: 1.4px;
     -webkit-text-decoration-line: underline;
     text-decoration-line: underline; }
+
+.page-tradein-head {
+  -webkit-box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5);
+  box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5);
+  overflow: hidden;
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  min-height: 300px;
+  margin-bottom: 0;
+  background: url(../img/bg-tradein.jpg), -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(rgba(255, 255, 255, 0)));
+  background: url(../img/bg-tradein.jpg), -webkit-linear-gradient(top, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+  background: url(../img/bg-tradein.jpg), -o-linear-gradient(top, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+  background: url(../img/bg-tradein.jpg), linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5);
+  background-size: cover;
+  z-index: 1;
+  color: white; }
+
+.page-tradein-content {
+  padding-bottom: 200px; }
+
+.tradein-available-marks {
+  margin-top: 70px; }
+  .tradein-available-marks__text {
+    font-family: "Toyota Display";
+    font-size: 24px;
+    letter-spacing: 2.4px;
+    font-weight: bold;
+    display: inline-block; }
+  .tradein-available-marks__tag {
+    display: inline-block;
+    margin: 0 0 0 20px; }
+
+.tradein-card {
+  margin-top: 70px; }
+  .tradein-card__description {
+    -webkit-transform: translateY(4%);
+    -ms-transform: translateY(4%);
+    transform: translateY(4%); }
+  .tradein-card__line {
+    padding-top: 30px; }
+  .tradein-card__ico {
+    display: inline-block;
+    padding-right: 40px; }
+
+.page-tradein-bottom {
+  padding: 70px 0;
+  text-align: center; }
+
+.tradein-form {
+  width: 66.66667%;
+  margin: 0 auto; }
+  .tradein-form__title {
+    font-family: "Toyota Display";
+    line-height: normal;
+    font-size: 40px;
+    font-weight: bold; }
+  .tradein-form__input {
+    width: 46%;
+    margin: 50px 15px 15px; }
+  .tradein-form__submit {
+    display: block;
+    margin: 15px auto 0; }

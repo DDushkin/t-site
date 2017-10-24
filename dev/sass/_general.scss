@@ -30,7 +30,7 @@ body {
     display: block;
     margin: 0 auto;
 }
-.cyan-bg{
+.bg-cyan{
   background: url(/img/bg-models-filter.jpg);
 }
 .section-title {
@@ -114,6 +114,14 @@ body {
     }
   }
 }
+.btn-main-o{
+  border: 3px solid #CC0033;
+  box-sizing: border-box;
+  box-shadow: 4px 4px 24px rgba(44, 1, 12, 0.3);
+  border-radius: 30px;
+  padding: 15px 40px;
+  cursor: pointer;
+}
 .btn-main{
   cursor: pointer;
   background: #CC0033;
@@ -190,6 +198,16 @@ body {
   &__path{
     &:before{
       background: url('/img/i-path.svg') center no-repeat;
+    }
+  }
+  &__available{
+    &:before{
+      background: url('/img/i-available-tick.svg') center no-repeat;
+    }
+  }
+  &__price{
+    &:before{
+      background: url('/img/i-price.svg') center no-repeat;
     }
   }
 }

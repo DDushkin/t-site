@@ -1,0 +1,66 @@
+.page-tradein-head{
+  box-shadow: 0px 0px 14px $shadow50;
+  overflow: hidden;
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  min-height: 300px;
+  margin-bottom: 0;
+  background: url(../img/bg-tradein.jpg), linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5);
+  background-size: cover;
+  z-index: 1;
+  color:white;
+}
+.page-tradein-content{
+  padding-bottom: 200px;
+}
+.tradein-available-marks{
+  margin-top:70px;
+  &__text{
+    font-family: $f-td;
+    font-size: 24px;
+    letter-spacing: 2.4px;
+    font-weight: bold;
+    display: inline-block;
+  }
+  &__tag{
+    display: inline-block;
+    margin: 0 0 0 20px;
+  }
+}
+.tradein-card{
+  margin-top: 70px;
+  &__description{
+    transform: translateY(4%);
+  }
+  &__line{
+    padding-top: 30px;
+  }
+  &__ico {
+    display: inline-block;
+    padding-right: 40px;
+  }
+}
+.page-tradein-bottom{
+  padding: 70px 0;
+  text-align: center;
+}
+.tradein-form{
+  width: percentage(8/12);
+  margin: 0 auto;
+  &__title{
+    font-family: $f-td;
+    line-height: normal;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  &__input{
+    width: 46%;
+    margin: 50px 15px 15px;
+  }
+  &__submit{
+    display: block;
+    margin: 15px auto 0;
+  }
+}

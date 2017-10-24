@@ -19,7 +19,7 @@ body {
 //   your styles
 // }
 
-.container {
+.container {     // нужен??
   max-width: 1310px;
 }
 
@@ -31,10 +31,9 @@ body {
     margin: 0 auto;
 }
 .bg-cyan{
-  background: url(/img/bg-models-filter.jpg);
+  background: url(/img/bg-models-filter.jpg);    //Странный серый бекграунд
 }
-.section-title {
-  margin-top: 50px;
+.section-title {                                  //Заголовок 40px со значком тойота
   font-size: 40px;
   font-family: $f-td, arial, sans-serif;
   letter-spacing: .1em;
@@ -64,6 +63,12 @@ body {
     }
   }
 }
+
+/*хлебные крошки с белыми точками , если нужны черные, то прописать
+.breadcrumbs__item:not(:first-child)::before {
+    background: $black;
+}  для нужного section
+*/
 .breadcrumbs{
   padding-top: 110px;
 
@@ -156,6 +161,8 @@ body {
     outline: none;
   }
 }
+
+/*стили для основных инпутов*/
 .input-main{
   padding: 15px 20px;
   background: #F7F7F7;
@@ -174,6 +181,9 @@ body {
   &:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease; font-style: italic; font-size: 18px; color: #B5B7B3;}
   &:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease; font-style: italic; font-size: 18px; color: #B5B7B3;}
 }
+
+
+/* Иконки возле текста как на странице №3*/
 .ico{
   &__bodytype{
     &:before{
@@ -209,16 +219,5 @@ body {
     &:before{
       background: url('/img/i-price.svg') center no-repeat;
     }
-  }
-}
-.toyota-icon-black{
-  &:before{
-    width: 40px;
-    height: 26px;
-    display: block;
-    content: "";
-    margin: 0 auto 10px;
-    background: url('/img/i-black-toyota.svg') center no-repeat;
-    vertical-align: middle;
   }
 }

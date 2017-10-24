@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Toyota Display";
   src: url("../fonts/woff2/ToyotaDisplay_Rg.woff2"); }
@@ -36,7 +37,7 @@ body {
   font-family: "Toyota Text", "Roboto", Helvetica, Arial, sans-serif;
   color: #23171A; }
 
-.clearfix:after, .test-drive-terms__description:after, .test-drive-form__car:after {
+.clearfix:after, .car-card:after, .filter__icons:after, .cars-list:after, .available-car-info:after, .test-drive-card:after, .test-drive-pace:after, .test-drive-terms__description:after, .test-drive-form__car:after {
   content: "";
   display: table;
   clear: both; }
@@ -56,7 +57,6 @@ body {
   background: url(/img/bg-models-filter.jpg); }
 
 .section-title {
-  margin-top: 50px;
   font-size: 40px;
   font-family: "Toyota Display", arial, sans-serif;
   letter-spacing: .1em;
@@ -81,6 +81,11 @@ body {
         width: 30px;
         height: 20px; } }
 
+/*хлебные крошки с белыми точками , если нужны черные, то прописать
+.breadcrumbs__item:not(:first-child)::before {
+    background: $black;
+}  для нужного section
+*/
 .breadcrumbs {
   padding-top: 110px; }
   .breadcrumbs__list {
@@ -161,6 +166,7 @@ body {
   .btn-more:focus {
     outline: none; }
 
+/*стили для основных инпутов*/
 .input-main {
   padding: 15px 20px;
   background: #F7F7F7;
@@ -223,6 +229,7 @@ body {
     font-size: 18px;
     color: #B5B7B3; }
 
+/* Иконки возле текста как на странице №3*/
 .ico__bodytype:before {
   background: url("/img/i-bodytype.svg") center no-repeat; }
 
@@ -243,15 +250,6 @@ body {
 
 .ico__price:before {
   background: url("/img/i-price.svg") center no-repeat; }
-
-.toyota-icon-black:before {
-  width: 40px;
-  height: 26px;
-  display: block;
-  content: "";
-  margin: 0 auto 10px;
-  background: url("/img/i-black-toyota.svg") center no-repeat;
-  vertical-align: middle; }
 
 .fotorama__nav-wrap {
   position: absolute;
@@ -444,6 +442,9 @@ nav {
   .nav__nav-secondary .nav__item__link:after {
     display: none; }
 
+.cars-title {
+  margin-top: 50px; }
+
 .page-availible-head {
   -webkit-box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5);
   box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5);
@@ -463,8 +464,7 @@ nav {
 
 .car-card {
   margin-top: 100px;
-  position: relative;
-  display: flow-root; }
+  position: relative; }
   .car-card__description {
     background: white;
     -webkit-box-shadow: 4px 4px 24px rgba(77, 79, 83, 0.25);
@@ -539,8 +539,7 @@ nav {
     color: #23171A;
     font-weight: bold; }
   .filter__icons {
-    padding: 50px 0;
-    display: flow-root; }
+    padding: 50px 0; }
   .filter__item {
     line-height: normal;
     font-size: 18px;
@@ -602,7 +601,6 @@ nav {
 
 .cars-list {
   padding: 60px 0;
-  display: flow-root;
   text-align: center; }
   .cars-list__item {
     float: left;
@@ -667,8 +665,7 @@ nav {
       vertical-align: middle; }
 
 .available-car-info {
-  padding: 100px 0;
-  display: flow-root; }
+  padding: 100px 0; }
   .available-car-info__description {
     width: 47%;
     background: white;
@@ -758,8 +755,7 @@ nav {
   color: white; }
 
 .test-drive-card {
-  padding: 200px 0;
-  display: flow-root; }
+  padding: 200px 0; }
   .test-drive-card__description {
     width: 47%;
     background: white;
@@ -802,8 +798,7 @@ nav {
 .test-drive-pace {
   margin-top: 60px;
   margin-bottom: 100px;
-  position: relative;
-  display: flow-root; }
+  position: relative; }
   .test-drive-pace__description {
     background: white;
     -webkit-box-shadow: 4px 4px 24px rgba(77, 79, 83, 0.25);
@@ -868,11 +863,6 @@ nav {
 .test-drive-terms {
   padding: 200px 0; }
   .test-drive-terms__title {
-    text-align: center;
-    font-family: "Toyota Display";
-    line-height: normal;
-    font-size: 40px;
-    font-weight: bold;
     padding-bottom: 10px; }
   .test-drive-terms__subtitle {
     text-align: center;
@@ -893,11 +883,6 @@ nav {
 .test-drive-form {
   padding: 70px 0; }
   .test-drive-form__title {
-    text-align: center;
-    font-family: "Toyota Display";
-    line-height: normal;
-    font-size: 40px;
-    font-weight: bold;
     padding-bottom: 10px; }
   .test-drive-form__subtitle {
     text-align: center;
@@ -995,11 +980,6 @@ nav {
 .tradein-form {
   width: 66.66667%;
   margin: 0 auto; }
-  .tradein-form__title {
-    font-family: "Toyota Display";
-    line-height: normal;
-    font-size: 40px;
-    font-weight: bold; }
   .tradein-form__input {
     width: 46%;
     margin: 50px 15px 15px; }

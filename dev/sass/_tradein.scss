@@ -49,12 +49,6 @@
 .tradein-form{
   width: percentage(8/12);
   margin: 0 auto;
-  &__title{
-    font-family: $f-td;
-    line-height: normal;
-    font-size: 40px;
-    font-weight: bold;
-  }
   &__input{
     width: 46%;
     margin: 50px 15px 15px;

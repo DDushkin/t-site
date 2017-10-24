@@ -33,7 +33,7 @@
   }
   &__icons{
     padding: 50px 0;
-    display: flow-root;
+    @extend .clearfix;
   }
   &__item{
     line-height: normal;
@@ -105,7 +105,7 @@
 }
 .cars-list{
   padding: 60px 0;
-  display: flow-root;
+  @extend .clearfix;
   text-align: center;
   &__item{
     float: left;
@@ -178,7 +178,7 @@
 }
 .available-car-info{
   padding: 100px 0;
-  display: flow-root;
+  @extend .clearfix;
   &__description{
     width: 47%;
     background: white;

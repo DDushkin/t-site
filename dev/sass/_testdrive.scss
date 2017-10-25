@@ -42,7 +42,7 @@
     font-family: $f-td;
     line-height: normal;
     font-size: 24px;
-    letter-spacing: 2.4px;
+    letter-spacing: 0.1em;
     font-weight: bold;
   }
   &__info{
@@ -79,7 +79,7 @@
     font-family: $f-td;
     line-height: normal;
     font-size: 24px;
-    letter-spacing: 2.4px;
+    letter-spacing: 0.1em;
     font-weight: bold;
   }
   &__info{
@@ -186,7 +186,7 @@
       font-family: "Toyota Display";
       line-height: normal;
       font-size: 18px;
-      letter-spacing: 1.8px;
+      letter-spacing: 0.1em;
       font-weight: bold;
     }
   }
@@ -208,7 +208,7 @@
     line-height: normal;
     font-size: 14px;
     text-align: center;
-    letter-spacing: 1.4px;
+    letter-spacing: 0.1em;
     text-decoration-line: underline;
   }
 }

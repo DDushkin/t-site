@@ -27,7 +27,7 @@
     font-family: $f-td;
     font-size: 24px;
     text-align: center;
-    letter-spacing: 2.4px;
+    letter-spacing: 0.1em;
     color: $black;
     font-weight: bold;
   }
@@ -97,7 +97,7 @@
       font-family: $f-td;
       line-height: normal;
       font-size: 24px;
-      letter-spacing: 2.4px;
+      letter-spacing: 0.1em;
       color: #B5B7B3;
       font-weight: bold;
     }
@@ -122,14 +122,14 @@
     line-height: normal;
     font-size: 24px;
     text-align: center;
-    letter-spacing: 2.4px;
+    letter-spacing: 0.1em;
     color: $black;
     font-weight: bold;
   }
   &__price{
     line-height: normal;
     font-size: 14px;
-    letter-spacing: 1.4px;
+    letter-spacing: 0.1em;
     color: $black;
     font-style: italic;
     padding-top: 5px;
@@ -141,7 +141,7 @@
   &__testdrive{
     line-height: normal;
     font-size: 14px;
-    letter-spacing: 1.4px;
+    letter-spacing: 0.1em;
     text-decoration-line: underline;
     font-style: italic;
     color: $black;
@@ -159,7 +159,7 @@
   &__available{
     line-height: normal;
     font-size: 14px;
-    letter-spacing: 1.4px;
+    letter-spacing: 0.1em;
     text-decoration-line: underline;
     font-style: italic;
     color: $black;
@@ -206,7 +206,7 @@
     font-family: $f-td;
     line-height: normal;
     font-size: 24px;
-    letter-spacing: 2.4px;
+    letter-spacing: 0.1em;
     font-weight: bold;
     width: 84%;
   }
@@ -251,7 +251,7 @@
   }
   &__button-text{
     font-size: 18px;
-    letter-spacing: 1.8px;
+    letter-spacing: 0.1em;
     color: #FFFFFF;
 
   }

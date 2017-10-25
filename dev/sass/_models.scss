@@ -19,6 +19,7 @@
 .page-models-filter{
   padding:50px 0;
 }
+
 .filter{
   width: percentage(11/12);
   margin: 0 auto;
@@ -32,10 +33,11 @@
     font-weight: bold;
   }
   &__icons{
-    padding: 50px 0;
+    padding: 50px 0 0;
     @extend .clearfix;
   }
   &__item{
+    cursor: pointer;
     line-height: normal;
     font-size: 18px;
     color: $black;
@@ -91,6 +93,7 @@
   }
 
   &__dragndrop{
+    margin-top: 50px;
     padding: 60px 110px;
     border: 3px dashed #B5B7B3;
     &__text{
@@ -102,22 +105,168 @@
       font-weight: bold;
     }
   }
+  &-price{
+    display: none;
+    &:after {
+      right: 80%;
+      margin-right: -25px;
+    }
+    &:before {
+      right: 80%;
+      margin-right: -28px;
+    }
+  }
+  &-bodytype{
+    display: none;
+    &:after {
+      right: 66%;
+      margin-right: -25px;
+    }
+    &:before {
+      right: 66%;
+      margin-right: -28px;
+    }
+  }
+  &-consumption{
+    display: none;
+    &:after {
+      right: 53%;
+      margin-right: -25px;
+    }
+    &:before {
+      right: 53%;
+      margin-right: -28px;
+    }
+  }
+  &-transmission{
+    display: none;
+    &:after {
+      right: 39%;
+      margin-right: -25px;
+    }
+    &:before {
+      right: 39%;
+      margin-right: -28px;
+    }
+  }
+  &-gastype{
+    display: none;
+    &:after {
+      right: 25%;
+      margin-right: -17px;
+    }
+    &:before {
+      right: 25%;
+      margin-right: -20px;
+    }
+  }
+  &-wrapper{
+    padding: 50px 0 50px;
+    margin: 50px 0 75px;
+    background: #FFFFFF;
+    border: 3px solid #B5B7B3;
+    box-sizing: border-box;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      top: -17px;
+      border-bottom: 17px solid #ffffff;
+      border-left: 17px solid transparent;
+      border-right: 17px solid transparent;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      top: -22px;
+      border-bottom: 20px solid #B5B7B3;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+    }
+  }
 }
 .cars-list{
   padding: 60px 0;
   @extend .clearfix;
   text-align: center;
-  &__item{
-    float: left;
-    width: percentage(4/12);
-    padding: 40px 0;
-    min-height: 285px;
+  &-item{
+      list-style-type: none;
+      float: left;
+      width: percentage(4/12);
+      padding: 40px 0;
+      min-height: 285px;
+    &__image{
+      width: 100%;
+      padding-bottom: 20px;
+    }
+    &__title{
+      font-family: $f-td;
+      line-height: normal;
+      font-size: 24px;
+      text-align: center;
+      letter-spacing: 0.1em;
+      color: $black;
+      font-weight: bold;
+    }
+    &__price{
+      line-height: normal;
+      font-size: 14px;
+      letter-spacing: 0.1em;
+      color: $black;
+      font-style: italic;
+      padding-top: 5px;
+    }
+    &__icons{
+      width: percentage(6/12);
+      margin: 10px auto;
+    }
+    &__testdrive{
+      line-height: normal;
+      font-size: 14px;
+      letter-spacing: 0.1em;
+      text-decoration-line: underline;
+      font-style: italic;
+      color: $black;
+      display: inline-block;
+      &:before{
+        width: 16px;
+        height: 12px;
+        display: inline-block;
+        content: "";
+        margin-right: 10px;
+        background: url('/img/i-testdrive.svg') center no-repeat;
+        vertical-align: middle;
+      }
+    }
+    &__available{
+      line-height: normal;
+      font-size: 14px;
+      letter-spacing: 0.1em;
+      text-decoration-line: underline;
+      font-style: italic;
+      color: $black;
+      display: inline-block;
+      margin-left: 10px;
+      &:before{
+        width: 16px;
+        height: 12px;
+        display: inline-block;
+        content: "";
+        margin-right: 10px;
+        background: url('/img/i-available.svg') center no-repeat;
+        vertical-align: middle;
+      }
+    }
   }
-  &__image{
-    width: 100%;
-    padding-bottom: 20px;
-  }
+}
+
+.filter-block{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   &__title{
+    display: block;
+    float: left;
     font-family: $f-td;
     line-height: normal;
     font-size: 24px;
@@ -126,56 +275,29 @@
     color: $black;
     font-weight: bold;
   }
-  &__price{
-    line-height: normal;
-    font-size: 14px;
-    letter-spacing: 0.1em;
-    color: $black;
-    font-style: italic;
-    padding-top: 5px;
+  &__switches{
+    display: block;
+    float: left;
+    width: 75%;
   }
-  &__icons{
-    width: percentage(6/12);
-    margin: 10px auto;
+  &__switch-label{
+    padding: 15px 0 15px 15px;
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    width: 33.333%;
   }
-  &__testdrive{
-    line-height: normal;
-    font-size: 14px;
-    letter-spacing: 0.1em;
-    text-decoration-line: underline;
-    font-style: italic;
-    color: $black;
-    display: inline-block;
-    &:before{
-      width: 16px;
-      height: 12px;
-      display: inline-block;
-      content: "";
-      margin-right: 10px;
-      background: url('/img/i-testdrive.svg') center no-repeat;
-      vertical-align: middle;
-    }
-  }
-  &__available{
-    line-height: normal;
-    font-size: 14px;
-    letter-spacing: 0.1em;
-    text-decoration-line: underline;
-    font-style: italic;
-    color: $black;
-    display: inline-block;
-    margin-left: 10px;
-    &:before{
-      width: 16px;
-      height: 12px;
-      display: inline-block;
-      content: "";
-      margin-right: 10px;
-      background: url('/img/i-available.svg') center no-repeat;
-      vertical-align: middle;
-    }
+  &__switch-box{
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    background-color: #F7F7F7;
+    border: 1px solid #1D71B8;
+    box-sizing: border-box;
+    border-radius: 4px;
   }
 }
+
 .available-car-info{
   padding: 100px 0;
   @extend .clearfix;

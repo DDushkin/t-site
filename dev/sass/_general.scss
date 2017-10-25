@@ -5,7 +5,7 @@ body {
   font-size: 18px;
   font-family: "Toyota Text", "Roboto", Helvetica, Arial, sans-serif;
   color: $black;
-
+  box-sizing: border-box;
 }
 
 .clearfix:after { //TODO: remove before deploy
@@ -29,6 +29,7 @@ body {
     position: relative;
     display: block;
     margin: 0 auto;
+    @extend .clearfix;
 }
 .bg-cyan{
   background: url(/img/bg-models-filter.jpg);    //Странный серый бекграунд
@@ -220,4 +221,8 @@ body {
       background: url('/img/i-price.svg') center no-repeat;
     }
   }
+}
+
+.toggle-active{
+  text-decoration: underline;
 }

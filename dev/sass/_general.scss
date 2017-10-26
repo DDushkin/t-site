@@ -5,21 +5,22 @@ body {
   font-size: 18px;
   font-family: "Toyota Text", "Roboto", Helvetica, Arial, sans-serif;
   color: $black;
-
+  box-sizing: border-box;
 }
 
-.clearfix:after { //TODO: remove before deploy
+.clearfix:after { 
   content: "";
   display: table;
   clear: both;
 }
+//TODO: remove before deploy
 // clearfix usage example:
 // selector {
 //   @extend .clearfix;
 //   your styles
 // }
 
-.container {
+.container {     // нужен??
   max-width: 1310px;
 }
 
@@ -29,10 +30,13 @@ body {
     position: relative;
     display: block;
     margin: 0 auto;
+    @extend .clearfix;
 }
 
-.section-title {
-  margin-top: 50px;
+.bg-cyan{
+  background: url(/img/bg-models-filter.jpg);    //Странный серый бекграунд
+}
+.section-title {                                  //Заголовок 40px со значком тойота
   font-size: 40px;
   font-family: $f-td, arial, sans-serif;
   letter-spacing: .1em;
@@ -44,9 +48,9 @@ body {
     font-size: 26px;
     letter-spacing: .1em;
   }
-  
+
   //icon
-  &:before { 
+  &:before {
     content: "";
     display: block;
     width: 39px;
@@ -62,6 +66,12 @@ body {
     }
   }
 }
+
+/*хлебные крошки с белыми точками , если нужны черные, то прописать
+.breadcrumbs__item:not(:first-child)::before {
+    background: $black;
+}  для нужного section
+*/
 .breadcrumbs{
   padding-top: 110px;
 
@@ -76,12 +86,13 @@ body {
     vertical-align: top;
     line-height: normal;
     font-size: 14px;
+    font-style: italic;
     text-align: center;
-    letter-spacing: 0.7px;
+    letter-spacing: 0.05em;
 
     &:not(:first-child)::before {
       position: absolute;
-      top: 6px;
+      top: 8px;
       left: 5px;
       width: 3px;
       height: 3px;
@@ -94,12 +105,16 @@ body {
     &:first-child {
       padding-left: 0;
     }
+    &:last-child{
+      text-decoration: underline;
+    }
   }
   &__title{
+    font-family: $f-td;
     line-height: normal;
     font-size: 40px;
     text-align: center;
-    letter-spacing: 4px;
+    letter-spacing: 0.1em;
     margin: 0;
 
     &-wrap{
@@ -107,17 +122,33 @@ body {
     }
   }
 }
+.btn-main-o{
+  border: 3px solid #CC0033;
+  box-sizing: border-box;
+  box-shadow: 4px 4px 24px rgba(44, 1, 12, 0.3);
+  border-radius: 30px;
+  padding: 15px 40px;
+  cursor: pointer;
+}
 .btn-main{
+  cursor: pointer;
   background: #CC0033;
   box-shadow: 4px 4px 24px rgba(44, 1, 12, 0.3);
   border-radius: 30px;
   padding: 15px 40px;
   display: inline-block;
+  text-align: center;
+  color: white;
+  &:focus{
+    outline: none;
+  }
 }
 .btn-more{
+  cursor: pointer;
+  font-family: $f-td;
   line-height: normal;
   font-size: 24px;
-  letter-spacing: 2.4px;
+  letter-spacing: 0.1em;
   color: $red;
   font-weight: bold;
   &:after{
@@ -129,7 +160,33 @@ body {
     background: url('/img/i-more-arrow.svg') center no-repeat;
     vertical-align: middle;
   }
+  &:focus{
+    outline: none;
+  }
 }
+
+/*стили для основных инпутов*/
+.input-main{
+  padding: 15px 20px;
+  background: #F7F7F7;
+  border: 1px solid #4D4F53;
+  box-sizing: border-box;
+  border-radius: 36px;
+  &:focus{
+    outline: none;
+    &::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+    &::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+    &:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+    &:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+  }
+  &::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease; font-style: italic; font-size: 18px; color: #B5B7B3;}
+  &::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease; font-style: italic; font-size: 18px; color: #B5B7B3;}
+  &:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease; font-style: italic; font-size: 18px; color: #B5B7B3;}
+  &:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease; font-style: italic; font-size: 18px; color: #B5B7B3;}
+}
+
+
+/* Иконки возле текста как на странице №3*/
 .ico{
   &__bodytype{
     &:before{
@@ -155,5 +212,32 @@ body {
     &:before{
       background: url('/img/i-path.svg') center no-repeat;
     }
+  }
+  &__available{
+    &:before{
+      background: url('/img/i-available-tick.svg') center no-repeat;
+    }
+  }
+  &__price{
+    &:before{
+      background: url('/img/i-price.svg') center no-repeat;
+    }
+  }
+}
+
+.toggle-active{
+  text-decoration: underline;
+}
+
+
+.link {
+  font-size: 14px;
+  letter-spacing: .1em;
+  color: $black;
+  font-style: italic;
+  transition: $tr;
+
+  &:hover {
+    color: $blue;
   }
 }

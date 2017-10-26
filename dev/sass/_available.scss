@@ -11,13 +11,13 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  z-index: 10;
+  z-index: 1;
   color:white;
 }
 .car-card{
   margin-top: 100px;
   position: relative;
-  display: flow-root;
+  @extend .clearfix;
 
   &__description{
     background: white;
@@ -27,12 +27,13 @@
     padding:50px 20px;
     width: percentage(5/12);
     position: absolute;
-    transform: translateY(15%);
+    transform: translateY(12%);
   }
   &__title{
+    font-family: $f-td;
     line-height: normal;
     font-size: 24px;
-    letter-spacing: 2.4px;
+    letter-spacing: .1em;
     font-weight: bold;
   }
   &__info{

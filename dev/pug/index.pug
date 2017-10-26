@@ -1,27 +1,23 @@
-doctype html
-html(lang="ru")
-  head
-    title mainpage
-    meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1")
+include partials/_mixins.pug
+
+//- title as parameter
+//- example:
+//- head("page title")
++head("mainpage")
+body
+  include partials/_header.pug
+  
+  //- main content
+  .mainslider
+    img(src="img/main-slider.jpg", alt="slider image")
+    img(src="img/main-slider.jpg", alt="slider image")
+    img(src="img/main-slider.jpg", alt="slider image")
+    img(src="img/main-slider.jpg", alt="slider image")
+  .wrapper
+    section.cars
+      .section-title Автомобілі Toyota
     
-    link(href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css", rel="stylesheet")
-    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.min.css")
-    link(href="css/main.css", rel="stylesheet")
-  body
-    include partials/_header.pug
-    
-    //- main content
-    .mainslider
-      img(src="img/main-slider.jpg", alt="slider image")
-      img(src="img/main-slider.jpg", alt="slider image")
-      img(src="img/main-slider.jpg", alt="slider image")
-      img(src="img/main-slider.jpg", alt="slider image")
-    .wrapper
-        section.cars
-          .section-title Автомобілі Toyota
-      
-    //- eof main content
-    
-    include partials/_footer.pug
-    include partials/_scripts.pug
+  //- eof main content
+  
+  include partials/_footer.pug
+  include partials/_scripts.pug

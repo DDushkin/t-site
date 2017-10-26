@@ -1,10 +1,10 @@
 doctype html
 html(lang="ua")
   head
-    title mainpage
+    title models
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1")
-    
+    -// Паша - помним, любим, скорбим - RIV (rest in Vintage) 26.10.17
     link(href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css", rel="stylesheet")
     link(href="css/main.css", rel="stylesheet")
   body
@@ -19,106 +19,142 @@ html(lang="ua")
             li.breadcrumbs__item Модельний ряд
           .breadcrumbs__title-wrap
             h1.breadcrumbs__title Модельний ряд Toyota
-    section.page-models-filter
+    section.page-models-filter.bg-cyan
       .wrapper
         .filter
           .filter__title Скористайтеся фільтром для підбору моделей
           .filter__icons
-            .filter__item
-              .filter__price Підбір по ціні
-            .filter__item
-              .filter__bodytype По типу кузова
-            .filter__item
-              .filter__consumption Використання пального
-            .filter__item
-              .filter__transmission Коробка передач
-            .filter__item
-              .filter__gastype Вид пального
+            .filter__item.filter__price(data-toggle=".filter-price") Підбір по ціні          
+            .filter__item.filter__bodytype(data-toggle=".filter-bodytype") По типу кузова          
+            .filter__item.filter__consumption(data-toggle=".filter-consumption") Використання пального          
+            .filter__item.filter__transmission(data-toggle=".filter-transmission") Коробка передач          
+            .filter__item.filter__gastype(data-toggle=".filter-gastype") Вид пального        
+      .filter-wrapper.filter-price
+        .wrapper
+          .filter-block__title Підбір по ціні: 
+          .filter-block__switches
+      .filter-wrapper.filter-bodytype
+        .wrapper.filter-block
+          .filter-block__title Підбір по типу кузова:
+          .filter-block__switches
+            label.filter-block__switch-label
+              input.filter-block__switch-box(type="checkbox")
+              | Компактні автомобілі 
+            label.filter-block__switch-label 
+              input.filter-block__switch-box(type="checkbox") 
+              | Сімейні авто 
+            label.filter-block__switch-label
+              input.filter-block__switch-box(type="checkbox")
+              | Седани 
+            label.filter-block__switch-label 
+              input.filter-block__switch-box(type="checkbox")
+              | Універсали  
+            label.filter-block__switch-label 
+              input.filter-block__switch-box(type="checkbox")
+              | Повнопривідні 4х4  
+            label.filter-block__switch-label 
+              input.filter-block__switch-box(type="checkbox")
+              | Гібридні  
+      .filter-wrapper.filter-consumption
+        .wrapper
+          .filter-block__title
+          .filter-block__switches
+      .filter-wrapper.filter-transmission
+        .wrapper
+          .filter-block__title
+          .filter-block__switches
+      .filter-wrapper.filter-gastype
+        .wrapper
+          .filter-block__title
+          .filter-block__switches  
+          
+      .wrapper
+        .filter    
           .filter__dragndrop
             .filter__dragndrop__text Для порівняння моделей перенесіть авто в цю область
     section.page-models-cars
       .wrapper
-        .cars-list
-          .cars-list__item
-            img.cars-list__image(src="/img/c-list-yaris.png")
-            .cars-list__title YARIS
-            .cars-list__price Ціна від 110 000 грн.
-            .cars-list__icons
+        ul.cars-list
+          li.cars-list-item
+            img.cars-list-item__image(src="/img/c-list-yaris.png")
+            .cars-list-item__title YARIS
+            .cars-list-item__price Ціна від 110 000 грн.
+            .cars-list-item__icons
   
-          .cars-list__item
-            img.cars-list__image(src="/img/c-list-auris.png")
-            .cars-list__title AURIS
-            .cars-list__price Ціна від 110 000 грн.
-            .cars-list__icons
+          li.cars-list-item
+            img.cars-list-item__image(src="/img/c-list-auris.png")
+            .cars-list-item__title AURIS
+            .cars-list-item__price Ціна від 110 000 грн.
+            .cars-list-item__icons
               
-          .cars-list__item
-            img.cars-list__image(src="/img/c-list-corolla.png")
-            .cars-list__title COROLLA
-            .cars-list__price Ціна від 410 400 грн.
-            .cars-list__icons              
-              .cars-list__available В салоні
+          li.cars-list-item
+            img.cars-list-item__image(src="/img/c-list-corolla.png")
+            .cars-list-item__title COROLLA
+            .cars-list-item__price Ціна від 410 400 грн.
+            .cars-list-item__icons              
+              .cars-list-item__available В салоні
               
-          .cars-list__item
-            img.cars-list__image(src="/img/c-list-camry.png")
-            .cars-list__title CAMRY
-            .cars-list__price Ціна від 699 000 грн.
-            .cars-list__icons
-              .cars-list__testdrive Тестдрайв
-              .cars-list__available В салоні  
+          li.cars-list-item
+            img.cars-list-item__image(src="/img/c-list-camry.png")
+            .cars-list-item__title CAMRY
+            .cars-list-item__price Ціна від 699 000 грн.
+            .cars-list-item__icons
+              .cars-list-item__testdrive Тестдрайв
+              .cars-list-item__available В салоні  
               
-          .cars-list__item
-            img.cars-list__image(src="/img/c-list-rav4.png")
-            .cars-list__title RAV4
-            .cars-list__price Ціна від 793 555 грн.
-            .cars-list__icons        
+          li.cars-list-item
+            img.cars-list-item__image(src="/img/c-list-rav4.png")
+            .cars-list-item__title RAV4
+            .cars-list-item__price Ціна від 793 555 грн.
+            .cars-list-item__icons        
               
-          .cars-list__item
-            img.cars-list__image(src="/img/c-list-rav4-hybrid.png")
-            .cars-list__title RAV4 HYBRID
-            .cars-list__price Ціна від 793 555 грн.
-            .cars-list__icons
-              .cars-list__available В салоні
+          li.cars-list-item
+            img.cars-list-item__image(src="/img/c-list-rav4-hybrid.png")
+            .cars-list-item__title RAV4 HYBRID
+            .cars-list-item__price Ціна від 793 555 грн.
+            .cars-list-item__icons
+              .cars-list-item__available В салоні
                     
-          .cars-list__item
-            img.cars-list__image(src="/img/c-list-highlander.png")
-            .cars-list__title HIGHLANDER
-            .cars-list__price Ціна від 1 109 080 грн.
-            .cars-list__icons
-              .cars-list__testdrive Тестдрайв
-              .cars-list__available В салоні  
+          li.cars-list-item
+            img.cars-list-item__image(src="/img/c-list-highlander.png")
+            .cars-list-item__title HIGHLANDER
+            .cars-list-item__price Ціна від 1 109 080 грн.
+            .cars-list-item__icons
+              .cars-list-item__testdrive Тестдрайв
+              .cars-list-item__available В салоні  
               
-          .cars-list__item
-            img.cars-list__image(src="/img/c-list-lc-prado.png")
-            .cars-list__title LC Prado
-            .cars-list__price Ціна від 110 000 грн.
-            .cars-list__icons        
-              .cars-list__available В салоні
+          li.cars-list-item
+            img.cars-list-item__image(src="/img/c-list-lc-prado.png")
+            .cars-list-item__title LC Prado
+            .cars-list-item__price Ціна від 110 000 грн.
+            .cars-list-item__icons        
+              .cars-list-item__available В салоні
               
-          .cars-list__item
-            img.cars-list__image(src="/img/c-list-lc-200.png")
-            .cars-list__title LC 200
-            .cars-list__price Ціна від 1 998 000 грн.
-            .cars-list__icons
+          li.cars-list-item
+            img.cars-list-item__image(src="/img/c-list-lc-200.png")
+            .cars-list-item__title LC 200
+            .cars-list-item__price Ціна від 1 998 000 грн.
+            .cars-list-item__icons
               
-          .cars-list__item
-            img.cars-list__image(src="/img/c-list-c-hr.png")
-            .cars-list__title C-HR
-            .cars-list__price Ціна від 604 824 грн.
-            .cars-list__icons        
+          li.cars-list-item
+            img.cars-list-item__image(src="/img/c-list-c-hr.png")
+            .cars-list-item__title C-HR
+            .cars-list-item__price Ціна від 604 824 грн.
+            .cars-list-item__icons        
               
-          .cars-list__item
-            img.cars-list__image(src="/img/c-list-hilux.png")
-            .cars-list__title HILUX
-            .cars-list__price Ціна від 843 885 грн.
-            .cars-list__icons
-              .cars-list__testdrive Тестдрайв
-              .cars-list__available В салоні
+          li.cars-list-item
+            img.cars-list-item__image(src="/img/c-list-hilux.png")
+            .cars-list-item__title HILUX
+            .cars-list-item__price Ціна від 843 885 грн.
+            .cars-list-item__icons
+              .cars-list-item__testdrive Тестдрайв
+              .cars-list-item__available В салоні
               
         .available-car-info
           .available-car-info__image
             img(src="/img/available-car-info.jpg")
           .available-car-info__description
-            .available-car-info__title Land Cruiser Prado Comfort
+            .available-car-info__title Можливість особисто ознайомитись з авто в салоні.
             .available-car-info__info В офіційній дилерській мережі ПІІ «Тойота-Україна» діє унікальна програма допомоги в дорозі під назвою Toyota Assistancе. Купуючи офіційний автомобіль Toyota, його власник автоматично отримує професійну підтримку та допомогу в дорозі не тільки у технічних питаннях, але й у нестандартних ситуаціях. Послуга Toyota Assistance діє протягом 3-х років з дня першої реєстрації автомобіля без обмеження пробігу.
             span.available-car-info__info_p Звертаємо вашу увагу на те, що програма Toyota Assistancе унікальна у своєму класі і що в межах цієї програми надається безпрецедентно повний спектр послуг із підтримки автомобіля в дорозі.
             .available-car-info__more.btn-more Подивитись автомобілі в наявності

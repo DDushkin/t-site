@@ -4,48 +4,110 @@
     <title>mainpage</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#CC0033">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link href="css/main.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
   </head>
-  <body>
-    <header class="header">
-      <div class="top-bar">
-        <div class="logo-part"><img src="img/logo.svg" alt="site logo">
-          <div class="header-adress"><img class="header-adress__icon" src="/img/i-header-map-pointer.svg" alt="map pointer"><span class="header-adress__text">Київ, Харківське шосе, 179</span></div>
+</html>
+<body>
+  <header class="header">
+    <div class="top-bar">
+      <div class="logo-part"><img src="img/logo.svg" alt="site logo">
+        <div class="header-adress"><img class="header-adress__icon" src="/img/i-header-map-pointer.svg" alt="map pointer"><span class="header-adress__text">Київ, Харківське шосе, 179</span></div>
+      </div>
+    </div>
+    <nav>
+      <ul class="nav">
+        <li class="nav__item"><a class="nav__item__link nav__item__link--has-child" href="#">Автомобілі</a></li>
+        <li class="nav__item"><a class="nav__item__link" href="javascript:void(0);">Корпоративним клієнтам</a></li>
+        <li class="nav__item"><a class="nav__item__link" href="javascript:void(0);">Акції</a></li>
+        <li class="nav__item"><a class="nav__item__link" href="javascript:void(0);">Новини</a></li>
+        <li class="nav__item"><a class="nav__item__link nav__item__link--has-child" href="javascript:void(0);">Сервіс</a>
+          <ul class="nav__nav-secondary">
+            <li class="nav__item"><a class="nav__item__link" href="javascript:void(0);">Toyota сервіс</a></li>
+            <li class="nav__item"><a class="nav__item__link" href="javascript:void(0);">Ремонт і ТО</a></li>
+            <li class="nav__item"><a class="nav__item__link" href="javascript:void(0);">Асістанс</a></li>
+            <li class="nav__item"><a class="nav__item__link" href="javascript:void(0);">Сервісні компанії</a></li>
+          </ul>
+        </li>
+        <li class="nav__item"><a class="nav__item__link nav__item__link--has-child" href="javascript:void(0);">Послуги</a></li>
+        <li class="nav__item"><a class="nav__item__link" href="javascript:void(0);">Запчастини</a></li>
+        <li class="nav__item"><a class="nav__item__link" href="javascript:void(0);">Аксесуари</a></li>
+        <li class="nav__item"><a class="nav__item__link nav__item__link--has-child" href="#">Про нас</a></li>
+      </ul>
+      <div class="nav-badge"><img class="nav-badge__logo" src="img/badge-toyota.png" alt=""><img class="nav-badge__slogan" src="img/badge-toyota-slogan.jpg" alt=""></div>
+    </nav>
+  </header>
+  <div class="mainslider"><img src="img/main-slider.jpg" alt="slider image"><img src="img/main-slider.jpg" alt="slider image"><img src="img/main-slider.jpg" alt="slider image"><img src="img/main-slider.jpg" alt="slider image"></div>
+  <div class="wrapper">
+    <section class="cars">
+      <div class="section-title">Автомобілі Toyota</div>
+    </section>
+  </div>
+  <footer>
+    <div class="footer-slider"> 
+      <div class="footer-slider__item"> <img src="img/c-footer-slider-1.png" alt=""></div>
+      <div class="footer-slider__item"> <img src="img/c-footer-slider-2.png" alt=""></div>
+      <div class="footer-slider__item"> <img src="img/c-footer-slider-3.png" alt=""></div>
+      <div class="footer-slider__item"> <img src="img/c-footer-slider-4.png" alt=""></div>
+      <div class="footer-slider__item"> <img src="img/c-footer-slider-5.png" alt=""></div>
+      <div class="footer-slider__item"> <img src="img/c-footer-slider-6.png" alt=""></div>
+      <div class="footer-slider__item"> <img src="img/c-footer-slider-1.png" alt=""></div>
+      <div class="footer-slider__item"> <img src="img/c-footer-slider-2.png" alt=""></div>
+      <div class="footer-slider__item"> <img src="img/c-footer-slider-3.png" alt="">
+        <div class="footer-slider__item"> <img src="img/c-footer-slider-4.png" alt=""></div>
+        <div class="footer-slider__item"> <img src="img/c-footer-slider-5.png" alt=""></div>
+        <div class="footer-slider__item"> <img src="img/c-footer-slider-6.png" alt=""></div>
+      </div>
+    </div>
+    <div class="wrapper">
+<<<<<<< HEAD
+      <div class="footer-feedback">
+        <div class="footer-feedback-text">
+          <p class="footer-feedback-text__item footer-feedback-text__item--strong">Бажаєте бути в курсі останніх новин Toyota? Підпишіться на розсилку:</p>
+          <p class="footer-feedback-text__item">Тільки корисні новини, ніякого спаму.</p>
+        </div>
+        <form class="footer-form" action="#">
+          <fieldset>
+            <input class="field-typical" type="text">
+            <label class="placeholder" for="">Email</label>
+          </fieldset>
+          <input class="btn-typical" type="submit" value="Відправити">
+        </form>
+      </div>
+    </div>
+    <div class="footer-info">
+      <div class="wrapper">
+        <div class="footer-info__item">
+          <div class="footer-info__heading">Шукайте нас в соцмережах:</div>
+        </div>
+        <div class="footer-info__item">
+          <div class="footer-info__heading">Наша адреса:</div>
+        </div>
+        <div class="footer-info__item">
+          <div class="footer-info__heading">Телефони:</div>
+        </div>
+        <div class="footer-info__item">
+          <div class="footer-info__heading">© Тойота Центр Київ «Автосаміт» — офіційний дилер TOYOTA</div><a class="footer-info__creators" href="https://uct.ua" target="_blank">Зроблено в UCT</a>
         </div>
       </div>
-      <nav>
-        <ul class="nav">
-          <li class="nav__item"><a class="nav__item__link nav__item__link--has-child" href="#">Автомобілі</a></li>
-          <li class="nav__item"><a class="nav__item__link" href="javascript:void(0);">Корпоративним клієнтам</a></li>
-          <li class="nav__item"><a class="nav__item__link" href="javascript:void(0);">Акції</a></li>
-          <li class="nav__item"><a class="nav__item__link" href="javascript:void(0);">Новини</a></li>
-          <li class="nav__item"><a class="nav__item__link nav__item__link--has-child" href="javascript:void(0);">Сервіс</a>
-            <ul class="nav__nav-secondary">
-              <li class="nav__item"><a class="nav__item__link" href="javascript:void(0);">Toyota сервіс</a></li>
-              <li class="nav__item"><a class="nav__item__link" href="javascript:void(0);">Ремонт і ТО</a></li>
-              <li class="nav__item"><a class="nav__item__link" href="javascript:void(0);">Асістанс</a></li>
-              <li class="nav__item"><a class="nav__item__link" href="javascript:void(0);">Сервісні компанії</a></li>
-            </ul>
-          </li>
-          <li class="nav__item"><a class="nav__item__link nav__item__link--has-child" href="javascript:void(0);">Послуги</a></li>
-          <li class="nav__item"><a class="nav__item__link" href="javascript:void(0);">Запчастини</a></li>
-          <li class="nav__item"><a class="nav__item__link" href="javascript:void(0);">Аксесуари</a></li>
-          <li class="nav__item"><a class="nav__item__link nav__item__link--has-child" href="#">Про нас</a></li>
-        </ul>
-        <div class="nav-badge"><img class="nav-badge__logo" src="img/badge-toyota.png" alt=""><img class="nav-badge__slogan" src="img/badge-toyota-slogan.jpg" alt=""></div>
-      </nav>
-    </header>
-    <div class="mainslider"><img src="img/main-slider.jpg" alt="slider image"><img src="img/main-slider.jpg" alt="slider image"><img src="img/main-slider.jpg" alt="slider image"><img src="img/main-slider.jpg" alt="slider image"></div>
-    <div class="wrapper">
+=======
       <section class="cars">
-        <div class="section-title">Автомобілі Toyota</div>
+        <div class="cars-title section-title">Автомобілі Toyota</div>
       </section>
+>>>>>>> 7b32bbb6dd761477757b81659339e5ad8e2024f6
     </div>
-    <footer></footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
-</html>
+    <div id="map-footer"></div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD44fLa7d5vR5XVpEal1HHt97Xb3i6bd6Y"> </script>
+  <script src="js/main.js"></script>
+</body>

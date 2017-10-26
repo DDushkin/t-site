@@ -1,13 +1,31 @@
 // colors
   $black: #23171A; // main color
+  $blue: #1D71B8; // link hover
   $grey: #4D4F53;
-  $shadow25: rgba(77, 79, 83, 0.25); //
-  $shadow50: rgba(77, 79, 83, 0.5); //
   $red: #CC0033;
+  $red-dark: #9D0004; // button hover color
   $accent: #1D71B8; // text hover
 // eof colors
+
+// shadows
+  $shadow25: rgba(77, 79, 83, 0.25);
+  $shadow50: rgba(77, 79, 83, 0.5);
+// eof shadows
 
 // fonts 
   $f-tt: "Toyota Text";
   $f-td: "Toyota Display";
 // eof fonts
+
+// transitions
+  $tr: all .3s;
+// eof transitions
+
+// layers for z-index
+$layer1: 10;
+$layer2: 20;
+$layer3: 30;
+$layer4: 40;
+$layer5: 50;
+$layertop: 999;
+// eof layers for z-index

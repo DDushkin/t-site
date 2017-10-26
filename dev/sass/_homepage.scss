@@ -1,3 +1,54 @@
 .cars-title{
   margin-top: 50px;
 }
+
+.car-grid {
+  @include row-flex();
+  @include wrapper(); // outer container 1290px for now
+  margin-top: 20px;
+
+  &-item {
+    @include col();
+    @include size(4);
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    transition: all .3s;
+    &:hover {
+      box-shadow: 0px 0px 14px #4D4F53;
+      padding-bottom: 10px;
+    }
+    &:hover &__img {
+      transform: scale(1.1);
+    }
+    &:hover &__heading {
+      padding-top: 10px;
+    }
+    &__img {
+      width: 80%;
+      transition: all .3s;
+    }
+    &__heading {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 24px;
+      font-family: $f-td;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      cursor: default;
+      transition: all .3s;
+    }
+    &__price {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 14px;
+      font-style: italic;
+      letter-spacing: .1em;
+      cursor: default;
+    }
+    &__link {
+      margin: 0 20px 0;
+    }
+  }
+}

@@ -8,6 +8,7 @@ var gulp = require('gulp'),
   uglify = require('gulp-uglify'),
   smartgrid = require('smart-grid');
 
+//smartgrid options
 var sgsettings = {
     outputStyle: 'scss', /* less || scss || sass || styl */
     columns: 12, /* number of grid columns */
@@ -84,7 +85,7 @@ gulp.task('browser-sync', function(){
   });
 });
 
-
+// regenerate smartgrid file
 gulp.task('sg', function(){
   smartgrid('dev/sass', sgsettings);
 });

@@ -5,11 +5,49 @@ var gulp = require('gulp'),
   browserSync = require('browser-sync'),
   rename = require('gulp-rename'),
   concat = require('gulp-concat'),
-  uglify = require('gulp-uglify');
+  uglify = require('gulp-uglify'),
+  smartgrid = require('smart-grid');
+
+var sgsettings = {
+    outputStyle: 'scss', /* less || scss || sass || styl */
+    columns: 12, /* number of grid columns */
+    offset: '30px', /* gutter width px || % */
+    mobileFirst: false, /* mobileFirst ? 'min-width' : 'max-width' */
+    container: {
+        maxWidth: '1320px', /* max-width оn very large screen */
+        fields: '0px' /* side fields */
+    },
+    // breakPoints: {
+    //     lg: {
+    //         width: '1100px', /* -> @media (max-width: 1100px) */
+    //     },
+    //     md: {
+    //         width: '960px'
+    //     },
+    //     sm: {
+    //         width: '780px',
+    //         fields: '15px' /* set fields only if you want to change container.fields */
+    //     },
+    //     xs: {
+    //         width: '560px'
+    //     }
+        /* 
+        We can create any quantity of break points.
+ 
+        some_name: {
+            width: 'Npx',
+            fields: 'N(px|%|rem)',
+            offset: 'N(px|%|rem)'
+        }
+        */
+    //}
+};
 
 
 gulp.task('sass', function(){
-  return gulp.src('dev/sass/*.scss')
+  return gulp.src([
+          '!dev/sass/smart-grid.scss',
+          'dev/sass/*.scss'])
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({
       browsers: ['last 5 versions'],
@@ -46,6 +84,10 @@ gulp.task('browser-sync', function(){
   });
 });
 
+
+gulp.task('sg', function(){
+  smartgrid('dev/sass', sgsettings);
+});
 
 gulp.task('watch', ['browser-sync', 'pug', 'sass', 'js'], function (){
   gulp.watch('dev/sass/*.scss', ['sass']);

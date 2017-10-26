@@ -517,9 +517,6 @@ nav {
   .nav__nav-secondary .nav__item__link:after {
     display: none; }
 
-.cars-title {
-  margin-top: 50px; }
-
 #map-footer {
   height: 350px; }
 
@@ -625,6 +622,9 @@ input[data-empty="false"] + label {
     text-decoration: none; }
     .footer-info__creators:hover {
       text-decoration: underline; }
+
+.cars-title {
+  margin-top: 50px; }
 
 .page-availible-head {
   -webkit-box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5);

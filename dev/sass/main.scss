@@ -1,15 +1,16 @@
 @import "variables";
 @import "mixins";
+@import "smart-grid";
 @import "fonts";
 @import "general";
 @import "slider";
 @import "header";
+@import "footer";
 
 // add pages here
 @import "homepage";
 
 
-@import "footer";
 
 @import "available";
 @import "models";

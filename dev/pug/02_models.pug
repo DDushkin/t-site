@@ -30,41 +30,59 @@ html(lang="ua")
             .filter__item.filter__transmission(data-toggle=".filter-transmission") Коробка передач          
             .filter__item.filter__gastype(data-toggle=".filter-gastype") Вид пального        
       .filter-wrapper.filter-price
-        .wrapper
+        .wrapper.filter-block
           .filter-block__title Підбір по ціні: 
           .filter-block__switches
+            label.filter-block__switch-label
+              input.filter-block__switch-box(type="checkbox")
+              span.checkbox-label Компактні автомобілі 
+            label.filter-block__switch-label 
+              input.filter-block__switch-box(type="checkbox") 
+              span.checkbox-label Сімейні авто 
+            label.filter-block__switch-label
+              input.filter-block__switch-box(type="checkbox")
+              span.checkbox-label Седани 
+            label.filter-block__switch-label 
+              input.filter-block__switch-box(type="checkbox")
+              span.checkbox-label Універсали  
+            label.filter-block__switch-label 
+              input.filter-block__switch-box(type="checkbox")
+              span.checkbox-label Повнопривідні 4х4  
+            label.filter-block__switch-label 
+              input.filter-block__switch-box(type="checkbox")
+              span.checkbox-label Гібридні  
       .filter-wrapper.filter-bodytype
         .wrapper.filter-block
           .filter-block__title Підбір по типу кузова:
           .filter-block__switches
             label.filter-block__switch-label
               input.filter-block__switch-box(type="checkbox")
-              | Компактні автомобілі 
+              span.checkbox-label Компактні автомобілі 
             label.filter-block__switch-label 
               input.filter-block__switch-box(type="checkbox") 
-              | Сімейні авто 
+              span.checkbox-label Сімейні авто 
             label.filter-block__switch-label
               input.filter-block__switch-box(type="checkbox")
-              | Седани 
+              span.checkbox-label Седани 
             label.filter-block__switch-label 
               input.filter-block__switch-box(type="checkbox")
-              | Універсали  
+              span.checkbox-label Універсали  
             label.filter-block__switch-label 
               input.filter-block__switch-box(type="checkbox")
-              | Повнопривідні 4х4  
+              span.checkbox-label Повнопривідні 4х4  
             label.filter-block__switch-label 
               input.filter-block__switch-box(type="checkbox")
-              | Гібридні  
+              span.checkbox-label Гібридні  
       .filter-wrapper.filter-consumption
-        .wrapper
+        .wrapper.filter-block
           .filter-block__title
           .filter-block__switches
       .filter-wrapper.filter-transmission
-        .wrapper
+        .wrapper.filter-block
           .filter-block__title
           .filter-block__switches
       .filter-wrapper.filter-gastype
-        .wrapper
+        .wrapper.filter-block
           .filter-block__title
           .filter-block__switches  
           

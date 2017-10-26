@@ -231,6 +231,55 @@ body {
     font-size: 18px;
     color: #B5B7B3; }
 
+/* Ex:
+label.filter-block__switch-label
+  input.filter-block__switch-box(type="checkbox")
+  span.checkbox-label Компактні автомобілі
+*/
+input[type="checkbox"] {
+  display: none; }
+
+input[type="checkbox"] + .checkbox-label::before {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+  vertical-align: middle;
+  background: url(../img/i-check-box.svg) center no-repeat;
+  cursor: pointer;
+  content: "";
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+input[type="checkbox"]:checked + .checkbox-label::before {
+  background: url(../img/i-check-tick.svg) center no-repeat; }
+
+input[type="checkbox"] + .checkbox-label:hover::before {
+  border: 3px solid rgba(29, 113, 184, 0.5);
+  border-radius: 7px; }
+
+input[type="radio"] {
+  display: none; }
+
+input[type="radio"] + .checkbox-label::before {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+  vertical-align: middle;
+  background: url(../img/i-radio-o.svg) center no-repeat;
+  cursor: pointer;
+  content: "";
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+input[type="radio"]:checked + .checkbox-label::before {
+  background: url(../img/i-radio-select.svg) center no-repeat; }
+
+input[type="radio"] + .checkbox-label:hover::before {
+  border: 3px solid rgba(29, 113, 184, 0.5);
+  border-radius: 50%; }
+
 /* Иконки возле текста как на странице №3*/
 .ico__bodytype:before {
   background: url("/img/i-bodytype.svg") center no-repeat; }
@@ -765,15 +814,6 @@ nav {
     display: block;
     float: left;
     width: 33.333%; }
-  .filter-block__switch-box {
-    width: 16px;
-    height: 16px;
-    margin-right: 10px;
-    background-color: #F7F7F7;
-    border: 1px solid #1D71B8;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    border-radius: 4px; }
 
 .available-car-info {
   padding: 100px 0; }

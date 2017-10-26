@@ -248,6 +248,7 @@ body {
   background: url("/img/i-path.svg") center no-repeat; }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .link {
   font-size: 14px;
   letter-spacing: .1em;
@@ -259,6 +260,8 @@ body {
   .link:hover {
     color: #1D71B8; }
 =======
+=======
+>>>>>>> 7b32bbb6dd761477757b81659339e5ad8e2024f6
 .ico__available:before {
   background: url("/img/i-available-tick.svg") center no-repeat; }
 
@@ -267,6 +270,9 @@ body {
 
 .toggle-active {
   text-decoration: underline; }
+<<<<<<< HEAD
+>>>>>>> 7b32bbb6dd761477757b81659339e5ad8e2024f6
+=======
 >>>>>>> 7b32bbb6dd761477757b81659339e5ad8e2024f6
 
 .fotorama__nav-wrap {
@@ -516,6 +522,7 @@ nav {
     display: none; }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #map-footer {
   height: 350px; }
 
@@ -649,6 +656,10 @@ input[data-empty="false"] + label {
     text-decoration: none; }
     .footer-info__creators:hover {
       text-decoration: underline; }
+=======
+.cars-title {
+  margin-top: 50px; }
+>>>>>>> 7b32bbb6dd761477757b81659339e5ad8e2024f6
 =======
 .cars-title {
   margin-top: 50px; }

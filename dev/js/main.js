@@ -51,12 +51,12 @@ $(document).ready(function(){
         // The latitude and longitude to center the map (always required)
         center: new google.maps.LatLng(50.406626,30.6757033), //TODO: fix position
 
-        // How you would like to style the map. 
+        // How you would like to style the map.
         // This is where you would paste any style found on Snazzy Maps.
         styles: [{"featureType":"landscape","elementType":"all","stylers":[{"color":"#dfdfdf"}]},{"featureType":"poi.park","elementType":"geometry.fill","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"geometry","stylers":[{"lightness":100},{"visibility":"on"},{"color":"#c64566"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"transit.station.airport","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"transit.station.bus","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#1d71b8"}]}]
       };
 
-      // Get the HTML DOM element that will contain your map 
+      // Get the HTML DOM element that will contain your map
       // We are using a div with id="map" seen below in the <body>
       var mapElement = document.getElementById('map-footer');
 
@@ -97,5 +97,4 @@ $(document).ready(function(){
       $(this).addClass("toggle-active");
     }
   });
-  
 });  // eof doc.ready

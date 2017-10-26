@@ -8,7 +8,7 @@ body {
   box-sizing: border-box;
 }
 
-.clearfix:after { 
+.clearfix:after {
   content: "";
   display: table;
   clear: both;
@@ -185,6 +185,28 @@ body {
   &:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease; font-style: italic; font-size: 18px; color: #B5B7B3;}
 }
 
+}
+
+/*стили для основных инпутов*/
+.input-main{
+  padding: 15px 20px;
+  background: #F7F7F7;
+  border: 1px solid #4D4F53;
+  box-sizing: border-box;
+  border-radius: 36px;
+  &:focus{
+    outline: none;
+    &::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+    &::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+    &:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+    &:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+  }
+  &::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease; font-style: italic; font-size: 18px; color: #B5B7B3;}
+  &::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease; font-style: italic; font-size: 18px; color: #B5B7B3;}
+  &:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease; font-style: italic; font-size: 18px; color: #B5B7B3;}
+  &:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease; font-style: italic; font-size: 18px; color: #B5B7B3;}
+}
+
 
 /* Иконки возле текста как на странице №3*/
 .ico{
@@ -223,6 +245,10 @@ body {
       background: url('/img/i-price.svg') center no-repeat;
     }
   }
+}
+
+.toggle-active{
+  text-decoration: underline;
 }
 
 .toggle-active{

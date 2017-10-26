@@ -1,0 +1,139 @@
+#map-footer {
+  height: 350px; //TODO: mob 489px
+}
+.footer-feedback {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 100px;
+  padding-bottom: 90px;
+}
+
+.footer-form {
+  display: flex;
+  font-size: 0;
+  width: 48.837209302325581395%;
+
+  fieldset {
+    flex-grow:1;
+  }
+  .btn-typical {
+    margin-left: 20px;
+  }
+}
+
+input, fieldset {
+  vertical-align: middle;
+  display: inline-block;
+  font-size: 18px;
+}
+
+fieldset {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  border: none;
+  .placeholder {
+    position: absolute;
+    top: 18px;
+    left: 20px;
+    font-style: italic;
+    font-size: 18px;
+    color: #B5B7B3;
+    transition: all .3s;
+    pointer-events: none;
+  }
+}
+
+input:focus + label,
+input[data-empty="false"] + label {
+  color: $black;
+  font-size: 14px;
+  transform: translateY(-38px);
+}
+
+.field-typical {
+  width: 100%;
+  padding: 17px 20px 15px;
+  border: 1px solid $black;
+  box-sizing: border-box;
+  border-radius: 100px;
+  outline: none;
+  font-family: inherit;
+  font-style: italic;
+  transition: all .3s;
+
+  &:hover {
+    border-color: #1D71B8;
+    box-shadow: 0px 0px 7px rgba(29, 113, 184, 0.8);
+  }
+
+}
+.btn-typical {
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: inherit;
+  background: $red;
+  outline: none;
+  border: none;
+  color: #fff;
+  box-sizing: border-box;
+  padding: 17px 40px;
+  box-shadow: 4px 4px 24px rgba(44, 1, 12, 0.3);
+  border-radius: 100px;
+  vertical-align: middle;
+  cursor: pointer;
+  letter-spacing: .1em;
+  transition: all .3s;
+
+  &:hover {
+    background-color: $red-dark;
+  }
+  &:active {
+    transform: translateY(1px);
+    outline: none;
+  }
+}
+
+.footer-feedback-text {
+  width: 48.837209302325581395%;
+
+  &__item {
+    font-style: italic;
+    margin: 0;
+
+    &--strong {
+      font-weight: bold;
+      font-style: normal;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+// footer-info
+.footer-info {
+  padding: 120px 0;
+  // background-color: $black;
+  color: #fff;
+  background:$black url('../img/bg-footer.png') center bottom no-repeat;
+
+  &__item {
+    font-size: 14px;
+  }
+  &__heading {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  &__creators {
+    font-size: 18px;
+    color: inherit;
+    font-weight: bold;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+// eof footer-info

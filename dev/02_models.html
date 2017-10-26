@@ -1,293 +1,300 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="ru">
   <head>
-    <title>models</title>
+    <title>mainpage</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#CC0033">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link href="css/main.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
   </head>
-  <body>
-    <header class="header">
-      <div class="top-bar">
-        <div class="logo-part"><img src="img/logo.svg" alt="site logo">
-          <div class="header-adress"><img class="header-adress__icon" src="/img/i-header-map-pointer.svg" alt="map pointer"><span class="header-adress__text">Київ, Харківське шосе, 179</span></div>
-        </div>
+</html>
+<body>
+  <header class="header">
+    <div class="top-bar">
+      <div class="logo-part"><img src="img/logo.svg" alt="site logo">
+        <div class="header-adress"><img class="header-adress__icon" src="/img/i-header-map-pointer.svg" alt="map pointer"><span class="header-adress__text">Київ, Харківське шосе, 179</span></div>
       </div>
-      <nav>
-        <ul class="nav">
-          <li class="nav__item"><a class="nav__item__link nav__item__link--has-child" href="#">Автомобілі</a></li>
-          <li class="nav__item"><a class="nav__item__link" href="javascript:void(0);">Корпоративним клієнтам</a></li>
-          <li class="nav__item"><a class="nav__item__link" href="javascript:void(0);">Акції</a></li>
-          <li class="nav__item"><a class="nav__item__link" href="javascript:void(0);">Новини</a></li>
-          <li class="nav__item"><a class="nav__item__link nav__item__link--has-child" href="javascript:void(0);">Сервіс</a>
-            <ul class="nav__nav-secondary">
-              <li class="nav__item"><a class="nav__item__link" href="javascript:void(0);">Toyota сервіс</a></li>
-              <li class="nav__item"><a class="nav__item__link" href="javascript:void(0);">Ремонт і ТО</a></li>
-              <li class="nav__item"><a class="nav__item__link" href="javascript:void(0);">Асістанс</a></li>
-              <li class="nav__item"><a class="nav__item__link" href="javascript:void(0);">Сервісні компанії</a></li>
-            </ul>
-          </li>
-          <li class="nav__item"><a class="nav__item__link nav__item__link--has-child" href="javascript:void(0);">Послуги</a></li>
-          <li class="nav__item"><a class="nav__item__link" href="javascript:void(0);">Запчастини</a></li>
-          <li class="nav__item"><a class="nav__item__link" href="javascript:void(0);">Аксесуари</a></li>
-          <li class="nav__item"><a class="nav__item__link nav__item__link--has-child" href="#">Про нас</a></li>
-        </ul>
-        <div class="nav-badge"><img class="nav-badge__logo" src="img/badge-toyota.png" alt=""><img class="nav-badge__slogan" src="img/badge-toyota-slogan.jpg" alt=""></div>
-      </nav>
-    </header>
-    <section class="page-models-head">
-      <div class="wrapper">
-        <div class="breadcrumbs">
-          <ul class="breadcrumbs__list">
-            <li class="breadcrumbs__item">Головна</li>
-            <li class="breadcrumbs__item">Модельний ряд</li>
+    </div>
+    <nav>
+      <ul class="nav">
+        <li class="nav__item"><a class="nav__item__link nav__item__link--has-child" href="#">Автомобілі</a></li>
+        <li class="nav__item"><a class="nav__item__link" href="javascript:void(0);">Корпоративним клієнтам</a></li>
+        <li class="nav__item"><a class="nav__item__link" href="javascript:void(0);">Акції</a></li>
+        <li class="nav__item"><a class="nav__item__link" href="javascript:void(0);">Новини</a></li>
+        <li class="nav__item"><a class="nav__item__link nav__item__link--has-child" href="javascript:void(0);">Сервіс</a>
+          <ul class="nav__nav-secondary">
+            <li class="nav__item"><a class="nav__item__link" href="javascript:void(0);">Toyota сервіс</a></li>
+            <li class="nav__item"><a class="nav__item__link" href="javascript:void(0);">Ремонт і ТО</a></li>
+            <li class="nav__item"><a class="nav__item__link" href="javascript:void(0);">Асістанс</a></li>
+            <li class="nav__item"><a class="nav__item__link" href="javascript:void(0);">Сервісні компанії</a></li>
           </ul>
-          <div class="breadcrumbs__title-wrap">
-            <h1 class="breadcrumbs__title">Модельний ряд Toyota</h1>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="page-models-filter bg-cyan">
-      <div class="wrapper">
-        <div class="filter">
-          <div class="filter__title">Скористайтеся фільтром для підбору моделей</div>
-          <div class="filter__icons">
-            <div class="filter__item filter__price" data-toggle=".filter-price">Підбір по ціні          </div>
-            <div class="filter__item filter__bodytype" data-toggle=".filter-bodytype">По типу кузова          </div>
-            <div class="filter__item filter__consumption" data-toggle=".filter-consumption">Використання пального          </div>
-            <div class="filter__item filter__transmission" data-toggle=".filter-transmission">Коробка передач          </div>
-            <div class="filter__item filter__gastype" data-toggle=".filter-gastype">Вид пального        </div>
-          </div>
-        </div>
-      </div>
-      <div class="filter-wrapper filter-price">
-        <div class="wrapper filter-block">
-          <div class="filter-block__title">Підбір по ціні: </div>
-          <div class="filter-block__switches">
-            <label class="filter-block__switch-label">
-              <input class="filter-block__switch-box" type="checkbox"><span class="checkbox-label">Компактні автомобілі </span>
-            </label>
-            <label class="filter-block__switch-label"> 
-              <input class="filter-block__switch-box" type="checkbox"><span class="checkbox-label">Сімейні авто </span>
-            </label>
-            <label class="filter-block__switch-label">
-              <input class="filter-block__switch-box" type="checkbox"><span class="checkbox-label">Седани </span>
-            </label>
-            <label class="filter-block__switch-label"> 
-              <input class="filter-block__switch-box" type="checkbox"><span class="checkbox-label">Універсали  </span>
-            </label>
-            <label class="filter-block__switch-label"> 
-              <input class="filter-block__switch-box" type="checkbox"><span class="checkbox-label">Повнопривідні 4х4  </span>
-            </label>
-            <label class="filter-block__switch-label"> 
-              <input class="filter-block__switch-box" type="checkbox"><span class="checkbox-label">Гібридні  </span>
-            </label>
-          </div>
-        </div>
-      </div>
-      <div class="filter-wrapper filter-bodytype">
-        <div class="wrapper filter-block">
-          <div class="filter-block__title">Підбір по типу кузова:</div>
-          <div class="filter-block__switches">
-            <label class="filter-block__switch-label">
-              <input class="filter-block__switch-box" type="checkbox"><span class="checkbox-label">Компактні автомобілі </span>
-            </label>
-            <label class="filter-block__switch-label"> 
-              <input class="filter-block__switch-box" type="checkbox"><span class="checkbox-label">Сімейні авто </span>
-            </label>
-            <label class="filter-block__switch-label">
-              <input class="filter-block__switch-box" type="checkbox"><span class="checkbox-label">Седани </span>
-            </label>
-            <label class="filter-block__switch-label"> 
-              <input class="filter-block__switch-box" type="checkbox"><span class="checkbox-label">Універсали  </span>
-            </label>
-            <label class="filter-block__switch-label"> 
-              <input class="filter-block__switch-box" type="checkbox"><span class="checkbox-label">Повнопривідні 4х4  </span>
-            </label>
-            <label class="filter-block__switch-label"> 
-              <input class="filter-block__switch-box" type="checkbox"><span class="checkbox-label">Гібридні  </span>
-            </label>
-          </div>
-        </div>
-      </div>
-      <div class="filter-wrapper filter-consumption">
-        <div class="wrapper filter-block">
-          <div class="filter-block__title"></div>
-          <div class="filter-block__switches"></div>
-        </div>
-      </div>
-      <div class="filter-wrapper filter-transmission">
-        <div class="wrapper filter-block">
-          <div class="filter-block__title"></div>
-          <div class="filter-block__switches"></div>
-        </div>
-      </div>
-      <div class="filter-wrapper filter-gastype">
-        <div class="wrapper filter-block">
-          <div class="filter-block__title"></div>
-          <div class="filter-block__switches"> </div>
-        </div>
-      </div>
-      <div class="wrapper">
-        <div class="filter">   
-          <div class="filter__dragndrop">
-            <div class="filter__dragndrop__text">Для порівняння моделей перенесіть авто в цю область</div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="page-models-cars">
-      <div class="wrapper">
-        <ul class="cars-list">
-          <li class="cars-list-item"><img class="cars-list-item__image" src="/img/c-list-yaris.png">
-            <div class="cars-list-item__title">YARIS</div>
-            <div class="cars-list-item__price">Ціна від 110 000 грн.</div>
-            <div class="cars-list-item__icons"></div>
-          </li>
-          <li class="cars-list-item"><img class="cars-list-item__image" src="/img/c-list-auris.png">
-            <div class="cars-list-item__title">AURIS</div>
-            <div class="cars-list-item__price">Ціна від 110 000 грн.</div>
-            <div class="cars-list-item__icons"></div>
-          </li>
-          <li class="cars-list-item"><img class="cars-list-item__image" src="/img/c-list-corolla.png">
-            <div class="cars-list-item__title">COROLLA</div>
-            <div class="cars-list-item__price">Ціна від 410 400 грн.</div>
-            <div class="cars-list-item__icons">             
-              <div class="cars-list-item__available">В салоні</div>
-            </div>
-          </li>
-          <li class="cars-list-item"><img class="cars-list-item__image" src="/img/c-list-camry.png">
-            <div class="cars-list-item__title">CAMRY</div>
-            <div class="cars-list-item__price">Ціна від 699 000 грн.</div>
-            <div class="cars-list-item__icons">
-              <div class="cars-list-item__testdrive">Тестдрайв</div>
-              <div class="cars-list-item__available">В салоні  </div>
-            </div>
-          </li>
-          <li class="cars-list-item"><img class="cars-list-item__image" src="/img/c-list-rav4.png">
-            <div class="cars-list-item__title">RAV4</div>
-            <div class="cars-list-item__price">Ціна від 793 555 грн.</div>
-            <div class="cars-list-item__icons">       </div>
-          </li>
-          <li class="cars-list-item"><img class="cars-list-item__image" src="/img/c-list-rav4-hybrid.png">
-            <div class="cars-list-item__title">RAV4 HYBRID</div>
-            <div class="cars-list-item__price">Ціна від 793 555 грн.</div>
-            <div class="cars-list-item__icons">
-              <div class="cars-list-item__available">В салоні</div>
-            </div>
-          </li>
-          <li class="cars-list-item"><img class="cars-list-item__image" src="/img/c-list-highlander.png">
-            <div class="cars-list-item__title">HIGHLANDER</div>
-            <div class="cars-list-item__price">Ціна від 1 109 080 грн.</div>
-            <div class="cars-list-item__icons">
-              <div class="cars-list-item__testdrive">Тестдрайв</div>
-              <div class="cars-list-item__available">В салоні  </div>
-            </div>
-          </li>
-          <li class="cars-list-item"><img class="cars-list-item__image" src="/img/c-list-lc-prado.png">
-            <div class="cars-list-item__title">LC Prado</div>
-            <div class="cars-list-item__price">Ціна від 110 000 грн.</div>
-            <div class="cars-list-item__icons">       
-              <div class="cars-list-item__available">В салоні</div>
-            </div>
-          </li>
-          <li class="cars-list-item"><img class="cars-list-item__image" src="/img/c-list-lc-200.png">
-            <div class="cars-list-item__title">LC 200</div>
-            <div class="cars-list-item__price">Ціна від 1 998 000 грн.</div>
-            <div class="cars-list-item__icons"></div>
-          </li>
-          <li class="cars-list-item"><img class="cars-list-item__image" src="/img/c-list-c-hr.png">
-            <div class="cars-list-item__title">C-HR</div>
-            <div class="cars-list-item__price">Ціна від 604 824 грн.</div>
-            <div class="cars-list-item__icons">       </div>
-          </li>
-          <li class="cars-list-item"><img class="cars-list-item__image" src="/img/c-list-hilux.png">
-            <div class="cars-list-item__title">HILUX</div>
-            <div class="cars-list-item__price">Ціна від 843 885 грн.</div>
-            <div class="cars-list-item__icons">
-              <div class="cars-list-item__testdrive">Тестдрайв</div>
-              <div class="cars-list-item__available">В салоні</div>
-            </div>
-          </li>
+        </li>
+        <li class="nav__item"><a class="nav__item__link nav__item__link--has-child" href="javascript:void(0);">Послуги</a></li>
+        <li class="nav__item"><a class="nav__item__link" href="javascript:void(0);">Запчастини</a></li>
+        <li class="nav__item"><a class="nav__item__link" href="javascript:void(0);">Аксесуари</a></li>
+        <li class="nav__item"><a class="nav__item__link nav__item__link--has-child" href="#">Про нас</a></li>
+      </ul>
+      <div class="nav-badge"><img class="nav-badge__logo" src="img/badge-toyota.png" alt=""><img class="nav-badge__slogan" src="img/badge-toyota-slogan.jpg" alt=""></div>
+    </nav>
+  </header>
+  <section class="page-models-head">
+    <div class="wrapper">
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">Головна</li>
+          <li class="breadcrumbs__item">Модельний ряд</li>
         </ul>
-        <div class="available-car-info">
-          <div class="available-car-info__image"><img src="/img/available-car-info.jpg"></div>
-          <div class="available-car-info__description">
-            <div class="available-car-info__title">Можливість особисто ознайомитись з авто в салоні.</div>
-            <div class="available-car-info__info">В офіційній дилерській мережі ПІІ «Тойота-Україна» діє унікальна програма допомоги в дорозі під назвою Toyota Assistancе. Купуючи офіційний автомобіль Toyota, його власник автоматично отримує професійну підтримку та допомогу в дорозі не тільки у технічних питаннях, але й у нестандартних ситуаціях. Послуга Toyota Assistance діє протягом 3-х років з дня першої реєстрації автомобіля без обмеження пробігу.</div><span class="available-car-info__info_p">Звертаємо вашу увагу на те, що програма Toyota Assistancе унікальна у своєму класі і що в межах цієї програми надається безпрецедентно повний спектр послуг із підтримки автомобіля в дорозі.</span>
-            <div class="available-car-info__more btn-more">Подивитись автомобілі в наявності</div>
-          </div>
+        <div class="breadcrumbs__title-wrap">
+          <h1 class="breadcrumbs__title">Модельний ряд Toyota</h1>
         </div>
       </div>
-    </section>
-    <section class="page-models-testdrive">
-      <div class="wrapper">
-        <div class="test-drive__wrapper">
-          <div class="test-drive__title">Відчуй себе за кермом жаданого автомобіля безкоштовно</div>
-          <div class="test-drive__descr1">Аби заощадити ваш час, автосалон «Тойота Центр Львів «Діамант» пропонує вам записатись на тест-драйв моделі Toyota, яка вам сподобалася, безпосередньо на нашому сайті.</div>
-          <div class="test-drive__descr2">Для цього вам необхідно лише заповнити спеціальну форму, вказавши модель автомобіля, бажаний час та дату тест-драйву.</div>
-          <div class="test-drive__descr3">Через деякий час консультанти відділу продажу автомобілів зв'яжуться з вами, щоб підтвердити вашу заявку та уточнити необхідну інформацію.</div>
-          <div class="test-drive__button btn-main">
-            <div class="test-drive__button-text">ДІЗНАТИСЬ БІЛЬШЕ ПРО ТЕСТДРАЙВ</div>
-          </div>
+    </div>
+  </section>
+  <section class="page-models-filter bg-cyan">
+    <div class="wrapper">
+      <div class="filter">
+        <div class="filter__title">Скористайтеся фільтром для підбору моделей</div>
+        <div class="filter__icons">
+          <div class="filter__item filter__price" data-toggle=".filter-price">Підбір по ціні          </div>
+          <div class="filter__item filter__bodytype" data-toggle=".filter-bodytype">По типу кузова          </div>
+          <div class="filter__item filter__consumption" data-toggle=".filter-consumption">Використання пального          </div>
+          <div class="filter__item filter__transmission" data-toggle=".filter-transmission">Коробка передач          </div>
+          <div class="filter__item filter__gastype" data-toggle=".filter-gastype">Вид пального        </div>
         </div>
       </div>
-    </section>
-    <footer>
-      <div class="footer-slider"> 
-        <div class="footer-slider__item"> <img src="img/c-footer-slider-1.png" alt=""></div>
-        <div class="footer-slider__item"> <img src="img/c-footer-slider-2.png" alt=""></div>
-        <div class="footer-slider__item"> <img src="img/c-footer-slider-3.png" alt=""></div>
+    </div>
+    <div class="filter-wrapper filter-price">
+      <div class="wrapper filter-block">
+        <div class="filter-block__title">Підбір по ціні: </div>
+        <div class="filter-block__switches">
+          <label class="filter-block__switch-label">
+            <input class="filter-block__switch-box" type="checkbox"><span class="checkbox-label">Компактні автомобілі </span>
+          </label>
+          <label class="filter-block__switch-label"> 
+            <input class="filter-block__switch-box" type="checkbox"><span class="checkbox-label">Сімейні авто </span>
+          </label>
+          <label class="filter-block__switch-label">
+            <input class="filter-block__switch-box" type="checkbox"><span class="checkbox-label">Седани </span>
+          </label>
+          <label class="filter-block__switch-label"> 
+            <input class="filter-block__switch-box" type="checkbox"><span class="checkbox-label">Універсали  </span>
+          </label>
+          <label class="filter-block__switch-label"> 
+            <input class="filter-block__switch-box" type="checkbox"><span class="checkbox-label">Повнопривідні 4х4  </span>
+          </label>
+          <label class="filter-block__switch-label"> 
+            <input class="filter-block__switch-box" type="checkbox"><span class="checkbox-label">Гібридні  </span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="filter-wrapper filter-bodytype">
+      <div class="wrapper filter-block">
+        <div class="filter-block__title">Підбір по типу кузова:</div>
+        <div class="filter-block__switches">
+          <label class="filter-block__switch-label">
+            <input class="filter-block__switch-box" type="checkbox"><span class="checkbox-label">Компактні автомобілі </span>
+          </label>
+          <label class="filter-block__switch-label"> 
+            <input class="filter-block__switch-box" type="checkbox"><span class="checkbox-label">Сімейні авто </span>
+          </label>
+          <label class="filter-block__switch-label">
+            <input class="filter-block__switch-box" type="checkbox"><span class="checkbox-label">Седани </span>
+          </label>
+          <label class="filter-block__switch-label"> 
+            <input class="filter-block__switch-box" type="checkbox"><span class="checkbox-label">Універсали  </span>
+          </label>
+          <label class="filter-block__switch-label"> 
+            <input class="filter-block__switch-box" type="checkbox"><span class="checkbox-label">Повнопривідні 4х4  </span>
+          </label>
+          <label class="filter-block__switch-label"> 
+            <input class="filter-block__switch-box" type="checkbox"><span class="checkbox-label">Гібридні  </span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="filter-wrapper filter-consumption">
+      <div class="wrapper filter-block">
+        <div class="filter-block__title"></div>
+        <div class="filter-block__switches"></div>
+      </div>
+    </div>
+    <div class="filter-wrapper filter-transmission">
+      <div class="wrapper filter-block">
+        <div class="filter-block__title"></div>
+        <div class="filter-block__switches"></div>
+      </div>
+    </div>
+    <div class="filter-wrapper filter-gastype">
+      <div class="wrapper filter-block">
+        <div class="filter-block__title"></div>
+        <div class="filter-block__switches"> </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="filter">   
+        <div class="filter__dragndrop">
+          <div class="filter__dragndrop__text">Для порівняння моделей перенесіть авто в цю область</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="page-models-cars">
+    <div class="wrapper">
+      <ul class="cars-list">
+        <li class="cars-list-item"><img class="cars-list-item__image" src="/img/c-list-yaris.png">
+          <div class="cars-list-item__title">YARIS</div>
+          <div class="cars-list-item__price">Ціна від 110 000 грн.</div>
+          <div class="cars-list-item__icons"></div>
+        </li>
+        <li class="cars-list-item"><img class="cars-list-item__image" src="/img/c-list-auris.png">
+          <div class="cars-list-item__title">AURIS</div>
+          <div class="cars-list-item__price">Ціна від 110 000 грн.</div>
+          <div class="cars-list-item__icons"></div>
+        </li>
+        <li class="cars-list-item"><img class="cars-list-item__image" src="/img/c-list-corolla.png">
+          <div class="cars-list-item__title">COROLLA</div>
+          <div class="cars-list-item__price">Ціна від 410 400 грн.</div>
+          <div class="cars-list-item__icons">             
+            <div class="cars-list-item__available">В салоні</div>
+          </div>
+        </li>
+        <li class="cars-list-item"><img class="cars-list-item__image" src="/img/c-list-camry.png">
+          <div class="cars-list-item__title">CAMRY</div>
+          <div class="cars-list-item__price">Ціна від 699 000 грн.</div>
+          <div class="cars-list-item__icons">
+            <div class="cars-list-item__testdrive">Тестдрайв</div>
+            <div class="cars-list-item__available">В салоні  </div>
+          </div>
+        </li>
+        <li class="cars-list-item"><img class="cars-list-item__image" src="/img/c-list-rav4.png">
+          <div class="cars-list-item__title">RAV4</div>
+          <div class="cars-list-item__price">Ціна від 793 555 грн.</div>
+          <div class="cars-list-item__icons">       </div>
+        </li>
+        <li class="cars-list-item"><img class="cars-list-item__image" src="/img/c-list-rav4-hybrid.png">
+          <div class="cars-list-item__title">RAV4 HYBRID</div>
+          <div class="cars-list-item__price">Ціна від 793 555 грн.</div>
+          <div class="cars-list-item__icons">
+            <div class="cars-list-item__available">В салоні</div>
+          </div>
+        </li>
+        <li class="cars-list-item"><img class="cars-list-item__image" src="/img/c-list-highlander.png">
+          <div class="cars-list-item__title">HIGHLANDER</div>
+          <div class="cars-list-item__price">Ціна від 1 109 080 грн.</div>
+          <div class="cars-list-item__icons">
+            <div class="cars-list-item__testdrive">Тестдрайв</div>
+            <div class="cars-list-item__available">В салоні  </div>
+          </div>
+        </li>
+        <li class="cars-list-item"><img class="cars-list-item__image" src="/img/c-list-lc-prado.png">
+          <div class="cars-list-item__title">LC Prado</div>
+          <div class="cars-list-item__price">Ціна від 110 000 грн.</div>
+          <div class="cars-list-item__icons">       
+            <div class="cars-list-item__available">В салоні</div>
+          </div>
+        </li>
+        <li class="cars-list-item"><img class="cars-list-item__image" src="/img/c-list-lc-200.png">
+          <div class="cars-list-item__title">LC 200</div>
+          <div class="cars-list-item__price">Ціна від 1 998 000 грн.</div>
+          <div class="cars-list-item__icons"></div>
+        </li>
+        <li class="cars-list-item"><img class="cars-list-item__image" src="/img/c-list-c-hr.png">
+          <div class="cars-list-item__title">C-HR</div>
+          <div class="cars-list-item__price">Ціна від 604 824 грн.</div>
+          <div class="cars-list-item__icons">       </div>
+        </li>
+        <li class="cars-list-item"><img class="cars-list-item__image" src="/img/c-list-hilux.png">
+          <div class="cars-list-item__title">HILUX</div>
+          <div class="cars-list-item__price">Ціна від 843 885 грн.</div>
+          <div class="cars-list-item__icons">
+            <div class="cars-list-item__testdrive">Тестдрайв</div>
+            <div class="cars-list-item__available">В салоні</div>
+          </div>
+        </li>
+      </ul>
+      <div class="available-car-info">
+        <div class="available-car-info__image"><img src="/img/available-car-info.jpg"></div>
+        <div class="available-car-info__description">
+          <div class="available-car-info__title">Можливість особисто ознайомитись з авто в салоні.</div>
+          <div class="available-car-info__info">В офіційній дилерській мережі ПІІ «Тойота-Україна» діє унікальна програма допомоги в дорозі під назвою Toyota Assistancе. Купуючи офіційний автомобіль Toyota, його власник автоматично отримує професійну підтримку та допомогу в дорозі не тільки у технічних питаннях, але й у нестандартних ситуаціях. Послуга Toyota Assistance діє протягом 3-х років з дня першої реєстрації автомобіля без обмеження пробігу.</div><span class="available-car-info__info_p">Звертаємо вашу увагу на те, що програма Toyota Assistancе унікальна у своєму класі і що в межах цієї програми надається безпрецедентно повний спектр послуг із підтримки автомобіля в дорозі.</span>
+          <div class="available-car-info__more btn-more">Подивитись автомобілі в наявності</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="page-models-testdrive">
+    <div class="wrapper">
+      <div class="test-drive__wrapper">
+        <div class="test-drive__title">Відчуй себе за кермом жаданого автомобіля безкоштовно</div>
+        <div class="test-drive__descr1">Аби заощадити ваш час, автосалон «Тойота Центр Львів «Діамант» пропонує вам записатись на тест-драйв моделі Toyota, яка вам сподобалася, безпосередньо на нашому сайті.</div>
+        <div class="test-drive__descr2">Для цього вам необхідно лише заповнити спеціальну форму, вказавши модель автомобіля, бажаний час та дату тест-драйву.</div>
+        <div class="test-drive__descr3">Через деякий час консультанти відділу продажу автомобілів зв'яжуться з вами, щоб підтвердити вашу заявку та уточнити необхідну інформацію.</div>
+        <div class="test-drive__button btn-typical">
+          <div class="test-drive__button-text">ДІЗНАТИСЬ БІЛЬШЕ ПРО ТЕСТДРАЙВ</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-slider"> 
+      <div class="footer-slider__item"> <img src="img/c-footer-slider-1.png" alt=""></div>
+      <div class="footer-slider__item"> <img src="img/c-footer-slider-2.png" alt=""></div>
+      <div class="footer-slider__item"> <img src="img/c-footer-slider-3.png" alt=""></div>
+      <div class="footer-slider__item"> <img src="img/c-footer-slider-4.png" alt=""></div>
+      <div class="footer-slider__item"> <img src="img/c-footer-slider-5.png" alt=""></div>
+      <div class="footer-slider__item"> <img src="img/c-footer-slider-6.png" alt=""></div>
+      <div class="footer-slider__item"> <img src="img/c-footer-slider-1.png" alt=""></div>
+      <div class="footer-slider__item"> <img src="img/c-footer-slider-2.png" alt=""></div>
+      <div class="footer-slider__item"> <img src="img/c-footer-slider-3.png" alt="">
         <div class="footer-slider__item"> <img src="img/c-footer-slider-4.png" alt=""></div>
         <div class="footer-slider__item"> <img src="img/c-footer-slider-5.png" alt=""></div>
         <div class="footer-slider__item"> <img src="img/c-footer-slider-6.png" alt=""></div>
-        <div class="footer-slider__item"> <img src="img/c-footer-slider-1.png" alt=""></div>
-        <div class="footer-slider__item"> <img src="img/c-footer-slider-2.png" alt=""></div>
-        <div class="footer-slider__item"> <img src="img/c-footer-slider-3.png" alt="">
-          <div class="footer-slider__item"> <img src="img/c-footer-slider-4.png" alt=""></div>
-          <div class="footer-slider__item"> <img src="img/c-footer-slider-5.png" alt=""></div>
-          <div class="footer-slider__item"> <img src="img/c-footer-slider-6.png" alt=""></div>
-        </div>
       </div>
+    </div>
+    <div class="wrapper">
+      <div class="footer-feedback">
+        <div class="footer-feedback-text">
+          <p class="footer-feedback-text__item footer-feedback-text__item--strong">Бажаєте бути в курсі останніх новин Toyota? Підпишіться на розсилку:</p>
+          <p class="footer-feedback-text__item">Тільки корисні новини, ніякого спаму.</p>
+        </div>
+        <form class="footer-form" action="#">
+          <fieldset>
+            <input class="field-typical" type="text">
+            <label class="placeholder" for="">Email</label>
+          </fieldset>
+          <input class="btn-typical" type="submit" value="Відправити">
+        </form>
+      </div>
+    </div>
+    <div class="footer-info">
       <div class="wrapper">
-        <div class="footer-feedback">
-          <div class="footer-feedback-text">
-            <p class="footer-feedback-text__item footer-feedback-text__item--strong">Бажаєте бути в курсі останніх новин Toyota? Підпишіться на розсилку:</p>
-            <p class="footer-feedback-text__item">Тільки корисні новини, ніякого спаму.</p>
-          </div>
-          <form class="footer-form" action="#">
-            <fieldset>
-              <input class="field-typical" type="text">
-              <label class="placeholder" for="">Email</label>
-            </fieldset>
-            <input class="btn-typical" type="submit" value="Відправити">
-          </form>
+        <div class="footer-info__item">
+          <div class="footer-info__heading">Шукайте нас в соцмережах:</div>
+        </div>
+        <div class="footer-info__item">
+          <div class="footer-info__heading">Наша адреса:</div>
+        </div>
+        <div class="footer-info__item">
+          <div class="footer-info__heading">Телефони:</div>
+        </div>
+        <div class="footer-info__item">
+          <div class="footer-info__heading">© Тойота Центр Київ «Автосаміт» — офіційний дилер TOYOTA</div><a class="footer-info__creators" href="https://uct.ua" target="_blank">Зроблено в UCT</a>
         </div>
       </div>
-      <div class="footer-info">
-        <div class="wrapper">
-          <div class="footer-info__item">
-            <div class="footer-info__heading">Шукайте нас в соцмережах:</div>
-          </div>
-          <div class="footer-info__item">
-            <div class="footer-info__heading">Наша адреса:</div>
-          </div>
-          <div class="footer-info__item">
-            <div class="footer-info__heading">Телефони:</div>
-          </div>
-          <div class="footer-info__item">
-            <div class="footer-info__heading">© Тойота Центр Київ «Автосаміт» — офіційний дилер TOYOTA</div><a class="footer-info__creators" href="https://uct.ua" target="_blank">Зроблено в UCT</a>
-          </div>
-        </div>
-      </div>
-      <div id="map-footer"></div>
-    </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD44fLa7d5vR5XVpEal1HHt97Xb3i6bd6Y"> </script>
-    <script src="js/main.js"></script>
-  </body>
-</html>
+    </div>
+    <div id="map-footer"></div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD44fLa7d5vR5XVpEal1HHt97Xb3i6bd6Y"> </script>
+  <script src="js/main.js"></script>
+</body>

@@ -136,17 +136,32 @@ body {
   padding: 15px 40px;
   cursor: pointer; }
 
-.btn-main {
-  cursor: pointer;
+.btn-typical {
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: inherit;
   background: #CC0033;
+  outline: none;
+  border: none;
+  color: #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 17px 40px;
   -webkit-box-shadow: 4px 4px 24px rgba(44, 1, 12, 0.3);
   box-shadow: 4px 4px 24px rgba(44, 1, 12, 0.3);
-  border-radius: 30px;
-  padding: 15px 40px;
-  display: inline-block;
-  text-align: center;
-  color: white; }
-  .btn-main:focus {
+  border-radius: 100px;
+  vertical-align: middle;
+  cursor: pointer;
+  letter-spacing: .1em;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s; }
+  .btn-typical:hover {
+    background-color: #9D0004; }
+  .btn-typical:active {
+    -webkit-transform: translateY(1px);
+    -ms-transform: translateY(1px);
+    transform: translateY(1px);
     outline: none; }
 
 .btn-more {
@@ -167,132 +182,6 @@ body {
     vertical-align: middle; }
   .btn-more:focus {
     outline: none; }
-
-/*стили для основных инпутов*/
-.input-main {
-  padding: 15px 20px;
-  background: #F7F7F7;
-  border: 1px solid #4D4F53;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  border-radius: 36px; }
-  .input-main:focus {
-    outline: none; }
-    .input-main:focus::-webkit-input-placeholder {
-      opacity: 0;
-      -webkit-transition: opacity 0.3s ease;
-      -o-transition: opacity 0.3s ease;
-      transition: opacity 0.3s ease; }
-    .input-main:focus::-moz-placeholder {
-      opacity: 0;
-      -webkit-transition: opacity 0.3s ease;
-      -o-transition: opacity 0.3s ease;
-      transition: opacity 0.3s ease; }
-    .input-main:focus:-moz-placeholder {
-      opacity: 0;
-      -webkit-transition: opacity 0.3s ease;
-      -o-transition: opacity 0.3s ease;
-      transition: opacity 0.3s ease; }
-    .input-main:focus:-ms-input-placeholder {
-      opacity: 0;
-      -webkit-transition: opacity 0.3s ease;
-      -o-transition: opacity 0.3s ease;
-      transition: opacity 0.3s ease; }
-  .input-main::-webkit-input-placeholder {
-    opacity: 1;
-    -webkit-transition: opacity 0.3s ease;
-    -o-transition: opacity 0.3s ease;
-    transition: opacity 0.3s ease;
-    font-style: italic;
-    font-size: 18px;
-    color: #B5B7B3; }
-  .input-main::-moz-placeholder {
-    opacity: 1;
-    -webkit-transition: opacity 0.3s ease;
-    -o-transition: opacity 0.3s ease;
-    transition: opacity 0.3s ease;
-    font-style: italic;
-    font-size: 18px;
-    color: #B5B7B3; }
-  .input-main:-moz-placeholder {
-    opacity: 1;
-    -webkit-transition: opacity 0.3s ease;
-    -o-transition: opacity 0.3s ease;
-    transition: opacity 0.3s ease;
-    font-style: italic;
-    font-size: 18px;
-    color: #B5B7B3; }
-  .input-main:-ms-input-placeholder {
-    opacity: 1;
-    -webkit-transition: opacity 0.3s ease;
-    -o-transition: opacity 0.3s ease;
-    transition: opacity 0.3s ease;
-    font-style: italic;
-    font-size: 18px;
-    color: #B5B7B3; }
-
-/*стили для основных инпутов*/
-.input-main {
-  padding: 15px 20px;
-  background: #F7F7F7;
-  border: 1px solid #4D4F53;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  border-radius: 36px; }
-  .input-main:focus {
-    outline: none; }
-    .input-main:focus::-webkit-input-placeholder {
-      opacity: 0;
-      -webkit-transition: opacity 0.3s ease;
-      -o-transition: opacity 0.3s ease;
-      transition: opacity 0.3s ease; }
-    .input-main:focus::-moz-placeholder {
-      opacity: 0;
-      -webkit-transition: opacity 0.3s ease;
-      -o-transition: opacity 0.3s ease;
-      transition: opacity 0.3s ease; }
-    .input-main:focus:-moz-placeholder {
-      opacity: 0;
-      -webkit-transition: opacity 0.3s ease;
-      -o-transition: opacity 0.3s ease;
-      transition: opacity 0.3s ease; }
-    .input-main:focus:-ms-input-placeholder {
-      opacity: 0;
-      -webkit-transition: opacity 0.3s ease;
-      -o-transition: opacity 0.3s ease;
-      transition: opacity 0.3s ease; }
-  .input-main::-webkit-input-placeholder {
-    opacity: 1;
-    -webkit-transition: opacity 0.3s ease;
-    -o-transition: opacity 0.3s ease;
-    transition: opacity 0.3s ease;
-    font-style: italic;
-    font-size: 18px;
-    color: #B5B7B3; }
-  .input-main::-moz-placeholder {
-    opacity: 1;
-    -webkit-transition: opacity 0.3s ease;
-    -o-transition: opacity 0.3s ease;
-    transition: opacity 0.3s ease;
-    font-style: italic;
-    font-size: 18px;
-    color: #B5B7B3; }
-  .input-main:-moz-placeholder {
-    opacity: 1;
-    -webkit-transition: opacity 0.3s ease;
-    -o-transition: opacity 0.3s ease;
-    transition: opacity 0.3s ease;
-    font-style: italic;
-    font-size: 18px;
-    color: #B5B7B3; }
-  .input-main:-ms-input-placeholder {
-    opacity: 1;
-    -webkit-transition: opacity 0.3s ease;
-    -o-transition: opacity 0.3s ease;
-    transition: opacity 0.3s ease;
-    font-style: italic;
-    font-size: 18px;
-    color: #B5B7B3; }
 
 /* Ex:
 label.filter-block__switch-label
@@ -709,34 +598,6 @@ input[data-empty="false"] + label {
     -webkit-box-shadow: 0px 0px 7px rgba(29, 113, 184, 0.8);
     box-shadow: 0px 0px 7px rgba(29, 113, 184, 0.8); }
 
-.btn-typical {
-  display: inline-block;
-  text-transform: uppercase;
-  font-family: inherit;
-  background: #CC0033;
-  outline: none;
-  border: none;
-  color: #fff;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 17px 40px;
-  -webkit-box-shadow: 4px 4px 24px rgba(44, 1, 12, 0.3);
-  box-shadow: 4px 4px 24px rgba(44, 1, 12, 0.3);
-  border-radius: 100px;
-  vertical-align: middle;
-  cursor: pointer;
-  letter-spacing: .1em;
-  -webkit-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s; }
-  .btn-typical:hover {
-    background-color: #9D0004; }
-  .btn-typical:active {
-    -webkit-transform: translateY(1px);
-    -ms-transform: translateY(1px);
-    transform: translateY(1px);
-    outline: none; }
-
 .footer-feedback-text {
   width: 48.837209302325581395%; }
   .footer-feedback-text__item {
@@ -829,6 +690,9 @@ input[data-empty="false"] + label {
     float: right; }
     .car-card__image img {
       width: 100%; }
+
+.page-availible-content {
+  margin-bottom: 225px; }
 
 .page-models-head {
   overflow: hidden;
@@ -1131,7 +995,8 @@ input[data-empty="false"] + label {
   background-size: cover;
   padding: 160px 0;
   color: white;
-  margin-top: 160px; }
+  margin-top: 160px;
+  margin-bottom: 200px; }
 
 .test-drive__wrapper {
   width: calc(50% - 40px);

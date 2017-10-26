@@ -69,31 +69,6 @@ input[data-empty="false"] + label {
   }
 
 }
-.btn-typical {
-  display: inline-block;
-  text-transform: uppercase;
-  font-family: inherit;
-  background: $red;
-  outline: none;
-  border: none;
-  color: #fff;
-  box-sizing: border-box;
-  padding: 17px 40px;
-  box-shadow: 4px 4px 24px rgba(44, 1, 12, 0.3);
-  border-radius: 100px;
-  vertical-align: middle;
-  cursor: pointer;
-  letter-spacing: .1em;
-  transition: all .3s;
-
-  &:hover {
-    background-color: $red-dark;
-  }
-  &:active {
-    transform: translateY(1px);
-    outline: none;
-  }
-}
 
 .footer-feedback-text {
   width: 48.837209302325581395%;

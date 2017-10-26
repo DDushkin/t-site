@@ -1,25 +1,23 @@
-doctype html
-html(lang="ua")
-  head
-    title available
-    meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1")
+include partials/_mixins.pug
+
+//- title as parameter
+//- example:
+//- head("page title")
++head("mainpage")
+body
+  include partials/_header.pug
     
-    link(href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css", rel="stylesheet")
-    link(href="css/main.css", rel="stylesheet")
-  body
-    include partials/_header.pug
-    
-    //- main content
-    section.page-availible-head
-      .wrapper
-        .breadcrumbs
-          ul.breadcrumbs__list
-            li.breadcrumbs__item Головна
-            li.breadcrumbs__item Модельний ряд
-            li.breadcrumbs__item Автомобілі в салоні
-          .breadcrumbs__title-wrap
-            h1.breadcrumbs__title Автомобілі в салоні
+  //- main content
+  section.page-availible-head
+    .wrapper
+      .breadcrumbs
+        ul.breadcrumbs__list
+          li.breadcrumbs__item Головна
+          li.breadcrumbs__item Модельний ряд
+          li.breadcrumbs__item Автомобілі в салоні
+        .breadcrumbs__title-wrap
+          h1.breadcrumbs__title Автомобілі в салоні
+  section.page-availible-content        
     .wrapper
       .car-card
         .car-card__description
@@ -57,10 +55,10 @@ html(lang="ua")
         .car-card__image
           img(src="/img/car-card.jpg")
            
-          
-      
+        
     
-    //- eof main content
-    
-    include partials/_footer.pug
-    include partials/_scripts.pug
+  
+  //- eof main content
+  
+  include partials/_footer.pug
+  include partials/_scripts.pug

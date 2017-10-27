@@ -89,81 +89,67 @@ body
           .filter__dragndrop__text Для порівняння моделей перенесіть авто в цю область
   section.page-models-cars
     .wrapper
-      ul.cars-list
-        li.cars-list-item
-          img.cars-list-item__image(src="/img/c-list-yaris.png")
-          .cars-list-item__title YARIS
-          .cars-list-item__price Ціна від 110 000 грн.
-          .cars-list-item__icons
-
-        li.cars-list-item
-          img.cars-list-item__image(src="/img/c-list-auris.png")
-          .cars-list-item__title AURIS
-          .cars-list-item__price Ціна від 110 000 грн.
-          .cars-list-item__icons
-            
-        li.cars-list-item
-          img.cars-list-item__image(src="/img/c-list-corolla.png")
-          .cars-list-item__title COROLLA
-          .cars-list-item__price Ціна від 410 400 грн.
-          .cars-list-item__icons              
-            .cars-list-item__available В салоні
-            
-        li.cars-list-item
-          img.cars-list-item__image(src="/img/c-list-camry.png")
-          .cars-list-item__title CAMRY
-          .cars-list-item__price Ціна від 699 000 грн.
-          .cars-list-item__icons
-            .cars-list-item__testdrive Тестдрайв
-            .cars-list-item__available В салоні  
-            
-        li.cars-list-item
-          img.cars-list-item__image(src="/img/c-list-rav4.png")
-          .cars-list-item__title RAV4
-          .cars-list-item__price Ціна від 793 555 грн.
-          .cars-list-item__icons        
-            
-        li.cars-list-item
-          img.cars-list-item__image(src="/img/c-list-rav4-hybrid.png")
-          .cars-list-item__title RAV4 HYBRID
-          .cars-list-item__price Ціна від 793 555 грн.
-          .cars-list-item__icons
-            .cars-list-item__available В салоні
-                  
-        li.cars-list-item
-          img.cars-list-item__image(src="/img/c-list-highlander.png")
-          .cars-list-item__title HIGHLANDER
-          .cars-list-item__price Ціна від 1 109 080 грн.
-          .cars-list-item__icons
-            .cars-list-item__testdrive Тестдрайв
-            .cars-list-item__available В салоні  
-            
-        li.cars-list-item
-          img.cars-list-item__image(src="/img/c-list-lc-prado.png")
-          .cars-list-item__title LC Prado
-          .cars-list-item__price Ціна від 110 000 грн.
-          .cars-list-item__icons        
-            .cars-list-item__available В салоні
-            
-        li.cars-list-item
-          img.cars-list-item__image(src="/img/c-list-lc-200.png")
-          .cars-list-item__title LC 200
-          .cars-list-item__price Ціна від 1 998 000 грн.
-          .cars-list-item__icons
-            
-        li.cars-list-item
-          img.cars-list-item__image(src="/img/c-list-c-hr.png")
-          .cars-list-item__title C-HR
-          .cars-list-item__price Ціна від 604 824 грн.
-          .cars-list-item__icons        
-            
-        li.cars-list-item
-          img.cars-list-item__image(src="/img/c-list-hilux.png")
-          .cars-list-item__title HILUX
-          .cars-list-item__price Ціна від 843 885 грн.
-          .cars-list-item__icons
-            .cars-list-item__testdrive Тестдрайв
-            .cars-list-item__available В салоні
+      .car-grid
+        .car-grid-item
+          img.car-grid-item__img(src="img/c-list-yaris.png", alt="")
+          .car-grid-item__heading yaris
+          .car-grid-item__price Ціна від 110 000 грн.
+          a.car-grid-item__link.link.i-inline__testdrive(href="#") Тестдрайв
+          //- a.car-grid-item__link.link(href="#") В салоні
+        .car-grid-item
+          img.car-grid-item__img(src="img/c-list-auris.png", alt="")
+          .car-grid-item__heading CAMRY 
+          .car-grid-item__price Ціна від 699 000 грн.
+          a.car-grid-item__link.link.i-inline__testdrive(href="#") Тестдрайв
+          a.car-grid-item__link.link.i-inline__available(href="#") В салоні
+        .car-grid-item
+          img.car-grid-item__img(src="img/c-list-corolla.png", alt="")
+          .car-grid-item__heading COROLLA
+          .car-grid-item__price Ціна від 410 400 грн.
+          //- a.car-grid-item__link.link(href="#") Тестдрайв
+          a.car-grid-item__link.link.i-inline__available(href="#") В салоні
+        .car-grid-item
+          img.car-grid-item__img(src="img/c-list-rav4.png", alt="")
+          .car-grid-item__heading RAV4 
+          .car-grid-item__price Ціна від 793 555 грн.
+          a.car-grid-item__link.link.i-inline__testdrive(href="#") Тестдрайв
+          a.car-grid-item__link.link.i-inline__available(href="#") В салоні
+        .car-grid-item
+          img.car-grid-item__img(src="img/c-list-rav4-hybrid.png", alt="")
+          .car-grid-item__heading RAV4 HYBRID
+          .car-grid-item__price Ціна від 793 555 грн.
+          a.car-grid-item__link.link.i-inline__testdrive(href="#") Тестдрайв
+          a.car-grid-item__link.link.i-inline__available(href="#") В салоні
+        .car-grid-item
+          img.car-grid-item__img(src="img/c-list-highlander.png", alt="")
+          .car-grid-item__heading HIGHLANDER
+          .car-grid-item__price Ціна від 1 109 080 грн.
+          a.car-grid-item__link.link.i-inline__testdrive(href="#") Тестдрайв
+          a.car-grid-item__link.link.i-inline__available(href="#") В салоні
+        .car-grid-item
+          img.car-grid-item__img(src="img/c-list-lc-prado.png", alt="")
+          .car-grid-item__heading LC Prado
+          .car-grid-item__price Ціна від 110 000 грн
+          a.car-grid-item__link.link.i-inline__testdrive(href="#") Тестдрайв
+          a.car-grid-item__link.link.i-inline__available(href="#") В салоні
+        .car-grid-item
+          img.car-grid-item__img(src="img/c-list-lc-200.png", alt="")
+          .car-grid-item__heading LC 200
+          .car-grid-item__price Ціна від 1 998 000 грн.
+          a.car-grid-item__link.link.i-inline__testdrive(href="#") Тестдрайв
+          a.car-grid-item__link.link.i-inline__available(href="#") В салоні
+        .car-grid-item
+          img.car-grid-item__img(src="img/c-list-c-hr.png", alt="")
+          .car-grid-item__heading C-HR
+          .car-grid-item__price Ціна від  604 824 грн.
+          a.car-grid-item__link.link.i-inline__testdrive(href="#") Тестдрайв
+          a.car-grid-item__link.link.i-inline__available(href="#") В салоні
+        .car-grid-item
+          img.car-grid-item__img(src="img/c-list-hilux.png", alt="")
+          .car-grid-item__heading HILUX
+          .car-grid-item__price Ціна від 843 885 грн.
+          a.car-grid-item__link.link.i-inline__testdrive(href="#") Тестдрайв
+          a.car-grid-item__link.link.i-inline__available(href="#") В салоні
             
       .available-car-info
         .available-car-info__image
@@ -181,7 +167,7 @@ body
         .test-drive__descr1 Аби заощадити ваш час, автосалон «Тойота Центр Львів «Діамант» пропонує вам записатись на тест-драйв моделі Toyota, яка вам сподобалася, безпосередньо на нашому сайті.
         .test-drive__descr2 Для цього вам необхідно лише заповнити спеціальну форму, вказавши модель автомобіля, бажаний час та дату тест-драйву.
         .test-drive__descr3 Через деякий час консультанти відділу продажу автомобілів зв'яжуться з вами, щоб підтвердити вашу заявку та уточнити необхідну інформацію.
-        .test-drive__button.btn-typical
+        .test-drive__button.btn.btn-typical
           .test-drive__button-text ДІЗНАТИСЬ БІЛЬШЕ ПРО ТЕСТДРАЙВ
           
         

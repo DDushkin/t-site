@@ -39,7 +39,7 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-.clearfix:after, .wrapper:after, .car-card:after, .filter__icons:after, .cars-list:after, .available-car-info:after, .test-drive-card:after, .test-drive-pace:after, .test-drive-terms__description:after, .test-drive-form__car:after {
+.clearfix:after, .wrapper:after, .car-card:after, .filter__icons:after, .available-car-info:after, .test-drive-card:after, .test-drive-pace:after, .test-drive-terms__description:after, .test-drive-form__car:after {
   content: "";
   display: table;
   clear: both; }
@@ -126,21 +126,10 @@ body {
     .breadcrumbs__title-wrap {
       padding-top: 15px; }
 
-.btn-main-o {
-  border: 3px solid #CC0033;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-box-shadow: 4px 4px 24px rgba(44, 1, 12, 0.3);
-  box-shadow: 4px 4px 24px rgba(44, 1, 12, 0.3);
-  border-radius: 30px;
-  padding: 15px 40px;
-  cursor: pointer; }
-
-.btn-typical {
+.btn {
   display: inline-block;
   text-transform: uppercase;
   font-family: inherit;
-  background: #CC0033;
   outline: none;
   border: none;
   color: #fff;
@@ -156,9 +145,20 @@ body {
   -webkit-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s; }
-  .btn-typical:hover {
-    background-color: #9D0004; }
-  .btn-typical:active {
+  .btn-typical {
+    background: #CC0033; }
+    .btn-typical:hover {
+      background-color: #9D0004; }
+  .btn-typical-o {
+    border: 3px solid #CC0033;
+    color: #23171A; }
+    .btn-typical-o:hover {
+      background: #CC0033;
+      color: #fff; }
+    .btn-typical-o:active {
+      border: 3px solid #9D0004;
+      background-color: #9D0004; }
+  .btn:active {
     -webkit-transform: translateY(1px);
     -ms-transform: translateY(1px);
     transform: translateY(1px);
@@ -253,6 +253,32 @@ input[type="radio"] + .checkbox-label:hover::before {
 
 .ico__price:before {
   background: url("/img/i-price.svg") center no-repeat; }
+
+.i-inline {
+  line-height: normal;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  font-style: italic;
+  color: #23171A;
+  display: inline-block; }
+  .i-inline__testdrive:before {
+    width: 16px;
+    height: 12px;
+    display: inline-block;
+    content: "";
+    margin-right: 10px;
+    background: url("/img/i-testdrive.svg") center no-repeat;
+    vertical-align: middle; }
+  .i-inline__available:before {
+    width: 16px;
+    height: 12px;
+    display: inline-block;
+    content: "";
+    margin-right: 10px;
+    background: url("/img/i-available.svg") center no-repeat;
+    vertical-align: middle; }
 
 .toggle-active {
   text-decoration: underline; }
@@ -679,6 +705,7 @@ input[data-empty="false"] + label {
       font-family: "Toyota Display";
       letter-spacing: .1em;
       text-transform: uppercase;
+      font-weight: bold;
       cursor: default;
       -webkit-transition: all .3s;
       -o-transition: all .3s;
@@ -914,71 +941,8 @@ input[data-empty="false"] + label {
       border-left: 20px solid transparent;
       border-right: 20px solid transparent; }
 
-.cars-list {
-  padding: 60px 0;
-  text-align: center; }
-  .cars-list-item {
-    list-style-type: none;
-    float: left;
-    width: 33.33333%;
-    padding: 40px 0;
-    min-height: 285px; }
-    .cars-list-item__image {
-      width: 100%;
-      padding-bottom: 20px; }
-    .cars-list-item__title {
-      font-family: "Toyota Display";
-      line-height: normal;
-      font-size: 24px;
-      text-align: center;
-      letter-spacing: 0.1em;
-      color: #23171A;
-      font-weight: bold; }
-    .cars-list-item__price {
-      line-height: normal;
-      font-size: 14px;
-      letter-spacing: 0.1em;
-      color: #23171A;
-      font-style: italic;
-      padding-top: 5px; }
-    .cars-list-item__icons {
-      width: 50%;
-      margin: 10px auto; }
-    .cars-list-item__testdrive {
-      line-height: normal;
-      font-size: 14px;
-      letter-spacing: 0.1em;
-      -webkit-text-decoration-line: underline;
-      text-decoration-line: underline;
-      font-style: italic;
-      color: #23171A;
-      display: inline-block; }
-      .cars-list-item__testdrive:before {
-        width: 16px;
-        height: 12px;
-        display: inline-block;
-        content: "";
-        margin-right: 10px;
-        background: url("/img/i-testdrive.svg") center no-repeat;
-        vertical-align: middle; }
-    .cars-list-item__available {
-      line-height: normal;
-      font-size: 14px;
-      letter-spacing: 0.1em;
-      -webkit-text-decoration-line: underline;
-      text-decoration-line: underline;
-      font-style: italic;
-      color: #23171A;
-      display: inline-block;
-      margin-left: 10px; }
-      .cars-list-item__available:before {
-        width: 16px;
-        height: 12px;
-        display: inline-block;
-        content: "";
-        margin-right: 10px;
-        background: url("/img/i-available.svg") center no-repeat;
-        vertical-align: middle; }
+.page-models-cars {
+  margin-top: 100px; }
 
 .filter-block {
   display: -webkit-box;

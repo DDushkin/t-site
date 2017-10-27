@@ -185,79 +185,9 @@
     }
   }
 }
-.cars-list{
-  padding: 60px 0;
-  @extend .clearfix;
-  text-align: center;
-  &-item{
-      list-style-type: none;
-      float: left;
-      width: percentage(4/12);
-      padding: 40px 0;
-      min-height: 285px;
-    &__image{
-      width: 100%;
-      padding-bottom: 20px;
-    }
-    &__title{
-      font-family: $f-td;
-      line-height: normal;
-      font-size: 24px;
-      text-align: center;
-      letter-spacing: 0.1em;
-      color: $black;
-      font-weight: bold;
-    }
-    &__price{
-      line-height: normal;
-      font-size: 14px;
-      letter-spacing: 0.1em;
-      color: $black;
-      font-style: italic;
-      padding-top: 5px;
-    }
-    &__icons{
-      width: percentage(6/12);
-      margin: 10px auto;
-    }
-    &__testdrive{
-      line-height: normal;
-      font-size: 14px;
-      letter-spacing: 0.1em;
-      text-decoration-line: underline;
-      font-style: italic;
-      color: $black;
-      display: inline-block;
-      &:before{
-        width: 16px;
-        height: 12px;
-        display: inline-block;
-        content: "";
-        margin-right: 10px;
-        background: url('/img/i-testdrive.svg') center no-repeat;
-        vertical-align: middle;
-      }
-    }
-    &__available{
-      line-height: normal;
-      font-size: 14px;
-      letter-spacing: 0.1em;
-      text-decoration-line: underline;
-      font-style: italic;
-      color: $black;
-      display: inline-block;
-      margin-left: 10px;
-      &:before{
-        width: 16px;
-        height: 12px;
-        display: inline-block;
-        content: "";
-        margin-right: 10px;
-        background: url('/img/i-available.svg') center no-repeat;
-        vertical-align: middle;
-      }
-    }
-  }
+
+.page-models-cars{
+  margin-top: 100px;
 }
 
 .filter-block{

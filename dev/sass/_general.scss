@@ -170,7 +170,7 @@ section {
     }
   }
   &-typical-o{                    // кнопка без бекграунда (пустая)
-    border: 3px solid #CC0033;
+    border: 3px solid $red;
     color: $black;
     &:hover {
       background: $red;

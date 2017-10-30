@@ -53,3 +53,148 @@
     }
   }
 }
+
+
+// services
+.services {
+  background-image: url(../img/bg-services.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+.services-list-wrapper {
+  @include row-flex();
+  @include wrapper();
+}
+.services-list {
+  @include col();
+  @include size(6);
+  padding-right: 190px;
+  background-color: #fff;
+  background-image: url(../img/bg-services-toyota.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  box-sizing: border-box;
+  box-shadow: 10px 10px 40px rgba(77, 79, 83, 0.3);
+  // border: 1px solid red;
+
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 90px 0;
+    padding-left: 80px;
+    cursor: pointer;
+
+    &:after {
+      content: "";
+      display: block;
+      width: 75px;
+      border-top: 1px dashed $red;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      opacity: .4;
+      transition: $tr;
+    }
+    &:hover .services-list__icon {
+      opacity: 1;
+    }
+    &:hover:after {
+      opacity: 1;
+    }
+    &:hover .services-list__name {
+      font-weight: bold;
+    }
+
+  }
+  &__icon {
+    vertical-align: middle;
+    opacity: .4;
+    transition: $tr;
+  }
+  &__name {
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 24px;
+    letter-spacing: .1em;
+    color: inherit;
+    text-decoration: none;
+  }
+}
+// eof services
+
+// news
+.btn-wrapper {
+  text-align: center;
+}
+.news .btn-typical {
+  display: inline-block;
+}
+.news .section-title {
+  margin-bottom: 50px; //TODO: fix
+}
+.news-grid {
+  @include row-flex();
+  @include wrapper();
+
+  &-item {
+    @include col();
+    
+    letter-spacing: .1em;
+    &__date {
+      position: relative;
+      color: #4D4F53;
+      font-size: 24px;
+      font-weight: bold;
+
+      &:before {
+        content: "";
+        display: inline-block;
+        height: 18px;
+        width: 6px;
+        margin-right: 10px;
+        background-color: $red;
+        border-radius: 100px;
+      }
+    }
+
+    &__img {
+      width: 100%;
+      height: auto;
+    }
+    &__heading {
+      font-size: 24px;
+      font-style: $f-td;
+      font-weight: bold;
+
+
+      // letter-spacing: .1em;
+    }
+    &--half {
+      @include size(6);
+      @include col();
+      margin-bottom: 100px;
+    }
+    &--half  &__text {
+      padding-left: 45px;
+      position: relative;
+      padding-right: 80px;
+    }
+    &--half  &__date {
+      position: absolute;
+      left: 0;
+      top: 0;
+      transform: rotate(90deg) translateY(4px);
+      transform-origin: 0 100% ;
+
+    }
+
+    .btn-more {
+      float: right;
+      margin-top: auto;
+    }
+  }
+
+}
+// eof news

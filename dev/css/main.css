@@ -39,6 +39,9 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+section {
+  padding-bottom: 200px; }
+
 .clearfix:after, .wrapper:after, .car-card:after, .filter__icons:after, .available-car-info:after, .test-drive-card:after, .test-drive-pace:after, .test-drive-terms__description:after, .test-drive-form__car:after {
   content: "";
   display: table;
@@ -82,6 +85,13 @@ body {
       .section-title:before {
         width: 30px;
         height: 20px; } }
+
+.section-subtitle {
+  margin-top: 10px;
+  font-size: 14px;
+  margin-bottom: 50px;
+  font-style: italic;
+  text-align: center; }
 
 /*хлебные крошки с белыми точками , если нужны черные, то прописать
 .breadcrumbs__item:not(:first-child)::before {
@@ -129,6 +139,7 @@ body {
 .btn {
   display: inline-block;
   text-transform: uppercase;
+  text-decoration: none;
   font-family: inherit;
   outline: none;
   border: none;
@@ -719,6 +730,165 @@ input[data-empty="false"] + label {
       cursor: default; }
     .car-grid-item__link {
       margin: 0 20px 0; }
+
+.services {
+  background-image: url(../img/bg-services.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain; }
+
+.services-list-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding-left: 0px;
+  padding-right: 0px; }
+  @media screen and (max-width: 992px) {
+    .services-list-wrapper {
+      padding-left: 15px;
+      padding-right: 15px; } }
+
+.services-list {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: calc(100% / 12 * 6 - 30px);
+  padding-right: 190px;
+  background-color: #fff;
+  background-image: url(../img/bg-services-toyota.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  box-sizing: border-box;
+  -webkit-box-shadow: 10px 10px 40px rgba(77, 79, 83, 0.3);
+  box-shadow: 10px 10px 40px rgba(77, 79, 83, 0.3); }
+  .services-list__item {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 90px 0;
+    padding-left: 80px;
+    cursor: pointer; }
+    .services-list__item:after {
+      content: "";
+      display: block;
+      width: 75px;
+      border-top: 1px dashed #CC0033;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      opacity: .4;
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+    .services-list__item:hover .services-list__icon {
+      opacity: 1; }
+    .services-list__item:hover:after {
+      opacity: 1; }
+    .services-list__item:hover .services-list__name {
+      font-weight: bold; }
+  .services-list__icon {
+    vertical-align: middle;
+    opacity: .4;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+  .services-list__name {
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 24px;
+    letter-spacing: .1em;
+    color: inherit;
+    text-decoration: none; }
+
+.btn-wrapper {
+  text-align: center; }
+
+.news .btn-typical {
+  display: inline-block; }
+
+.news .section-title {
+  margin-bottom: 50px; }
+
+.news-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding-left: 0px;
+  padding-right: 0px; }
+  @media screen and (max-width: 992px) {
+    .news-grid {
+      padding-left: 15px;
+      padding-right: 15px; } }
+  .news-grid-item {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-left: 15px;
+    margin-right: 15px;
+    letter-spacing: .1em; }
+    .news-grid-item__date {
+      position: relative;
+      color: #4D4F53;
+      font-size: 24px;
+      font-weight: bold; }
+      .news-grid-item__date:before {
+        content: "";
+        display: inline-block;
+        height: 18px;
+        width: 6px;
+        margin-right: 10px;
+        background-color: #CC0033;
+        border-radius: 100px; }
+    .news-grid-item__img {
+      width: 100%;
+      height: auto; }
+    .news-grid-item__heading {
+      font-size: 24px;
+      font-style: "Toyota Display";
+      font-weight: bold; }
+    .news-grid-item--half {
+      width: calc(100% / 12 * 6 - 30px);
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      word-wrap: break-word;
+      margin-left: 15px;
+      margin-right: 15px;
+      margin-bottom: 100px; }
+    .news-grid-item--half .news-grid-item__text {
+      padding-left: 45px;
+      position: relative;
+      padding-right: 80px; }
+    .news-grid-item--half .news-grid-item__date {
+      position: absolute;
+      left: 0;
+      top: 0;
+      -webkit-transform: rotate(90deg) translateY(4px);
+      -ms-transform: rotate(90deg) translateY(4px);
+      transform: rotate(90deg) translateY(4px);
+      -webkit-transform-origin: 0 100%;
+      -ms-transform-origin: 0 100%;
+      transform-origin: 0 100%; }
+    .news-grid-item .btn-more {
+      float: right;
+      margin-top: auto; }
 
 .page-availible-head {
   -webkit-box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5);

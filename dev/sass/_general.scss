@@ -22,6 +22,9 @@ body {
   box-sizing: border-box;
 }
 
+section {
+  padding-bottom: 200px;
+}
 .clearfix:after {
   content: "";
   display: table;
@@ -79,6 +82,13 @@ body {
       height: 20px;
     }
   }
+}
+.section-subtitle {
+  margin-top: 10px;
+  font-size: 14px;
+  margin-bottom: 50px; //TODO: combine with subtitle
+  font-style: italic;
+  text-align: center;
 }
 
 /*хлебные крошки с белыми точками , если нужны черные, то прописать
@@ -140,6 +150,7 @@ body {
 .btn{       // просто тело кнопки
   display: inline-block;
   text-transform: uppercase;
+  text-decoration: none;
   font-family: inherit;
   outline: none;
   border: none;
@@ -159,7 +170,7 @@ body {
     }
   }
   &-typical-o{                    // кнопка без бекграунда (пустая)
-    border: 3px solid #CC0033;
+    border: 3px solid $red;
     color: $black;
     &:hover {
       background: $red;

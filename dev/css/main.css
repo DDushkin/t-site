@@ -898,7 +898,7 @@ input[data-empty="false"] + label {
   max-width: 100%;
   width: 100%;
   min-height: 300px;
-  margin-bottom: 0;
+  padding-bottom: 0;
   background-color: #767676;
   background-image: url(../img/bg-available.jpg);
   background-repeat: no-repeat;
@@ -955,16 +955,13 @@ input[data-empty="false"] + label {
     .car-card__image img {
       width: 100%; }
 
-.page-availible-content {
-  margin-bottom: 225px; }
-
 .page-models-head {
   overflow: hidden;
   position: relative;
   max-width: 100%;
   width: 100%;
   min-height: 210px;
-  margin-bottom: 0;
+  padding-bottom: 0;
   z-index: 1;
   color: #23171A; }
   .page-models-head .breadcrumbs {
@@ -1196,7 +1193,6 @@ input[data-empty="false"] + label {
   background-size: cover;
   padding: 160px 0;
   color: white;
-  margin-top: 160px;
   margin-bottom: 200px; }
 
 .test-drive__wrapper {
@@ -1229,7 +1225,7 @@ input[data-empty="false"] + label {
   max-width: 100%;
   width: 100%;
   min-height: 300px;
-  margin-bottom: 0;
+  padding-bottom: 0;
   background-color: #767676;
   background-image: url(../img/bg-testdrive-head.jpg);
   background-repeat: no-repeat;
@@ -1412,6 +1408,9 @@ input[data-empty="false"] + label {
     -webkit-text-decoration-line: underline;
     text-decoration-line: underline; }
 
+.page-testdrive-form {
+  padding-bottom: 0; }
+
 .page-tradein-head {
   -webkit-box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5);
   box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5);
@@ -1420,7 +1419,7 @@ input[data-empty="false"] + label {
   max-width: 100%;
   width: 100%;
   min-height: 300px;
-  margin-bottom: 0;
+  padding-bottom: 0;
   background: url(../img/bg-tradein.jpg), -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(rgba(255, 255, 255, 0)));
   background: url(../img/bg-tradein.jpg), -webkit-linear-gradient(top, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
   background: url(../img/bg-tradein.jpg), -o-linear-gradient(top, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);

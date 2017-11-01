@@ -37,7 +37,7 @@ section {
 //   your styles
 // }
 
-.container {     
+.container {
   max-width: 1310px;
 }
 
@@ -51,7 +51,7 @@ section {
 }
 
 .bg-cyan{
-  background: url(/img/bg-models-filter.jpg);    //Странный серый бекграунд
+  background: url(../img/bg-models-filter.jpg);    //Странный серый бекграунд
 }
 .section-title {                                  //Заголовок 40px со значком тойота
   font-size: 40px;
@@ -146,7 +146,28 @@ section {
     }
   }
 }
-
+.is-checked{
+  &:after {
+    display: inline-block;
+    content: "";
+    width: 30px;
+    height: 12px;
+    margin-left: auto;
+    background: url('../img/i-comparison-check.svg') center no-repeat;
+    vertical-align: middle;
+  }
+  &-o{
+    &:after {
+      display: inline-block;
+      content: "";
+      width: 30px;
+      height: 30px;
+      margin-left: auto;
+      background: url('../img/i-comparison-check-o.svg') center no-repeat;
+      vertical-align: middle;
+    }
+  }
+}
 .btn{       // просто тело кнопки
   display: inline-block;
   text-transform: uppercase;
@@ -200,7 +221,7 @@ section {
     display: inline-block;
     content: "";
     margin-left: 10px;
-    background: url('/img/i-more-arrow.svg') center no-repeat;
+    background: url('../img/i-more-arrow.svg') center no-repeat;
     vertical-align: middle;
   }
   &:focus{
@@ -268,37 +289,37 @@ input[type="radio"] + .checkbox-label:hover::before {
 .ico{
   &__bodytype{
     &:before{
-      background: url('/img/i-bodytype.svg') center no-repeat;
+      background: url('../img/i-bodytype.svg') center no-repeat;
     }
   }
   &__capacity{
     &:before{
-      background: url('/img/i-capacity.svg') center no-repeat;
+      background: url('../img/i-capacity.svg') center no-repeat;
     }
   }
   &__transmission{
     &:before{
-      background: url('/img/i-transmission.svg') center no-repeat;
+      background: url('../img/i-transmission.svg') center no-repeat;
     }
   }
   &__gastype{
     &:before{
-      background: url('/img/i-gastype.svg') center no-repeat;
+      background: url('../img/i-gastype.svg') center no-repeat;
     }
   }
   &__path{
     &:before{
-      background: url('/img/i-path.svg') center no-repeat;
+      background: url('../img/i-path.svg') center no-repeat;
     }
   }
   &__available{
     &:before{
-      background: url('/img/i-available-tick.svg') center no-repeat;
+      background: url('../img/i-available-tick.svg') center no-repeat;
     }
   }
   &__price{
     &:before{
-      background: url('/img/i-price.svg') center no-repeat;
+      background: url('../img/i-price.svg') center no-repeat;
     }
   }
 }
@@ -317,7 +338,7 @@ input[type="radio"] + .checkbox-label:hover::before {
       display: inline-block;
       content: "";
       margin-right: 10px;
-      background: url('/img/i-testdrive.svg') center no-repeat;
+      background: url('../img/i-testdrive.svg') center no-repeat;
       vertical-align: middle;
     }
   }
@@ -328,7 +349,7 @@ input[type="radio"] + .checkbox-label:hover::before {
       display: inline-block;
       content: "";
       margin-right: 10px;
-      background: url('/img/i-available.svg') center no-repeat;
+      background: url('../img/i-available.svg') center no-repeat;
       vertical-align: middle;
     }
   }

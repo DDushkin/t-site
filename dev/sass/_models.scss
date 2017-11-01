@@ -52,7 +52,7 @@
     display: block;
     content: "";
     margin: 0 auto 10px;
-    background: url('/img/i-price80x60.svg') center no-repeat;
+    background: url('../img/i-price80x60.svg') center no-repeat;
     vertical-align: middle;
   }
   &__bodytype:before{
@@ -61,7 +61,7 @@
     display: block;
     content: "";
     margin: 0 auto 10px;
-    background: url('/img/i-bodytype80x60.svg') center no-repeat;
+    background: url('../img/i-bodytype80x60.svg') center no-repeat;
     vertical-align: middle;
   }
   &__consumption:before{
@@ -70,7 +70,7 @@
     display: block;
     content: "";
     margin: 0 auto 10px;
-    background: url('/img/i-consumption80x60.svg') center no-repeat;
+    background: url('../img/i-consumption80x60.svg') center no-repeat;
     vertical-align: middle;
   }
   &__transmission:before{
@@ -79,7 +79,7 @@
     display: block;
     content: "";
     margin: 0 auto 10px;
-    background: url('/img/i-transmission80x60.svg') center no-repeat;
+    background: url('../img/i-transmission80x60.svg') center no-repeat;
     vertical-align: middle;
   }
   &__gastype:before{
@@ -88,7 +88,7 @@
     display: block;
     content: "";
     margin: 0 auto 10px;
-    background: url('/img/i-gastype80x60.svg') center no-repeat;
+    background: url('../img/i-gastype80x60.svg') center no-repeat;
     vertical-align: middle;
   }
 
@@ -267,7 +267,7 @@
   }
 }
 .page-models-testdrive{
-  background: url(/img/bg-testdrive.jpg);
+  background: url(../img/bg-testdrive.jpg);
   background-position: left center;
   background-size: cover;
   padding:160px 0;

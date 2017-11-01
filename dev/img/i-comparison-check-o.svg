@@ -1,0 +1,24 @@
+<svg width="30" height="30" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Group 2</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-2079 -662)">
+<g id="Group 2">
+<g id="Path">
+<use xlink:href="#path0_fill" transform="translate(2087 671)" fill="#23171A"/>
+</g>
+<g id="Ellipse">
+<mask id="mask0_outline_ins">
+<use xlink:href="#path1_fill" fill="white" transform="translate(2079 662)"/>
+</mask>
+<g mask="url(#mask0_outline_ins)">
+<use xlink:href="#path2_stroke_2x" transform="translate(2079 662)" fill="#23171A"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 5.625 12L 0 6.17143L 2.38636 3.77143L 5.625 7.02857L 12.6136 0L 15 2.4L 5.625 12Z"/>
+<path id="path1_fill" d="M 30 15C 30 23.2843 23.2843 30 15 30C 6.71573 30 0 23.2843 0 15C 0 6.71573 6.71573 0 15 0C 23.2843 0 30 6.71573 30 15Z"/>
+<path id="path2_stroke_2x" d="M 28 15C 28 22.1797 22.1797 28 15 28L 15 32C 24.3888 32 32 24.3888 32 15L 28 15ZM 15 28C 7.8203 28 2 22.1797 2 15L -2 15C -2 24.3888 5.61116 32 15 32L 15 28ZM 2 15C 2 7.8203 7.8203 2 15 2L 15 -2C 5.61116 -2 -2 5.61116 -2 15L 2 15ZM 15 2C 22.1797 2 28 7.8203 28 15L 32 15C 32 5.61116 24.3888 -2 15 -2L 15 2Z"/>
+</defs>
+</svg>

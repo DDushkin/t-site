@@ -92,8 +92,21 @@ input[data-empty="false"] + label {
   color: #fff;
   background:$black url('../img/bg-footer.png') center bottom no-repeat;
 
+  &__wrapper {
+    @include row-flex();
+    @include wrapper();
+  }
   &__item {
     font-size: 14px;
+    @include col();
+    @include size(3);
+
+    &--small {
+      @include size(2);
+    }
+    &--big {
+      @include size(4);
+    }
   }
   &__heading {
     margin-bottom: 10px;
@@ -109,6 +122,40 @@ input[data-empty="false"] + label {
     &:hover {
       text-decoration: underline;
     }
+  }
+}
+.social {
+  display: flex;
+  flex-direction: row;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    margin-right: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    &:last-of-type {
+      margin-right: 0;
+    }
+    &:hover { // TODO: add hover effect
+      
+    }
+
+    object {
+      pointer-events: none;
+    }
+  }
+}
+.footer-address {
+  &__icon {
+    margin-right: 17px;
+    vertical-align: middle;
+  }
+  &__text {
+    font-style: italic;
   }
 }
 // eof footer-info

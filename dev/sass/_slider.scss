@@ -82,12 +82,14 @@
   .footer-slider {
     width: 100%;
     overflow: hidden;
+
     &__item {
-      width: 301px; // magic numbers
+      width: 301px; // TODO: remove magic numbers
       height: 176px;
       overflow: hidden;
       position: relative;
       cursor: pointer;
+      outline: none; // to remove blue line between slides
 
       img {
         position: absolute;

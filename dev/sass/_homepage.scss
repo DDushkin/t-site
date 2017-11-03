@@ -6,7 +6,7 @@
   @include row-flex();
   @include wrapper(); // outer container 1290px for now
   margin-top: 20px;
-  margin-bottom: -30px;
+  margin-bottom: -30px; //TODO: 
 
   &-item {
     @include col();
@@ -69,7 +69,7 @@
 .services-list {
   @include col();
   @include size(6);
-  padding-right: 190px;
+  padding-right: 180px;
   background-color: #fff;
   background-image: url(../img/bg-services-toyota.svg);
   background-repeat: no-repeat;

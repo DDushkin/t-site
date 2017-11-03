@@ -11,7 +11,7 @@
 <g id="Group">
 <g id="Group">
 <g id="Vector">
-<use xlink:href="#path0_fill" transform="translate(-274.12 3092.61)" fill="#CC0033" fill-opacity="0.4"/>
+<use xlink:href="#path0_fill" transform="translate(-274.12 3092.61)" fill="#CC0033"/>
 </g>
 </g>
 </g>
@@ -24,7 +24,7 @@
 <g id="Group">
 <g id="Group">
 <g id="Vector">
-<use xlink:href="#path1_fill" transform="translate(-285 3066.14)" fill="#CC0033" fill-opacity="0.4"/>
+<use xlink:href="#path1_fill" transform="translate(-285 3066.14)" fill="#CC0033"/>
 </g>
 </g>
 </g>
@@ -37,7 +37,7 @@
 <g id="Group">
 <g id="Group">
 <g id="Vector">
-<use xlink:href="#path2_fill" transform="translate(-269.871 3071.4)" fill="#CC0033" fill-opacity="0.4"/>
+<use xlink:href="#path2_fill" transform="translate(-269.871 3071.4)" fill="#CC0033"/>
 </g>
 </g>
 </g>
@@ -50,7 +50,7 @@
 <g id="Group">
 <g id="Group">
 <g id="Vector">
-<use xlink:href="#path3_fill" transform="translate(-231.566 3092.61)" fill="#CC0033" fill-opacity="0.4"/>
+<use xlink:href="#path3_fill" transform="translate(-231.566 3092.61)" fill="#CC0033"/>
 </g>
 </g>
 </g>
@@ -63,7 +63,7 @@
 <g id="Group">
 <g id="Group">
 <g id="Vector">
-<use xlink:href="#path4_fill" transform="translate(-255.45 3099.86)" fill="#CC0033" fill-opacity="0.4"/>
+<use xlink:href="#path4_fill" transform="translate(-255.45 3099.86)" fill="#CC0033"/>
 </g>
 </g>
 </g>
@@ -76,7 +76,7 @@
 <g id="Group">
 <g id="Group">
 <g id="Vector">
-<use xlink:href="#path5_fill" transform="translate(-256.352 3093.32)" fill="#CC0033" fill-opacity="0.4"/>
+<use xlink:href="#path5_fill" transform="translate(-256.352 3093.32)" fill="#CC0033"/>
 </g>
 </g>
 </g>
@@ -89,7 +89,7 @@
 <g id="Group">
 <g id="Group">
 <g id="Vector">
-<use xlink:href="#path6_fill" transform="translate(-272.189 3108.71)" fill="#CC0033" fill-opacity="0.4"/>
+<use xlink:href="#path6_fill" transform="translate(-272.189 3108.71)" fill="#CC0033"/>
 </g>
 </g>
 </g>
@@ -102,35 +102,7 @@
 <g id="Group">
 <g id="Group">
 <g id="Vector">
-<use xlink:href="#path7_fill" transform="translate(-227.124 3108.71)" fill="#CC0033" fill-opacity="0.4"/>
-</g>
-</g>
-</g>
-</g>
-</g>
-</g>
-</g>
-<g id="Group">
-<g id="Group">
-<g id="Group">
-<g id="Group">
-<g id="Group">
-<g id="Group">
-<g id="Vector">
-<use xlink:href="#path8_fill" transform="translate(-227.639 3057.94)" fill="#CC0033" fill-opacity="0.4"/>
-</g>
-</g>
-</g>
-</g>
-</g>
-</g>
-<g id="Group">
-<g id="Group">
-<g id="Group">
-<g id="Group">
-<g id="Group">
-<g id="Vector">
-<use xlink:href="#path9_fill" transform="translate(-227.573 3053.13)" fill="#CC0033" fill-opacity="0.4"/>
+<use xlink:href="#path7_fill" transform="translate(-227.124 3108.71)" fill="#CC0033"/>
 </g>
 </g>
 </g>
@@ -145,7 +117,7 @@
 <g id="Group">
 <g id="Group">
 <g id="Vector">
-<use xlink:href="#path10_fill" transform="translate(-275.987 3057.94)" fill="#CC0033" fill-opacity="0.4"/>
+<use xlink:href="#path8_fill" transform="translate(-227.639 3057.94)" fill="#CC0033"/>
 </g>
 </g>
 </g>
@@ -158,7 +130,35 @@
 <g id="Group">
 <g id="Group">
 <g id="Vector">
-<use xlink:href="#path11_fill" transform="translate(-280.88 3053.13)" fill="#CC0033" fill-opacity="0.4"/>
+<use xlink:href="#path9_fill" transform="translate(-227.573 3053.13)" fill="#CC0033"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g id="Group">
+<g id="Group">
+<g id="Group">
+<g id="Group">
+<g id="Group">
+<g id="Group">
+<g id="Vector">
+<use xlink:href="#path10_fill" transform="translate(-275.987 3057.94)" fill="#CC0033"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g id="Group">
+<g id="Group">
+<g id="Group">
+<g id="Group">
+<g id="Group">
+<g id="Vector">
+<use xlink:href="#path11_fill" transform="translate(-280.88 3053.13)" fill="#CC0033"/>
 </g>
 </g>
 </g>
@@ -171,7 +171,7 @@
 <g id="Group">
 <g id="Group">
 <g id="Vector">
-<use xlink:href="#path12_fill" transform="translate(-256.961 3038)" fill="#CC0033" fill-opacity="0.4"/>
+<use xlink:href="#path12_fill" transform="translate(-256.961 3038)" fill="#CC0033"/>
 </g>
 </g>
 </g>

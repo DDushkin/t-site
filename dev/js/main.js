@@ -63,13 +63,22 @@ $(document).ready(function(){
       // Create the Google Map using our element and options defined above
       var map = new google.maps.Map(mapElement, mapOptions);
       var image = {
-        url: 'img/i-footer-map.svg',
+        url: 'img/i-footer-info-map-top.svg',
         // This marker is 20 pixels wide by 32 pixels high.
-        size: new google.maps.Size(83, 102),
+        size: new google.maps.Size(41, 58),
         // The origin for this image is (0, 0).
         origin: new google.maps.Point(0, 0),
         // The anchor for this image is the base of the flagpole at (0, 32).
-        anchor: new google.maps.Point(0, 80)
+        anchor: new google.maps.Point(0, 58)
+      };
+      var image2 = {
+        url: 'img/i-footer-info-map-bottom.svg',
+        // This marker is 20 pixels wide by 32 pixels high.
+        size: new google.maps.Size(58, 22),
+        // The origin for this image is (0, 0).
+        origin: new google.maps.Point(0, 0),
+        // The anchor for this image is the base of the flagpole at (0, 32).
+        anchor: new google.maps.Point(8, 15)
       };
       // Let's also add a marker while we're at it
       var marker = new google.maps.Marker({
@@ -78,6 +87,13 @@ $(document).ready(function(){
         icon: image,
         // animation: google.maps.Animation.DROP, // appear animation
         title: 'Toyota Автосамит'
+      });
+      var marker2 = new google.maps.Marker({
+        position: new google.maps.LatLng(50.406626,30.6757033),
+        map: map,
+        icon: image2,
+        // animation: google.maps.Animation.DROP, // appear animation
+        title: ''
       });
       marker.setAnimation(google.maps.Animation.BOUNCE);
     }
@@ -133,5 +149,30 @@ $(document).ready(function(){
       console.log("# click");
       return false;
     }
+  });
+
+  // 04 slider
+   $('.slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    // arrows: true,
+    fade: true,
+    asNavFor: '.slider-carousel'
+  });
+
+  $('.slider-carousel').slick({
+    dots: true,
+    infinite: true,
+    // speed: 300,
+    // slidesToShow: 5,
+    slidesToScroll: 1,
+    centerMode: true,
+    // autoplay: true,
+    draggable: false,
+    // autoplaySpeed: 2000,
+    variableWidth: true,
+    asNavFor: '.slider',
+    focusOnSelect: true
+
   });
 });  // eof doc.ready

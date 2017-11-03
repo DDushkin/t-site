@@ -428,6 +428,31 @@ input[type="radio"] + .checkbox-label:hover::before {
       -webkit-box-shadow: rgba(77, 79, 83, 0.25);
       box-shadow: rgba(77, 79, 83, 0.25); }
 
+.slick-slide {
+  outline: none !important; }
+
+.slick-slider {
+  width: 100%;
+  overflow: hidden; }
+
+.slider-carousel {
+  width: 100%;
+  overflow: hidden; }
+  .slider-carousel__item {
+    width: 360px;
+    height: 180px;
+    position: relative; }
+    .slider-carousel__item img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+      object-fit: cover;
+      outline: none;
+      cursor: pointer; }
+
 .header {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -468,6 +493,14 @@ input[type="radio"] + .checkbox-label:hover::before {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+  .logo-part__logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
 
 nav {
   position: relative; }
@@ -860,7 +893,7 @@ input[data-empty="false"] + label {
   margin-left: 15px;
   margin-right: 15px;
   width: calc(100% / 12 * 6 - 30px);
-  padding-right: 190px;
+  padding-right: 180px;
   background-color: #fff;
   background-image: url(../img/bg-services-toyota.svg);
   background-repeat: no-repeat;

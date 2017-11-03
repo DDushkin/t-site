@@ -98,7 +98,6 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-
       }
 
       &:after {
@@ -116,3 +115,34 @@
     }
   }
 // eof footer slider
+
+// 04 slider
+.slick-slide {
+  outline: none !important;
+}
+.slick-slider {
+  width: 100%;
+  overflow: hidden;
+}
+.slider-carousel {
+  width: 100%;
+  overflow: hidden;
+
+  &__item {
+    width: 360px;
+    height: 180px;
+    position: relative;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+  
+}
+// eof 04 slider

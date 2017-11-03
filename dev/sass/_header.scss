@@ -28,6 +28,10 @@
 .logo-part {
   display: flex;
   align-items: center;
+  &__logo {
+    display: flex;
+    flex-direction: column;
+  }
 }
 // eof top-bar
 

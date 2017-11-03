@@ -158,4 +158,19 @@ input[data-empty="false"] + label {
     font-style: italic;
   }
 }
+.footer-phone {
+  font-size: 14px;
+  margin-top: 10px;
+  &__heading {
+    font-style: italic;
+  }
+  &__number {
+    text-decoration: none;
+    font-family: $f-td;
+    color: inherit;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
 // eof footer-info

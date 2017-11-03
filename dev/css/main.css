@@ -747,6 +747,18 @@ input[data-empty="false"] + label {
 .footer-address__text {
   font-style: italic; }
 
+.footer-phone {
+  font-size: 14px;
+  margin-top: 10px; }
+  .footer-phone__heading {
+    font-style: italic; }
+  .footer-phone__number {
+    text-decoration: none;
+    font-family: "Toyota Display";
+    color: inherit; }
+    .footer-phone__number:hover {
+      text-decoration: underline; }
+
 .cars-title {
   margin-top: 50px; }
 

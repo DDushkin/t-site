@@ -71,7 +71,7 @@ input[data-empty="false"] + label {
 }
 
 .footer-feedback-text {
-  width: 48.837209302325581395%;
+  width: 48.837209302325581395%; //TODO: remove magic numbers
 
   &__item {
     font-style: italic;

@@ -341,7 +341,7 @@ input[type="radio"] + .checkbox-label:hover::before {
   &__testdrive{
     &:before{
       width: 16px;
-      height: 12px;
+      height: 16px; // fixed hidden part of image
       display: inline-block;
       content: "";
       margin-right: 10px;

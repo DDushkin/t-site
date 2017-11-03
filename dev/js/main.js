@@ -126,4 +126,12 @@ $(document).ready(function(){
     }, 'xml');
     });
   });
+
+  //disable dummy anchor events
+  $("a").click(function(){
+    if ($(this).attr("href")=="#") {
+      console.log("# click");
+      return false;
+    }
+  });
 });  // eof doc.ready

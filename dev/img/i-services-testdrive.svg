@@ -1,11 +1,7 @@
-<svg width="80" height="80" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="78" height="79" viewBox="0 0 78 79" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <title>Group</title>
 <desc>Created using Figma</desc>
-<g id="Canvas" transform="translate(286 -3037)">
-<clipPath id="clip-0" clip-rule="evenodd">
-<path d="M -286 3037L -206 3037L -206 3117L -286 3117L -286 3037Z" fill="#FFFFFF"/>
-</clipPath>
-<g id="Group" clip-path="url(#clip-0)">
+<g id="Canvas" transform="translate(285 -3038)">
 <g id="Group">
 <g id="Group">
 <g id="Group">
@@ -15,7 +11,7 @@
 <g id="Group">
 <g id="Group">
 <g id="Vector">
-<use xlink:href="#path0_fill" transform="translate(-271.12 3092.61)" fill="#CC0033"/>
+<use xlink:href="#path0_fill" transform="translate(-274.12 3092.61)" fill="#CC0033" fill-opacity="0.4"/>
 </g>
 </g>
 </g>
@@ -28,7 +24,7 @@
 <g id="Group">
 <g id="Group">
 <g id="Vector">
-<use xlink:href="#path1_fill" transform="translate(-282 3066.14)" fill="#CC0033"/>
+<use xlink:href="#path1_fill" transform="translate(-285 3066.14)" fill="#CC0033" fill-opacity="0.4"/>
 </g>
 </g>
 </g>
@@ -41,7 +37,7 @@
 <g id="Group">
 <g id="Group">
 <g id="Vector">
-<use xlink:href="#path2_fill" transform="translate(-266.871 3071.4)" fill="#CC0033"/>
+<use xlink:href="#path2_fill" transform="translate(-269.871 3071.4)" fill="#CC0033" fill-opacity="0.4"/>
 </g>
 </g>
 </g>
@@ -54,7 +50,7 @@
 <g id="Group">
 <g id="Group">
 <g id="Vector">
-<use xlink:href="#path3_fill" transform="translate(-228.566 3092.61)" fill="#CC0033"/>
+<use xlink:href="#path3_fill" transform="translate(-231.566 3092.61)" fill="#CC0033" fill-opacity="0.4"/>
 </g>
 </g>
 </g>
@@ -67,7 +63,7 @@
 <g id="Group">
 <g id="Group">
 <g id="Vector">
-<use xlink:href="#path4_fill" transform="translate(-252.45 3099.86)" fill="#CC0033"/>
+<use xlink:href="#path4_fill" transform="translate(-255.45 3099.86)" fill="#CC0033" fill-opacity="0.4"/>
 </g>
 </g>
 </g>
@@ -80,7 +76,7 @@
 <g id="Group">
 <g id="Group">
 <g id="Vector">
-<use xlink:href="#path5_fill" transform="translate(-253.352 3093.32)" fill="#CC0033"/>
+<use xlink:href="#path5_fill" transform="translate(-256.352 3093.32)" fill="#CC0033" fill-opacity="0.4"/>
 </g>
 </g>
 </g>
@@ -93,7 +89,7 @@
 <g id="Group">
 <g id="Group">
 <g id="Vector">
-<use xlink:href="#path6_fill" transform="translate(-269.189 3108.71)" fill="#CC0033"/>
+<use xlink:href="#path6_fill" transform="translate(-272.189 3108.71)" fill="#CC0033" fill-opacity="0.4"/>
 </g>
 </g>
 </g>
@@ -106,7 +102,7 @@
 <g id="Group">
 <g id="Group">
 <g id="Vector">
-<use xlink:href="#path7_fill" transform="translate(-224.124 3108.71)" fill="#CC0033"/>
+<use xlink:href="#path7_fill" transform="translate(-227.124 3108.71)" fill="#CC0033" fill-opacity="0.4"/>
 </g>
 </g>
 </g>
@@ -121,7 +117,7 @@
 <g id="Group">
 <g id="Group">
 <g id="Vector">
-<use xlink:href="#path8_fill" transform="translate(-224.639 3057.94)" fill="#CC0033"/>
+<use xlink:href="#path8_fill" transform="translate(-227.639 3057.94)" fill="#CC0033" fill-opacity="0.4"/>
 </g>
 </g>
 </g>
@@ -134,7 +130,7 @@
 <g id="Group">
 <g id="Group">
 <g id="Vector">
-<use xlink:href="#path9_fill" transform="translate(-224.573 3053.13)" fill="#CC0033"/>
+<use xlink:href="#path9_fill" transform="translate(-227.573 3053.13)" fill="#CC0033" fill-opacity="0.4"/>
 </g>
 </g>
 </g>
@@ -149,7 +145,7 @@
 <g id="Group">
 <g id="Group">
 <g id="Vector">
-<use xlink:href="#path10_fill" transform="translate(-272.987 3057.94)" fill="#CC0033"/>
+<use xlink:href="#path10_fill" transform="translate(-275.987 3057.94)" fill="#CC0033" fill-opacity="0.4"/>
 </g>
 </g>
 </g>
@@ -162,7 +158,7 @@
 <g id="Group">
 <g id="Group">
 <g id="Vector">
-<use xlink:href="#path11_fill" transform="translate(-277.88 3053.13)" fill="#CC0033"/>
+<use xlink:href="#path11_fill" transform="translate(-280.88 3053.13)" fill="#CC0033" fill-opacity="0.4"/>
 </g>
 </g>
 </g>
@@ -175,8 +171,7 @@
 <g id="Group">
 <g id="Group">
 <g id="Vector">
-<use xlink:href="#path12_fill" transform="translate(-254.961 3038)" fill="#CC0033"/>
-</g>
+<use xlink:href="#path12_fill" transform="translate(-256.961 3038)" fill="#CC0033" fill-opacity="0.4"/>
 </g>
 </g>
 </g>

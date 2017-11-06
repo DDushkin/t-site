@@ -792,6 +792,57 @@ input[data-empty="false"] + label {
     .footer-phone__number:hover {
       text-decoration: underline; }
 
+.footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 65px;
+  padding-bottom: 60px; }
+  @media screen and (max-width: 992px) {
+    .footer-nav {
+      padding-left: 15px;
+      padding-right: 15px; } }
+  .footer-nav__list {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: calc(100% / 12 * 3 - 30px);
+    position: relative;
+    padding: 0; }
+    .footer-nav__list--decorated {
+      padding-left: 16px; }
+      .footer-nav__list--decorated:after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 6px;
+        height: 100%;
+        background-color: #CC0033;
+        border-radius: 100px; }
+  .footer-nav__item {
+    list-style: none;
+    margin-bottom: 10px; }
+  .footer-nav__link {
+    color: inherit;
+    text-decoration: none;
+    font-style: italic; }
+    .footer-nav__link--strong {
+      font-weight: bold;
+      font-style: normal;
+      letter-spacing: .1em; }
+
 .cars-title {
   margin-top: 50px; }
 

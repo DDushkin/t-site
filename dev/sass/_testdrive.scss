@@ -18,19 +18,23 @@
   padding: 200px 0;
   @extend .clearfix;
   &__description{
-    width: 47%;
+    //width: 47%;
+    @include col();
+    @include size(7); // col count
     background: white;
     box-shadow: 4px 4px 24px $shadow25;
     border-radius: 2px;
     color: $black;
-    padding:50px 35px 50px 140px;
+    padding:50px 35px 50px 110px;
     float:right;
     transform: translateY(15%);
   }
   &__image{
     box-shadow: 4px 4px 14px $shadow25;
     border-radius: 2px;
-    width: 48%;
+    //width: 48%;
+    @include col();
+    @include size(6); // col count
     max-height: 580px;
     position: absolute;
     z-index: 1;

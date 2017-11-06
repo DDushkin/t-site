@@ -1,0 +1,61 @@
+include partials/_mixins.pug
+
+//- title as parameter
+//- example:
+//- head("page title")
++head("mainpage")
+body
+  include partials/_header.pug
+    
+  //- main content
+  section.page-corporate-head
+    .wrapper
+      .breadcrumbs
+        ul.breadcrumbs__list
+          li.breadcrumbs__item Головна
+          li.breadcrumbs__item Корпоративним клієнтам
+        .breadcrumbs__title-wrap
+          h1.breadcrumbs__title Корпоративним клієнтам
+  section.page-corporate-models
+    .wrapper
+      .corporate-title-card
+        .corporate-title-card__image
+          img(src="../img/bg-title-card.jpg")
+        .corporate-title-card__description
+          .corporate-title-card__title.section-title Корпоративні продажі
+          .corporate-title-card__info Автомобілі марки Toyota користуються заслуженою популярністю в автопарках різних компаній. Японське якість, надійність, комфорт, безпеку роблять використання автомобілів Toyota вигідним для компаній і державних структур. Toyota є провідним світовим брендом, автомобілі цієї марки не просто стануть надійними помічниками в бізнесі, але і підкреслять рівень компанії.
+      .corporate-card
+        .corporate-card__image
+          img(src="../img/c-testdrive-card.jpg")
+        .corporate-card__description
+          .corporate-card__title Вартість володіння
+          .corporate-card__info Единий спосіб зрозуміти, що саме робить автомобіль Toyota таким особливим — проїхатися на ньому.
+          span.corporate-card_p Аби заощадити ваш час, автосалон «Тойота Фвтосаміт» пропонує вам записатись на тест-драйв моделі Toyota, яка вам сподобалася, безпосередньо на нашому сайті.
+          span.corporate-card_p Через деякий час консультанти відділу продажу автомобілів зв'яжуться з вами, щоб підтвердити вашу заявку та уточнити необхідну інформацію.
+          .corporate-card__btn.btn.btn-typical ПРОРАХУВАТИ ВАРТІСТЬ ВОЛОДІНЯ
+    
+      .corporate-service-card
+        .corporate-service-card__image
+          img(src="../img/c-testdrive-card.jpg")
+        .corporate-service-card__description
+          .corporate-service-card__title.section-title Корпоративне обслуговування
+          ul.corporate-service-card__info
+            li.corporate-service-card__info-li Довгострокові ділові зв'язки з клієнтами;
+            li.corporate-service-card__info-li Наявність одного контактної особи - професійного представника, готового допомогти в вирішенні питань або надання необхідної інформації постійно, а не тільки в момент продажу автомобілів;
+            li.corporate-service-card__info-li Розуміння індивідуальних потреб клієнта. Пропозиція повного спектру послуг в рамках пакету, розробленого за індивідуальним потребам клієнта.
+            li.corporate-service-card__info-li Спеціальні цінові пропозиції, які враховують обсяги і регулярність замовлень;
+            li.corporate-service-card__info-li Спеціальні цінові пропозиції на сервісне обслуговування та запчастини;
+            li.corporate-service-card__info-li Комплектації, які максимально відповідають потребам наших партнерів;
+            li.corporate-service-card__info-li Установка додаткового обладнання на автомобілі, відповідно до індивідуальних потреб клієнта, зі збереженням гарантійних зобов'язань;
+            li.corporate-service-card__info-li Спеціальні пропозиції за програмою Trade-in - заміні вашого парку б / у автомобілів на нові автомобілі Toyota;
+            li.corporate-service-card__info-li Зворотний викуп автомобіля, купленого у нас - Buy-Back, c урахуванням терміну експлуатації і пробігу, по найпривабливішою для Вас ціною;
+            li.corporate-service-card__info-li Своєчасне інформування клієнта про всі нові розробки і розширення модельного ряду Toyota;
+            li.corporate-service-card__info-li Можливість тест-драйву автомобіля, який Вас зацікавив;
+            li.corporate-service-card__info-li Фінансовий сервіс: 
+            li.corporate-service-card__info-li Можливість придбання автомобіля Toyota в кредит;
+            li.corporate-service-card__info-li Можливість оформлення автомобіля Toyota в лізинг; 
+            li.corporate-service-card__info-li Страхування автомобіля; 
+            li.corporate-service-card__info-li Страхування автомобіля; 
+            li.corporate-service-card__info-li Пріоритет при замовленні Ваших автомобілів;
+            li.corporate-service-card__info-li Спеціальні умови при технічному обслуговуванні; 
+            li.corporate-service-card__info-li Спеціальні умови при придбанні автомобілів Toyota співробітниками Вашої компанії для особистого користування;

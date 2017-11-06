@@ -1929,6 +1929,8 @@ input[data-empty="false"] + label {
     -webkit-transform: translateY(5%);
     -ms-transform: translateY(5%);
     transform: translateY(5%); }
+  .corporate-service-card__title:before {
+    margin: 0 0 10px; }
   .corporate-service-card__image {
     -webkit-box-shadow: 4px 4px 14px rgba(77, 79, 83, 0.25);
     box-shadow: 4px 4px 14px rgba(77, 79, 83, 0.25);

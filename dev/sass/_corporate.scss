@@ -124,6 +124,11 @@
     float:right;
     transform: translateY(5%);
   }
+  &__title{
+    &:before {
+      margin: 0 0 10px;
+    }
+  }
   &__image{
     box-shadow: 4px 4px 14px $shadow25;
     border-radius: 2px;

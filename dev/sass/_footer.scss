@@ -174,3 +174,52 @@ input[data-empty="false"] + label {
   }
 }
 // eof footer-info
+
+
+// footer-nav
+.footer-nav {
+  @include row-flex();
+  @include wrapper();
+  padding-top: 65px;
+  padding-bottom: 60px;
+
+  &__list {
+    @include col();
+    @include size(3);
+    position: relative;
+    padding: 0;
+
+    &--decorated {
+      padding-left: 16px;
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 6px;
+        height: 100%;
+        background-color: $red;
+        border-radius: 100px;
+      }
+    }
+  }
+
+  &__item {
+    list-style: none;
+    margin-bottom: 10px;
+  }
+  
+  &__link {
+    color: inherit;
+    text-decoration: none;
+    font-style: italic;
+
+    &--strong {
+      font-weight: bold; //TODO: different margins in design!
+      font-style: normal;
+      letter-spacing: .1em;
+    }
+  }
+}
+// eof footer-nav

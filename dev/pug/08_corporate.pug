@@ -1,0 +1,101 @@
+include partials/_mixins.pug
+
+//- title as parameter
+//- example:
+//- head("page title")
++head("mainpage")
+body
+  include partials/_header.pug
+    
+  //- main content
+  section.page-corporate-head
+    .wrapper
+      .breadcrumbs
+        ul.breadcrumbs__list
+          li.breadcrumbs__item Головна
+          li.breadcrumbs__item Корпоративним клієнтам
+        .breadcrumbs__title-wrap
+          h1.breadcrumbs__title Корпоративним клієнтам
+  section.page-corporate-models
+    .wrapper
+      .corporate-title-card
+        .corporate-title-card__image
+          img(src="../img/bg-title-card.jpg")
+        .corporate-title-card__description
+          h2.corporate-title-card__title.section-title Корпоративні продажі
+          p.corporate-title-card__info Автомобілі марки Toyota користуються заслуженою популярністю в автопарках різних компаній. Японське якість, надійність, комфорт, безпеку роблять використання автомобілів Toyota вигідним для компаній і державних структур. Toyota є провідним світовим брендом, автомобілі цієї марки не просто стануть надійними помічниками в бізнесі, але і підкреслять рівень компанії.
+      .corporate-card
+        .corporate-card__image
+          img(src="../img/c-testdrive-card.jpg")
+        .corporate-card__description
+          h2.corporate-card__title Вартість володіння
+          p.corporate-card__info Единий спосіб зрозуміти, що саме робить автомобіль Toyota таким особливим — проїхатися на ньому.
+          p.corporate-card_p Аби заощадити ваш час, автосалон «Тойота Фвтосаміт» пропонує вам записатись на тест-драйв моделі Toyota, яка вам сподобалася, безпосередньо на нашому сайті.
+          p.corporate-card_p Через деякий час консультанти відділу продажу автомобілів зв'яжуться з вами, щоб підтвердити вашу заявку та уточнити необхідну інформацію.
+          a.corporate-card__btn.btn.btn-typical ПРОРАХУВАТИ ВАРТІСТЬ ВОЛОДІНЯ
+    
+      .corporate-service-card.card-big
+        .card-big__image.card-big__image-right
+          img(src="../img/c-corporate-service.jpg")
+        .card-big__description.card-big__description-right
+          h2.card-big__title.card-big__title-right.section-title Корпоративне обслуговування
+          ul.card-big__info.card-big__info-right
+            li.card-big__li-right Довгострокові ділові зв'язки з клієнтами;
+            li.card-big__li-right Наявність одного контактної особи - професійного представника, готового допомогти в вирішенні питань або надання необхідної інформації постійно, а не тільки в момент продажу автомобілів;
+            li.card-big__li-right Розуміння індивідуальних потреб клієнта. Пропозиція повного спектру послуг в рамках пакету, розробленого за індивідуальним потребам клієнта.
+            li.card-big__li-right Спеціальні цінові пропозиції, які враховують обсяги і регулярність замовлень;
+            li.card-big__li-right Спеціальні цінові пропозиції на сервісне обслуговування та запчастини;
+            li.card-big__li-right Комплектації, які максимально відповідають потребам наших партнерів;
+            li.card-big__li-right Установка додаткового обладнання на автомобілі, відповідно до індивідуальних потреб клієнта, зі збереженням гарантійних зобов'язань;
+            li.card-big__li-right Спеціальні пропозиції за програмою Trade-in - заміні вашого парку б / у автомобілів на нові автомобілі Toyota;
+            li.card-big__li-right Зворотний викуп автомобіля, купленого у нас - Buy-Back, c урахуванням терміну експлуатації і пробігу, по найпривабливішою для Вас ціною;
+            li.card-big__li-right Своєчасне інформування клієнта про всі нові розробки і розширення модельного ряду Toyota;
+            li.card-big__li-right Можливість тест-драйву автомобіля, який Вас зацікавив;
+            li.card-big__li-right Фінансовий сервіс: 
+            li.card-big__li-right Можливість придбання автомобіля Toyota в кредит;
+            li.card-big__li-right Можливість оформлення автомобіля Toyota в лізинг; 
+            li.card-big__li-right Страхування автомобіля; 
+            li.card-big__li-right Страхування автомобіля; 
+            li.card-big__li-right Пріоритет при замовленні Ваших автомобілів;
+            li.card-big__li-right Спеціальні умови при технічному обслуговуванні; 
+            li.card-big__li-right Спеціальні умови при придбанні автомобілів Toyota співробітниками Вашої компанії для особистого користування;
+            
+      .corporate-lising-card.card-big
+        .card-big__image.card-big__image-left
+          img(src="../img/c-corporate-lising.jpg")
+        .card-big__description.card-big__description-left
+          h2.card-big__title.card-big__title-left.section-title Лізинг для юридичних особ
+          .card-big__info.card-big__info-left
+            p.card-big__p.card-big__p-left Лізинг - це один із сучасних ефективних фінансових інструментів, який дозволяє як юридичним особам всіх форм власності, так і фізичним особам (в т.ч. приватним підприємцям) придбати необхідне майно, який отримав його відразу після підписання договору фінансового лізингу і здійснюючи розрахунки протягом довгострокового періоду (від 1 до 5 років залежно від об'єкта та ін.).
+            p.card-big__p.card-big__p-left Після закінчення терміну лізингу і виплати лізингових платежів Лізингоодержувач стає власником даного майна.
+            p.card-big__p.card-big__p-left 4 кроки для придбання автомобіля в лізинг:
+            ol.card-big__ol.card-big__ol-left 
+              li.card-big__li.card-big__li-left Проконсультуватися з фахівцем і отримати комерційну пропозицію.
+              li.card-big__li.card-big__li-left Оформити заявку і надати пакет документів (згідно встановленого переліку).
+              li.card-big__li.card-big__li-left Підписати договір, сплатити аванс, страховку.
+              li.card-big__li.card-big__li-left Отримати автомобіль.
+              
+  section.page-corporate-managers
+    .wrapper
+      .managers-title.section-title Наші менеджери
+      .manager-list
+        .manager-card
+          img.manager-card__image
+          .manager-card__name
+          .manager-card__status
+          .manager-card__phone
+          .manager-card__mail
+        .manager-card
+          img.manager-card__image
+          .manager-card__name
+          .manager-card__status
+          .manager-card__phone
+          .manager-card__mail
+        .manager-card
+          img.manager-card__image
+          .manager-card__name
+          .manager-card__status 
+          .manager-card__phone
+          .manager-card__mail
+            
+          

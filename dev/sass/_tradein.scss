@@ -33,13 +33,17 @@
   margin-top: 70px;
   &__description{
     transform: translateY(4%);
+
+  }
+  &__title{
+    margin: 0;
   }
   &__line{
-    padding-top: 30px;
+    padding-top: 5px;
   }
   &__ico {
     display: inline-block;
-    padding-right: 40px;
+    padding-right: 30px;
   }
 }
 .page-tradein-bottom{
@@ -47,7 +51,9 @@
   text-align: center;
 }
 .tradein-form{
-  width: percentage(8/12);
+  @include col();
+  @include size(8);
+  //width: percentage(8/12);
   margin: 0 auto;
   &__input{
     width: 46%;

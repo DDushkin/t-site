@@ -1,0 +1,190 @@
+.page-corporate-head{
+  box-shadow: 0px 0px 14px $shadow50;
+  overflow: hidden;
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  min-height: 300px;
+  padding-bottom: 0;
+  background-color: #767676;
+  background-image: url(../img/bg-corporate-head.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+  color:white;
+}
+.corporate-card{
+  padding: 200px 0 0;
+  @extend .clearfix;
+  &__description{
+    //width: 47%;
+    @include col();
+    @include size(7); // col count
+    background: white;
+    box-shadow: 4px 4px 24px $shadow25;
+    border-radius: 2px;
+    color: $black;
+    padding:50px 35px 50px 110px;
+    float:right;
+    transform: translateY(15%);
+  }
+  &__image{
+    box-shadow: 4px 4px 14px $shadow25;
+    border-radius: 2px;
+    //width: 48%;
+    @include col();
+    @include size(6); // col count
+    max-height: 580px;
+    position: absolute;
+    z-index: 1;
+    img{
+      width: 100%;
+    }
+  }
+  &__title{
+    font-family: $f-td;
+    line-height: normal;
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+        margin: 0;
+  }
+  &__info{
+    padding-top: 30px;
+    line-height: normal;
+    font-size: 18px;
+        margin: 0;
+  }
+  &_p{
+    display: block;
+    padding-top: 20px;
+        margin: 0;
+  }
+  &__btn{
+    margin-top: 30px;
+    color:white;
+
+  }
+}
+.corporate-title-card{
+  padding: 100px 0 0;
+  @extend .clearfix;
+  &__description{
+    //width: 47%;
+    @include col();
+    @include size(8.5);
+    background: url(../img/bg-toyota-big.svg) no-repeat bottom left white;
+    box-shadow: 4px 4px 24px $shadow25;
+    border-radius: 2px;
+    color: $black;
+    padding: 70px 170px 65px 30px;
+    position: absolute;
+    z-index: 1;
+    transform: translateY(9%);
+        margin: 0;
+  }
+  &__image{
+    box-shadow: 4px 4px 14px $shadow25;
+    border-radius: 2px;
+    //width: 43%;
+    @include col();
+    @include size(5); // col count
+    max-height: 580px;
+    float:right;
+    z-index: 2;
+    position: relative;
+    img{
+      width: 100%;
+    }
+  }
+  &__info{
+    padding-top: 30px;
+        margin: 0;
+  }
+  &__p{
+    display: block;
+    padding-top: 20px;
+        margin: 0;
+  }
+  &__title{
+        margin: 0;
+  }
+}
+.card-big{
+  @extend .clearfix;
+    padding: 200px 0 0;
+  &__description{
+    @include col();
+
+    background: white;
+    box-shadow: 4px 4px 24px $shadow25;
+    border-radius: 2px;
+
+    color: $black;
+    &-right{
+      @include size(8.5); // col count
+      padding:70px 30px 70px 150px;
+      float:right;
+      transform: translateY(5%);
+      background: url(../img/bg-toyota-big-2.svg) no-repeat bottom left white;
+    }
+    &-left{
+      @include size(7.5); // col count
+
+      padding:70px 125px 70px 30px;
+      background: url(../img/bg-toyota-big-3.svg) no-repeat bottom right white;
+    }
+  }
+  &__title{
+    text-align: left;
+        margin: 0;
+    &:before {
+      margin: 0 0 10px;
+    }
+  }
+  &__image{
+    box-shadow: 4px 4px 14px $shadow25;
+    border-radius: 2px;
+    //width: 48%;
+    @include col();
+
+    z-index: 1;
+    &-right{
+      transform: translateX(-28%);
+      position: absolute;
+      @include size(6.6); // col count
+      max-height: 580px;
+      max-width: calc(100% / 12 * 6.6 - 30px);
+    }
+    &-left{
+      position: absolute;
+      transform: translateX(84%) translateY(35%);
+      @include size(7.6); // col count
+      max-height: 580px;
+      max-width: calc(100% / 12 * 7.6 - 30px);
+    }
+    img{
+      width: 100%;
+    }
+  }
+  &__info{
+    padding-top: 12px;
+    line-height: normal;
+    font-size: 18px;
+        margin: 0;
+    &-left{
+      padding-left: 0;
+      padding-right: 35px;
+    }
+    &-right{
+      padding-left: 25px;
+    }
+  }
+  &__p{
+    margin: 0;
+  }
+  &__ol{
+    padding-left: 20px;
+  }
+}

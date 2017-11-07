@@ -47,7 +47,9 @@
   text-align: center;
 }
 .tradein-form{
-  width: percentage(8/12);
+  @include col();
+  @include size(8);
+  //width: percentage(8/12);
   margin: 0 auto;
   &__input{
     width: 46%;

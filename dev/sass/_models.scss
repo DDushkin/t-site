@@ -22,6 +22,8 @@
 
 .filter{
   width: percentage(11/12);
+  //     @include col();
+  //     @include size(2); // col count
   margin: 0 auto;
   text-align: center;
   &__title{
@@ -223,19 +225,23 @@
   padding: 100px 0;
   @extend .clearfix;
   &__description{
-    width: 47%;
+    //width: 47%;
+    @include col();
+    @include size(7);
     background: white;
     box-shadow: 4px 4px 24px $shadow25;
     border-radius: 2px;
     color: $black;
-    padding:50px 35px 50px 140px;
+    padding:50px 35px 50px 110px;
     float:right;
     transform: translateY(15%);
   }
   &__image{
     box-shadow: 4px 4px 14px $shadow25;
     border-radius: 2px;
-    width: 48%;
+    //width: 48%;
+    @include col();
+    @include size(6);
     max-height: 450px;
     position: absolute;
     z-index: 1;
@@ -276,7 +282,8 @@
 }
 .test-drive{
   &__wrapper{
-    width: calc(50% - 40px);
+    @include col();
+    @include size(6);
     margin: 0 0 0 auto;
   }
   &__title{

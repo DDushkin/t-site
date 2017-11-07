@@ -75,9 +75,11 @@
     border-radius: 2px;
     color: $black;
     padding:70px 20px;
-    width: percentage(5/12);
+    @include col();
+    @include size(5);
+    //width: percentage(5/12);
     position: absolute;
-    transform: translateY(40%);
+    transform: translateY(35%);
   }
   &__title{
     font-family: $f-td;
@@ -108,7 +110,9 @@
   &__map{
     box-shadow: 4px 4px 14px $shadow25;
     border-radius: 2px;
-    width: percentage(8/12);
+    @include col();
+    @include size(8);
+    //width: percentage(8/12);
     max-height: 600px;
     float: right;
     img{
@@ -147,7 +151,9 @@
   }
   &__description{
     @extend .clearfix;
-    width: percentage(10/12);
+    @include col();
+    @include size(10);
+    //width: percentage(10/12);
     margin: 0 auto;
     &-item{
       float: left;
@@ -173,13 +179,17 @@
   }
   &__car{
     @extend .clearfix;
-    width: percentage(10/12);
+    @include col();
+    @include size(10);
+    //width: percentage(10/12);
     margin: 0 auto;
   }
   &__car-item{
     text-align: center;
     float: left;
-    width: 22%;
+    @include col();
+    @include size(3);
+    //width: 22%;
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 20px;

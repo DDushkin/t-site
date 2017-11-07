@@ -25,9 +25,11 @@
     border-radius: 2px;
     color: $black;
     padding:50px 20px;
-    width: percentage(5/12);
+    @include col();
+    @include size(5);
+    //width: percentage(5/12);
     position: absolute;
-    transform: translateY(12%);
+    transform: translateY(8%);
   }
   &__title{
     font-family: $f-td;
@@ -60,7 +62,9 @@
   &__image{
     box-shadow: 4px 4px 14px $shadow25;
     border-radius: 2px;
-    width: percentage(8/12);
+    @include col();
+    @include size(8);
+    //width: percentage(8/12);
     max-height: 580px;
     float: right;
     img{

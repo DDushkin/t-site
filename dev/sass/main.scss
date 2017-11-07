@@ -8,12 +8,10 @@
 @import "footer";
 
 // add pages here
-@import "homepage";
-
-
-
-@import "available";
-@import "models";
-@import "testdrive";
-@import "tradein";
-@import "comparison";
+@import "homepage";    // 01
+@import "models";      // 02
+@import "available";   // 03
+@import "automobile";  // 04
+@import "testdrive";   // 05
+@import "comparison";  // 06
+@import "tradein";     // 07

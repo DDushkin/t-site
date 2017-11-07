@@ -46,7 +46,7 @@ body {
 section {
   padding-bottom: 200px; }
 
-.clearfix:after, .wrapper:after, .car-card:after, .filter__icons:after, .available-car-info:after, .test-drive-card:after, .test-drive-pace:after, .test-drive-terms__description:after, .test-drive-form__car:after {
+.clearfix:after, .wrapper:after, .filter__icons:after, .available-car-info:after, .car-card:after, .test-drive-card:after, .test-drive-pace:after, .test-drive-terms__description:after, .test-drive-form__car:after {
   content: "";
   display: table;
   clear: both; }
@@ -89,6 +89,8 @@ section {
       .section-title:before {
         width: 30px;
         height: 20px; } }
+  .section-title--simple:before {
+    display: none; }
 
 .section-subtitle {
   margin-top: 10px;
@@ -333,6 +335,10 @@ input[type="radio"] + .checkbox-label:hover::before {
   .link:hover {
     color: #1D71B8; }
 
+.video {
+  width: 100%;
+  height: auto; }
+
 .fotorama__nav-wrap {
   position: absolute;
   bottom: 40px;
@@ -435,6 +441,9 @@ input[type="radio"] + .checkbox-label:hover::before {
   width: 100%;
   overflow: hidden; }
 
+.slick-dotted.slick-slider {
+  margin-bottom: 0; }
+
 .slider-carousel {
   width: 100%;
   overflow: hidden; }
@@ -526,6 +535,12 @@ nav {
   background: linear-gradient(180deg, #F0F2F2 0%, #FFFFFF 100%);
   -webkit-box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5);
   box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5); }
+  .nav--fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10; }
   .nav__item {
     list-style: none; }
     .nav__item:hover .nav__nav-secondary {
@@ -818,7 +833,9 @@ input[data-empty="false"] + label {
     margin-right: 15px;
     width: calc(100% / 12 * 3 - 30px);
     position: relative;
-    padding: 0; }
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0; }
     .footer-nav__list--decorated {
       padding-left: 16px; }
       .footer-nav__list--decorated:after {
@@ -1103,71 +1120,6 @@ input[data-empty="false"] + label {
       float: right;
       margin-top: auto; }
 
-.page-availible-head {
-  -webkit-box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5);
-  box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5);
-  overflow: hidden;
-  position: relative;
-  max-width: 100%;
-  width: 100%;
-  min-height: 300px;
-  padding-bottom: 0;
-  background-color: #767676;
-  background-image: url(../img/bg-available.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  z-index: 1;
-  color: white; }
-
-.car-card {
-  margin-top: 100px;
-  position: relative; }
-  .car-card__description {
-    background: white;
-    -webkit-box-shadow: 4px 4px 24px rgba(77, 79, 83, 0.25);
-    box-shadow: 4px 4px 24px rgba(77, 79, 83, 0.25);
-    border-radius: 2px;
-    color: #23171A;
-    padding: 50px 20px;
-    width: 41.66667%;
-    position: absolute;
-    -webkit-transform: translateY(12%);
-    -ms-transform: translateY(12%);
-    transform: translateY(12%); }
-  .car-card__title {
-    font-family: "Toyota Display";
-    line-height: normal;
-    font-size: 24px;
-    letter-spacing: .1em;
-    font-weight: bold; }
-  .car-card__info {
-    padding-top: 10px;
-    line-height: normal;
-    font-size: 18px; }
-  .car-card__line {
-    padding-top: 10px;
-    line-height: normal;
-    font-size: 18px; }
-    .car-card__line:before {
-      width: 41px;
-      height: 31px;
-      display: inline-block;
-      content: "";
-      margin-right: 15px;
-      vertical-align: middle; }
-  .car-card__more {
-    padding-top: 35px; }
-  .car-card__image {
-    -webkit-box-shadow: 4px 4px 14px rgba(77, 79, 83, 0.25);
-    box-shadow: 4px 4px 14px rgba(77, 79, 83, 0.25);
-    border-radius: 2px;
-    width: 66.66667%;
-    max-height: 580px;
-    float: right; }
-    .car-card__image img {
-      width: 100%; }
-
 .page-models-head {
   overflow: hidden;
   position: relative;
@@ -1430,6 +1382,112 @@ input[data-empty="false"] + label {
   letter-spacing: 0.1em;
   color: #FFFFFF; }
 
+.page-availible-head {
+  -webkit-box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5);
+  box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5);
+  overflow: hidden;
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  min-height: 300px;
+  padding-bottom: 0;
+  background-color: #767676;
+  background-image: url(../img/bg-available.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+  color: white; }
+
+.car-card {
+  margin-top: 100px;
+  position: relative; }
+  .car-card__description {
+    background: white;
+    -webkit-box-shadow: 4px 4px 24px rgba(77, 79, 83, 0.25);
+    box-shadow: 4px 4px 24px rgba(77, 79, 83, 0.25);
+    border-radius: 2px;
+    color: #23171A;
+    padding: 50px 20px;
+    width: 41.66667%;
+    position: absolute;
+    -webkit-transform: translateY(12%);
+    -ms-transform: translateY(12%);
+    transform: translateY(12%); }
+  .car-card__title {
+    font-family: "Toyota Display";
+    line-height: normal;
+    font-size: 24px;
+    letter-spacing: .1em;
+    font-weight: bold; }
+  .car-card__info {
+    padding-top: 10px;
+    line-height: normal;
+    font-size: 18px; }
+  .car-card__line {
+    padding-top: 10px;
+    line-height: normal;
+    font-size: 18px; }
+    .car-card__line:before {
+      width: 41px;
+      height: 31px;
+      display: inline-block;
+      content: "";
+      margin-right: 15px;
+      vertical-align: middle; }
+  .car-card__more {
+    padding-top: 35px; }
+  .car-card__image {
+    -webkit-box-shadow: 4px 4px 14px rgba(77, 79, 83, 0.25);
+    box-shadow: 4px 4px 14px rgba(77, 79, 83, 0.25);
+    border-radius: 2px;
+    width: 66.66667%;
+    max-height: 580px;
+    float: right; }
+    .car-card__image img {
+      width: 100%; }
+
+.pagenav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 30px 0;
+  margin: 0;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5);
+  box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5); }
+  .pagenav__item {
+    margin-right: 50px;
+    list-style: none; }
+    .pagenav__item:last-of-type {
+      margin-right: 0; }
+    .pagenav__item--active {
+      position: relative; }
+      .pagenav__item--active:after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 5px;
+        border-radius: 6px;
+        background: #CC0033; }
+  .pagenav__link {
+    color: inherit;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 0px; }
+
 .page-testdrive-head {
   -webkit-box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5);
   box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5);
@@ -1624,65 +1682,6 @@ input[data-empty="false"] + label {
 .page-testdrive-form {
   padding-bottom: 0; }
 
-.page-tradein-head {
-  -webkit-box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5);
-  box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5);
-  overflow: hidden;
-  position: relative;
-  max-width: 100%;
-  width: 100%;
-  min-height: 300px;
-  padding-bottom: 0;
-  background: url(../img/bg-tradein.jpg), -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(rgba(255, 255, 255, 0)));
-  background: url(../img/bg-tradein.jpg), -webkit-linear-gradient(top, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
-  background: url(../img/bg-tradein.jpg), -o-linear-gradient(top, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
-  background: url(../img/bg-tradein.jpg), linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
-  box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5);
-  background-size: cover;
-  z-index: 1;
-  color: white; }
-
-.page-tradein-content {
-  padding-bottom: 200px; }
-
-.tradein-available-marks {
-  margin-top: 70px; }
-  .tradein-available-marks__text {
-    font-family: "Toyota Display";
-    font-size: 24px;
-    letter-spacing: 0.1em;
-    font-weight: bold;
-    display: inline-block; }
-  .tradein-available-marks__tag {
-    display: inline-block;
-    margin: 0 0 0 20px; }
-
-.tradein-card {
-  margin-top: 70px; }
-  .tradein-card__description {
-    -webkit-transform: translateY(4%);
-    -ms-transform: translateY(4%);
-    transform: translateY(4%); }
-  .tradein-card__line {
-    padding-top: 30px; }
-  .tradein-card__ico {
-    display: inline-block;
-    padding-right: 40px; }
-
-.page-tradein-bottom {
-  padding: 70px 0;
-  text-align: center; }
-
-.tradein-form {
-  width: 66.66667%;
-  margin: 0 auto; }
-  .tradein-form__input {
-    width: 46%;
-    margin: 50px 15px 15px; }
-  .tradein-form__submit {
-    display: block;
-    margin: 15px auto 0; }
-
 .page-comparison-head {
   overflow: hidden;
   position: relative;
@@ -1787,3 +1786,62 @@ input[data-empty="false"] + label {
   font-size: 18px;
   font-weight: bold;
   font-style: normal; }
+
+.page-tradein-head {
+  -webkit-box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5);
+  box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5);
+  overflow: hidden;
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  min-height: 300px;
+  padding-bottom: 0;
+  background: url(../img/bg-tradein.jpg), -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(rgba(255, 255, 255, 0)));
+  background: url(../img/bg-tradein.jpg), -webkit-linear-gradient(top, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+  background: url(../img/bg-tradein.jpg), -o-linear-gradient(top, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+  background: url(../img/bg-tradein.jpg), linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5);
+  background-size: cover;
+  z-index: 1;
+  color: white; }
+
+.page-tradein-content {
+  padding-bottom: 200px; }
+
+.tradein-available-marks {
+  margin-top: 70px; }
+  .tradein-available-marks__text {
+    font-family: "Toyota Display";
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    display: inline-block; }
+  .tradein-available-marks__tag {
+    display: inline-block;
+    margin: 0 0 0 20px; }
+
+.tradein-card {
+  margin-top: 70px; }
+  .tradein-card__description {
+    -webkit-transform: translateY(4%);
+    -ms-transform: translateY(4%);
+    transform: translateY(4%); }
+  .tradein-card__line {
+    padding-top: 30px; }
+  .tradein-card__ico {
+    display: inline-block;
+    padding-right: 40px; }
+
+.page-tradein-bottom {
+  padding: 70px 0;
+  text-align: center; }
+
+.tradein-form {
+  width: 66.66667%;
+  margin: 0 auto; }
+  .tradein-form__input {
+    width: 46%;
+    margin: 50px 15px 15px; }
+  .tradein-form__submit {
+    display: block;
+    margin: 15px auto 0; }

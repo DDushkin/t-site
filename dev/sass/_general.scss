@@ -68,7 +68,6 @@ section {
     font-size: 26px;
     letter-spacing: .1em;
   }
-
   //icon
   &:before {
     content: "";
@@ -83,6 +82,11 @@ section {
     @media (max-width: 1024px) {
       width: 30px;
       height: 20px;
+    }
+  }
+  &--simple { // without icon
+    &:before {
+      display: none;
     }
   }
 }
@@ -381,4 +385,8 @@ input[type="radio"] + .checkbox-label:hover::before {
   &:hover {
     color: $blue;
   }
+}
+.video {
+  width: 100%;
+  height: auto;
 }

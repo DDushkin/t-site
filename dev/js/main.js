@@ -116,7 +116,7 @@ $(document).ready(function(){
 
 
 
-  //replace svg img to inline
+  //replace svg img to inline //TODO: fix images
   // https://medium.com/@asadalikanwal/controlling-svg-via-css-for-transitions-and-hover-effects-fcd9b48a4562
   $(function() {
     $('img.svg').each(function() {
@@ -175,4 +175,21 @@ $(document).ready(function(){
     focusOnSelect: true
 
   });
+
+  // sticky header 
+  var sc;
+  var nav = $("nav");
+  var navOffsetY = nav.offset().top;
+  $(window).scroll(function(){
+    sc = $(document).scrollTop();
+    if (sc>navOffsetY) {
+      nav.addClass("nav--fixed");
+    }
+    else {
+      nav.removeClass("nav--fixed");
+    }
+  });
+  
+  // nav.clone().addClass('nav--fixed').appendTo("body");
+  // eof sticky header
 });  // eof doc.ready

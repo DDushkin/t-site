@@ -24,14 +24,28 @@ body
       img(src="img/automobile-slider-thumb.png", alt="slider thumb")
     .slider-carousel__item
       img(src="img/automobile-slider-thumb.png", alt="slider thumb")
+  ul.pagenav
+    li.pagenav__item.pagenav__item--active
+      a.pagenav__link(href="#color-choose") Опис та колір
+    li.pagenav__item
+      a.pagenav__link(href="#") Ціна та комплектація
+    li.pagenav__item
+      a.pagenav__link(href="#") Технічні  характеристики
+    li.pagenav__item
+      a.pagenav__link(href="#") Галлерея
+
   .wrapper
-  sectio.color-choose
+  section.color-choose#color-choose
+    p.section-title.section-title--simple Виберіть колір:
   section.variant
   section.specs
   section.photo-grid
   .docs
 
   .video-wrapper
+    //- https://www.youtube.com/watch?v=B0ddPNsp1Tw 
+    //- iframe.video(src="https://www.youtube.com/embed/B0ddPNsp1Tw?rel=0&amp;showinfo=0", frameborder="0", allowfullscreen)
+
 
   include partials/_footer.pug
   include partials/_scripts.pug

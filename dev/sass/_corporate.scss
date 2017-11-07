@@ -102,24 +102,30 @@
     padding-top: 20px;
   }
 }
-.corporate-service-card{
-  padding: 200px 0 0;
+.card-big{
   @extend .clearfix;
+    padding: 200px 0 0;
   &__description{
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-    margin-left: 15px;
-    margin-right: 15px;
-    width: calc(100% / 12 * 8.5 - 30px);
+    @include col();
+
     background: white;
     box-shadow: 4px 4px 24px $shadow25;
     border-radius: 2px;
-    background: url(../img/bg-toyota-big-2.svg) no-repeat bottom left white;
+
     color: $black;
-    padding:70px 30px 70px 150px;
-    float:right;
-    transform: translateY(5%);
+    &-right{
+      @include size(8.5); // col count
+      padding:70px 30px 70px 150px;
+      float:right;
+      transform: translateY(5%);
+      background: url(../img/bg-toyota-big-2.svg) no-repeat bottom left white;
+    }
+    &-left{
+      @include size(7.5); // col count
+      position: absolute;
+      padding:70px 125px 70px 30px;
+      background: url(../img/bg-toyota-big-3.svg) no-repeat bottom right white;
+    }
   }
   &__title{
     text-align: left;
@@ -132,20 +138,39 @@
     border-radius: 2px;
     //width: 48%;
     @include col();
-    @include size(6.6); // col count
-    max-height: 580px;
-    max-width: calc(100% / 12 * 6.6 - 30px);
-    transform: translateX(-28%);
-    position: absolute;
+
     z-index: 1;
+    &-right{
+      transform: translateX(-28%);
+      position: absolute;
+      @include size(6.6); // col count
+      max-height: 580px;
+      max-width: calc(100% / 12 * 6.6 - 30px);
+    }
+    &-left{
+      position: absolute;
+      transform: translateX(84%) translateY(35%);
+      @include size(7.6); // col count
+      max-height: 580px;
+      max-width: calc(100% / 12 * 7.6 - 30px);
+    }
     img{
       width: 100%;
     }
   }
   &__info{
-    padding-left: 25px;
     padding-top: 12px;
     line-height: normal;
     font-size: 18px;
+    &-left{
+      padding-left: 0;
+      padding-right: 35px;
+    }
+    &-right{
+      padding-left: 25px;
+    }
+  }
+  &__ol{
+    padding-left: 20px;
   }
 }

@@ -1141,17 +1141,18 @@ input[data-empty="false"] + label {
     -ms-transform: translateY(8%);
     transform: translateY(8%); }
   .car-card__title {
+    margin: 0 0 10px;
     font-family: "Toyota Display";
     line-height: normal;
     font-size: 24px;
     letter-spacing: .1em;
     font-weight: bold; }
   .car-card__info {
-    padding-top: 10px;
+    margin: 10px 0;
     line-height: normal;
     font-size: 18px; }
   .car-card__line {
-    padding-top: 10px;
+    margin: 7px 0;
     line-height: normal;
     font-size: 18px; }
     .car-card__line:before {
@@ -1162,7 +1163,8 @@ input[data-empty="false"] + label {
       margin-right: 15px;
       vertical-align: middle; }
   .car-card__more {
-    padding-top: 35px; }
+    display: inline-block;
+    margin-top: 20px; }
   .car-card__image {
     -webkit-box-shadow: 4px 4px 14px rgba(77, 79, 83, 0.25);
     box-shadow: 4px 4px 14px rgba(77, 79, 83, 0.25);
@@ -1414,9 +1416,6 @@ input[data-empty="false"] + label {
     padding-top: 10px;
     line-height: normal;
     font-size: 18px; }
-  .available-car-info__info_p {
-    display: block;
-    padding-top: 20px; }
   .available-car-info__more {
     padding-top: 20px; }
 
@@ -1441,14 +1440,7 @@ input[data-empty="false"] + label {
   font-family: "Toyota Display";
   line-height: normal;
   font-size: 40px;
-  font-weight: bold;
-  padding-bottom: 30px; }
-
-.test-drive__descr1, .test-drive__descr2 {
-  padding-bottom: 20px; }
-
-.test-drive__descr3 {
-  padding-bottom: 30px; }
+  font-weight: bold; }
 
 .test-drive__button-text {
   font-size: 18px;
@@ -1511,14 +1503,17 @@ input[data-empty="false"] + label {
     line-height: normal;
     font-size: 24px;
     letter-spacing: 0.1em;
-    font-weight: bold; }
+    font-weight: bold;
+    margin: 0; }
   .test-drive-card__info {
     padding-top: 30px;
     line-height: normal;
-    font-size: 18px; }
+    font-size: 18px;
+    margin: 0; }
   .test-drive-card_p {
     display: block;
-    padding-top: 20px; }
+    padding-top: 20px;
+    margin: 0; }
   .test-drive-card__btn {
     margin-top: 30px;
     color: white; }
@@ -1543,22 +1538,26 @@ input[data-empty="false"] + label {
     position: absolute;
     -webkit-transform: translateY(35%);
     -ms-transform: translateY(35%);
-    transform: translateY(35%); }
+    transform: translateY(35%);
+    margin: 0; }
   .test-drive-pace__title {
     font-family: "Toyota Display";
     line-height: normal;
     font-size: 24px;
     letter-spacing: 0.1em;
-    font-weight: bold; }
+    font-weight: bold;
+    margin: 0; }
   .test-drive-pace__info {
     padding-top: 10px;
     line-height: normal;
-    font-size: 18px; }
+    font-size: 18px;
+    margin: 0; }
   .test-drive-pace__line {
     padding-top: 30px;
     line-height: normal;
     font-size: 18px;
-    font-style: italic; }
+    font-style: italic;
+    margin: 0; }
     .test-drive-pace__line:before {
       width: 41px;
       height: 31px;
@@ -1601,8 +1600,10 @@ input[data-empty="false"] + label {
 .test-drive-terms {
   padding: 200px 0; }
   .test-drive-terms__title {
-    padding-bottom: 10px; }
+    padding-bottom: 10px;
+    margin: 0; }
   .test-drive-terms__subtitle {
+    margin: 0;
     text-align: center;
     line-height: normal;
     font-size: 14px;
@@ -1619,6 +1620,7 @@ input[data-empty="false"] + label {
     .test-drive-terms__description-item {
       float: left;
       width: 47%;
+      margin: 0;
       padding-left: 15px;
       padding-right: 15px;
       padding-top: 30px; }
@@ -1626,7 +1628,8 @@ input[data-empty="false"] + label {
 .test-drive-form {
   padding: 70px 0; }
   .test-drive-form__title {
-    padding-bottom: 10px; }
+    padding-bottom: 10px;
+    margin: 0; }
   .test-drive-form__subtitle {
     text-align: center;
     line-height: normal;
@@ -1723,11 +1726,13 @@ input[data-empty="false"] + label {
     -webkit-transform: translateY(4%);
     -ms-transform: translateY(4%);
     transform: translateY(4%); }
+  .tradein-card__title {
+    margin: 0; }
   .tradein-card__line {
-    padding-top: 30px; }
+    padding-top: 5px; }
   .tradein-card__ico {
     display: inline-block;
-    padding-right: 40px; }
+    padding-right: 30px; }
 
 .page-tradein-bottom {
   padding: 70px 0;
@@ -1909,14 +1914,17 @@ input[data-empty="false"] + label {
     line-height: normal;
     font-size: 24px;
     letter-spacing: 0.1em;
-    font-weight: bold; }
+    font-weight: bold;
+    margin: 0; }
   .corporate-card__info {
     padding-top: 30px;
     line-height: normal;
-    font-size: 18px; }
+    font-size: 18px;
+    margin: 0; }
   .corporate-card_p {
     display: block;
-    padding-top: 20px; }
+    padding-top: 20px;
+    margin: 0; }
   .corporate-card__btn {
     margin-top: 30px;
     color: white; }
@@ -1940,7 +1948,8 @@ input[data-empty="false"] + label {
     z-index: 1;
     -webkit-transform: translateY(9%);
     -ms-transform: translateY(9%);
-    transform: translateY(9%); }
+    transform: translateY(9%);
+    margin: 0; }
   .corporate-title-card__image {
     -webkit-box-shadow: 4px 4px 14px rgba(77, 79, 83, 0.25);
     box-shadow: 4px 4px 14px rgba(77, 79, 83, 0.25);
@@ -1958,10 +1967,14 @@ input[data-empty="false"] + label {
     .corporate-title-card__image img {
       width: 100%; }
   .corporate-title-card__info {
-    padding-top: 30px; }
+    padding-top: 30px;
+    margin: 0; }
   .corporate-title-card__p {
     display: block;
-    padding-top: 20px; }
+    padding-top: 20px;
+    margin: 0; }
+  .corporate-title-card__title {
+    margin: 0; }
 
 .card-big {
   padding: 200px 0 0; }
@@ -1986,11 +1999,11 @@ input[data-empty="false"] + label {
       background: url(../img/bg-toyota-big-2.svg) no-repeat bottom left white; }
     .card-big__description-left {
       width: calc(100% / 12 * 7.5 - 30px);
-      position: absolute;
       padding: 70px 125px 70px 30px;
       background: url(../img/bg-toyota-big-3.svg) no-repeat bottom right white; }
   .card-big__title {
-    text-align: left; }
+    text-align: left;
+    margin: 0; }
     .card-big__title:before {
       margin: 0 0 10px; }
   .card-big__image {
@@ -2024,11 +2037,14 @@ input[data-empty="false"] + label {
   .card-big__info {
     padding-top: 12px;
     line-height: normal;
-    font-size: 18px; }
+    font-size: 18px;
+    margin: 0; }
     .card-big__info-left {
       padding-left: 0;
       padding-right: 35px; }
     .card-big__info-right {
       padding-left: 25px; }
+  .card-big__p {
+    margin: 0; }
   .card-big__ol {
     padding-left: 20px; }

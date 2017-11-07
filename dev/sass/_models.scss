@@ -264,10 +264,6 @@
     line-height: normal;
     font-size: 18px;
   }
-  &__info_p{
-    display: block;
-    padding-top: 20px;
-  }
   &__more{
     padding-top: 20px;
   }
@@ -291,18 +287,11 @@
     line-height: normal;
     font-size: 40px;
     font-weight: bold;
-    padding-bottom: 30px;
   }
-  &__descr1, &__descr2{
-    padding-bottom: 20px;
-  }
-  &__descr3{
-    padding-bottom: 30px;
-  }
+
   &__button-text{
     font-size: 18px;
     letter-spacing: 0.1em;
     color: #FFFFFF;
-
   }
 }

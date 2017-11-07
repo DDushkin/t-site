@@ -32,6 +32,7 @@
     transform: translateY(8%);
   }
   &__title{
+    margin: 0 0 10px;
     font-family: $f-td;
     line-height: normal;
     font-size: 24px;
@@ -39,12 +40,12 @@
     font-weight: bold;
   }
   &__info{
-    padding-top: 10px;
+    margin: 10px 0;
     line-height: normal;
     font-size: 18px;
   }
   &__line{
-    padding-top: 10px;
+    margin: 7px 0;
     line-height: normal;
     font-size: 18px;
     &:before{
@@ -57,7 +58,8 @@
     }
   }
   &__more{
-    padding-top: 35px;
+    display: inline-block;
+    margin-top: 20px;
   }
   &__image{
     box-shadow: 4px 4px 14px $shadow25;

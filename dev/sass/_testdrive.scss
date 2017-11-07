@@ -48,15 +48,18 @@
     font-size: 24px;
     letter-spacing: 0.1em;
     font-weight: bold;
+    margin: 0;
   }
   &__info{
     padding-top: 30px;
     line-height: normal;
     font-size: 18px;
+    margin: 0;
   }
   &_p{
     display: block;
     padding-top: 20px;
+    margin: 0;
   }
   &__btn{
     margin-top: 30px;
@@ -80,6 +83,7 @@
     //width: percentage(5/12);
     position: absolute;
     transform: translateY(35%);
+    margin: 0;
   }
   &__title{
     font-family: $f-td;
@@ -87,17 +91,20 @@
     font-size: 24px;
     letter-spacing: 0.1em;
     font-weight: bold;
+    margin: 0;
   }
   &__info{
     padding-top: 10px;
     line-height: normal;
     font-size: 18px;
+    margin: 0;
   }
   &__line{
     padding-top: 30px;
     line-height: normal;
     font-size: 18px;
     font-style: italic;
+    margin: 0;
     &:before{
       width: 41px;
       height: 31px;
@@ -141,8 +148,10 @@
 
   &__title{
     padding-bottom: 10px;
+    margin: 0;
   }
   &__subtitle{
+    margin: 0;
     text-align: center;
     line-height: normal;
     font-size: 14px;
@@ -155,9 +164,11 @@
     @include size(10);
     //width: percentage(10/12);
     margin: 0 auto;
+
     &-item{
       float: left;
       width: 47%;
+      margin: 0;
       padding-left: 15px;
       padding-right: 15px;
       padding-top: 30px;
@@ -169,6 +180,7 @@
 
   &__title{
     padding-bottom: 10px;
+    margin: 0;
   }
   &__subtitle{
     text-align: center;

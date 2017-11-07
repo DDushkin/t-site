@@ -100,7 +100,7 @@ $(document).ready(function(){
   // eof google maps footer
 
   //toggle filters page 2
-  $("div[data-toggle]").click(function(e) {
+  $("a[data-toggle]").click(function(e) {
     e.preventDefault();  // prevent navigating
     var selector = $(this).data("toggle");  // get corresponding element
     if( $(this).hasClass("toggle-active") ) {  // если уже нажата, то скрыть
@@ -108,7 +108,7 @@ $(document).ready(function(){
       $(this).removeClass("toggle-active");
     }  else {                                 // если не нажата, то очистить все а потом показать нужное
       $("div.filter-wrapper").hide();
-      $("div.filter__item").removeClass("toggle-active");
+      $("a.filter__item").removeClass("toggle-active");
       $(selector).show();
       $(this).addClass("toggle-active");
     }

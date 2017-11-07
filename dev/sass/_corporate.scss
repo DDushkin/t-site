@@ -48,19 +48,23 @@
     font-size: 24px;
     letter-spacing: 0.1em;
     font-weight: bold;
+        margin: 0;
   }
   &__info{
     padding-top: 30px;
     line-height: normal;
     font-size: 18px;
+        margin: 0;
   }
   &_p{
     display: block;
     padding-top: 20px;
+        margin: 0;
   }
   &__btn{
     margin-top: 30px;
     color:white;
+
   }
 }
 .corporate-title-card{
@@ -78,7 +82,7 @@
     position: absolute;
     z-index: 1;
     transform: translateY(9%);
-
+        margin: 0;
   }
   &__image{
     box-shadow: 4px 4px 14px $shadow25;
@@ -96,10 +100,15 @@
   }
   &__info{
     padding-top: 30px;
+        margin: 0;
   }
   &__p{
     display: block;
     padding-top: 20px;
+        margin: 0;
+  }
+  &__title{
+        margin: 0;
   }
 }
 .card-big{
@@ -122,13 +131,14 @@
     }
     &-left{
       @include size(7.5); // col count
-      position: absolute;
+
       padding:70px 125px 70px 30px;
       background: url(../img/bg-toyota-big-3.svg) no-repeat bottom right white;
     }
   }
   &__title{
     text-align: left;
+        margin: 0;
     &:before {
       margin: 0 0 10px;
     }
@@ -162,6 +172,7 @@
     padding-top: 12px;
     line-height: normal;
     font-size: 18px;
+        margin: 0;
     &-left{
       padding-left: 0;
       padding-right: 35px;
@@ -169,6 +180,9 @@
     &-right{
       padding-left: 25px;
     }
+  }
+  &__p{
+    margin: 0;
   }
   &__ol{
     padding-left: 20px;

@@ -192,4 +192,14 @@ $(document).ready(function(){
   
   // nav.clone().addClass('nav--fixed').appendTo("body");
   // eof sticky header
+
+  // smooth scroll to anchor  (page 04)
+  $(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top-$(".nav").height()
+    }, 500);
+  });
+  //anchor scroll (04)
+  
 });  // eof doc.ready

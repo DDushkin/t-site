@@ -98,6 +98,13 @@ section {
   text-align: center;
 }
 
+.text-simple { // 04 blue small text
+  font-size: 14px;
+  color: $blue;
+  letter-spacing: .1em;
+  font-style: italic;
+}
+
 /*хлебные крошки с белыми точками , если нужны черные, то прописать
 .breadcrumbs__item:not(:first-child)::before {
     background: $black;

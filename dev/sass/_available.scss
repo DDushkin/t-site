@@ -1,18 +1,11 @@
 .page-availible-head{
-  box-shadow: 0px 0px 14px $shadow50;
-  overflow: hidden;
-  position: relative;
-  max-width: 100%;
-  width: 100%;
-  min-height: 300px;
-  padding-bottom: 0;
-  background-color: #767676;
   background-image: url(../img/bg-available.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  z-index: 1;
   color:white;
+  padding-bottom: 0;
+  box-shadow: 0px 0px 14px $shadow50;
 }
 .car-card{
   margin-top: 100px;
@@ -29,7 +22,8 @@
     @include size(5);
     //width: percentage(5/12);
     position: absolute;
-    transform: translateY(8%);
+    transform: translateY(15%);
+    z-index: 1;
   }
   &__title{
     margin: 0 0 10px;
@@ -48,14 +42,6 @@
     margin: 7px 0;
     line-height: normal;
     font-size: 18px;
-    &:before{
-      width: 41px;
-      height: 31px;
-      display: inline-block;
-      content: "";
-      margin-right: 15px;
-      vertical-align: middle;
-    }
   }
   &__more{
     display: inline-block;
@@ -67,10 +53,16 @@
     @include col();
     @include size(8);
     //width: percentage(8/12);
-    max-height: 580px;
+    height: 600px;
     float: right;
+    position: relative;
     img{
       width: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
     }
   }
 }

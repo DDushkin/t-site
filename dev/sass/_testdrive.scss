@@ -1,21 +1,14 @@
 .page-testdrive-head{
-  box-shadow: 0px 0px 14px $shadow50;
-  overflow: hidden;
-  position: relative;
-  max-width: 100%;
-  width: 100%;
-  min-height: 300px;
-  padding-bottom: 0;
-  background-color: #767676;
   background-image: url(../img/bg-testdrive-head.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  z-index: 1;
   color:white;
+  padding-bottom: 0;
+  box-shadow: 0px 0px 14px $shadow50;
 }
 .test-drive-card{
-  padding: 200px 0;
+  padding: 140px 0 65px;
   @extend .clearfix;
   &__description{
     //width: 47%;
@@ -35,11 +28,16 @@
     //width: 48%;
     @include col();
     @include size(6); // col count
-    max-height: 580px;
+    height: 450px;
     position: absolute;
     z-index: 1;
     img{
       width: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
     }
   }
   &__title{
@@ -84,6 +82,7 @@
     position: absolute;
     transform: translateY(35%);
     margin: 0;
+    z-index: 1;
   }
   &__title{
     font-family: $f-td;
@@ -120,20 +119,24 @@
     @include col();
     @include size(8);
     //width: percentage(8/12);
-    max-height: 600px;
+    height: 600px;
     float: right;
+    position: relative;
     img{
       width: 100%;
-      max-height: 600px;
       object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
     }
   }
 }
 .page-testdrive-video{
-  background: radial-gradient(851.00px at 50% 50%, rgba(176, 178, 173, 0.7) 0%, rgba(196, 196, 196, 0) 100%);
   box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5);
   padding: 70px 0 40px;
   height: 1100px;
+  margin-bottom: 200px;
 }
 .test-drive-video{
   &-main{
@@ -151,12 +154,7 @@
     margin: 0;
   }
   &__subtitle{
-    margin: 0;
-    text-align: center;
-    line-height: normal;
-    font-size: 14px;
-    font-style: italic;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
   }
   &__description{
     @extend .clearfix;
@@ -183,11 +181,8 @@
     margin: 0;
   }
   &__subtitle{
-    text-align: center;
-    line-height: normal;
-    font-size: 14px;
-    font-style: italic;
-    padding-bottom: 20px;
+
+    margin-bottom: 20px;
   }
   &__car{
     @extend .clearfix;
@@ -240,4 +235,28 @@
 }
 .page-testdrive-form{
   padding-bottom: 0;
+}
+
+.testdrive-bages{
+  padding: 100px 0 60px;
+  text-align: center;
+  @include row-flex();
+  &__li{
+    font-family: $f-td;
+    line-height: normal;
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    @include col();
+    @include size(2);
+  }
+  &__forest{
+    @include shift-left(2);
+  }
+  &__city{
+    @include shift-left(1);
+  }
+  &__track{
+    @include shift-left(1);
+  }
 }

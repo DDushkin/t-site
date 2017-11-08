@@ -364,6 +364,17 @@ input[type="radio"] + .checkbox-label:hover::before {
       vertical-align: middle;
     }
   }
+  &__phone{
+    &:before{
+      width: 19px;
+      height: 26px;
+      display: inline-block;
+      content: "";
+      margin-right: 10px;
+      background: url('../img/i-phone-black.svg') center no-repeat;
+      vertical-align: middle;
+    }
+  }
 }
 
 .toggle-active{

@@ -22,8 +22,9 @@ body
         .corporate-title-card__image
           img(src="img/bg-title-card.jpg")
         .corporate-title-card__description
-          h2.corporate-title-card__title.section-title Корпоративні продажі
+          h2.corporate-title-card__title Корпоративні продажі
           p.corporate-title-card__info Автомобілі марки Toyota користуються заслуженою популярністю в автопарках різних компаній. Японське якість, надійність, комфорт, безпеку роблять використання автомобілів Toyota вигідним для компаній і державних структур. Toyota є провідним світовим брендом, автомобілі цієї марки не просто стануть надійними помічниками в бізнесі, але і підкреслять рівень компанії.
+          a.corporate-title-card__btn.btn.btn-typical ОТРИМАТИ КОНСУЛЬТАЦІЮ
       .corporate-card
         .corporate-card__image
           img(src="img/c-testdrive-card.jpg")
@@ -80,22 +81,29 @@ body
       .managers-title.section-title Наші менеджери
       .manager-list
         .manager-card
-          img.manager-card__image
-          .manager-card__name
-          .manager-card__status
-          .manager-card__phone
-          .manager-card__mail
+          .manager-card__images
+            img.manager-card__image(src="img/c-manager-1.jpg")
+          .manager-card__name Геодержинский Валентин
+          .manager-card__status.section-subtitle Керівник відділу корпоративних продаж
+          .manager-card__phone.i-inline__phone (044) 537-54-54
+          a.manager-card__mail.btn-more(href="") Відправити листа
         .manager-card
-          img.manager-card__image
-          .manager-card__name
-          .manager-card__status
-          .manager-card__phone
-          .manager-card__mail
+          .manager-card__images
+            img.manager-card__image(src="img/c-manager-2.jpg")
+          .manager-card__name Усманова Евдокія
+          .manager-card__status.section-subtitle Керівник відділу корпоративних продаж
+          .manager-card__phone.i-inline__phone (044) 537-54-54
+          a.manager-card__mail.btn-more(href="") Відправити листа
         .manager-card
-          img.manager-card__image
-          .manager-card__name
-          .manager-card__status 
-          .manager-card__phone
-          .manager-card__mail
+          .manager-card__images
+            img.manager-card__image(src="img/c-manager-3.jpg")
+          .manager-card__name Зеленська Катерина
+          .manager-card__status.section-subtitle Експерт
+          .manager-card__phone.i-inline__phone (044) 537-54-54
+          a.manager-card__mail.btn-more(href="") Відправити листа
             
-          
+
+  //- eof main content
+
+  include partials/_footer.pug
+  include partials/_scripts.pug

@@ -15,7 +15,7 @@
   color:white;
 }
 .corporate-card{
-  padding: 200px 0 0;
+  padding: 265px 0 0;
   @extend .clearfix;
   &__description{
     //width: 47%;
@@ -35,11 +35,16 @@
     //width: 48%;
     @include col();
     @include size(6); // col count
-    max-height: 580px;
     position: absolute;
     z-index: 1;
+    height: 450px;
     img{
       width: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
     }
   }
   &__title{
@@ -48,7 +53,7 @@
     font-size: 24px;
     letter-spacing: 0.1em;
     font-weight: bold;
-        margin: 0;
+    margin: 0;
   }
   &__info{
     padding-top: 30px;
@@ -73,12 +78,11 @@
   &__description{
     //width: 47%;
     @include col();
-    @include size(8.5);
-    background: url(../img/bg-toyota-big.svg) no-repeat bottom left white;
+    @include size(7);
     box-shadow: 4px 4px 24px $shadow25;
     border-radius: 2px;
     color: $black;
-    padding: 70px 170px 65px 30px;
+    padding: 70px 217px 75px 20px;
     position: absolute;
     z-index: 1;
     transform: translateY(9%);
@@ -89,13 +93,19 @@
     border-radius: 2px;
     //width: 43%;
     @include col();
-    @include size(5); // col count
-    max-height: 580px;
+    @include size(7); // col count
+    max-height: 420px;
+    height: 420px;
     float:right;
     z-index: 2;
     position: relative;
     img{
       width: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
     }
   }
   &__info{
@@ -109,11 +119,19 @@
   }
   &__title{
         margin: 0;
+        font-family: $f-td;
+        font-size: 24px;
+        letter-spacing: 0.1em;
+        color: $black;
+        font-weight: bold;
+  }
+  &__btn{
+    margin-top: 30px;
   }
 }
 .card-big{
   @extend .clearfix;
-    padding: 200px 0 0;
+
   &__description{
     @include col();
 
@@ -154,18 +172,26 @@
       transform: translateX(-28%);
       position: absolute;
       @include size(6.6); // col count
-      max-height: 580px;
+
+      height: 490px;
       max-width: calc(100% / 12 * 6.6 - 30px);
     }
     &-left{
       position: absolute;
-      transform: translateX(84%) translateY(35%);
+      transform: translateX(84%) translateY(32%);
       @include size(7.6); // col count
       max-height: 580px;
+      height: 570px;
       max-width: calc(100% / 12 * 7.6 - 30px);
     }
     img{
       width: 100%;
+      width: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
     }
   }
   &__info{
@@ -186,5 +212,57 @@
   }
   &__ol{
     padding-left: 20px;
+  }
+}
+.corporate-service-card{
+  padding-top: 325px;
+}
+.corporate-lising-card{
+  padding-top: 200px;
+}
+.page-corporate-models{
+      padding-bottom: 325px;
+}
+.manager-list{
+  @include row-flex();
+  text-align: center;
+  padding-top: 50px;
+}
+.manager-card{
+  @include col();
+  @include size(4); // col count
+  &__name{
+    padding-top: 20px;
+    font-family: $f-td;
+    line-height: normal;
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+  }
+  &__status{
+    margin-bottom: 10px;
+  }
+  &__phone{
+    padding-bottom: 20px;
+    font-family: $f-td;
+    line-height: normal;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+  }
+  &__images{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    img{
+      width: 100%;
+      -o-object-fit: cover;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+    }
   }
 }

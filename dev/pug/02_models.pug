@@ -8,7 +8,7 @@ body
   include partials/_header.pug
     
   //- main content
-  section.page-models-head
+  section.page-head.page-models-head
     .wrapper
       .breadcrumbs
         ul.breadcrumbs__list
@@ -21,11 +21,11 @@ body
       .filter
         h2.filter__title Скористайтеся фільтром для підбору моделей
         .filter__icons
-          a.filter__item.filter__price(data-toggle=".filter-price" href="") Підбір по ціні          
-          a.filter__item.filter__bodytype(data-toggle=".filter-bodytype" href="") По типу кузова          
-          a.filter__item.filter__consumption(data-toggle=".filter-consumption" href="") Використання пального          
-          a.filter__item.filter__transmission(data-toggle=".filter-transmission" href="") Коробка передач          
-          a.filter__item.filter__gastype(data-toggle=".filter-gastype" href="") Вид пального        
+          a.filter__item.ico.ico__price80(data-toggle=".filter-price" href="") Підбір по ціні          
+          a.filter__item.ico.ico__bodytype80(data-toggle=".filter-bodytype" href="") По типу кузова          
+          a.filter__item.ico.ico__consumption80(data-toggle=".filter-consumption" href="") Використання пального          
+          a.filter__item.ico.ico__transmission80(data-toggle=".filter-transmission" href="") Коробка передач          
+          a.filter__item.ico.ico__gastype80(data-toggle=".filter-gastype" href="") Вид пального        
     .filter-wrapper.filter-price
       .wrapper.filter-block
         .filter-block__title Підбір по ціні: 

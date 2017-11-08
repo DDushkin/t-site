@@ -1,13 +1,7 @@
 .page-models-head{
-  overflow: hidden;
-  position: relative;
-  max-width: 100%;
-  width: 100%;
   min-height: 210px;
-  padding-bottom: 0;
-  z-index: 1;
   color:$black;
-
+  padding-bottom: 0;
   .breadcrumbs{
     padding-top: 70px;
     &__item:not(:first-child)::before {
@@ -48,52 +42,6 @@
     padding-left: 13px;
     padding-right: 13px;
   }
-  &__price:before{
-    width: 80px;
-    height: 60px;
-    display: block;
-    content: "";
-    margin: 0 auto 10px;
-    background: url('../img/i-price80x60.svg') center no-repeat;
-    vertical-align: middle;
-  }
-  &__bodytype:before{
-    width: 80px;
-    height: 60px;
-    display: block;
-    content: "";
-    margin: 0 auto 10px;
-    background: url('../img/i-bodytype80x60.svg') center no-repeat;
-    vertical-align: middle;
-  }
-  &__consumption:before{
-    width: 80px;
-    height: 60px;
-    display: block;
-    content: "";
-    margin: 0 auto 10px;
-    background: url('../img/i-consumption80x60.svg') center no-repeat;
-    vertical-align: middle;
-  }
-  &__transmission:before{
-    width: 80px;
-    height: 60px;
-    display: block;
-    content: "";
-    margin: 0 auto 10px;
-    background: url('../img/i-transmission80x60.svg') center no-repeat;
-    vertical-align: middle;
-  }
-  &__gastype:before{
-    width: 80px;
-    height: 60px;
-    display: block;
-    content: "";
-    margin: 0 auto 10px;
-    background: url('../img/i-gastype80x60.svg') center no-repeat;
-    vertical-align: middle;
-  }
-
   &__dragndrop{
     margin-top: 50px;
     padding: 60px 110px;
@@ -242,13 +190,16 @@
     //width: 48%;
     @include col();
     @include size(6);
-    max-height: 450px;
+    height: 450px;
     position: absolute;
     z-index: 1;
     img{
       width: 100%;
       object-fit: cover;
-      min-height: 450px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
     }
   }
   &__title{

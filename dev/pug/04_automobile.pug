@@ -1,5 +1,5 @@
 include partials/_mixins.pug
-+head("automobile")
++head("04 automobile")
 body
   include partials/_header.pug
   
@@ -37,6 +37,27 @@ body
   .wrapper
   section.color-choose#color-choose
     p.section-title.section-title--simple Виберіть колір:
+    p.text-simple.text-simple--centered.js-color-name Перлинно-білий перламутр (070) 
+
+    ul.color-selector
+      li.color-selector__item.color-selector__item--c1.color-selector__item--active(data-color="Перлинно-білий перламутр (070)")
+      li.color-selector__item.color-selector__item--c2(data-color="Чорний")
+      li.color-selector__item.color-selector__item--c3(data-color="Білий")
+      li.color-selector__item.color-selector__item--c4(data-color="Сірий")
+      li.color-selector__item.color-selector__item--c5(data-color="Темно-синій")
+      li.color-selector__item.color-selector__item--c6(data-color="Чорний 2")
+      li.color-selector__item.color-selector__item--c7(data-color="Червоний")
+      li.color-selector__item.color-selector__item--c8(data-color="Коричневий")
+      li.color-selector__item.color-selector__item--c9(data-color="Молочний")
+      li.color-selector__item.color-selector__item--c10(data-color="Темний")
+    .car-card-big
+      img(src="img/c-car-card-big.jpg", alt="") 
+    .color-choose-buttons
+      .btn.btn-typical-o ЗАМОВИТИ ОНЛАЙН
+      .btn.btn-typical-o ЗАПИСАТИСЯ НА ТЕСТДРАЙВ
+      .btn.btn-typical-o ОТРИМАТИ КОНСУЛЬТАЦІЮ
+
+    
   section.variant
   section.specs
   section.photo-grid

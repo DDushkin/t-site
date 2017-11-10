@@ -1,4 +1,8 @@
 var gulp = require('gulp'),
+  gulpif = require('gulp-if'),
+  // emitty = require('emitty'),
+  // emitty = require('emitty').setup('dev/pug', 'pug'),
+  pugInheritance = require('gulp-pug-inheritance'),
   sass = require('gulp-sass'),
   autoprefixer = require('gulp-autoprefixer'),
   pug = require('gulp-pug'),
@@ -6,7 +10,9 @@ var gulp = require('gulp'),
   rename = require('gulp-rename'),
   concat = require('gulp-concat'),
   uglify = require('gulp-uglify'),
-  smartgrid = require('smart-grid');
+  smartgrid = require('smart-grid'),
+  cached = require('gulp-cached'),
+  changed = require('gulp-changed');
 
 //smartgrid options
 var sgsettings = {
@@ -44,7 +50,6 @@ var sgsettings = {
     //}
 };
 
-
 gulp.task('sass', function(){
   return gulp.src([
           '!dev/sass/smart-grid.scss',
@@ -60,7 +65,28 @@ gulp.task('sass', function(){
 
 gulp.task('pug', function(){
   return gulp.src('dev/pug/*.pug')
+    // .pipe(pugInheritance({basedir: '/dev/'}))
     .pipe(pug({ pretty: true }))
+    .pipe(gulp.dest('dev/'))
+    .pipe(browserSync.reload({stream: true}))
+});
+
+gulp.task('pug-pages', function() {
+  return gulp.src([
+    'dev/pug/**/*.pug'
+  ])
+    .pipe(changed('./', {
+      extension: '.html'
+    }))
+    .pipe(cached('pug'))
+    .pipe(pugInheritance({
+      basedir: 'dev/pug',
+      skip: 'node_modules'
+    }))
+    .pipe(pug({
+      locals: {},
+      pretty: true
+    }))
     .pipe(gulp.dest('dev/'))
     .pipe(browserSync.reload({stream: true}))
 });
@@ -90,9 +116,40 @@ gulp.task('sg', function(){
   smartgrid('dev/sass', sgsettings);
 });
 
+// emitty
+// gulp.task('templates', () =>
+//   gulp.src('dev/pug/*.pug')
+//     .pipe(gulpif(global.watch, emitty.stream()))
+//     .pipe(pug({ pretty: true }))
+//     .pipe(gulp.dest('build'))
+// );
+
+// gulp.task('templates', () =>
+//   new Promise((resolve, reject) => {
+//     // console.log(emitty.storage());
+//     emitty.scan(global.emittyChangedFile).then(() => {
+//       gulp.src('dev/pug/*.pug')
+//         .pipe(gulpif(global.watch, emitty.filter(global.emittyChangedFile)))
+//         .pipe(pug({ pretty: true }))
+//         .pipe(gulp.dest('dev'))
+//         .on('end', resolve)
+//         .on('error', reject);
+//     });
+//   })
+// );
+// gulp.task('templates', () =>
+//   gulp.src('dev/pug/*.pug')
+//     .pipe(gulpif(global.watch, emitty.stream(global.emittyChangedFile)))
+//     .pipe(pug({ pretty: true }))
+//     .pipe(gulp.dest('dev'))
+//     .pipe(browserSync.reload({stream: true}))
+// );
+// eof emitty
+
 gulp.task('watch', ['browser-sync', 'pug', 'sass', 'js'], function (){
+  global.watch = true;
   gulp.watch('dev/sass/*.scss', ['sass']);
-  gulp.watch('dev/pug/**/*.pug', ['pug']);
+  gulp.watch('dev/pug/**/*.pug', ['pug-pages']);
   gulp.watch('dev/js/*.js', ['js']);
 });
 

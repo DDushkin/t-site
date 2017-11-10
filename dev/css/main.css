@@ -104,8 +104,10 @@ section {
       .section-title:before {
         width: 30px;
         height: 20px; } }
-  .section-title--simple:before {
-    display: none; }
+  .section-title--simple {
+    margin-bottom: 0; }
+    .section-title--simple:before {
+      display: none; }
 
 .section-subtitle {
   margin-top: 10px;
@@ -118,7 +120,10 @@ section {
   font-size: 14px;
   color: #1D71B8;
   letter-spacing: .1em;
-  font-style: italic; }
+  font-style: italic;
+  margin: 10px 0; }
+  .text-simple--centered {
+    text-align: center; }
 
 /*хлебные крошки с белыми точками , если нужны черные, то прописать
 .breadcrumbs__item:not(:first-child)::before {
@@ -1022,7 +1027,8 @@ input[data-empty="false"] + label {
       cursor: default;
       -webkit-transition: all .3s;
       -o-transition: all .3s;
-      transition: all .3s; }
+      transition: all .3s;
+      text-transform: uppercase; }
     .car-grid-item__price {
       margin-top: 0;
       margin-bottom: 10px;
@@ -1568,6 +1574,86 @@ input[data-empty="false"] + label {
     display: inline-block;
     text-decoration: none;
     padding: 10px 0px; }
+
+.color-selector {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .color-selector__item {
+    width: 55px;
+    height: 55px;
+    border-radius: 6px;
+    margin-top: 17px;
+    border: 1px solid #B5B7B3;
+    list-style: none;
+    cursor: pointer;
+    will-change: transform;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+    .color-selector__item--c1 {
+      background-image: -webkit-linear-gradient(45deg, #dedede 27.07%, rgba(222, 222, 222, 0.8) 49.72%, #dedede 70.96%);
+      background-image: -o-linear-gradient(45deg, #dedede 27.07%, rgba(222, 222, 222, 0.8) 49.72%, #dedede 70.96%);
+      background-image: linear-gradient(45deg, #dedede 27.07%, rgba(222, 222, 222, 0.8) 49.72%, #dedede 70.96%); }
+    .color-selector__item--c2 {
+      background-image: -webkit-linear-gradient(45deg, black 27.07%, rgba(0, 0, 0, 0.8) 49.72%, black 70.96%);
+      background-image: -o-linear-gradient(45deg, black 27.07%, rgba(0, 0, 0, 0.8) 49.72%, black 70.96%);
+      background-image: linear-gradient(45deg, black 27.07%, rgba(0, 0, 0, 0.8) 49.72%, black 70.96%); }
+    .color-selector__item--c3 {
+      background-image: -webkit-linear-gradient(45deg, #f2f2f0 27.07%, rgba(242, 242, 240, 0.8) 49.72%, #f2f2f0 70.96%);
+      background-image: -o-linear-gradient(45deg, #f2f2f0 27.07%, rgba(242, 242, 240, 0.8) 49.72%, #f2f2f0 70.96%);
+      background-image: linear-gradient(45deg, #f2f2f0 27.07%, rgba(242, 242, 240, 0.8) 49.72%, #f2f2f0 70.96%); }
+    .color-selector__item--c4 {
+      background-image: -webkit-linear-gradient(45deg, #525252 27.07%, rgba(82, 82, 82, 0.8) 49.72%, #525252 70.96%);
+      background-image: -o-linear-gradient(45deg, #525252 27.07%, rgba(82, 82, 82, 0.8) 49.72%, #525252 70.96%);
+      background-image: linear-gradient(45deg, #525252 27.07%, rgba(82, 82, 82, 0.8) 49.72%, #525252 70.96%); }
+    .color-selector__item--c5 {
+      background-image: -webkit-linear-gradient(45deg, #011924 27.07%, rgba(1, 25, 36, 0.8) 49.72%, #011924 70.96%);
+      background-image: -o-linear-gradient(45deg, #011924 27.07%, rgba(1, 25, 36, 0.8) 49.72%, #011924 70.96%);
+      background-image: linear-gradient(45deg, #011924 27.07%, rgba(1, 25, 36, 0.8) 49.72%, #011924 70.96%); }
+    .color-selector__item--c6 {
+      background-image: -webkit-linear-gradient(45deg, #00000d 27.07%, rgba(0, 0, 13, 0.8) 49.72%, #00000d 70.96%);
+      background-image: -o-linear-gradient(45deg, #00000d 27.07%, rgba(0, 0, 13, 0.8) 49.72%, #00000d 70.96%);
+      background-image: linear-gradient(45deg, #00000d 27.07%, rgba(0, 0, 13, 0.8) 49.72%, #00000d 70.96%); }
+    .color-selector__item--c7 {
+      background-image: -webkit-linear-gradient(45deg, #9d1723 27.07%, rgba(157, 23, 35, 0.8) 49.72%, #9d1723 70.96%);
+      background-image: -o-linear-gradient(45deg, #9d1723 27.07%, rgba(157, 23, 35, 0.8) 49.72%, #9d1723 70.96%);
+      background-image: linear-gradient(45deg, #9d1723 27.07%, rgba(157, 23, 35, 0.8) 49.72%, #9d1723 70.96%); }
+    .color-selector__item--c8 {
+      background-image: -webkit-linear-gradient(45deg, #6b5e4d 27.07%, rgba(107, 94, 77, 0.8) 49.72%, #6b5e4d 70.96%);
+      background-image: -o-linear-gradient(45deg, #6b5e4d 27.07%, rgba(107, 94, 77, 0.8) 49.72%, #6b5e4d 70.96%);
+      background-image: linear-gradient(45deg, #6b5e4d 27.07%, rgba(107, 94, 77, 0.8) 49.72%, #6b5e4d 70.96%); }
+    .color-selector__item--c9 {
+      background-image: -webkit-linear-gradient(45deg, #dbdbdb 27.07%, rgba(219, 219, 219, 0.8) 49.72%, #dbdbdb 70.96%);
+      background-image: -o-linear-gradient(45deg, #dbdbdb 27.07%, rgba(219, 219, 219, 0.8) 49.72%, #dbdbdb 70.96%);
+      background-image: linear-gradient(45deg, #dbdbdb 27.07%, rgba(219, 219, 219, 0.8) 49.72%, #dbdbdb 70.96%); }
+    .color-selector__item--c10 {
+      background-image: -webkit-linear-gradient(45deg, #2a221c 27.07%, rgba(42, 34, 28, 0.8) 49.72%, #2a221c 70.96%);
+      background-image: -o-linear-gradient(45deg, #2a221c 27.07%, rgba(42, 34, 28, 0.8) 49.72%, #2a221c 70.96%);
+      background-image: linear-gradient(45deg, #2a221c 27.07%, rgba(42, 34, 28, 0.8) 49.72%, #2a221c 70.96%); }
+    .color-selector__item:hover, .color-selector__item--active {
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1); }
+  .color-selector__item + .color-selector__item {
+    margin-left: 20px; }
+
+.color-choose-buttons {
+  text-align: center;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .color-choose-buttons .btn + .btn {
+    margin-left: 50px; }
 
 .page-testdrive-head {
   background-image: url(../img/bg-testdrive-head.jpg);

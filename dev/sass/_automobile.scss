@@ -122,6 +122,51 @@
 // eof color-choose
 
 
-// color-choose
+.car-card {
+  position: relative;
+  padding: 0 20px; // TODO: fix?!
+  box-sizing: border-box;
 
-// eof color-choose
+  &--big {
+    @extend .wrapper;
+    margin-top: 67px;
+    margin-bottom: 50px;
+  }
+  &__img {
+    width: 100%; // 95%?
+    height: auto;
+  }
+  &__info {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #fff;
+    width: 42%;
+    padding: 30px 50px;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 24px rgba(77, 79, 83, 0.25);
+  }
+  &__heading {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: $f-td;
+    letter-spacing: .1em;
+  }
+  .text-simple {
+    margin: 0;
+  }
+  &__fuel {
+    display: inline-block;
+    p {
+      margin: 0;
+    }
+
+    &:before {
+      content: ""
+      display: inline-block;
+      
+    }
+  }
+
+}

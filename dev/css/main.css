@@ -46,7 +46,7 @@ body {
 section {
   padding-bottom: 200px; }
 
-.clearfix:after, .wrapper:after, .filter__icons:after, .available-car-info:after, .car-card:after, .test-drive-card:after, .test-drive-pace:after, .test-drive-terms__description:after, .test-drive-form__car:after, .corporate-card:after, .corporate-title-card:after, .card-big:after, .lising-card:after {
+.clearfix:after, .wrapper:after, .filter__icons:after, .available-car-info:after, .car-card:after, .test-drive-card:after, .test-drive-pace:after, .test-drive-terms__description:after, .test-drive-form__car:after, .corporate-card:after, .corporate-title-card:after, .card-big:after, .credit-card:after, .lising-card:after {
   content: "";
   display: table;
   clear: both; }
@@ -2381,6 +2381,161 @@ input[data-empty="false"] + label {
       left: 0;
       height: 100%; }
 
+.page-credit-head {
+  color: white;
+  background-image: url(../img/bg-credit-head.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 0;
+  -webkit-box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5);
+  box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5); }
+
+.credit-card {
+  margin: 131px 0; }
+  .credit-card__description {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: calc(100% / 12 * 8.5 - 30px);
+    padding: 70px 0 52px 168px;
+    float: right;
+    border-radius: 5px;
+    background: url(../img/bg-toyota-big-2.svg) no-repeat bottom left #FAFAFA; }
+  .credit-card__title {
+    text-align: left; }
+  .credit-card__image {
+    -webkit-box-shadow: 4px 4px 14px rgba(77, 79, 83, 0.25);
+    box-shadow: 4px 4px 14px rgba(77, 79, 83, 0.25);
+    border-radius: 2px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: calc(100% / 12 * 5 - 30px);
+    height: 380px;
+    position: absolute;
+    z-index: 1;
+    -webkit-transform: translateY(-10%);
+    -ms-transform: translateY(-10%);
+    transform: translateY(-10%); }
+    .credit-card__image img {
+      width: 100%;
+      -o-object-fit: cover;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%; }
+  .credit-card__bank {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px; }
+  .credit-card__logo {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: calc(100% / 12 * 2.5 - 30px); }
+  .credit-card__license {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: calc(100% / 12 * 9.5 - 30px); }
+
+.page-credit-form {
+  padding: 0; }
+
+.credit-form {
+  padding: 70px 0; }
+  .credit-form__title {
+    padding-bottom: 10px;
+    margin: 0; }
+  .credit-form__subtitle {
+    margin-bottom: 20px; }
+  .credit-form__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px; }
+  .credit-form__car {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: calc(100% / 12 * 4 - 30px);
+    margin-left: calc(100% / 12 * 1 + 15px); }
+  .credit-form__percent {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: calc(100% / 12 * 3 - 30px); }
+  .credit-form__term {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: calc(100% / 12 * 3 - 30px); }
+  .credit-form__name {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: calc(100% / 12 * 4 - 30px);
+    margin-left: calc(100% / 12 * 1 + 15px); }
+  .credit-form__phone {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: calc(100% / 12 * 3.5 - 30px); }
+  .credit-form__submit {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: calc(100% / 12 * 2.5 - 30px); }
+  .credit-form__clear {
+    cursor: pointer;
+    width: 10%;
+    margin: 10px auto 0;
+    font-style: italic;
+    font-weight: 300;
+    line-height: normal;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    -webkit-text-decoration-line: underline;
+    text-decoration-line: underline; }
+
+.manager-list {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.page-credit-manager {
+  padding: 200px 0; }
+
 .page-lising-head {
   color: white;
   background-image: url(../img/bg-lising-head.jpg);
@@ -2555,15 +2710,3 @@ input[data-empty="false"] + label {
     margin: 30px auto 0;
     display: block;
     width: calc(100% / 12 * 4 - 30px); }
-  .lising-form__clear {
-    cursor: pointer;
-    width: 10%;
-    margin: 10px auto 0;
-    font-style: italic;
-    font-weight: 300;
-    line-height: normal;
-    font-size: 14px;
-    text-align: center;
-    letter-spacing: 0.1em;
-    -webkit-text-decoration-line: underline;
-    text-decoration-line: underline; }

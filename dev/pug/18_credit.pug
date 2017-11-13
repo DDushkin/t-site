@@ -1,0 +1,71 @@
+include partials/_mixins.pug
+
+//- title as parameter
+//- example:
+//- head("page title")
++head("18 credit")
+body
+  include partials/_header.pug
+    
+  //- main content
+  section.page-head.page-credit-head
+    .wrapper
+      .breadcrumbs
+        ul.breadcrumbs__list
+          li.breadcrumbs__item Головна
+          li.breadcrumbs__item Кредит
+        .breadcrumbs__title-wrap
+          h1.breadcrumbs__title Кредит
+  .wrapper
+    .credit-card
+      .credit-card__description
+        .credit-card__title.section-title.section-title--simple Експрес кредит 
+        p «Експрес Кредит» активно співпрацює з банками, які охоче надають спеціальні умови кредитування на покупку легкових автомобілів, представлених в салонах «УкрАВТО».
+        p Система «Експрес Кредит» пропонує не лише найпривабливіші умови автокредитування, але і найзручніше оформлення. 
+        p Заповнивши анкету в будь-якому автосалоні УкрАВТО, клієнт в найкоротший строк зможе отримати відповідь банку.
+        .credit-card__bank
+          .credit-card__logo
+            img(src="img/i-bank-logo.svg")
+          .credit-card__license Партнером програми «Тойота Кредит» є ПАТ «КРЕДІ АГРІКОЛЬ БАНК» (Ліцензія НБУ № 99 від 12.10.2011. Кредитування здійснюється відповідно до вимог і правил банку.)
+      .credit-card__image
+        img(src="img/c-credit.jpg")
+          
+
+    
+  section.page-credit-form.bg-cyan
+    .wrapper    
+      .credit-form
+        h2.credit-form__title.section-title Кредитний калькулятор
+        .credit-form__subtitle.section-subtitle Виберіть автомобіль
+        form.credit-form__form          
+          input.credit-form__car.field-typical(type="text" placeholder="Вартість автомобіля")
+          input.credit-form__percent.field-typical(type="text" placeholder="Ваше Ім’я")
+          input.credit-form__term.field-typical(type="text" placeholder="Ваше Ім’я")
+          input.credit-form__name.field-typical(type="text" placeholder="Телефон +38 0")
+          input.credit-form__phone.field-typical(type="text" placeholder="Ваше Ім’я")
+          input.credit-form__submit.btn.btn-typical(value="ВІДПРАВИТИ" type="button")
+          
+  section.page-credit-manager        
+    .wrapper
+      .managers-title.section-title Наші менеджери
+      .manager-list
+        .manager-card
+          .manager-card__images
+            img(src="img/c-manager-1.jpg")
+          .manager-card__name Геодержинский Валентин
+          .manager-card__status.section-subtitle Керівник відділу корпоративних продаж
+          .manager-card__phone.i-inline__phone (044) 537-54-54
+          a.manager-card__mail.btn-more(href="") Відправити листа
+        .manager-card
+          .manager-card__images
+            img(src="img/c-manager-2.jpg")
+          .manager-card__name Усманова Евдокія
+          .manager-card__status.section-subtitle Керівник відділу корпоративних продаж
+          .manager-card__phone.i-inline__phone (044) 537-54-54
+          a.manager-card__mail.btn-more(href="") Відправити листа
+          
+          
+  //- eof main content
+  
+  include partials/_footer.pug
+  include partials/_scripts.pug

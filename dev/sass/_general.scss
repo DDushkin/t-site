@@ -97,6 +97,7 @@ section {
     }
   }
   &--simple { // without icon
+    margin-bottom: 0;
     &:before {
       display: none;
     }
@@ -115,6 +116,11 @@ section {
   color: $blue;
   letter-spacing: .1em;
   font-style: italic;
+  margin: 10px 0;
+
+  &--centered {
+    text-align: center;
+  }
 }
 
 /*хлебные крошки с белыми точками , если нужны черные, то прописать
@@ -217,7 +223,7 @@ section {
       background-color: $red-dark;
     }
   }
-  &-typical-o{                    // кнопка без бекграунда (пустая)
+  &-typical-o{                    // кнопка без бекграунда (пустая) - лучше использовать модификатор -g (ghost - более популярная терминология)
     border: 3px solid $red;
     color: $black;
     &:hover {

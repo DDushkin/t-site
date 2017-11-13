@@ -201,5 +201,14 @@ $(document).ready(function(){
     }, 500);
   });
   //anchor scroll (04)
-  
+
+  // color-selector (04)
+    $(".color-selector__item").click(function(){
+      console.log($(this).attr("data-color"));
+      $(".js-color-name").text($(this).attr("data-color"));
+      $(".color-selector__item").removeClass("color-selector__item--active");
+      $(this).addClass("color-selector__item--active");
+
+    });
+  // eof color-selector (04)
 });  // eof doc.ready

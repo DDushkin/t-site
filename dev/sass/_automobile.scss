@@ -43,7 +43,7 @@
     text-decoration: none;
     padding: 10px 0px;
   }
-} 
+}
 // eof pagenav
 
 // color-choose section
@@ -161,11 +161,9 @@
     p {
       margin: 0;
     }
-
     &:before {
-      content: ""
-      display: inline-block;
-      
+      content: "";
+      display:inline-block;
     }
   }
 

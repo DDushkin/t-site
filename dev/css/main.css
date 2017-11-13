@@ -46,11 +46,7 @@ body {
 section {
   padding-bottom: 200px; }
 
-<<<<<<< HEAD
-.clearfix:after, .wrapper:after, .filter__icons:after, .available-car-info:after, .car-card:after, .test-drive-card:after, .test-drive-pace:after, .test-drive-terms__description:after, .test-drive-form__car:after, .corporate-card:after, .corporate-title-card:after, .card-big:after, .credit-card:after, .lising-card:after {
-=======
 .clearfix:after, .wrapper:after, .car-card--big:after, .filter__icons:after, .available-car-info:after, .car-card:after, .test-drive-card:after, .test-drive-pace:after, .test-drive-terms__description:after, .test-drive-form__car:after, .corporate-card:after, .corporate-title-card:after, .card-big:after {
->>>>>>> 5fbea78c2267c0e77910a9b0b552c3d6d62206c9
   content: "";
   display: table;
   clear: both; }

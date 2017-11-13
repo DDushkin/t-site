@@ -15,7 +15,6 @@
 html {
   box-sizing: border-box;
   user-select: $red;
-
 }
 
 body {
@@ -482,17 +481,58 @@ input[type="radio"] + .checkbox-label:hover::before {
       vertical-align: middle;
     }
   }
+  &__consult{         //19 page
+    &:before{
+      width: 80px;
+      height: 80px;
+      display: block;
+      content: "";
+      margin-right: 40px;
+      background: url('../img/i-consult.svg') center no-repeat;
+      vertical-align: middle;
+    }
+  }
+  &__form{   //19 page
+    &:before{
+      width: 80px;
+      height: 80px;
+      display: block;
+      content: "";
+      margin-right: 40px;
+      background: url('../img/i-form.svg') center no-repeat;
+      vertical-align: middle;
+    }
+  }
+  &__pen{        //19 page
+    &:before{
+      width: 80px;
+      height: 80px;
+      display: block;
+      content: "";
+      margin-right: 40px;
+      background: url('../img/i-pen.svg') center no-repeat;
+      vertical-align: middle;
+    }
+  }
+  &__car{          //19 page
+    &:before{
+      width: 80px;
+      height: 80px;
+      display: block;
+      content: "";
+      margin-right: 40px;
+      background: url('../img/i-car.svg') center no-repeat;
+      vertical-align: middle;
+    }
+  }
 }
 
 .toggle-active{
   text-decoration: underline;
 }
-
-.toggle-active{
-  text-decoration: underline;
+.bold{
+  font-weight: bold;
 }
-
-
 .link {
   font-size: 14px;
   letter-spacing: .1em;

@@ -46,7 +46,7 @@ body {
 section {
   padding-bottom: 200px; }
 
-.clearfix:after, .wrapper:after, .filter__icons:after, .available-car-info:after, .car-card:after, .test-drive-card:after, .test-drive-pace:after, .test-drive-terms__description:after, .test-drive-form__car:after, .corporate-card:after, .corporate-title-card:after, .card-big:after {
+.clearfix:after, .wrapper:after, .filter__icons:after, .available-car-info:after, .car-card:after, .test-drive-card:after, .test-drive-pace:after, .test-drive-terms__description:after, .test-drive-form__car:after, .corporate-card:after, .corporate-title-card:after, .card-big:after, .lising-card:after {
   content: "";
   display: table;
   clear: both; }
@@ -424,12 +424,44 @@ input[type="radio"] + .checkbox-label:hover::before {
     margin-right: 10px;
     background: url("../img/i-phone-black.svg") center no-repeat;
     vertical-align: middle; }
+  .i-inline__consult:before {
+    width: 80px;
+    height: 80px;
+    display: block;
+    content: "";
+    margin-right: 40px;
+    background: url("../img/i-consult.svg") center no-repeat;
+    vertical-align: middle; }
+  .i-inline__form:before {
+    width: 80px;
+    height: 80px;
+    display: block;
+    content: "";
+    margin-right: 40px;
+    background: url("../img/i-form.svg") center no-repeat;
+    vertical-align: middle; }
+  .i-inline__pen:before {
+    width: 80px;
+    height: 80px;
+    display: block;
+    content: "";
+    margin-right: 40px;
+    background: url("../img/i-pen.svg") center no-repeat;
+    vertical-align: middle; }
+  .i-inline__car:before {
+    width: 80px;
+    height: 80px;
+    display: block;
+    content: "";
+    margin-right: 40px;
+    background: url("../img/i-car.svg") center no-repeat;
+    vertical-align: middle; }
 
 .toggle-active {
   text-decoration: underline; }
 
-.toggle-active {
-  text-decoration: underline; }
+.bold {
+  font-weight: bold; }
 
 .link {
   font-size: 14px;
@@ -2358,3 +2390,180 @@ input[data-empty="false"] + label {
   padding-bottom: 0;
   -webkit-box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5);
   box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5); }
+
+.lising-card {
+  margin: 155px 0 210px; }
+  .lising-card__description {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: calc(100% / 12 * 8 - 30px);
+    padding: 70px 220px 60px 0px;
+    position: absolute;
+    background: url(../img/bg-toyota-big-3.svg) no-repeat bottom right white; }
+  .lising-card__image {
+    -webkit-box-shadow: 4px 4px 14px rgba(77, 79, 83, 0.25);
+    box-shadow: 4px 4px 14px rgba(77, 79, 83, 0.25);
+    border-radius: 2px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: calc(100% / 12 * 5.5 - 30px);
+    height: 380px;
+    position: relative;
+    float: right;
+    z-index: 1; }
+    .lising-card__image img {
+      width: 100%;
+      -o-object-fit: cover;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%; }
+  .lising-card__title {
+    font-family: "Toyota Display";
+    line-height: normal;
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    margin: 0; }
+  .lising-card__info {
+    padding-top: 30px;
+    line-height: normal;
+    font-size: 18px;
+    margin: 0; }
+  .lising-card_p {
+    display: block;
+    padding-top: 20px;
+    margin: 0; }
+  .lising-card__btn {
+    margin-top: 30px;
+    color: white; }
+
+.lising-steps-title:before {
+  background-image: url(../img/i-toyota-white.svg); }
+
+.page-lising-steps {
+  padding: 70px 0;
+  color: white; }
+
+.lising-steps {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: calc(100% / 12 * 10 - 30px);
+  margin-left: calc(100% / 12 * 1 + 15px); }
+
+.lising-steps-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: calc(100% / 12 * 7 - 30px);
+  margin-left: calc(100% / 12 * 2 + 15px);
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .lising-steps-list__item {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: calc(100% / 12 * 10 - 30px);
+    margin-top: 40px; }
+  .lising-steps-list__icon {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: calc(100% / 12 * 2 - 30px);
+    margin-top: 40px; }
+
+.lising-steps-subtitle {
+  margin-bottom: 10px; }
+
+.lising-advantage {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: calc(100% / 12 * 8 - 30px);
+  margin-left: calc(100% / 12 * 2 + 15px);
+  margin-top: 100px;
+  padding-left: 15px; }
+  .lising-advantage__title {
+    font-family: "Toyota Text";
+    line-height: normal;
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 10px; }
+  .lising-advantage__list {
+    margin: 0;
+    padding-left: 20px; }
+  .lising-advantage__item {
+    line-height: 21px; }
+
+.page-lising-form {
+  padding: 0; }
+
+.lising-form {
+  padding: 70px 0; }
+  .lising-form__title {
+    padding-bottom: 10px;
+    margin: 0; }
+  .lising-form__subtitle {
+    margin-bottom: 20px; }
+  .lising-form__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    width: calc(100% / 12 * 8 - 30px);
+    margin-left: calc(100% / 12 * 2 + 15px); }
+  .lising-form__input {
+    margin: 30px auto 0;
+    display: block;
+    width: 30%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: calc(100% / 12 * 6 - 30px); }
+  .lising-form__submit {
+    margin: 30px auto 0;
+    display: block;
+    width: calc(100% / 12 * 4 - 30px); }
+  .lising-form__clear {
+    cursor: pointer;
+    width: 10%;
+    margin: 10px auto 0;
+    font-style: italic;
+    font-weight: 300;
+    line-height: normal;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    -webkit-text-decoration-line: underline;
+    text-decoration-line: underline; }

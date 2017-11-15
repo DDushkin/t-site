@@ -2420,6 +2420,104 @@ input[data-empty="false"] + label {
       left: 0;
       height: 100%; }
 
+.page-accessories-head {
+  color: white;
+  background-image: url(../img/bg-accessories-head.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  padding-bottom: 0;
+  -webkit-box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5);
+  box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5); }
+
+.accessories-booklet {
+  border: 1px solid #CBCDC9;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin: 200px 0; }
+  .accessories-booklet__wrap {
+    border: 1px solid #CBCDC9;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0px 0px 34px rgba(77, 79, 83, 0.5);
+    box-shadow: 0px 0px 34px rgba(77, 79, 83, 0.5);
+    border-radius: 5px;
+    width: calc(100% / 12 * 6 - 40px);
+    margin: 20px; }
+
+.accessories-card {
+  margin-bottom: 220px; }
+  .accessories-card__description {
+    background: url(../img/bg-toyota-big-2.svg) no-repeat bottom left white; }
+  .accessories-card__right {
+    padding-left: 0; }
+
+.page-accessories-intravel {
+  background: url(../img/bg-accessories-intravel.jpg);
+  background-position: left center;
+  background-size: cover;
+  padding: 160px 0;
+  color: white;
+  margin-bottom: 0; }
+
+.accessories-intravel__wrapper {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: calc(100% / 12 * 6 - 30px);
+  margin: 0 0 0 auto; }
+
+.accessories-intravel__title {
+  font-family: "Toyota Display";
+  line-height: normal;
+  font-size: 40px;
+  font-weight: bold; }
+
+.page-accessories-form {
+  padding: 0; }
+
+.accessories-form {
+  padding: 70px 0; }
+  .accessories-form__title {
+    padding-bottom: 10px;
+    margin: 0; }
+  .accessories-form__subtitle {
+    margin-bottom: 20px; }
+  .accessories-form__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    width: calc(100% / 12 * 8 - 30px);
+    margin-left: calc(100% / 12 * 2 + 15px); }
+  .accessories-form__input {
+    margin: 0 auto;
+    display: block;
+    width: 30%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: calc(100% / 12 * 6 - 30px); }
+  .accessories-form__submit {
+    margin: 30px auto 0;
+    display: block;
+    width: calc(100% / 12 * 4 - 30px); }
+
 .page-credit-head {
   color: white;
   background-image: url(../img/bg-credit-head.jpg);

@@ -1,0 +1,98 @@
+include partials/_mixins.pug
+
+//- title as parameter
+//- example:
+//- head("page title")
++head("20 accessories")
+body
+  include partials/_header.pug
+    
+  //- main content
+  section.page-head.page-accessories-head
+    .wrapper
+      .breadcrumbs
+        ul.breadcrumbs__list
+          li.breadcrumbs__item Головна
+          li.breadcrumbs__item Запчастини
+        .breadcrumbs__title-wrap
+          h1.breadcrumbs__title Аксесуари Toyota
+          
+  .wrapper 
+    .accessories-booklet
+      .accessories-booklet__wrap
+        .accessories-booklet__left
+          .accessories-booklet__title.section-title.section-title--simple
+      .accessories-booklet__wrap
+        .accessories-booklet__right
+          .accessories-booklet__booklet-inline
+            .accessories-booklet__booklet-name Prado буклети
+            .accessories-booklet__booklet-size 0.5 Мб
+          .accessories-booklet__booklet-inline
+            .accessories-booklet__booklet-name Yaris буклети
+            .accessories-booklet__booklet-size 0.5 Мб
+          .accessories-booklet__booklet-inline
+            .accessories-booklet__booklet-name Corolla буклети
+            .accessories-booklet__booklet-size 0.5 Мб
+          .accessories-booklet__booklet-inline
+            .accessories-booklet__booklet-name Auris буклети
+            .accessories-booklet__booklet-size 0.5 Мб
+          .accessories-booklet__booklet-inline
+            .accessories-booklet__booklet-name Prado буклети
+            .accessories-booklet__booklet-size 0.5 Мб
+          .accessories-booklet__booklet-inline
+            .accessories-booklet__booklet-name Yaris буклети
+            .accessories-booklet__booklet-size 0.5 Мб
+          .accessories-booklet__booklet-inline
+            .accessories-booklet__booklet-name Corolla буклети
+            .accessories-booklet__booklet-size 0.5 Мб
+          .accessories-booklet__booklet-inline
+            .accessories-booklet__booklet-name Auris буклети
+            .accessories-booklet__booklet-size 0.5 Мб
+          .accessories-booklet__booklet-inline
+            .accessories-booklet__booklet-name Prado буклети
+            .accessories-booklet__booklet-size 0.5 Мб                    
+          .accessories-booklet__booklet-inline
+            .accessories-booklet__booklet-name Yaris буклети
+            .accessories-booklet__booklet-size 0.5 Мб                    
+          .accessories-booklet__booklet-inline
+            .accessories-booklet__booklet-name Corolla буклети
+            .accessories-booklet__booklet-size 0.5 Мб
+        
+    
+    .accessories-card.card-big
+      .card-big__image.card-big__image-right
+        img(src="img/c-accessories.jpg")
+      .accessories-card__description.card-big__description.card-big__description-right
+        h2.card-big__title.card-big__title-right.section-title Умови покупки
+        .accessories-card__right.card-big__info.card-big__info-right
+          p За вашим бажанням Ви можете замовити у нас установку додаткових аксесуарів для зміни стилю, різноманітних охоронних систем для захисту від угону і крадіжки, аудіо-відеосистем для насолоди улюбленою музикою і перегляду фільмів, паркувальних радарів, тонування стекол і багато іншого. Ми постараємося висвітлити всю гаму і дати Вам повне уявлення про оригінальні аксесуари Тойота, а також аксесуарах і додаткового обладнання інших відомих світових брендів. 
+          p Співробітники відділу аксесуарів Тойота Центр Київ «Автосаміт» готові дати професійні консультації з будь-яких питань щоб зробити Вашу Toyota неповторною. Професійна установка, з наданням заводської гарантії, виключає сумніви в якості пропонованої продукції.
+
+  section.page-accessories-intravel
+    .wrapper
+      .accessories-intravel__wrapper
+        h2.accessories-intravel__title Безкоштовна допомога під час подорожі
+        p.accessories-intravel__descr В рамках своїх зобов'язань щодо забезпечення задоволення потреб клієнта, компанія «Toyota» здійснює обслуговування своїх клієнтів за допомогою служби «Toyota Assistance».
+        p.accessories-intravel__descr Добре відоме якість «Toyota» в поєднанні з досвідом і перевагами обслуговування, які пропонуються службою «Toyota Assistance», гарантують Вам душевний спокій під час поїздки на автомобілі. 
+        p.accessories-intravel__descr Механическая поломка 
+          span Закончилось топливо 
+          span Разрядился аккумулятор 
+          span Спустило колесо 
+          span Потеря ключей или случайное запирание их в автомобиле
+          
+  section.page-accessories-form.bg-cyan
+    .wrapper    
+      .accessories-form
+        h2.accessories-form__title.section-title Ми будемо раді проконсультуваи вас
+        .accessories-form__subtitle.section-subtitle Вкажіть ваше Ім’я та номер телефону
+        form.accessories-form__form          
+          input.accessories-form__input.field-typical(type="text" placeholder="Вартість автомобіля")
+          input.accessories-form__input.field-typical(type="text" placeholder="Номер телефону +38 0")
+          input.accessories-form__submit.btn.btn-typical(value="ВІДПРАВИТИ" type="button")
+          
+          
+          
+  //- eof main content
+  
+  include partials/_footer.pug
+  include partials/_scripts.pug

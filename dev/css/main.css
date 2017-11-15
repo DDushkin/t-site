@@ -2763,3 +2763,78 @@ input[data-empty="false"] + label {
     margin: 30px auto 0;
     display: block;
     width: calc(100% / 12 * 4 - 30px); }
+
+.page-insurance-head {
+  color: white;
+  background-image: url(../img/bg-insurance-head.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  padding-bottom: 0;
+  -webkit-box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5);
+  box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5); }
+
+.insurance-info {
+  padding: 100px 0 200px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: calc(100% / 12 * 8 - 30px);
+  margin-left: calc(100% / 12 * 2 + 15px); }
+  .insurance-info__subtitle {
+    margin-bottom: 30px; }
+  .insurance-info__logo {
+    float: left;
+    margin: 0 20px 0 0; }
+  .insurance-info__description-list {
+    padding: 20px 0 0 20px; }
+
+.insurance-card {
+  margin-bottom: 220px; }
+  .insurance-card__description {
+    background: url(../img/bg-toyota-big-half.svg) no-repeat bottom left white; }
+
+.page-insurance-form {
+  padding: 0; }
+
+.insurance-form {
+  padding: 70px 0; }
+  .insurance-form__title {
+    padding-bottom: 10px;
+    margin: 0; }
+  .insurance-form__subtitle {
+    margin-bottom: 20px; }
+  .insurance-form__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    width: calc(100% / 12 * 8 - 30px);
+    margin-left: calc(100% / 12 * 2 + 15px); }
+  .insurance-form__input {
+    margin: 0 auto;
+    display: block;
+    width: 30%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: calc(100% / 12 * 6 - 30px); }
+  .insurance-form__submit {
+    margin: 30px auto 0;
+    display: block;
+    width: calc(100% / 12 * 4 - 30px); }
+
+.manager-list {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.page-insurance-manager {
+  padding: 70px 0 200px; }

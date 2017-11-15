@@ -2795,6 +2795,8 @@ input[data-empty="false"] + label {
   margin-bottom: 220px; }
   .insurance-card__description {
     background: url(../img/bg-toyota-big-half.svg) no-repeat bottom left white; }
+  .insurance-card__right {
+    padding-left: 0; }
 
 .page-insurance-form {
   padding: 0; }

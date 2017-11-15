@@ -68,6 +68,9 @@ border-radius: 5px;
   &__form{
     @include row-flex();
   }
+  &__select-block{
+
+  }
   &__car{
     @include col();
     @include size(4);

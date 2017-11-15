@@ -844,6 +844,15 @@ input[data-empty="false"] + label {
     border-color: #1D71B8;
     -webkit-box-shadow: 0px 0px 7px rgba(29, 113, 184, 0.8);
     box-shadow: 0px 0px 7px rgba(29, 113, 184, 0.8); }
+  .field-typical__select {
+    width: 100%;
+    border-color: #23171A;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    cursor: pointer;
+    font-size: 18px;
+    font-style: italic;
+    background: transparent; }
 
 .footer-feedback-text {
   width: 48.837209302325581395%; }
@@ -2024,14 +2033,6 @@ input[data-empty="false"] + label {
     font-size: 14px;
     font-style: italic;
     text-align: left; }
-  .chosen-models__select-block {
-    width: 100%;
-    border-color: #23171A;
-    border-style: solid;
-    border-width: 0 0 1px 0;
-    cursor: pointer;
-    font-size: 18px;
-    font-style: italic; }
 
 .selected-text {
   color: #B5B7B3; }

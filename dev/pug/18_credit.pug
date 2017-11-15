@@ -39,12 +39,16 @@ body
         .credit-form__subtitle.section-subtitle Виберіть автомобіль
         form.credit-form__form          
           input.credit-form__car.field-typical(type="text" placeholder="Вартість автомобіля")
-          input.credit-form__percent.field-typical(type="text" placeholder="Ваше Ім’я")
-          input.credit-form__term.field-typical(type="text" placeholder="Ваше Ім’я")
+          
+          select.field-typical__select.credit-form__percent
+            option(value="20%") 20%
+          
+          select.field-typical__select.credit-form__term
+            option(value="12") 12 міс
           p.credit-form__rate Ваша ставка: 
            span.section-title.section-title--simple 12.5%
-          input.credit-form__name.field-typical(type="text" placeholder="Телефон +38 0")
-          input.credit-form__phone.field-typical(type="text" placeholder="Ваше Ім’я")
+          input.credit-form__name.field-typical(type="text" placeholder="Ваше Ім’я")
+          input.credit-form__phone.field-typical(type="text" placeholder="Номер телефону +38 0")
           input.credit-form__submit.btn.btn-typical(value="ВІДПРАВИТИ" type="button")
           p.credit-form__questions Якщо у вас є питання з приводу кредитування 
             span Залиште свій номер і ми передзвонимо вам в найближчий час

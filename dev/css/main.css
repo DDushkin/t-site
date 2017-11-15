@@ -2500,7 +2500,7 @@ input[data-empty="false"] + label {
     padding-bottom: 10px;
     margin: 0; }
   .credit-form__subtitle {
-    margin-bottom: 20px; }
+    margin-bottom: 50px; }
   .credit-form__form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2553,18 +2553,32 @@ input[data-empty="false"] + label {
     margin-left: 15px;
     margin-right: 15px;
     width: calc(100% / 12 * 2.5 - 30px); }
-  .credit-form__clear {
-    cursor: pointer;
-    width: 10%;
-    margin: 10px auto 0;
+  .credit-form__rate {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: calc(100% / 12 * 12 - 30px);
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 50px 0; }
+  .credit-form__questions {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: calc(100% / 12 * 12 - 30px);
+    margin-left: calc(100% / 12 * 1 + 15px);
     font-style: italic;
     font-weight: 300;
     line-height: normal;
     font-size: 14px;
-    text-align: center;
-    letter-spacing: 0.1em;
-    -webkit-text-decoration-line: underline;
-    text-decoration-line: underline; }
+    margin-top: 20px; }
+    .credit-form__questions span {
+      display: block; }
 
 .manager-list {
   -webkit-box-pack: center;

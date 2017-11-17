@@ -3,7 +3,7 @@ include partials/_mixins.pug
 //- title as parameter
 //- example:
 //- head("page title")
-+head("20 accessories")
++head("15 accessories")
 body
   include partials/_header.pug
     
@@ -18,44 +18,78 @@ body
           h1.breadcrumbs__title Аксесуари Toyota
           
   .wrapper 
+    .accessories-order
+      .accessories-order__title.section-title.section-title--simple Ви можете замовити аксесуар онлайн
+      .accessories-order__subtitle.section-subtitle Вкажіть артикул запчастини для замовлення. Повний список запчастин доступний для завантаження нижче
+      form.accessories-order__form
+        input.accessories-order__input.field-typical(type="text" placeholder="Введіть назву")
+        input.accessories-order__submit.btn.btn-typical-o(value="ШУКАТИ" type="button")
+          
+          
+  .table__tr-wrapper.table__thead-wrapper.accessories-table__thead-wrapper
+    .table__tr
+      .table__td.accessories-table__td.table__title Артикул
+      .table__td.accessories-table__td.table__title Назва
+      .table__td.accessories-table__td.table__title Ціна, грн.
+      .table__td.accessories-table__td.table__title Кількість
+  .table__tr-wrapper.accessories-table__tr-wrapper      
+    .table__tr
+      .table__td.accessories-table__td Кількість циліндрів
+      .table__td.accessories-table__td
+      .table__td.accessories-table__td
+      .table__td.accessories-table__td
+  .table__tr-wrapper.accessories-table__tr-wrapper       
+    .table__tr
+      .table__td.accessories-table__td Розташування циліндрів
+      .table__td.accessories-table__td
+      .table__td.accessories-table__td
+      .table__td.accessories-table__td
+  .table__tr-wrapper.accessories-table__tr-wrapper      
+    .table__tr
+      .table__td.accessories-table__td Тип двигуна
+      .table__td.accessories-table__td
+      .table__td.accessories-table__td
+      .table__td.accessories-table__td
+                
+  .wrapper              
     .accessories-booklet
-      .accessories-booklet__wrap
-        .accessories-booklet__left
-          .accessories-booklet__title.section-title.section-title--simple
-      .accessories-booklet__wrap
-        .accessories-booklet__right
-          .accessories-booklet__booklet-inline
-            .accessories-booklet__booklet-name Prado буклети
+      .accessories-booklet__left
+        .accessories-booklet__wrap
+          .accessories-booklet__title.section-title.section-title--simple Скачайте наши буклеты
+      .accessories-booklet__right
+        .accessories-booklet__wrap
+          a.accessories-booklet__booklet-inline(href="")
+            .accessories-booklet__booklet-name.i-inline__pdf Prado буклети
             .accessories-booklet__booklet-size 0.5 Мб
-          .accessories-booklet__booklet-inline
-            .accessories-booklet__booklet-name Yaris буклети
+          a.accessories-booklet__booklet-inline(href="")
+            .accessories-booklet__booklet-name.i-inline__pdf Yaris буклети
             .accessories-booklet__booklet-size 0.5 Мб
-          .accessories-booklet__booklet-inline
-            .accessories-booklet__booklet-name Corolla буклети
+          a.accessories-booklet__booklet-inline(href="")
+            .accessories-booklet__booklet-name.i-inline__pdf Corolla буклети
             .accessories-booklet__booklet-size 0.5 Мб
-          .accessories-booklet__booklet-inline
-            .accessories-booklet__booklet-name Auris буклети
+          a.accessories-booklet__booklet-inline(href="")
+            .accessories-booklet__booklet-name.i-inline__pdf Auris буклети
             .accessories-booklet__booklet-size 0.5 Мб
-          .accessories-booklet__booklet-inline
-            .accessories-booklet__booklet-name Prado буклети
+          a.accessories-booklet__booklet-inline(href="")
+            .accessories-booklet__booklet-name.i-inline__pdf Prado буклети
             .accessories-booklet__booklet-size 0.5 Мб
-          .accessories-booklet__booklet-inline
-            .accessories-booklet__booklet-name Yaris буклети
+          a.accessories-booklet__booklet-inline(href="")
+            .accessories-booklet__booklet-name.i-inline__pdf Yaris буклети
             .accessories-booklet__booklet-size 0.5 Мб
-          .accessories-booklet__booklet-inline
-            .accessories-booklet__booklet-name Corolla буклети
+          a.accessories-booklet__booklet-inline(href="")
+            .accessories-booklet__booklet-name.i-inline__pdf Corolla буклети
             .accessories-booklet__booklet-size 0.5 Мб
-          .accessories-booklet__booklet-inline
-            .accessories-booklet__booklet-name Auris буклети
+          a.accessories-booklet__booklet-inline(href="")
+            .accessories-booklet__booklet-name.i-inline__pdf Auris буклети
             .accessories-booklet__booklet-size 0.5 Мб
-          .accessories-booklet__booklet-inline
-            .accessories-booklet__booklet-name Prado буклети
+          a.accessories-booklet__booklet-inline(href="")
+            .accessories-booklet__booklet-name.i-inline__pdf Prado буклети
             .accessories-booklet__booklet-size 0.5 Мб                    
-          .accessories-booklet__booklet-inline
-            .accessories-booklet__booklet-name Yaris буклети
+          a.accessories-booklet__booklet-inline(href="")
+            .accessories-booklet__booklet-name.i-inline__pdf Yaris буклети
             .accessories-booklet__booklet-size 0.5 Мб                    
-          .accessories-booklet__booklet-inline
-            .accessories-booklet__booklet-name Corolla буклети
+          a.accessories-booklet__booklet-inline(href="")
+            .accessories-booklet__booklet-name.i-inline__pdf Corolla буклети
             .accessories-booklet__booklet-size 0.5 Мб
         
     

@@ -225,6 +225,7 @@ section {
   &-typical-o{                    // кнопка без бекграунда (пустая) - лучше использовать модификатор -g (ghost - более популярная терминология)
     border: 3px solid $red;
     color: $black;
+    background: transparent;
     &:hover {
       background: $red;
       color: #fff;
@@ -426,7 +427,7 @@ input[type="radio"] + .checkbox-label:hover::before {
       background: url('../img/i-path.svg') center no-repeat;
     }
   }
-  &__available{
+  &__available-tick{
     &:before{
       display: inline-block;
       content: "";
@@ -470,6 +471,18 @@ input[type="radio"] + .checkbox-label:hover::before {
       background: url('../img/i-available.svg') center no-repeat;
     }
   }
+  &__pdf{
+    &:before{
+      width: 32px;
+      height: 34px;
+      display: inline-block;
+      content: "";
+      margin-right: 30px;
+      background: url('../img/i-pdf.svg') center no-repeat;
+      vertical-align: middle;
+    }
+  }
+
   &__phone{
     &:before{
       width: 19px;

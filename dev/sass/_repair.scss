@@ -1,0 +1,22 @@
+.page-repair-head{
+  background-image: url(../img/bg-repair-head.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color:white;
+  padding-bottom: 0;
+  box-shadow: 0px 0px 14px $shadow50;
+}
+.repair-card{
+  padding: 100px 0 0;
+  &__description{
+    background: none;
+  }
+  &__btn{
+    margin-top: 20px;
+    margin-right: 40px;
+  }
+  &__text{
+    padding-left: 0;
+  }
+}

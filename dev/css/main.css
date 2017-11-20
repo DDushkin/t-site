@@ -2477,7 +2477,28 @@ input[data-empty="false"] + label {
   padding: 15px 0 0; }
 
 .accessories-table__td {
-  text-align: left; }
+  text-align: left !important; }
+
+.accessories-table__total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 60px; }
+
+.accessories-table__total-price {
+  font-size: 14px;
+  padding-right: 50px; }
+  .accessories-table__total-price span {
+    font-size: 40px;
+    font-family: "Toyota Display";
+    font-weight: bold; }
+    .accessories-table__total-price span:after {
+      content: "грн";
+      font-size: 14px;
+      font-weight: normal; }
 
 .accessories-booklet {
   border: 1px solid #CBCDC9;

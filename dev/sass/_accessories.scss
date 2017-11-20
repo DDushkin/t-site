@@ -36,7 +36,26 @@
     padding: 15px 0 0;
   }
   &__td{
-    text-align: left;
+    text-align: left!important;
+  }
+  &__total{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+  }
+  &__total-price{
+    font-size: 14px;
+    padding-right: 50px;
+    span {
+      font-size: 40px;
+      font-family: $f-td;
+      font-weight: bold;
+      &:after{
+        content: "грн";
+          font-size: 14px;
+          font-weight: normal;
+      }
+    }
   }
 }
 .accessories-booklet{

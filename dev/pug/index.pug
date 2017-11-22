@@ -8,11 +8,14 @@ body
   include partials/_header.pug
   
   //- main content
-  .mainslider
-    img(src="img/main-slider.jpg", alt="slider image")
-    img(src="img/main-slider.jpg", alt="slider image")
-    img(src="img/main-slider.jpg", alt="slider image")
-    img(src="img/main-slider.jpg", alt="slider image")
+  .mainslider-wrapper
+    img.mainslider-wrapper__bg(src="img/bg-circle-m.svg", alt="")
+    img.mainslider-wrapper__bg(src="img/bg-circle-l.svg", alt="")
+    .mainslider
+      img(src="img/main-slider.jpg", alt="slider image")
+      img(src="img/main-slider.jpg", alt="slider image")
+      img(src="img/main-slider.jpg", alt="slider image")
+      img(src="img/main-slider.jpg", alt="slider image")
   .wrapper
     section.cars
       .section-title.cars-title Автомобілі Toyota

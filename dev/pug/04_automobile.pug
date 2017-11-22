@@ -32,7 +32,7 @@ body
     li.pagenav__item
       a.pagenav__link(href="#") Технічні  характеристики
     li.pagenav__item
-      a.pagenav__link(href="#") Галлерея
+      a.pagenav__link(href="#") Галерея
 
   .wrapper
   section.color-choose#color-choose
@@ -58,8 +58,10 @@ body
         p.text-simple Переможною ходою долає будь-які шляхи 
         p Сучасний Land Cruiser Prado, що належить до 150 серії, став наслідком невтомної праці найкращих конструкторів компанії «Тойота» протягом останніх 60 років. На цьому автомобілі ви зможете вирушити із самісінького центра міста у найвіддаленіші райони у сільській місцевості стильно та з комфортом. Його сучасне зовнішнє оформлення поєднано з напрочуд міцною та витривалою системою повного приводу. У чудово оформленому салоні передбачено можливість складати задні сидіння, завдяки чому Prado має неабияку універсальність у використанні.
         .car-card__fuel
-          p.text-simple Споживання пального
-          p від 7,4 л/100 км
+          .ico.ico--fuel
+          .car-card__fuel-inner
+            p.text-simple Споживання пального
+            p від 7,4 л/100 км
 
 
 
@@ -70,13 +72,55 @@ body
 
     
   section.variant
+    p.section-title.section-title--simple Моделі та комплектації
   section.specs
-  section.photo-grid
-  .docs
+    p.section-title.section-title--simple Технічні характеристики
+  section.car-photo
+    p.section-title.section-title--simple Фотографії Land Cruiser Prado
+    .photo-grid
+      .photo-grid__col.photo-grid__col--s
+        .photo-grid__item
+          img.photo-grid__img(src="img/c-photo-grid.jpg", alt="")
+        .photo-grid__item
+          img.photo-grid__img(src="img/c-photo-grid.jpg", alt="")
+        .photo-grid__item
+          img.photo-grid__img(src="img/c-photo-grid.jpg", alt="")
+      .photo-grid__col.photo-grid__col--m
+        .photo-grid__item
+          img.photo-grid__img(src="img/c-photo-grid.jpg", alt="")
+        .photo-grid__item
+          img.photo-grid__img(src="img/c-photo-grid.jpg", alt="")
+        .photo-grid__item
+          img.photo-grid__img(src="img/c-photo-grid.jpg", alt="")
+        .photo-grid__item
+          img.photo-grid__img(src="img/c-photo-grid.jpg", alt="")
 
-  .video-wrapper
+  .docs
+    .docs__part
+      .section-title.section-title--simple Cкачайте наши буклеты
+      img.docs__img(src="img/c-docs.png", alt="")
+      
+    .docs__part
+      .docs__listing
+        .docs__item
+          .ico.ico--pdf
+          a(href="#").docs__link Завантажити буклет Toyota Prado
+          a(href="#").docs__link.docs__link--alt 0,5Мб
+        .docs__item
+          .ico.ico--pdf
+          a(href="#").docs__link Завантажити буклет аксесуарів Toyota prado
+          a(href="#").docs__link.docs__link--alt 0,5Мб
+        .docs__item
+          .ico.ico--pdf
+          a(href="#").docs__link Модельний ряд Toyota
+          a(href="#").docs__link.docs__link--alt 0,5Мб
+
+  .video-wrapper.bg-gradient
+    .section-title.section-title--simple Запрошуємо на тестдрайв Toyota
+    .video-wrapper__subtitle Єдиний спосіб зрозуміти, що саме робить автомобіль Toyota таким особливим — проїхатися на ньому
+    .btn.btn-typical ЗАПИСАТИСЯ НА ТЕСТДРАЙВ
     //- https://www.youtube.com/watch?v=B0ddPNsp1Tw 
-    //- iframe.video(src="https://www.youtube.com/embed/B0ddPNsp1Tw?rel=0&amp;showinfo=0", frameborder="0", allowfullscreen)
+    iframe.video(src="https://www.youtube.com/embed/B0ddPNsp1Tw?rel=0&amp;showinfo=0", frameborder="0", allowfullscreen)
 
 
   include partials/_footer.pug

@@ -70,7 +70,7 @@ $(document).ready(function(){
         origin: new google.maps.Point(0, 0),
         // The anchor for this image is the base of the flagpole at (0, 32).
         anchor: new google.maps.Point(0, 58)
-      };
+      }; 
       var image2 = {
         url: 'img/i-footer-info-map-bottom.svg',
         // This marker is 20 pixels wide by 32 pixels high.
@@ -113,8 +113,6 @@ $(document).ready(function(){
       $(this).addClass("toggle-active");
     }
   });
-
-
 
   //replace svg img to inline //TODO: fix images
   // https://medium.com/@asadalikanwal/controlling-svg-via-css-for-transitions-and-hover-effects-fcd9b48a4562
@@ -190,9 +188,6 @@ $(document).ready(function(){
     }
   });
   
-  // nav.clone().addClass('nav--fixed').appendTo("body");
-  // eof sticky header
-
   // smooth scroll to anchor  (page 04)
   $(document).on('click', 'a[href^="#"]', function (event) {
     event.preventDefault();
@@ -200,15 +195,15 @@ $(document).ready(function(){
         scrollTop: $($.attr(this, 'href')).offset().top-$(".nav").height()
     }, 500);
   });
-  //anchor scroll (04)
+  // eof smooth scroll to anchor  (page 04)
 
   // color-selector (04)
-    $(".color-selector__item").click(function(){
-      console.log($(this).attr("data-color"));
-      $(".js-color-name").text($(this).attr("data-color"));
-      $(".color-selector__item").removeClass("color-selector__item--active");
-      $(this).addClass("color-selector__item--active");
-
-    });
+  $(".color-selector__item").click(function(){
+    // console.log($(this).attr("data-color")); //TODO: remove
+    $(".js-color-name").text($(this).attr("data-color"));
+    $(".color-selector__item").removeClass("color-selector__item--active");
+    $(this).addClass("color-selector__item--active");
+  });
   // eof color-selector (04)
+
 });  // eof doc.ready

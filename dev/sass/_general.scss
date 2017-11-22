@@ -46,6 +46,13 @@ section {
   min-height: 300px;
   padding-bottom: 0;
   z-index: 1;
+
+  &--news {
+    margin-bottom: 100px;
+    color: #fff;
+    background: #174165 url('../img/bg-head-news.png') center no-repeat;
+    background-size: cover;
+  }
 }
 
 .container {
@@ -330,36 +337,51 @@ input[type="radio"] + .checkbox-label:hover::before {
   content: "";
   margin: 0 auto 10px;
   vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: center center;
   }
   &__price80:before{    //page 2 icons over  80x60
-    background: url('../img/i-price80x60.svg') center no-repeat;
+    background-image: url('../img/i-price80x60.svg');
   }
   &__bodytype80:before{
-    background: url('../img/i-bodytype80x60.svg') center no-repeat;
-  }
+    background-image: url('../img/i-bodytype80x60.svg');
+  } 
   &__consumption80:before{
-    background: url('../img/i-consumption80x60.svg') center no-repeat;
+    background-image: url('../img/i-consumption80x60.svg');
   }
   &__transmission80:before{
-    background: url('../img/i-transmission80x60.svg') center no-repeat;
+    background-image: url('../img/i-transmission80x60.svg');
   }
   &__gastype80:before{
-    background: url('../img/i-gastype80x60.svg') center no-repeat;
+    background-image: url('../img/i-gastype80x60.svg');
   }
   &__forest:before{
     width: 150px;
     height: 150px;
-    background: url('../img/i-forest.svg') center no-repeat;
+    background-image: url('../img/i-forest.svg');
   }
   &__city:before{
     width: 150px;
     height: 150px;
-    background: url('../img/i-city.svg') center no-repeat;
+    background-image: url('../img/i-city.svg');
   }
   &__track:before{
     width: 150px;
     height: 150px;
-    background: url('../img/i-track.svg') center no-repeat;
+    background-image: url('../img/i-track.svg');
+  }
+  &--pdf:before {
+    width: 52px;
+    height: 54px;
+    margin: 0;
+    background-image: url("../img/i-pdf.svg");
+  }
+  &--fuel:before {
+    width: 52px;
+    height: 36px;
+    margin: 0;
+    background-image: url("../img/i-fuel.svg");
+    // background-size: contain;
   }
 }
 
@@ -547,4 +569,11 @@ input[type="radio"] + .checkbox-label:hover::before {
 .video {
   width: 100%;
   height: auto;
+}
+
+
+.bg-gradient {
+  background-color: #303A41;
+  color: #fff;
+  background-image:  radial-gradient(51vw at 50% 50%, rgba(176, 178, 173, 0.7) 0%, rgba(196, 196, 196, 0) 100%), radial-gradient(62vw at 50% 50%, rgba(160, 161, 164, 0.6) 0%, rgba(196, 196, 196, 0) 72.93%, rgba(196, 196, 196, 0.04) 100%);
 }

@@ -2,18 +2,21 @@
   height: 350px; //TODO: mob 489px
 }
 .footer-feedback {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  // display: flex;
+  // flex-direction: row;
+  // justify-content: space-between;
+  @include row-flex();
+  @include wrapper();
   padding-top: 100px;
   padding-bottom: 90px;
 }
 
 .footer-form {
+  @include col();
+  @include size(6);
   display: flex;
   font-size: 0;
-  width: 48.837209302325581395%;
-
+  
   fieldset {
     flex-grow: 1;
   }
@@ -71,7 +74,9 @@ input[data-empty="false"] + label {
 }
 
 .footer-feedback-text {
-  width: 48.837209302325581395%; //TODO: remove magic numbers
+  //width: 48.837209302325581395%; //TODO: remove magic numbers
+  @include col();
+  @include size(6);
 
   &__item {
     font-style: italic;

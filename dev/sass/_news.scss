@@ -1,0 +1,38 @@
+.postnav {
+  display: flex;
+  justify-content: center;
+
+  &__inner {
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+  }
+
+  &__arrow {
+    font-size: 0;
+
+    &--prev {
+    }
+    &--next {
+
+      img {
+        // transform: rotate(180deg);
+      }
+      
+    }
+  }
+  &__links-wrapper {
+    margin: 0 45px;
+  }
+  &__link {
+    color: inherit;
+    text-decoration: none;
+    // margin: 0 3px;
+    padding: 3px;
+
+    &--active {
+      font-size: 130%;
+      color: $red;
+    }
+  }
+}

@@ -1,9 +1,57 @@
 // fotorama mainpage
+.mainslider {
+  position: relative;
+  clip-path: ellipse(175vw 230vw at 50% calc(100% - 229.7vw)); // TODO: review
+  border-bottom: 1px solid red;
+  z-index: $layer5;
+
+ }
+ .mainslider-wrapper {
+  position: relative;
+  overflow: hidden;
+
+  &__bg { // color circles 
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  // &:before {
+  //   content:"";
+  //   position: absolute;
+  //   width: 220vw;
+  //   height: 140vw;
+  //   background: url(../img/bg-circle-m.svg) bottom center no-repeat;
+  //   // border: 300px solid $red;
+  //   background-size: contain;
+  //   bottom: 0px;
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  //   z-index: -1;
+
+  // }
+  // &:after {
+  //   content:"";
+  //   position: absolute;
+  //   width: 382vw;
+  //   height: 243vw;
+  //   background: url(../img/bg-circle-l.svg) bottom center no-repeat;
+  //   background-size: contain;
+  //   bottom: 0px;
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  //   border-radius: 50%;
+  //   // z-index: $layer5;
+  //   z-index: 0;
+  // }
+ }
 .fotorama__nav-wrap {
   position: absolute;
   bottom: 40px;
   left: 0;
   z-index: 10;
+  
 }
 .fotorama__dot {
   width: 10px;

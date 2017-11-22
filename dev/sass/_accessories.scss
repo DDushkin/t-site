@@ -1,0 +1,168 @@
+.page-accessories-head{
+  color:white;
+  background-image: url(../img/bg-accessories-head.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  padding-bottom: 0;
+  box-shadow: 0px 0px 14px $shadow50;
+}
+.accessories-order{
+  padding: 100px 0 50px ;
+  &__subtitle{
+    margin: 20px 0;
+    color: $blue;
+  }
+  &__form{
+    @include row-flex();
+  }
+  &__input{
+    @include col();
+    @include size(6);
+    @include shift-left(2);
+  }
+  &__submit{
+    @include col();
+    @include size(2);
+  }
+}
+.accessories-table{
+  &__thead-wrapper{
+    padding: 23px 0;
+    margin-bottom: 15px;
+  }
+  &__tr-wrapper{
+    border: none;
+    padding: 15px 0 0;
+  }
+  &__td{
+    text-align: left!important;
+  }
+  &__total{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+  }
+  &__total-price{
+    font-size: 14px;
+    padding-right: 50px;
+    span {
+      font-size: 40px;
+      font-family: $f-td;
+      font-weight: bold;
+      &:after{
+        content: "грн";
+          font-size: 14px;
+          font-weight: normal;
+      }
+    }
+  }
+}
+.accessories-booklet{
+  border: 1px solid #CBCDC9;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 34px rgba(77, 79, 83, 0.5);
+  border-radius: 5px;
+  @include row-flex();
+  margin: 200px 0;
+  &__wrap{
+    border: 1px solid #CBCDC9;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 40px 0;
+  }
+  &__left{
+    border: 0 1px 0 0 solid #CBCDC9;
+    box-sizing: border-box;
+    width: calc(100% / 2);
+  }
+  &__right{
+    box-shadow: -21px 0px 62px rgba(77, 79, 83, 0.3);
+    box-sizing: border-box;
+    width: calc(100% / 2);
+
+  }
+  &__title{
+    padding: 50px 0 70px;
+  }
+  &__booklet-inline{
+    padding: 10px 45px;
+    display: block;
+    color: $black;
+  }
+  &__booklet-name{
+    display: inline-block;
+    font-size: 18px;
+    text-decoration-line: underline;
+    padding-right: 10px;
+  }
+  &__booklet-size{
+    display: inline-block;
+    font-style: italic;
+    font-size: 18px;
+    text-decoration-line: underline;
+  }
+}
+
+.accessories-card{
+ margin-bottom: 220px;
+ &__description{
+   background: url(../img/bg-toyota-big-2.svg) no-repeat bottom left white;
+ }
+ &__right{
+   padding-left:0;
+ }
+}
+.page-accessories-intravel{
+  background: url(../img/bg-accessories-intravel.jpg);
+  background-position: left center;
+  background-size: cover;
+  padding:160px 0;
+  color:white;
+  margin-bottom: 0;
+}
+.accessories-intravel{
+  &__wrapper{
+    @include col();
+    @include size(6);
+    margin: 0 0 0 auto;
+  }
+  &__title{
+    font-family: $f-td;
+    line-height: normal;
+    font-size: 40px;
+    font-weight: bold;
+  }
+}
+.page-accessories-form{
+  padding:0;
+}
+.accessories-form{
+  padding: 70px 0;
+
+  &__title{
+    padding-bottom: 10px;
+    margin: 0;
+  }
+  &__subtitle{
+    margin-bottom: 20px;
+  }
+  &__form{
+    @include row-flex();
+    @include size(8); // col count
+    @include shift-left(2);
+  }
+  &__input{
+    margin: 0 auto;
+    display: block;
+    width: 30%;
+      @include col();
+      @include size(6);
+  }
+  &__submit{
+    margin: 30px auto 0;
+    display: block;
+    @include size(4);
+  }
+}

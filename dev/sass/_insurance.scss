@@ -1,0 +1,71 @@
+.page-insurance-head{
+  color:white;
+  background-image: url(../img/bg-insurance-head.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  padding-bottom: 0;
+  box-shadow: 0px 0px 14px $shadow50;
+}
+.insurance-info{
+  padding: 100px 0 200px;
+  @include col();
+  @include size(8); // col count
+  @include shift-left(2);
+  &__subtitle{
+    margin-bottom: 30px;
+  }
+  &__logo{
+    float: left;
+    margin: 0 20px 0 0;
+  }
+  &__description-list{
+    padding: 20px 0 0 20px;
+  }
+}
+.insurance-card{
+ margin-bottom: 220px;
+ &__description{
+   background: url(../img/bg-toyota-big-half.svg) no-repeat bottom left white;
+ }
+ &__right{
+   padding-left:0; 
+ }
+}
+.page-insurance-form{
+  padding:0;
+}
+.insurance-form{
+  padding: 70px 0;
+
+  &__title{
+    padding-bottom: 10px;
+    margin: 0;
+  }
+  &__subtitle{
+    margin-bottom: 20px;
+  }
+  &__form{
+    @include row-flex();
+    @include size(8); // col count
+    @include shift-left(2);
+  }
+  &__input{
+    margin: 0 auto;
+    display: block;
+    width: 30%;
+      @include col();
+      @include size(6);
+  }
+  &__submit{
+    margin: 30px auto 0;
+    display: block;
+    @include size(4);
+  }
+}
+.manager-list{
+  justify-content: center;
+}
+.page-insurance-manager{
+  padding: 70px 0 200px;
+}

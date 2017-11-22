@@ -1,0 +1,92 @@
+include partials/_mixins.pug
+
+//- title as parameter
+//- example:
+//- head("page title")
++head("12 repair")
+body
+  include partials/_header.pug
+    
+  //- main content
+  section.page-head.page-repair-head
+    .wrapper
+      .breadcrumbs
+        ul.breadcrumbs__list
+          li.breadcrumbs__item Головна
+          li.breadcrumbs__item Сервіс
+          li.breadcrumbs__item Дбайливий та якісний ремонт
+        .breadcrumbs__title-wrap
+          h1.breadcrumbs__title Дбайливий та якісний ремонт
+  section.page-repair-models
+    .wrapper
+    
+      .repair-card.card-big
+        .card-big__image.card-big__image-right
+          img(src="img/c-repair-1.jpg")
+        .card-big__description.card-big__description-right.repair-card__description
+          h2.card-big__title.card-big__title-right.section-title Технічне обслуговування
+          .card-big__info.card-big__info-right.repair-card__text
+            p Ми щиро сподіваємось, що Ви знаходите Ваш автомобіль Toyota надійним та комфортним у використанні. 
+            p Одним з найголовніших пріоритетів компанії Toyota є питання якості та надійності своїх автомобілів. Ми постійно відстежуємо експлуатаційні якості наших автомобілів, використовуючи найрізноманітніші методи. 
+            p Цінуючи свою репутацію і ставлячи турботу про клієнта за всіма аспектами діяльності своїм найвищим пріоритетом, компанія Toyota запроваджує Спеціальні Сервісні Кампанії, для запобігання можливості виникнення ситуації, коли певні компоненти чи аспекти автомобіля можуть не відповідати нашим високим стандартам. 
+            p За допомогою програми перевірки, Ви можете перевірити чи залучений Ваш автомобіль до проведення Спеціальних Сервісних Кампаній. 
+            p Програма перевірки містить перелік автомобілів марки Toyota, що були продані виключно через мережу офіційних дилерських центрів Toyota в Україні. Автомобілі, що були продані в інших країнах, не можуть бути перевірені за допомогою цієї програми.
+            .btn.btn-typical.repair-card__btn ЗАПИСАТИ
+            .btn.btn-typical-o.repair-card__btn ВЗНАТИ БІЛЬШЕ
+            
+              
+      .repair-card.card-big
+        .card-big__image.card-big__image-right
+          img(src="img/c-repair-2.jpg")
+        .card-big__description.card-big__description-right.repair-card__description
+          h2.card-big__title.card-big__title-right.section-title Кузовний ремонт
+          .card-big__info.card-big__info-right.repair-card__text
+            p Кузовной ремонт — это один из наиболее трудоемких видов ремонта. От качества работы проделанного кузовного ремонта зависит внешний вид автомобиля и его ходовые показатели.  
+            p Сервис Тойота Центр Киев «Автосамит» располагает всем необходимым для проведения качественного кузовного ремонта. В сервисе восстановят любые повреждения кузова, — от мелкой вмятины до исправления нарушенной геометрии или замены кузовных деталей. 
+            p Специалисты нашего сервиса выполняют жестяные работы разной сложности, начиная от рихтовки, вытяжки, сварки любых кузовных деталей с точным восстановлением зазоров до заводских величин, до выдавливания, выколачивания и растяжки с целью придания поврежденным частям автомобиля первоначального вида.
+            p Наш сервис поможет Вам решить любую задачу, связанную с восстановлением автомобиля.
+            .btn.btn-typical.repair-card__btn ЗАПИСАТИ
+            .btn.btn-typical-o.repair-card__btn ВЗНАТИ БІЛЬШЕ
+
+      .repair-card.card-big
+        .card-big__image.card-big__image-right
+          img(src="img/c-repair-3.jpg")
+        .card-big__description.card-big__description-right.repair-card__description
+          h2.card-big__title.card-big__title-right.section-title Покраска
+          .card-big__info.card-big__info-right.repair-card__text
+            p В процессе ремонта мы используем лакокрасочную систему Du Pont, расходные материалы для авторемонта 3M, Loctite, Colad и др. При расчетах стоимости кузовных работ, нормативная трудоемкость, стоимость необходимых запасных частей и материалов принимается в соответствии с документацией заводов изготовителей и программного комплекса AUDATEX. Это позволяет не только оптимизировать стоимость кузовного ремонта, но и сделать ее прозрачной как для владельца автомобиля, так и страховой компании. 
+            p Кузовной ремонт и покраска Toyota (Тойота) Camry, Corolla, Land Cruiser 200, Prado, 150, 120, Venza, Highlander, Sequoia, RAV4, HiluxВ распоряжении наших клиентов имеется целый ряд дополнительных услуг.
+            .btn.btn-typical.repair-card__btn ЗАПИСАТИ
+            .btn.btn-typical-o.repair-card__btn ВЗНАТИ БІЛЬШЕ
+
+
+      .repair-card.card-big
+        .card-big__image.card-big__image-right
+          img(src="img/c-repair-4.jpg")
+        .card-big__description.card-big__description-right.repair-card__description
+          h2.card-big__title.card-big__title-right.section-title Диагностика
+          .card-big__info.card-big__info-right.repair-card__text
+            p Опытные механики станции качественно проведут техническое обслуживание Вашего автомобиля. Цех ТО и ремонта включает в себя 20 постов, на которых смонтированы 19 подъемников: 
+            p 7 четырехстоечных грузоподъемностью 3,5 тонны; 
+            p 10 двухстоечных грузоподъемностью 3,5 тонны; 
+            p 1 шестистоечный грузоподъемностью 5,0 тонн; 
+            p 1 ножничного типа грузоподъемностью 3,0 тонны. 
+            p Для осуществления технического обслуживания и ремонта систем впрыска бензиновых двигателей сервисная станция располагает стендом, который предназначен для проверки и очистки электронно-управляемых форсунок кавитационным методом. Очистка кавитационным методом качественно чистит форсунки и не оказывает на них негативного воздействия.
+            .btn.btn-typical.repair-card__btn ЗАПИСАТИ
+            .btn.btn-typical-o.repair-card__btn ВЗНАТИ БІЛЬШЕ      
+            
+      .repair-card.card-big
+        .card-big__image.card-big__image-right
+          img(src="img/c-repair-5.jpg")
+        .card-big__description.card-big__description-right.repair-card__description
+          h2.card-big__title.card-big__title-right.section-title Мойка
+          .card-big__info.card-big__info-right.repair-card__text
+            p Специалисты мойки автомобилей и двигателей Официального дилерского центра Тойота Центр Киев «Автосамит» — проводят всегда качественную и профессиональную мойку Вашего автомобиля. 
+            p Мы предлагаем полный спектр услуг по мойке авто, начиная от мойки и чистки колес, заканчивая комплексной химчисткой салона, обновлением деталей из хрома и предпродажной подготовкой автомобиля. В процессе выполнения работ мы используем только сертифицированные моющие средства мировых производителей автохимии. Индивидуальный подход к каждому автомобилю, мы учитываем все пожелания владельца авто.
+            .btn.btn-typical.repair-card__btn ЗАПИСАТИ
+            .btn.btn-typical-o.repair-card__btn ВЗНАТИ БІЛЬШЕ                     
+
+  //- eof main content
+
+  include partials/_footer.pug
+  include partials/_scripts.pug

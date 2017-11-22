@@ -1,0 +1,81 @@
+include partials/_mixins.pug
+
+//- title as parameter
+//- example:
+//- head("page title")
++head("20 insurance")
+body
+  include partials/_header.pug
+    
+  //- main content
+  section.page-head.page-insurance-head
+    .wrapper
+      .breadcrumbs
+        ul.breadcrumbs__list
+          li.breadcrumbs__item Головна
+          li.breadcrumbs__item Кредит
+          li.breadcrumbs__item Страхування
+        .breadcrumbs__title-wrap
+          h1.breadcrumbs__title Страхування
+  .wrapper
+    .insurance-info
+      .insurance-info__title.section-title Toyota страхування
+      .insurance-info__subtitle.section-subtitle Отримай повний захист автомобіля
+      .insurance-info__description
+        .insurance-info__logo
+            img(src="img/c-logo-insurance.png")
+        p В офіційній дилерській мережі ПІІ «Тойота-Україна» впроваджено унікальну страхову програму під назвою «Тойота Страхування». Вона спрямована на якісне та оперативне врегулювання збитків при настанні страхових випадків і дозволить вам забезпечити свій автомобіль на максимально вигідних умовах. 
+        p При приобретении автомобилей у официального дилера Тойота Центр Киев «Автосамит» покупатели имеют возможность оформить договора страхования следующих типов:
+        
+      ul.insurance-info__description-list      
+        li Страхование наземного автотранспорта (полное автоКАСКО)
+        li Обязательное страхование гражданско-правовой ответственности (ОСГПО) 
+      p Основным страховым партнёром Тойота Центр Киев «Автосамит» является компания «Экспресс Страхование».        
+      
+        
+    .insurance-card.card-big
+      .card-big__image.card-big__image-right
+        img(src="img/c-insurance.jpg")
+      .insurance-card__description.card-big__description.card-big__description-right
+        h2.card-big__title.card-big__title-right.section-title “Експрес страхування”
+        .insurance-card__right.card-big__info.card-big__info-right
+          p «Экспресс Страхование» — динамично развивающаяся страховая компания, основанная при участии лидера рынка автотранспорта Украины — Украинской Автомобильной Корпорации «УкрАВТО». 
+          p Используя многолетний опыт, техническую базу, и инновационные подходы в работе Корпорации «УкрАВТО», страховая компания «Экспресс Страхование» направляет все усилия на завоевание положительного имиджа и доверия клиентов.
+          p «Экспресс Страхование» — это: 
+          p оптимальный выбор продуктов полного КАСКО с фиксированными тарифами; возможность защиты авто именно от тех рисков, которые больше всего волнуют Клиента; максимально быстрое оформление и качественное сопровождение договора; своевременное урегулирование страховых событий. Кроме того, компания «Экспресс Страхование» позаботилась обо всех своих клиентах и создала уникальные продукты Экспресс КАСКО
+
+    
+  section.page-insurance-form.bg-cyan
+    .wrapper    
+      .insurance-form
+        h2.insurance-form__title.section-title Ми будемо раді проконсультуваи вас
+        .insurance-form__subtitle.section-subtitle Вкажіть ваше Ім’я та номер телефону
+        form.insurance-form__form          
+          input.insurance-form__input.field-typical(type="text" placeholder="Вартість автомобіля")
+          input.insurance-form__input.field-typical(type="text" placeholder="Номер телефону +38 0")
+          input.insurance-form__submit.btn.btn-typical(value="ВІДПРАВИТИ" type="button")
+          
+  section.page-insurance-manager        
+    .wrapper
+      .managers-title.section-title Наші менеджери
+      .manager-list
+        .manager-card
+          .manager-card__images
+            img(src="img/c-manager-1.jpg")
+          .manager-card__name Геодержинский Валентин
+          .manager-card__status.section-subtitle Керівник відділу корпоративних продаж
+          .manager-card__phone.i-inline__phone (044) 537-54-54
+          a.manager-card__mail.btn-more(href="") Відправити листа
+        .manager-card
+          .manager-card__images
+            img(src="img/c-manager-2.jpg")
+          .manager-card__name Усманова Евдокія
+          .manager-card__status.section-subtitle Керівник відділу корпоративних продаж
+          .manager-card__phone.i-inline__phone (044) 537-54-54
+          a.manager-card__mail.btn-more(href="") Відправити листа
+          
+          
+  //- eof main content
+  
+  include partials/_footer.pug
+  include partials/_scripts.pug

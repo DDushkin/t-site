@@ -146,16 +146,4 @@
     display: block;
     @include size(4);
   }
-  &__clear{
-    cursor: pointer;
-    width: 10%;
-    margin: 10px auto 0;
-    font-style: italic;
-    font-weight: 300;
-    line-height: normal;
-    font-size: 14px;
-    text-align: center;
-    letter-spacing: 0.1em;
-    text-decoration-line: underline;
-  }
 }

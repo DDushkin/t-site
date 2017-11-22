@@ -46,11 +46,7 @@ body {
 section {
   padding-bottom: 200px; }
 
-<<<<<<< HEAD
-.clearfix:after, .wrapper:after, .car-card--big:after, .filter__icons:after, .available-car-info:after, .car-card:after, .test-drive-card:after, .test-drive-pace:after, .test-drive-terms__description:after, .test-drive-form__car:after, .corporate-card:after, .corporate-title-card:after, .card-big:after, .lising-card:after {
-=======
 .clearfix:after, .wrapper:after, .car-card--big:after, .filter__icons:after, .available-car-info:after, .available-card:after, .test-drive-card:after, .test-drive-pace:after, .test-drive-terms__description:after, .test-drive-form__car:after, .corporate-card:after, .corporate-title-card:after, .card-big:after, .credit-card:after, .lising-card:after {
->>>>>>> 40a37e0c983b568b6ffced7d04ead57b77c8e81a
   content: "";
   display: table;
   clear: both; }
@@ -1810,9 +1806,6 @@ input[data-empty="false"] + label {
       padding: 15px; }
     .car-card__fuel p {
       margin: 0; }
-    .car-card__fuel:before {
-      content: "";
-      display: inline-block; }
 
 .photo-grid {
   display: -webkit-box;
@@ -3249,46 +3242,6 @@ input[data-empty="false"] + label {
     margin: 30px auto 0;
     display: block;
     width: calc(100% / 12 * 4 - 30px); }
-<<<<<<< HEAD
-  .lising-form__clear {
-    cursor: pointer;
-    width: 10%;
-    margin: 10px auto 0;
-    font-style: italic;
-    font-weight: 300;
-    line-height: normal;
-    font-size: 14px;
-    text-align: center;
-    letter-spacing: 0.1em;
-    -webkit-text-decoration-line: underline;
-    text-decoration-line: underline; }
-
-.postnav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
-  .postnav__inner {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
-  .postnav__arrow {
-    font-size: 0; }
-  .postnav__links-wrapper {
-    margin: 0 45px; }
-  .postnav__link {
-    color: inherit;
-    text-decoration: none;
-    padding: 3px; }
-    .postnav__link--active {
-      font-size: 130%;
-      color: #CC0033; }
-=======
 
 .page-insurance-head {
   color: white;
@@ -3366,4 +3319,29 @@ input[data-empty="false"] + label {
 
 .page-insurance-manager {
   padding: 70px 0 200px; }
->>>>>>> 40a37e0c983b568b6ffced7d04ead57b77c8e81a
+
+.postnav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .postnav__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .postnav__arrow {
+    font-size: 0; }
+  .postnav__links-wrapper {
+    margin: 0 45px; }
+  .postnav__link {
+    color: inherit;
+    text-decoration: none;
+    padding: 3px; }
+    .postnav__link--active {
+      font-size: 130%;
+      color: #CC0033; }

@@ -53,6 +53,20 @@ section {
     background: #174165 url('../img/bg-head-news.png') center no-repeat;
     background-size: cover;
   }
+  &--offers {
+    // margin-bottom: 100px;
+    background: url('../img/bg-head-offers.png') center/cover no-repeat;
+  }
+  &--stuff {
+    // margin-bottom: 100px;
+    color: #fff;
+    background: url('../img/bg-head-news.png') center/cover no-repeat;
+  }
+  &--protect {
+    margin-bottom: 100px;
+    color: #fff;
+    background: url('../img/bg-protect-head.png') center/cover no-repeat;
+  }
 }
 
 .container {
@@ -108,7 +122,18 @@ section {
       display: none;
     }
   }
+} // eof section-title
+
+.block-title {
+  font-size: 24px;
+  font-family: $f-td;
+  letter-spacing: .1em;
+  font-weight: bold;
+  margin: 0;
+
+
 }
+
 .section-subtitle {
   margin-top: 10px;
   font-size: 14px;
@@ -133,8 +158,10 @@ section {
 .breadcrumbs__item:not(:first-child)::before {
     background: $black;
 }  для нужного section
+
+!!! добавил модификатор '--dark' для черных точек !!!
 */
-.breadcrumbs{
+.breadcrumbs {
   padding-top: 110px;
 
   &__list {
@@ -171,6 +198,10 @@ section {
     &:last-child{
       text-decoration: underline;
     }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
   }
   &__title{
     font-family: $f-td;
@@ -184,7 +215,14 @@ section {
       padding-top: 15px;
     }
   }
-}
+
+  &--dark {
+    .breadcrumbs__item:not(:first-child)::before {
+      background: $black;
+    }
+  }
+} // oef breadcrumbs
+
 .is-checked{
   &:after {
     display: inline-block;
@@ -223,8 +261,11 @@ section {
   cursor: pointer;
   letter-spacing: .1em;
   transition: all .3s;
+  user-select: none;
+
   &-typical {                    // главная кнопка
     background: $red;
+    text-align: center;
     &:hover {
       background-color: $red-dark;
     }
@@ -566,7 +607,7 @@ input[type="radio"] + .checkbox-label:hover::before {
 .toggle-active{
   text-decoration: underline;
 }
-.bold{
+.bold{ // ???
   font-weight: bold;
 }
 .link {
@@ -585,9 +626,85 @@ input[type="radio"] + .checkbox-label:hover::before {
   height: auto;
 }
 
-
 .bg-gradient {
   background-color: #303A41;
   color: #fff;
   background-image:  radial-gradient(51vw at 50% 50%, rgba(176, 178, 173, 0.7) 0%, rgba(196, 196, 196, 0) 100%), radial-gradient(62vw at 50% 50%, rgba(160, 161, 164, 0.6) 0%, rgba(196, 196, 196, 0) 72.93%, rgba(196, 196, 196, 0.04) 100%);
 }
+
+
+// forms
+input, fieldset {
+  vertical-align: middle;
+  display: inline-block;
+  font-size: 18px;
+}
+
+textarea {
+  width: 200px;
+  height: 100px;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  resize: none;
+  border: 1px solid $grey;
+  background-color: transparent;
+  border-radius: 27px;
+  outline: none;
+  font-style: italic;
+  color: inherit;
+  font-family: inherit;
+}
+
+.textfield {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  border: none;
+  &__placeholder {
+    position: absolute;
+    top: 18px;
+    left: 20px;
+    font-style: italic;
+    font-size: 18px;
+    color: #B5B7B3;
+    transition: all .3s;
+    pointer-events: none;
+  }
+  &__textarea {
+    height: 130px;
+  }
+}
+.textfield__input:focus + .textfield__placeholder,
+.textfield__input[data-empty="false"] + .textfield__placeholder {
+  color: $black;
+  font-size: 14px;
+  transform: translateY(-38px);
+}
+
+.field-typical {
+  width: 100%;
+  padding: 17px 20px 15px;
+  border: 1px solid $black;
+  box-sizing: border-box;
+  border-radius: 100px;
+  outline: none;
+  font-family: inherit;
+  font-style: italic;
+  transition: all .3s;
+
+  &:hover {
+    border-color: #1D71B8;
+    box-shadow: 0px 0px 7px rgba(29, 113, 184, 0.8);
+  }
+  &__select{
+    width: 100%;
+    border-color: $black;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    cursor: pointer;
+    font-size: 18px;
+    font-style: italic;
+    background: transparent;
+  }
+}
+//eof forms

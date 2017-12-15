@@ -20,13 +20,14 @@ $(document).ready(function(){
   $('.footer-slider').slick({
     dots: false,
     infinite: true,
-    speed: 300,
+    speed: 1000,
     slidesToShow: 5,
     slidesToScroll: 1,
     centerMode: true,
     autoplay: true,
     draggable: false,
     autoplaySpeed: 2000,
+    cssEase: 'ease-in-out',
     variableWidth: true
   });
   // eof footer-slider
@@ -148,7 +149,7 @@ $(document).ready(function(){
       return false;
     }
   });
-
+--> 
   // 04 slider
    $('.slider').slick({
     slidesToShow: 1,
@@ -206,4 +207,14 @@ $(document).ready(function(){
   });
   // eof color-selector (04)
 
+  // pagenav tabs (31)
+    $(".js-pagenav .pagenav__link").click(function(){
+      $(this).parent().addClass("pagenav__item--active");
+      $(this).parent().siblings().removeClass("pagenav__item--active");
+      if ($(".tab-item--active").attr("data-tab")!=$(this).attr("data-tab")) {
+        $(".tab-item--active").removeClass("tab-item--active").hide();
+        $(".tab-item[data-tab="+$(this).attr("data-tab")+"]").fadeIn(400).addClass("tab-item--active");
+      }
+    });
+  // eof pagenav tabs (31)
 });  // eof doc.ready

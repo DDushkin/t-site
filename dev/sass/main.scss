@@ -1,3 +1,4 @@
+// partials
 @import "variables";
 @import "mixins";
 @import "smart-grid";
@@ -7,20 +8,36 @@
 @import "header";
 @import "footer";
 
-// add pages here
-@import "homepage";    // 01
-@import "models";      // 02
-@import "available";   // 03
-@import "automobile";  // 04
-@import "testdrive";   // 05
-@import "comparison";  // 06
-@import "tradein";     // 07
-@import "corporate";   // 08
-@import "repair";      // 12
-@import "service-camp";// 13
-@import "accessories"; // 15
-@import "credit";      // 18
-@import "lising";      // 19
-@import "insurance";   // 20
-@import "news";        // 22
+// pages
+@import "homepage";         // 01
+@import "models";           // 02
+@import "available";        // 03
+@import "automobile";       // 04 -
+@import "testdrive";        // 05
+@import "comparison";       // 06
+@import "tradein";          // 07
+@import "corporate";        // 08
+//@import "service ";         // l09 na
+//@import "assistance ";      // 10 na
+//@import "loyalty";          // 11 na
+@import "repair";           // 12
+@import "service-camp";     // 13
+//@import "parts";            // 14 na
+@import "accessories";      // 15
+@import "protect";          // 16
+//@import "touch";            // 17
+@import "credit";           // 18
+@import "lising";           // 19
+@import "insurance";        // 20
+//@import "story";            // 21
+@import "news";             // 22
+@import "news";             // 23
+@import "special-offers";   // 24
+//@import "one-offer";        // 25
+//@import "gallery";          // 26
+//@import "vacancies";        // 27
+//@import "contacts";         // 28
+//@import "customer-service"; // 29
+//@import "404";              // 30
+@import "stuff";            // 31 na
 

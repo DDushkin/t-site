@@ -1,0 +1,220 @@
+include partials/_mixins.pug
+
+//- title as parameter
+//- example:
+//- head("page title")
++head("31_stuff")
+body
+  include partials/_header.pug
+
+  //- main content
+  section.page-head.page-head--stuff
+    .wrapper
+      .breadcrumbs
+        ul.breadcrumbs__list
+          li.breadcrumbs__item Головна
+          li.breadcrumbs__item Про нас
+          li.breadcrumbs__item Співробітники
+        .breadcrumbs__title-wrap
+          h1.breadcrumbs__title Співробітники
+  
+  ul.pagenav.pagenav--smallgap.js-pagenav
+    li.pagenav__item.pagenav__item--active
+      a.pagenav__link(href="#", data-tab=1) Відділ продажу
+    li.pagenav__item
+      a.pagenav__link(href="#", data-tab=2) Корпоративні продажі
+    li.pagenav__item
+      a.pagenav__link(href="#", data-tab=3) Сервіс
+    li.pagenav__item
+      a.pagenav__link(href="#", data-tab=4) Відділ запчастин
+    li.pagenav__item
+      a.pagenav__link(href="#", data-tab=5) Відділ аксесуарів
+    li.pagenav__item
+      a.pagenav__link(href="#", data-tab=6) Кредит та страхування
+    li.pagenav__item
+      a.pagenav__link(href="#", data-tab=7) Трейд-ін
+    li.pagenav__item
+      a.pagenav__link(href="#", data-tab=8) Клієнтська служба
+
+  .tab-wrapper
+    .tab-item.tab-item--active(data-tab=1)
+      .manager-list
+        //- reference: 18 credit page block
+        .manager-card
+          .manager-card__images
+            img(src="img/c-manager-1.jpg")
+          .manager-card__name Геодержинский Валентин
+          .manager-card__status.section-subtitle Керівник відділу корпоративних продаж
+          a(href="tel:0445375454").manager-card__phone.i-inline__phone (044) 537-54-54 
+          a.manager-card__mail.btn-more(href="#") Відправити листа
+        .manager-card
+          .manager-card__images
+            img(src="img/c-manager-2.jpg")
+          .manager-card__name Усманова Евдокія
+          .manager-card__status.section-subtitle Керівник відділу корпоративних продаж
+          a(href="tel:0445375454").manager-card__phone.i-inline__phone (044) 537-54-54
+          a.manager-card__mail.btn-more(href="#") Відправити листа
+        .manager-card
+          .manager-card__images
+            img(src="img/c-manager-3.jpg")
+          .manager-card__name Зеленська Катерина
+          .manager-card__status.section-subtitle Експерт
+          a(href="tel:0445375454").manager-card__phone.i-inline__phone (044) 537-54-54
+          a.manager-card__mail.btn-more(href="#") Відправити листа
+        .manager-card
+          .manager-card__images
+            img(src="img/c-manager-1.jpg")
+          .manager-card__name Геодержинский Валентин
+          .manager-card__status.section-subtitle Керівник відділу корпоративних продаж
+          a(href="tel:0445375454").manager-card__phone.i-inline__phone (044) 537-54-54
+          a.manager-card__mail.btn-more(href="#") Відправити листа
+        .manager-card
+          .manager-card__images
+            img(src="img/c-manager-2.jpg")
+          .manager-card__name Усманова Евдокія
+          .manager-card__status.section-subtitle Керівник відділу корпоративних продаж
+          a(href="tel:0445375454").manager-card__phone.i-inline__phone (044) 537-54-54
+          a.manager-card__mail.btn-more(href="#") Відправити листа
+        .manager-card
+          .manager-card__images
+            img(src="img/c-manager-3.jpg")
+          .manager-card__name Зеленська Катерина
+          .manager-card__status.section-subtitle Експерт
+          a(href="tel:0445375454").manager-card__phone.i-inline__phone (044) 537-54-54
+          a.manager-card__mail.btn-more(href="#") Відправити листа
+      .manager-grid
+        .manager-grid__header
+          .manager-grid__header-inner
+            .manager-grid__row
+              .manager-grid__cell Ім’я
+              .manager-grid__cell посада
+              .manager-grid__cell телефон
+        .manager-grid__row
+              .manager-grid__cell Хохлов Денис Іванович
+              .manager-grid__cell механік-менеджер
+              .manager-grid__cell
+        .manager-grid__row
+              .manager-grid__cell Несамохвалов Ернест Веніаминович
+              .manager-grid__cell СЕО иллюстраторов окрашивателей
+              .manager-grid__cell
+                a.manager-grid__phone(href="tel:55002362231") 5-500-236-22-31
+        .manager-grid__row
+              .manager-grid__cell Монашко Василь Вікторович
+              .manager-grid__cell механік-менеджер
+              .manager-grid__cell
+        .manager-grid__row
+              .manager-grid__cell Звегінцешвілі Нестор Павлович
+              .manager-grid__cell Продажник закройщик
+              .manager-grid__cell
+                a.manager-grid__phone(href="tel:55002362231") 5-500-236-22-31
+        .manager-grid__row
+              .manager-grid__cell У Фей Дзінь
+              .manager-grid__cell Пастор шиномонтажник
+              .manager-grid__cell
+                a.manager-grid__phone(href="tel:55002362231") 5-500-236-22-31
+        .manager-grid__row
+              .manager-grid__cell Фіфтісенко Михайло Васильович
+              .manager-grid__cell Контролер секьюріті
+              .manager-grid__cell
+                a.manager-grid__phone(href="tel:55002362231") 5-500-236-22-31
+    .tab-item(data-tab=2)
+      .manager-list
+        .manager-card
+          .manager-card__images
+            img(src="img/c-manager-2.jpg")
+          .manager-card__name Усманова Евдокія
+          .manager-card__status.section-subtitle Керівник відділу корпоративних продаж
+          a(href="tel:0445375454").manager-card__phone.i-inline__phone (044) 537-54-54
+          a.manager-card__mail.btn-more(href="#") Відправити листа
+        .manager-card
+          .manager-card__images
+            img(src="img/c-manager-1.jpg")
+          .manager-card__name Геодержинский Валентин
+          .manager-card__status.section-subtitle Керівник відділу корпоративних продаж
+          a(href="tel:(44)37-4-44").manager-card__phone.i-inline__phone (044) 537-54-54 
+          a.manager-card__mail.btn-more(href="#") Відправити листа
+        .manager-card
+          .manager-card__images
+            img(src="img/c-manager-3.jpg")
+          .manager-card__name Зеленська Катерина
+          .manager-card__status.section-subtitle Експерт
+          a(href="tel:0445375454").manager-card__phone.i-inline__phone (044) 537-54-54
+          a.manager-card__mail.btn-more(href="#") Відправити листа
+        .manager-card
+          .manager-card__images
+            img(src="img/c-manager-1.jpg")
+          .manager-card__name Геодержинский Валентин
+          .manager-card__status.section-subtitle Керівник відділу корпоративних продаж
+          a(href="tel:0445375454").manager-card__phone.i-inline__phone (044) 537-54-54
+          a.manager-card__mail.btn-more(href="#") Відправити листа
+        .manager-card
+          .manager-card__images
+            img(src="img/c-manager-2.jpg")
+          .manager-card__name Усманова Евдокія
+          .manager-card__status.section-subtitle Керівник відділу корпоративних продаж
+          a(href="tel:0445375454").manager-card__phone.i-inline__phone (044) 537-54-54
+          a.manager-card__mail.btn-more(href="#") Відправити листа
+        .manager-card
+          .manager-card__images
+            img(src="img/c-manager-3.jpg")
+          .manager-card__name Зеленська Катерина
+          .manager-card__status.section-subtitle Експерт
+          a(href="tel:0445375454").manager-card__phone.i-inline__phone (044) 537-54-54
+          a.manager-card__mail.btn-more(href="#") Відправити листа
+      .manager-grid
+        .manager-grid__header
+          .manager-grid__header-inner
+            .manager-grid__row
+              .manager-grid__cell Ім’я
+              .manager-grid__cell посада
+              .manager-grid__cell телефон
+        .manager-grid__row
+              .manager-grid__cell Хохлов Денис Іванович
+              .manager-grid__cell механік-менеджер
+              .manager-grid__cell 
+        .manager-grid__row
+              .manager-grid__cell Несамохвалов Ернест Веніаминович
+              .manager-grid__cell СЕО иллюстраторов окрашивателей
+              .manager-grid__cell
+                a.manager-grid__phone(href="tel:55002362231") 5-500-236-22-31
+        .manager-grid__row
+              .manager-grid__cell Монашко Василь Вікторович
+              .manager-grid__cell механік-менеджер
+              .manager-grid__cell
+        .manager-grid__row
+              .manager-grid__cell Звегінцешвілі Нестор Павлович
+              .manager-grid__cell Продажник закройщик
+              .manager-grid__cell
+                a.manager-grid__phone(href="tel:55002362231") 5-500-236-22-31
+        .manager-grid__row
+              .manager-grid__cell У Фей Дзінь
+              .manager-grid__cell Пастор шиномонтажник
+              .manager-grid__cell
+                a.manager-grid__phone(href="tel:55002362231") 5-500-236-22-31
+        .manager-grid__row
+              .manager-grid__cell Фіфтісенко Михайло Васильович
+              .manager-grid__cell Контролер секьюріті
+              .manager-grid__cell
+                a.manager-grid__phone(href="tel:55002362231") 5-500-236-22-31
+
+  .stuff-consult
+    .section-title Мы будемо раді проконсультувати вас
+    .section-subtitle Вкажіть ваше ім'я та повідомлення для консультанта Toyota
+    form.stuff-form
+      .stuff-form__part-left
+        fieldset.textfield
+          input.textfield__input.field-typical(type="text")
+          label.textfield__placeholder(for="") Ваше ім'я
+        fieldset.textfield
+          input.textfield__input.field-typical(type="text")
+          label.textfield__placeholder(for="") Email
+      .stuff-form__part-right
+        fieldset.textfield
+          textarea.textfield__input.textfield__textarea
+          label.textfield__placeholder(for="") Ваше повідомлення
+      button.btn.btn-typical Відправити
+
+  //- eof main content
+  
+  include partials/_footer.pug
+  include partials/_scripts.pug

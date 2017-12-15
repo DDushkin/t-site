@@ -6,6 +6,7 @@ var gulp = require('gulp'),
   sass = require('gulp-sass'),
   autoprefixer = require('gulp-autoprefixer'),
   pug = require('gulp-pug'),
+  sourcemaps = require('gulp-sourcemaps'),
   browserSync = require('browser-sync'),
   rename = require('gulp-rename'),
   concat = require('gulp-concat'),
@@ -54,11 +55,13 @@ gulp.task('sass', function(){
   return gulp.src([
           '!dev/sass/smart-grid.scss',
           'dev/sass/*.scss'])
+    .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({
       browsers: ['last 5 versions'],
       cascade: false
     }))
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest('dev/css'))
     .pipe(browserSync.reload({stream: true}))
 });
@@ -107,7 +110,8 @@ gulp.task('browser-sync', function(){
     server: {
       baseDir: 'dev'
     },
-    notify: false
+    notify: false,
+    open: false
   });
 });
 

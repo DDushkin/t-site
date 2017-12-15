@@ -43,6 +43,11 @@
     text-decoration: none;
     padding: 10px 0px;
   }
+  &--smallgap {
+    .pagenav__item + .pagenav__item {
+      margin-left: 30px;
+    }
+  }
 }
 // eof pagenav
 

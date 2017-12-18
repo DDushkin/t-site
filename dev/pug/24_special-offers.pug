@@ -1,0 +1,95 @@
+include partials/_mixins.pug
+
++head("24_special-offers")
+body
+  include partials/_header.pug
+
+  //- main content
+  section.page-head.page-head--offers
+    .wrapper
+      .breadcrumbs.breadcrumbs--dark
+        ul.breadcrumbs__list
+          li.breadcrumbs__item 
+            a(href="#") Головна
+          li.breadcrumbs__item 
+            a(href="#") Про нас
+          li.breadcrumbs__item Акції та спеціальні пропозиції
+        .breadcrumbs__title-wrap
+          h1.breadcrumbs__title Акції та спеціальні пропозиції
+  
+  section.offer
+    .offer-item
+      .offer-item__info
+        .block-title TOYOTA CAMRY від 699 000 грн!
+        p У 2017 році легендарний седан Toyota Camry святкує 35 років успіху. Щоб відзначити цю дату, була підготовлена ​​лімітована серія автомобіля - Camry 35th Anniversary, доступна тільки на українському ринку і тільки в цьому році.
+        p Також інформуємо, що в Тойота Центр Київ «Автосаміт» діють спеціальні ціни на ToyotaCAMRY!
+        span.btn-more Читати далі 
+      .offer-item__img-wrap
+        img(src="/img/main-slider.jpg", alt="").offer-item__img
+
+
+  section
+    .news-grid
+      .news-grid-item.news-grid-item--full
+        img.news-grid-item__img(src="img/c-news.png")
+        .news-grid-item__text
+          .news-grid-item__date 25.09.2019
+          .news-grid-item__heading Camry 35th Anniversary – лімітована серія
+          p TOYOTA CAMRY від 699 000 грн! У 2017 році легендарний седан Toyota Camry святкує 35 років успіху. Щоб відзначити цю дату, була підготовлена ​​лімітована серія автомобіля - Camry 35th Anniversary, доступна тільки на українському ринку і тільки в цьому році.
+          a.btn-more(href="#") Читати далі
+
+      .news-grid-item.news-grid-item--full
+        img.news-grid-item__img(src="img/c-news.png")
+        .news-grid-item__text
+          .news-grid-item__date 25.09.2019
+          .news-grid-item__heading Camry 35th Anniversary – лімітована серія
+          p TOYOTA CAMRY від 699 000 грн! У 2017 році легендарний седан Toyota Camry святкує 35 років успіху. Щоб відзначити цю дату, була підготовлена ​​лімітована серія автомобіля - Camry 35th Anniversary, доступна тільки на українському ринку і тільки в цьому році.
+          a.btn-more(href="#") Читати далі
+
+      .news-grid-item.news-grid-item--full
+        img.news-grid-item__img(src="img/c-news.png")
+        .news-grid-item__text
+          .news-grid-item__date 25.09.2019
+          .news-grid-item__heading Camry 35th Anniversary – лімітована серія
+          p TOYOTA CAMRY від 699 000 грн! У 2017 році легендарний седан Toyota Camry святкує 35 років успіху. Щоб відзначити цю дату, була підготовлена ​​лімітована серія автомобіля - Camry 35th Anniversary, доступна тільки на українському ринку і тільки в цьому році.
+          a.btn-more(href="#") Читати далі
+
+      .news-grid-item.news-grid-item--full
+        img.news-grid-item__img(src="img/c-news.png")
+        .news-grid-item__text
+          .news-grid-item__date 25.09.2019
+          .news-grid-item__heading Camry 35th Anniversary – лімітована серія
+          p TOYOTA CAMRY від 699 000 грн! У 2017 році легендарний седан Toyota Camry святкує 35 років успіху. Щоб відзначити цю дату, була підготовлена ​​лімітована серія автомобіля - Camry 35th Anniversary, доступна тільки на українському ринку і тільки в цьому році.
+          a.btn-more(href="#") Читати далі
+      .news-grid-item.news-grid-item--full
+        img.news-grid-item__img(src="img/c-news.png")
+        .news-grid-item__text
+          .news-grid-item__date 25.09.2019
+          .news-grid-item__heading Camry 35th Anniversary – лімітована серія
+          p TOYOTA CAMRY від 699 000 грн! У 2017 році легендарний седан Toyota Camry святкує 35 років успіху. Щоб відзначити цю дату, була підготовлена ​​лімітована серія автомобіля - Camry 35th Anniversary, доступна тільки на українському ринку і тільки в цьому році.
+          a.btn-more(href="#") Читати далі
+      .news-grid-item.news-grid-item--full
+        img.news-grid-item__img(src="img/c-news.png")
+        .news-grid-item__text
+          .news-grid-item__date 25.09.2019
+          .news-grid-item__heading Camry 35th Anniversary – лімітована серія
+          p TOYOTA CAMRY від 699 000 грн! У 2017 році легендарний седан Toyota Camry святкує 35 років успіху. Щоб відзначити цю дату, була підготовлена ​​лімітована серія автомобіля - Camry 35th Anniversary, доступна тільки на українському ринку і тільки в цьому році.
+          a.btn-more(href="#") Читати далі
+    .postnav
+      .postnav__inner
+        a(href="#").postnav__arrow.postnav__arrow--prev
+          img(src="img/i-postnav-arrow.svg", alt="")
+        .postnav__links-wrapper
+          a(href="#").postnav__link.postnav__link--active 1
+          a(href="#").postnav__link 2
+          a(href="#").postnav__link 3
+          a(href="#").postnav__link 4
+        a(href="#").postnav__arrow.postnav__arrow--next
+          img(src="img/i-postnav-arrow-next.svg", alt="")
+
+
+
+  //- eof main content
+  
+  include partials/_footer.pug
+  include partials/_scripts.pug

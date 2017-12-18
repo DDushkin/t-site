@@ -2,9 +2,6 @@
   height: 350px; //TODO: mob 489px
 }
 .footer-feedback {
-  // display: flex;
-  // flex-direction: row;
-  // justify-content: space-between;
   @include row-flex();
   @include wrapper();
   padding-top: 100px;
@@ -25,65 +22,10 @@
   }
 }
 
-input, fieldset {
-  vertical-align: middle;
-  display: inline-block;
-  font-size: 18px;
-}
 
-fieldset {
-  position: relative;
-  padding: 0;
-  margin: 0;
-  border: none;
-  .placeholder {
-    position: absolute;
-    top: 18px;
-    left: 20px;
-    font-style: italic;
-    font-size: 18px;
-    color: #B5B7B3;
-    transition: all .3s;
-    pointer-events: none;
-  }
-}
 
-input:focus + label,
-input[data-empty="false"] + label {
-  color: $black;
-  font-size: 14px;
-  transform: translateY(-38px);
-}
-
-.field-typical {
-  width: 100%;
-  padding: 17px 20px 15px;
-  border: 1px solid $black;
-  box-sizing: border-box;
-  border-radius: 100px;
-  outline: none;
-  font-family: inherit;
-  font-style: italic;
-  transition: all .3s;
-
-  &:hover {
-    border-color: #1D71B8;
-    box-shadow: 0px 0px 7px rgba(29, 113, 184, 0.8);
-  }
-  &__select{
-    width: 100%;
-    border-color: $black;
-    border-style: solid;
-    border-width: 0 0 1px 0;
-    cursor: pointer;
-    font-size: 18px;
-    font-style: italic;
-    background: transparent;
-  }
-}
 
 .footer-feedback-text {
-  //width: 48.837209302325581395%; //TODO: remove magic numbers
   @include col();
   @include size(6);
 
@@ -102,9 +44,8 @@ input[data-empty="false"] + label {
 // footer-info
 .footer-info {
   padding: 120px 0;
-  // background-color: $black;
   color: #fff;
-  background:$black url('../img/bg-footer.png') center bottom no-repeat;
+  background: $black url('../img/bg-footer.png') center bottom no-repeat;
 
   &__wrapper {
     @include row-flex();

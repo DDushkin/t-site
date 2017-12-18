@@ -236,12 +236,15 @@
     margin-bottom: 10px;
   }
   &__phone{
+    display: block;
     padding-bottom: 20px;
     font-family: $f-td;
     line-height: normal;
     font-size: 18px;
     letter-spacing: 0.1em;
     font-weight: bold;
+    color: inherit;
+    text-decoration: none;
   }
   &__images{
     position: relative;

@@ -61,7 +61,7 @@ section {
 
 .wrapper {
     box-sizing: border-box;
-    width: 1310px;
+    max-width: 1310px;
     position: relative;
     display: block;
     margin: 0 auto;
@@ -347,7 +347,7 @@ input[type="radio"] + .checkbox-label:hover::before {
   }
   &__bodytype80:before{
     background-image: url('../img/i-bodytype80x60.svg');
-  } 
+  }
   &__consumption80:before{
     background-image: url('../img/i-consumption80x60.svg');
   }

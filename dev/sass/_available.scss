@@ -11,7 +11,16 @@
   margin-top: 100px;
   position: relative;
   @extend .clearfix;
-
+  @include tablet {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  @include mobile {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
   &__description{
     background: white;
     box-shadow: 4px 4px 24px $shadow25;
@@ -24,6 +33,18 @@
     position: absolute;
     transform: translateY(15%);
     z-index: 1;
+    @include tablet {
+      @include size(11);
+      position: relative;
+      transform: none;
+      padding: 20px 20px 50px;
+    }
+    @include mobile {
+      @include size(12);
+      position: relative;
+      transform: none;
+      padding: 20px 10px 50px;
+    }
   }
   &__title{
     margin: 0 0 10px;
@@ -63,6 +84,16 @@
       top: 0;
       left: 0;
       height: 100%;
+    }
+    @include tablet {
+      @include size(12);
+      float: none;
+      height: 520px;
+    }
+    @include mobile {
+      @include size(12);
+      float: none;
+      height: 215px;
     }
   }
 }

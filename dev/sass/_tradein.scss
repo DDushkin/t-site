@@ -18,17 +18,39 @@
     letter-spacing: 0.1em;
     font-weight: bold;
     display: inline-block;
+    @include tablet {
+      @include col();
+      @include size(12);
+      display: block;
+      margin-bottom: 40px;
+    }
+    @include mobile {
+      @include col();
+      @include size(12);
+      display: block;
+      margin-bottom: 40px;
+    }
   }
   &__tag{
     display: inline-block;
     margin: 0 0 0 20px;
+
+    @include mobile {
+      @include col();
+      margin-bottom: 40px;
+    }
   }
 }
 .tradein-card{
   margin-top: 70px;
   &__description{
     transform: translateY(4%);
-
+    @include tablet {
+      transform: none;
+    }
+    @include mobile {
+      transform: none;
+    }
   }
   &__title{
     margin: 0;

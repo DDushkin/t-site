@@ -22,7 +22,10 @@ body
       .accessories-order__title.section-title.section-title--simple Ви можете замовити аксесуар онлайн
       .accessories-order__subtitle.section-subtitle Вкажіть артикул запчастини для замовлення. Повний список запчастин доступний для завантаження нижче
       form.accessories-order__form
-        input.accessories-order__input.field-typical(type="text" placeholder="Введіть назву")
+        fieldset.textfield.accessories-order__input
+          input.textfield__input.field-typical(type="text")
+          label.textfield__placeholder(for="") Введіть назву
+        
         input.accessories-order__submit.btn.btn-typical-o(value="ШУКАТИ" type="button")
           
           
@@ -62,6 +65,7 @@ body
       .accessories-booklet__left
         .accessories-booklet__wrap
           .accessories-booklet__title.section-title.section-title--simple Скачайте наши буклеты
+          img.docs__img(src="img/c-docs.png")
       .accessories-booklet__right
         .accessories-booklet__wrap
           a.accessories-booklet__booklet-inline(href="")
@@ -125,9 +129,13 @@ body
       .accessories-form
         h2.accessories-form__title.section-title Ми будемо раді проконсультуваи вас
         .accessories-form__subtitle.section-subtitle Вкажіть ваше Ім’я та номер телефону
-        form.accessories-form__form          
-          input.accessories-form__input.field-typical(type="text" placeholder="Вартість автомобіля")
-          input.accessories-form__input.field-typical(type="text" placeholder="Номер телефону +38 0")
+        form.accessories-form__form
+          fieldset.textfield.accessories-form__input
+            input.textfield__input.field-typical(type="text")
+            label.textfield__placeholder(for="") Ваше ім'я
+          fieldset.textfield.accessories-form__input
+            input.textfield__input.field-typical(type="text")
+            label.textfield__placeholder(for="") Телефон +38 0          
           input.accessories-form__submit.btn.btn-typical(value="ВІДПРАВИТИ" type="button")
           
           

@@ -81,10 +81,7 @@ section {
     margin: 0 auto;
     @extend .clearfix;
 }
-.bg-radial{
-  background: #303A41;
-  background-image: radial-gradient(851px at 50% 50%, rgba(176, 178, 173, 0.7) 0%, rgba(196, 196, 196, 0) 100%);
-}
+
 .bg-cyan{
   background: url(../img/bg-models-filter.jpg);    //Странный серый бекграунд
 }
@@ -222,7 +219,9 @@ section {
     }
   }
 } // oef breadcrumbs
-
+.checkbox-label{
+  cursor: pointer;
+}
 .is-checked{
   &:after {
     display: inline-block;
@@ -631,8 +630,7 @@ input[type="radio"] + .checkbox-label:hover::before {
   color: #fff;
   background-image:  radial-gradient(51vw at 50% 50%, rgba(176, 178, 173, 0.7) 0%, rgba(196, 196, 196, 0) 100%), radial-gradient(62vw at 50% 50%, rgba(160, 161, 164, 0.6) 0%, rgba(196, 196, 196, 0) 72.93%, rgba(196, 196, 196, 0.04) 100%);
 }
-<<<<<<< HEAD
-=======
+
 
 
 // forms
@@ -710,4 +708,3 @@ textarea {
   }
 }
 //eof forms
->>>>>>> 4920ef86705b4b0226df9763f841cc014bf68ff9

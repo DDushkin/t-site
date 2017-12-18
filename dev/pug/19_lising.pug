@@ -29,7 +29,7 @@ body
           
     
           
-  section.page-lising-steps.bg-radial
+  section.page-lising-steps.bg-gradient
     .wrapper
       .lising-steps
         .lising-steps-title.section-title 4 кроки для придбання автомобіля в лізинг:
@@ -85,9 +85,13 @@ body
       .lising-form
         h2.lising-form__title.section-title Ми будемо раді проконсультуваи вас
         .lising-form__subtitle.section-subtitle Вкажіть ваше Ім’я та номер телефону
-        .lising-form__form          
-          input.lising-form__input.field-typical(type="text" placeholder="Ваше Ім’я")
-          input.lising-form__input.field-typical(type="text" placeholder="Телефон +38 0")
+        .lising-form__form
+          fieldset.textfield.lising-form__input
+            input.textfield__input.field-typical(type="text")
+            label.textfield__placeholder(for="") Ваше ім'я
+          fieldset.textfield.lising-form__input
+            input.textfield__input.field-typical(type="text")
+            label.textfield__placeholder(for="") Телефон +38 0                    
           input.lising-form__submit.btn.btn-typical(value="ВІДПРАВИТИ" type="button")
           
           

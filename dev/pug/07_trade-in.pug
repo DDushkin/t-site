@@ -72,9 +72,25 @@ body
     .wrapper
       .tradein-form
         .tradein-form__title.section-title Заявка на трейдин
-        .tradein-form__form                    
-          input.tradein-form__input.field-typical(type="text" placeholder="Ваше Ім’я")
-          input.tradein-form__input.field-typical(type="text" placeholder="Телефон +38 0")
+        .tradein-form__fields
+          fieldset.textfield.tradein-form__mark
+            input.textfield__input.field-typical(type="text")
+            label.textfield__placeholder(for="") Марка
+          fieldset.textfield.tradein-form__prob
+            input.textfield__input.field-typical(type="text")
+            label.textfield__placeholder(for="") Пробіг
+          fieldset.textfield.tradein-form__year
+            input.textfield__input.field-typical(type="text")
+            label.textfield__placeholder(for="") Рік виготовлення
+          fieldset.textfield.tradein-form__engine
+            input.textfield__input.field-typical(type="text")
+            label.textfield__placeholder(for="") Об'єм двигуна
+          fieldset.textfield.tradein-form__name
+            input.textfield__input.field-typical(type="text")
+            label.textfield__placeholder(for="") Ваше ім'я
+          fieldset.textfield.tradein-form__tel
+            input.textfield__input.field-typical(type="text")
+            label.textfield__placeholder(for="") Телефон +38 0
           input.tradein-form__submit.btn.btn-typical(value="ВІДПРАВИТИ" type="button")        
            
           

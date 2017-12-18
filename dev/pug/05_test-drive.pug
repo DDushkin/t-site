@@ -22,9 +22,9 @@ body
       .testdrive-bages__li.testdrive-bages__forest.ico.ico__forest 1 
       .testdrive-bages__li.testdrive-bages__city.ico.ico__city 2
       .testdrive-bages__li.testdrive-bages__track.ico.ico__track 3
-  section.page-testdrive-video.bg-radial
-    .wrapper    
-      iframe.test-drive-video-main(width="100%" height="720" src="https://www.youtube.com/embed/09m0B8RRiEE?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen)      
+  section.page-testdrive-video.bg-gradient
+    .wrapper.video-wrapper    
+      iframe.video(src="https://www.youtube.com/embed/B0ddPNsp1Tw?rel=0&amp;showinfo=0", frameborder="0", allowfullscreen)      
       .test-drive-video-slider
         
   .wrapper
@@ -108,8 +108,13 @@ body
               img.test-drive-form__car-item-img(src="img/c-list-highlander.png" alt="")
               .test-drive-form__car-item-title HIGHLANDER
           
-          input.test-drive-form__input.field-typical(type="text" placeholder="Ваше Ім’я")
-          input.test-drive-form__input.field-typical(type="text" placeholder="Телефон +38 0")
+          .test-drive-form__fields
+            fieldset.textfield.test-drive-form__textfield
+              input.textfield__input.field-typical(type="text")
+              label.textfield__placeholder(for="") Ваше ім'я
+            fieldset.textfield.test-drive-form__textfield
+              input.textfield__input.field-typical(type="text")
+              label.textfield__placeholder(for="") Телефон +38 0
           input.test-drive-form__submit.btn.btn-typical(value="ВІДПРАВИТИ" type="button")
           .test-drive-form__clear очистити  
           

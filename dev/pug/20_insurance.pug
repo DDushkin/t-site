@@ -50,9 +50,13 @@ body
       .insurance-form
         h2.insurance-form__title.section-title Ми будемо раді проконсультуваи вас
         .insurance-form__subtitle.section-subtitle Вкажіть ваше Ім’я та номер телефону
-        form.insurance-form__form          
-          input.insurance-form__input.field-typical(type="text" placeholder="Вартість автомобіля")
-          input.insurance-form__input.field-typical(type="text" placeholder="Номер телефону +38 0")
+        form.insurance-form__form
+          fieldset.textfield.insurance-form__input
+            input.textfield__input.field-typical(type="text")
+            label.textfield__placeholder(for="") Ваше ім'я
+          fieldset.textfield.insurance-form__input
+            input.textfield__input.field-typical(type="text")
+            label.textfield__placeholder(for="") Телефон +38 0            
           input.insurance-form__submit.btn.btn-typical(value="ВІДПРАВИТИ" type="button")
           
   section.page-insurance-manager        

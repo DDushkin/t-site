@@ -69,11 +69,39 @@
 }
 .tradein-form{
   @include col();
-  @include size(8);
+  @include size(12);
   //width: percentage(8/12);
   margin: 0 auto;
-  &__input{
-    width: 46%;
+  &__engine{
+    @include col();
+    @include size(2);
+    margin: 50px 15px 15px;
+  }
+  &__year{
+    @include col();
+    @include size(2);
+    margin: 50px 15px 15px;
+  }
+  &__prob{
+    @include col();
+    @include size(2);
+    margin: 50px 15px 15px;
+  }
+  &__mark{
+    @include col();
+    @include size(2);
+    @include shift-left(2);
+    margin: 50px 15px 15px;
+  }
+  &__name{
+    @include col();
+    @include size(4);
+    @include shift-left(2);
+    margin: 50px 15px 15px;
+  }
+  &__tel{
+    @include col();
+    @include size(4);
     margin: 50px 15px 15px;
   }
   &__submit{

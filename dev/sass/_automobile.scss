@@ -298,7 +298,7 @@
     margin-right: 10px;
     margin-top: 0;
     margin-bottom: 0;
-    
+
     &--alt {
       font-style: italic;
     }
@@ -337,7 +337,15 @@
     height: 720px;
     display: block;
     margin: 0 auto;
+    border-radius: 5px;
+    @include tablet {
+      max-width: 610px;
+      height: 344px;
+    }
+    @include mobile {
+      max-width: 298px;
+      height: 168px;
+    }
   }
 }
 // eof video-wrapper
-

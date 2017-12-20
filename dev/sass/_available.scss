@@ -16,11 +16,6 @@
     flex-direction: column-reverse;
     align-items: center;
   }
-  @include mobile {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-  }
   &__description{
     background: white;
     box-shadow: 4px 4px 24px $shadow25;
@@ -40,10 +35,11 @@
       padding: 20px 20px 50px;
     }
     @include mobile {
-      @include size(12);
+      width: calc(100% / 12 * 12 );
       position: relative;
-      transform: none;
-      padding: 20px 10px 50px;
+      transform: translateY(-6%);
+      padding: 50px 10px 50px;
+      z-index: 0;
     }
   }
   &__title{

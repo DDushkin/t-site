@@ -12,6 +12,9 @@
 
 .page-models-filter{
   padding:50px 0;
+  @include tablet {
+    display: none;
+  }
 }
 
 .filter{
@@ -20,6 +23,7 @@
   //     @include size(2); // col count
   margin: 0 auto;
   text-align: center;
+
   &__title{
     font-family: $f-td;
     font-size: 24px;
@@ -138,6 +142,10 @@
 
 .page-models-cars{
   margin-top: 100px;
+  @include tablet {
+    margin-top: 0px;
+    padding-bottom: 0;
+  }
 }
 
 .filter-block{
@@ -172,6 +180,12 @@
 .available-car-info{
   padding: 100px 0;
   @extend .clearfix;
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0; 
+  }
   &__description{
     //width: 47%;
     @include col();
@@ -183,6 +197,18 @@
     padding:50px 35px 50px 110px;
     float:right;
     transform: translateY(15%);
+    @include tablet {
+      padding:50px 20px;
+      float:none;
+      transform: translateY(-11%);
+      @include size(11);
+    }
+    @include mobile {
+      padding:105px 10px 50px;
+      width: calc(100% / 12 * 12);
+      position: relative;
+      margin: 0;
+    }
   }
   &__image{
     box-shadow: 4px 4px 14px $shadow25;
@@ -193,6 +219,16 @@
     height: 450px;
     position: absolute;
     z-index: 1;
+    @include tablet {
+      @include size(12);
+      height: 530px;
+      position: relative;
+    }
+    @include mobile {
+      @include size(12);
+      height: 215px;
+      position: relative;
+    }
     img{
       width: 100%;
       object-fit: cover;
@@ -209,6 +245,9 @@
     letter-spacing: 0.1em;
     font-weight: bold;
     width: 84%;
+    @include mobile {
+      width: calc(100% / 12 * 12);
+    }
   }
   &__info{
     padding-top: 10px;
@@ -226,18 +265,32 @@
   padding:160px 0;
   color:white;
   margin-bottom: 200px;
+  @include mobile {
+    padding:70px 0;
+  }
 }
 .test-drive{
   &__wrapper{
     @include col();
     @include size(6);
-    margin: 0 0 0 auto;
+    @include shift-left(6);
+    @include tablet {
+      @include size(10);
+      @include shift-left(1);
+    }
+    @include mobile {
+      @include shift-left(0);
+      @include size(12);
+    }
   }
   &__title{
     font-family: $f-td;
     line-height: normal;
     font-size: 40px;
     font-weight: bold;
+    @include mobile {
+      font-size: 26px;
+    }
   }
 
   &__button-text{

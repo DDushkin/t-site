@@ -21,7 +21,7 @@ $desktop-width: 1024px;
 }
 
 @mixin tablet {  // 1023 - 768
-  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}){
+  @media (max-width: #{$desktop-width - 1px}){
     @content;
   }
 }

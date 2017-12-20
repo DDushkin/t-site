@@ -14,7 +14,17 @@
   }
   &__btn{
     margin-top: 20px;
-    margin-right: 40px;
+    margin-right: 30px;
+    text-align: center;
+    @include tablet {
+      @include size(6);
+      float: left;
+
+    }
+    @include mobile {
+      @include size(12);
+
+    }
   }
   &__text{
     padding-left: 0;

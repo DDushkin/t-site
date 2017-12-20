@@ -95,10 +95,6 @@ section {
   text-align: center;
   font-weight: bold;
 
-  @media (max-width: 1024px) {
-    font-size: 26px;
-    letter-spacing: .1em;
-  }
   //icon
   &:before {
     content: "";
@@ -120,6 +116,18 @@ section {
     &:before {
       display: none;
     }
+  }
+  @media (max-width: 1024px) {
+    font-size: 28px;
+    line-height: 30px;
+    letter-spacing: .1em;
+    &:before {
+      content: none;
+    }
+  }
+  @include mobile {
+    font-size: 24px;
+    line-height: 28px;
   }
 } // eof section-title
 

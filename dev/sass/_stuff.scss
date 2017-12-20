@@ -4,7 +4,7 @@
 }
 .tab-item {
   display: none;
-  
+
   &--active {
     display: block;
   }
@@ -106,7 +106,14 @@
     @include col();
     @include size(4);
     @include shift-left(2);
-
+    @include tablet {
+      @include size(6);
+      @include shift-left(0);
+    }
+    @include mobile {
+      @include size(12);
+      margin-bottom: 30px;
+    }
     .textfield + .textfield {
       margin-top: 30px;
     }
@@ -115,6 +122,13 @@
     @include col();
     @include size(4);
     @include shift-right(2);
+    @include tablet {
+      @include size(6);
+      @include shift-right(0);
+    }
+    @include mobile {
+      @include size(12);
+    }
   }
   .textfield {
     width: 100%;

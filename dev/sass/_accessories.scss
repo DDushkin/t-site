@@ -20,10 +20,25 @@
     @include col();
     @include size(6);
     @include shift-left(2);
+    @include tablet {
+      @include size(8);
+      @include shift-left(0);
+    }
+    @include mobile {
+      @include size(12);
+      margin-bottom: 20px;
+    }
   }
   &__submit{
     @include col();
     @include size(2);
+    @include tablet {
+      @include size(4);
+    }
+    @include mobile {
+      @include size(12);
+
+    }
   }
 }
 .accessories-table{
@@ -42,10 +57,19 @@
     display: flex;
     justify-content: center;
     margin-top: 60px;
+    @include mobile {
+      align-items: center;
+      flex-flow: column;
+    }
   }
   &__total-price{
     font-size: 14px;
     padding-right: 50px;
+    @include mobile {
+      align-items: center;
+      flex-flow: column;
+      padding:0 0 20px;
+    }
     span {
       font-size: 40px;
       font-family: $f-td;
@@ -65,14 +89,28 @@
   border-radius: 5px;
   @include row-flex();
   margin: 200px 0;
+  @include tablet {
+    border: none;
+    box-shadow: none;
+    justify-content: center;
+    margin: 100px 0;
+  }
   &__wrap{
     border: 1px solid #CBCDC9;
     box-sizing: border-box;
     border-radius: 5px;
     margin: 20px;
     padding: 40px 0;
+    @include tablet {
+      border: none;
+      box-shadow: none;
+      padding: 0;
+    }
     img{
-          margin-bottom: 84px;
+      margin-bottom: 84px;
+      @include tablet {
+        display: none;
+      }
     }
   }
   &__left{
@@ -80,20 +118,42 @@
     box-sizing: border-box;
     width: calc(100% / 2);
     text-align: center;
+    @include tablet {
+      @include size(6);
+      border: none;
+    }
+    @include mobile {
+      width: 100%;
+      margin: 0;
+    }
   }
   &__right{
     box-shadow: -21px 0px 62px rgba(77, 79, 83, 0.3);
     box-sizing: border-box;
     width: calc(100% / 2);
-
+    @include tablet {
+      @include size(7);
+      border: none;
+      box-shadow: none;
+    }
+    @include mobile {
+      width: 100%;
+      margin: 0;
+    }
   }
   &__title{
     padding: 50px 0 70px;
+    @include tablet {
+      padding: 0;
+    }
   }
   &__booklet-inline{
     padding: 10px 45px;
     display: block;
     color: $black;
+    @include tablet {
+      padding: 10px 0;
+    }
   }
   &__booklet-name{
     display: inline-block;
@@ -111,6 +171,9 @@
 
 .accessories-card{
  margin-bottom: 220px;
+ @include mobile {
+   margin-bottom: 70px;
+ }
  &__description{
    background: url(../img/bg-toyota-big-2.svg) no-repeat bottom left white;
  }
@@ -122,21 +185,49 @@
   background: url(../img/bg-accessories-intravel.jpg);
   background-position: left center;
   background-size: cover;
-  padding:160px 0;
+  padding:150px 0;
   color:white;
   margin-bottom: 0;
+  @include mobile {
+    padding:50px 0 35px;
+  }
 }
 .accessories-intravel{
   &__wrapper{
     @include col();
     @include size(6);
     margin: 0 0 0 auto;
+    @include tablet {
+      @include size(10);
+      @include shift-left(1);
+    }
+    @include mobile {
+      @include shift-left(0);
+      @include size(12);
+    }
   }
   &__title{
     font-family: $f-td;
     line-height: normal;
     font-size: 40px;
     font-weight: bold;
+    @include mobile {
+      font-size: 26px;
+    }
+  }
+}
+.accessories-card__description{
+  @include tablet {
+    padding:75px 20px 40px;
+    float:none;
+    transform: translateY(-6%);
+    width: 100%;;
+    margin: 0;
+  }
+  @include mobile {
+    padding:105px 10px 50px;
+    width: calc(100% / 12 * 12);
+    margin: 0;
   }
 }
 .page-accessories-form{
@@ -156,6 +247,14 @@
     @include row-flex();
     @include size(8); // col count
     @include shift-left(2);
+    @include tablet {
+      @include size(10);
+      @include shift-left(1);
+    }
+    @include mobile {
+      @include shift-left(0);
+      @include size(12);
+    }
   }
   &__input{
     margin: 0 auto;
@@ -163,10 +262,23 @@
     width: 30%;
       @include col();
       @include size(6);
+      @include mobile {
+        @include shift-left(0);
+        @include size(12);
+        margin-top: 30px;
+      }
   }
   &__submit{
     margin: 30px auto 0;
     display: block;
     @include size(4);
+    @include tablet {
+      @include size(6);
+      @include shift-left(3);
+    }
+    @include mobile {
+      @include shift-left(0);
+      @include size(12);
+    }
   }
 }

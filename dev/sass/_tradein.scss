@@ -24,12 +24,6 @@
       display: block;
       margin-bottom: 40px;
     }
-    @include mobile {
-      @include col();
-      @include size(12);
-      display: block;
-      margin-bottom: 40px;
-    }
   }
   &__tag{
     display: inline-block;
@@ -46,10 +40,8 @@
   &__description{
     transform: translateY(4%);
     @include tablet {
-      transform: none;
-    }
-    @include mobile {
-      transform: none;
+      transform: translateY(-6%);
+      margin: 0;
     }
   }
   &__title{
@@ -76,33 +68,69 @@
     @include col();
     @include size(2);
     margin: 50px 15px 15px;
+    @include tablet {
+      @include size(3);
+    }
+    @include mobile {
+      margin-top:10px;
+      @include size(12);
+    }
   }
   &__year{
     @include col();
     @include size(2);
     margin: 50px 15px 15px;
+    @include tablet {
+      @include size(4);
+    }
+    @include mobile {
+      margin-top:10px;
+      @include size(12);
+    }
   }
   &__prob{
     @include col();
     @include size(2);
     margin: 50px 15px 15px;
+    @include tablet {
+      @include size(4);
+    }
+    @include mobile {
+      margin-top:10px;
+      @include size(12);
+    }
   }
   &__mark{
     @include col();
     @include size(2);
     @include shift-left(2);
     margin: 50px 15px 15px;
+    @include tablet {
+      @include size(3);
+    }
+    @include mobile {
+      margin-top:30px;
+      @include size(12);
+    }
   }
   &__name{
     @include col();
     @include size(4);
     @include shift-left(2);
     margin: 50px 15px 15px;
+    @include mobile {
+      margin-top:10px;
+      @include size(12);
+    }
   }
   &__tel{
     @include col();
     @include size(4);
     margin: 50px 15px 15px;
+    @include mobile {
+      margin-top:10px;
+      @include size(12);
+    }
   }
   &__submit{
     display: block;

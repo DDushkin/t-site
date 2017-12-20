@@ -9,6 +9,9 @@
 }
 .page-service-c{
   padding-bottom: 150px;
+  @include tablet {
+    padding-bottom: 0px;
+  }
 }
 .service-c-card{
   padding: 100px 0 0;
@@ -18,18 +21,29 @@
   &__btn{
     margin-top: 20px;
     margin-right: 40px;
+    @include mobile {
+        margin-right: 0px;
+    }
   }
   &__text{
     padding-left: 0;
   }
 }
 .service-c-photo{
-   @include row-flex();
+  @include row-flex();
+  justify-content: space-between;
   &__item{
-    @include col();
-    @include size(4);
+    width: calc(100% / 12 * 4 - 15px);
     position: relative;
     height: 375px;
+    @include tablet {
+      height: 180px;
+    }
+    @include mobile {
+      width: calc(100% / 12 * 12 - 15px);
+      height: 235px;
+      margin-bottom: 20px;
+    }
     img{
       bottom: 0;
       right: 0;

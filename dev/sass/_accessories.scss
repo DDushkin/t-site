@@ -7,6 +7,7 @@
   padding-bottom: 0;
   box-shadow: 0px 0px 14px $shadow50;
 }
+
 .accessories-order{
   padding: 100px 0 50px ;
   &__subtitle{
@@ -45,13 +46,31 @@
   &__thead-wrapper{
     padding: 23px 0;
     margin-bottom: 15px;
+    @include mobile {
+      display: none;
+    }
   }
   &__tr-wrapper{
     border: none;
     padding: 15px 0 0;
   }
+  &__tr{
+    flex-flow: column;
+  }
   &__td{
     text-align: left!important;
+    @include mobile {
+      width: 100%;
+      margin: 0 0 30px;
+      &:before{
+        font-size: 18px;
+        
+        font-weight: bold;
+        width: 50%;;
+        display: block;
+        float: left;
+      }
+    }
   }
   &__total{
     display: flex;
@@ -82,6 +101,29 @@
     }
   }
 }
+@include mobile {
+  .art__td{
+    &:before{
+      content: "Артикул";
+    }
+  }
+  .name__td{
+    &:before{
+      content: "Назва";
+    }
+  }
+  .price__td{
+    &:before{
+      content: "Ціна, грн.";
+    }
+  }
+  .quant__td{
+    &:before{
+      content: "Кількість, од.";
+    }
+  }
+}
+
 .accessories-booklet{
   border: 1px solid #CBCDC9;
   box-sizing: border-box;

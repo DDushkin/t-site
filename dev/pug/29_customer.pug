@@ -1,0 +1,39 @@
+include partials/_mixins.pug
+
+//- title as parameter
+//- example:
+//- head("page title")
++head("29 customer")
+body
+  include partials/_header.pug
+    
+  //- main content
+  section.page-head.page-customer-head
+    .wrapper
+      .breadcrumbs
+        ul.breadcrumbs__list
+          li.breadcrumbs__item Головна
+          li.breadcrumbs__item Про нас
+          li.breadcrumbs__item Клієнтська служба
+        .breadcrumbs__title-wrap
+          h1.breadcrumbs__title Клієнтська служба
+          
+  section.page-customer
+    .wrapper
+      .customer-card.card-big
+        .customer-card__image.card-big__image.card-big__image-left
+          img(src="img/c-customer.jpg")
+        .customer-card__description.card-big__description.card-big__description-left
+          .card-big__info.card-big__info-left
+            p.card-big__p.card-big__p-left Одним из преимуществ покупки автомобиля в «Тойота» является клиентская служба компании. Представители нашей службы всегда поддерживают контакт с Вами после продажи автомобиля, всегда готовы прийти на помощь и найти выход из самых сложных ситуаций. 
+            p.card-big__p.card-big__p-left Основные направления деятельности клиентской службы: 
+            p.card-big__p.card-big__p-left работа с пожеланиями и претензиями клиентов; 
+            p.card-big__p.card-big__p-left исследования уровня рекомендации клиентов; 
+            p.card-big__p.card-big__p-left поддержка работы службы помощи в дороге Toyota Assistance и Toyota Assistance Plus.
+              
+
+
+  //- eof main content
+
+  include partials/_footer.pug
+  include partials/_scripts.pug

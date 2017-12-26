@@ -12,28 +12,56 @@
   @include col();
   @include size(8); // col count
   @include shift-left(2);
+  @include tablet {
+    @include size(12); // col count
+    @include shift-left(0);
+    padding: 100px 0 100px;
+  }
   &__subtitle{
     margin-bottom: 30px;
   }
   &__logo{
     float: left;
     margin: 0 20px 0 0;
+    @include mobile {
+      float:none;
+      img {
+        margin: 0 auto;
+        display: block;
+      }
+    }
   }
   &__description-list{
     padding: 20px 0 0 20px;
   }
 }
 .insurance-card{
- margin-bottom: 220px;
+ margin-bottom: 200px;
+ &__title{
+   @include tablet {
+     text-align: center;
+     &:before{
+       content: none;
+     }
+  }
+  @include mobile {
+    text-align: left;
+  }
+ }
  &__description{
    background: url(../img/bg-toyota-big-half.svg) no-repeat bottom left white;
+   width: 100%;
+   margin: 0;
  }
  &__right{
-   padding-left:0; 
+   padding-left:0;
  }
 }
 .page-insurance-form{
   padding:0;
+  @include tablet {
+    display: none;
+  }
 }
 .insurance-form{
   padding: 70px 0;
@@ -68,4 +96,7 @@
 }
 .page-insurance-manager{
   padding: 70px 0 200px;
+  @include mobile {
+    padding-top: 0;
+  }
 }

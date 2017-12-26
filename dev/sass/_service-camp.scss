@@ -32,6 +32,11 @@
 .service-c-photo{
   @include row-flex();
   justify-content: space-between;
+  margin: 0;
+  @include mobile {
+      margin-right: -15px;
+      margin-left: -15px;
+  }
   &__item{
     width: calc(100% / 12 * 4 - 15px);
     position: relative;

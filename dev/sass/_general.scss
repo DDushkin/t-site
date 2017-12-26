@@ -121,9 +121,7 @@ section {
     font-size: 28px;
     line-height: 30px;
     letter-spacing: .1em;
-    &:before {
-      content: none;
-    }
+
   }
   @include mobile {
     font-size: 24px;

@@ -55,7 +55,9 @@
     padding: 15px 0 0;
   }
   &__tr{
-    flex-flow: column;
+    @include mobile {
+      flex-flow: column;
+    }
   }
   &__td{
     text-align: left!important;
@@ -64,7 +66,7 @@
       margin: 0 0 30px;
       &:before{
         font-size: 18px;
-        
+
         font-weight: bold;
         width: 50%;;
         display: block;

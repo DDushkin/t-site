@@ -22,7 +22,7 @@
 
     }
     @include mobile {
-      @include size(12);
+      width: 100%;
 
     }
   }

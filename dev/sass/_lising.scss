@@ -10,6 +10,12 @@
 .lising-card{
   margin: 155px 0 210px;
   @extend .clearfix;
+  @include tablet {
+    margin: 110px 0 100px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
   &__description{
     //width: 47%;
     @include col();
@@ -17,6 +23,20 @@
     padding:70px 220px 60px 0px;
     position: absolute;
     background: url(../img/bg-toyota-big-3.svg) no-repeat bottom right white;
+    @include tablet {
+      width: 100%;
+      position: relative;
+      transform: none;
+      padding: 20px 20px 50px;
+      margin: 0;
+    }
+    @include mobile {
+      width: calc(100% / 12 * 12 );
+      position: relative;
+      transform: translateY(-6%);
+      padding: 50px 10px 50px;
+      z-index: 0;
+    }
   }
   &__image{
     box-shadow: 4px 4px 14px $shadow25;
@@ -28,6 +48,16 @@
     position: relative;
     float:right;
     z-index: 1;
+    @include tablet {
+      @include size(12);
+      float: none;
+      height: 520px;
+    }
+    @include mobile {
+      @include size(12);
+      float: none;
+      height: 215px;
+    }
     img{
       width: 100%;
       object-fit: cover;
@@ -81,15 +111,28 @@
   @include size(7); // col count
   @include shift-left(2);
   align-items: center;
+  @include tablet {
+    @include size(12); // col count
+    @include shift-left(0);
+  }
   &__item{
     @include col();
     @include size(10); // col count
-  margin-top: 40px;
+    margin-top: 40px;
+    @include tablet {
+      margin-top: 30px;
+    }
+    @include mobile {
+      @include size(12);
+    }
   }
   &__icon{
     @include col();
     @include size(2); // col count
     margin-top: 40px;
+    @include tablet {
+      margin-top: 30px;
+    }
   }
 }
 .lising-steps-subtitle{
@@ -101,6 +144,10 @@
   @include shift-left(2);
   margin-top: 100px;
   padding-left: 15px;
+  @include tablet {
+    @include size(12); // col count
+    @include shift-left(0);
+  }
   &__title{
     font-family:  $f-tt;
     line-height: normal;
@@ -133,17 +180,27 @@
     @include row-flex();
     @include size(8); // col count
     @include shift-left(2);
+    @include tablet {
+      @include size(12); // col count
+      @include shift-left(0);
+    }
   }
   &__input{
     margin: 30px auto 0;
     display: block;
     width: 30%;
-      @include col();
-      @include size(6);
+    @include col();
+    @include size(6);
+    @include mobile {
+      @include size(12);
+    }
   }
   &__submit{
     margin: 30px auto 0;
     display: block;
     @include size(4);
+    @include mobile {
+      @include size(12);
+    }
   }
 }

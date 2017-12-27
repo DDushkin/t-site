@@ -26,6 +26,9 @@ body {
 
 section {
   padding-bottom: 200px;
+  @include tablet {
+    padding-bottom: 100px;
+  }
 }
 .clearfix:after {
   content: "";
@@ -135,8 +138,9 @@ section {
   letter-spacing: .1em;
   font-weight: bold;
   margin: 0;
-
-
+  @include tablet {
+    font-size: 18px;
+  }
 }
 
 .section-subtitle {

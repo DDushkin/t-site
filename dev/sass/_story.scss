@@ -1,0 +1,102 @@
+.breadcrumbs-story-alone{
+  padding-top: 70px;
+}
+.story-alone{
+  &__content{
+    @include col();
+    @include size(8);
+    @include shift-left(2);
+    @include tablet {
+      @include size(12); // col count
+      @include shift-left(0);
+    }
+  }
+  &__image{
+        width: 100%;
+  }
+  &__text-img{
+    float: left;
+    margin: 0 20px 0 0;
+    @include tablet {
+      margin: 0 10px 0 0;
+    }
+    @include mobile {
+      margin: 0;
+      float:none;
+      img{
+        width: 100%;
+      }
+    }
+  }
+  &__nav{
+    font-weight: bold;
+    @include row-flex();
+        align-items: center;
+    &-back-btn{
+      cursor: pointer;
+      @include col();
+      @include size(2); // col count
+      @include mobile {
+        @include size(4); // col count
+        @include shift-left(4);
+        justify-content: space-between;
+        padding: 50px 0;
+      }
+      &:hover{
+        text-decoration: underline;
+      }
+      &::before{
+        display: inline-block;
+        content: "";
+        vertical-align: middle;
+        width: 11px;
+        height: 10px;
+        margin-right: 10px;
+        background: url('../img/i-back.svg') center no-repeat;
+      }
+    }
+    &-share{
+      @include row-flex();
+      @include col();
+      @include size(8); // col count
+      @include shift-left(2);
+      justify-content: flex-end;
+      align-items: center;
+      @include mobile {
+        @include size(12); // col count
+        @include shift-left(0);
+        justify-content: space-between;
+      }
+      &-btn{
+        cursor: pointer;
+        margin-left: 20px;
+        margin-right: 0;
+        background: #FFFFFF;
+        box-shadow: 2px 2px 6px rgba(44, 1, 12, 0.3);
+      }
+    }
+  }
+}
+.a-news-grid{
+  @include row-flex();
+  padding-bottom: 50px;
+  &-item{
+    text-decoration: none;
+    color: $black;
+    @include col();
+    @include size(3); // col count
+    @include tablet {
+      @include size(4); // col count
+    }
+    @include mobile {
+      width: 100%; // col count
+    }
+    &__title{
+      margin: 0 15px;
+    }
+    &__img{
+      width: 100%;
+
+    }
+  }
+}

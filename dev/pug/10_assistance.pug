@@ -1,0 +1,220 @@
+include partials/_mixins.pug
+
+//- title as parameter
+//- example:
+//- head("page title")
++head("10_assistance")
+body
+  include partials/_header.pug
+     
+  //- main content
+  section.page-head
+    .wrapper
+      .breadcrumbs.breadcrumbs--dark.breadcrumbs-assistance
+        ul.breadcrumbs__list
+          li.breadcrumbs__item Головна
+          li.breadcrumbs__item Сервіс
+          li.breadcrumbs__item Toyota assistance
+        .breadcrumbs__title-wrap
+          h1.breadcrumbs__title Toyota assistance
+          
+  section.page-assistance-intravel
+    .wrapper
+      .accessories-intravel__wrapper
+        h2.accessories-intravel__title Безкоштовна допомога під час подорожі
+        p.accessories-intravel__descr В рамках своїх зобов'язань щодо забезпечення задоволення потреб клієнта, компанія «Toyota» здійснює обслуговування своїх клієнтів за допомогою служби «Toyota Assistance».
+        p.accessories-intravel__descr Добре відоме якість «Toyota» в поєднанні з досвідом і перевагами обслуговування, які пропонуються службою «Toyota Assistance», гарантують Вам душевний спокій під час поїздки на автомобілі. 
+        p.accessories-intravel__descr Механическая поломка 
+          span Закончилось топливо 
+          span Разрядился аккумулятор 
+          span Спустило колесо 
+          span Потеря ключей или случайное запирание их в автомобиле
+          
+  section.assistance-content
+    .wrapper
+      .assistance-card.card-big
+        .card-big__image.card-big__image-right
+          img(src="img/c-assistance.jpg")
+        .card-big__description.card-big__description-right.assistance-card__description
+          h2.card-big__title.card-big__title-right.section-title.assistance-card__title Загальна політика
+          p.card-big__p-right Обслуговування за програмою «Toyota Assistance» здійснюється протягом 36 місяців з дня продажу автомобіля (початку дії гарантії).
+          p.card-big__p.card-big__p-right Автомобілі, які обслуговуються 
+          p.card-big__p Всі нові автомобілі «Toyota», які були офіційно продані компанією, за винятком: 
+          p.card-big__p автомобілів Dynatа Coaster або їх модифікацій; 
+          p.card-big__p автомобілів, які були переобладнані без дозволу виробника (машини швидкої допомоги, катафалки і т.п.); 
+          p.card-big__p обслуговування таксі та шкільних автомобілів обмежується швидкою допомогою і буксируванням. 
+          p.card-big__p зміна власника
+          p.card-big__p-right Можливість користуватися послугами «Toyota Assistance» автоматично надається кожному наступному власнику автомобіля, і так до закінчення терміну дії.
+          p.card-big__p-right Для того, щоб переконатися, що новий власник має доступ до цих послуг, ми рекомендуємо невідкладно надати «Toyota Assistance» всі дані щодо його нової власності.
+          p.card-big__p-right Для цього пишіть на адресу: 
+          p.card-big__p Тойота Україна, 
+          p.card-big__p 01021, м Київ, 
+          p.card-big__p вул.Мечникова 18
+          p.card-big__p-right Відшкодування витрат
+          p.card-big__p-right У разі виникнення витрат через проблеми з автомобілем, які унеможливлюють його використання, і на які власник автомобіля отримав згоду з боку програми Toyota Assistance, слід вислати рахунок-фактуру, що відображає понесені витрати, за адресою: 
+          
+          
+      .section-title Корпоративне обслуговування
+      .section-subtitle
+      .assistance-corp-grid
+        .assistance-corp-grid__col
+          .block-title Поряд з домом
+          p.assistance-corp-grid__sub Предоставление помощи на незначительном расстоянии от дома
+          p.assistance-corp-grid__b Скорая помощь
+          ul.assistance-corp-grid__ul В случае, если из-за поломки, что очень маловероятно, Ваш автомобиль не сможет самостоятельно двигаться, «Toyota Assistance» за свой счет:
+            li.assistance-corp-grid__li.assistance-corp-grid__b обеспечит быстрое прибытие на место представителей компании, которая занимается буксированием, настолько быстро, насколько это возможно;
+            li.assistance-corp-grid__li.assistance-corp-grid__b будет требовать от этой компании осуществить несложный ремонт на месте происшествия.
+            li.assistance-corp-grid__li.assistance-corp-grid__b Буксирование
+          p.assistance-corp-grid__p Предоставление помощи на незначительном расстоянии от дома
+           span.assistance-corp-grid__b обеспечит доставку автомобиля к ближайшему дилеру компании «Toyota».
+           span.assistance-corp-grid__p Если понадобится предоставить безопасную стоянку автомобиля на протяжении ночи до начала ремонтных работ, «Toyota Assistance» 
+           span.assistance-corp-grid__b оплатит стоянку
+           span.assistance-corp-grid__p , однако эта сумма не может превышать 74,00 евро.
+          p.assistance-corp-grid__p Служба помощи также осуществит 
+           span.assistance-corp-grid__b транспортировку любого прицепа 
+           span.assistance-corp-grid__p (со стандартным 50 мм буксировочным устройством), присоединенного к неисправному автомобилю, к тому же самому дилеру компании «Toyota».
+           
+           
+           
+        .assistance-corp-grid__col
+          .block-title 50+ км. от дому
+          p.assistance-corp-grid__sub В случае, если поломка произошла за 50 км от местожительства основного пользователя автомобиля: Возвращение отремонтированного автомобиля
+          p.assistance-corp-grid__p Если отремонтированный автомобиль нужно будет возвратить от дилера компании «Toyota», который находится на расстоянии более чем 50 км от местожительства пользователя, тогда, по требованию пользователя, «Toyota Assistance» 
+            span.assistance-corp-grid__b оформит и оплатит проезд одного человека железной дорогой в одну сторону к месту ремонта автомобиля.
+          p.assistance-corp-grid__p Если путешествие железной дорогой будет превышать 6 часов, как альтернатива может быть предоставлен 
+            span.assistance-corp-grid__b авиабилет бизнес-класса.
+          p.assistance-corp-grid__p В случае, если поломка произошла за 50 км от местожительства основного пользователя автомобиля, и дилер компании «Toyota» не смог отремонтировать автомобиль в тот же день, тогда водитель и пассажиры могут воспользоваться такими услугами:
+          p.assistance-corp-grid__b Отель
+          p.assistance-corp-grid__p Если пользователь автомобиля желает остановиться неподалеку от своего автомобиля, пока его отремонтируют, тогда «Toyota Assistance» 
+            span.assistance-corp-grid__b закажет и оплатит проживание в отеле водителя и его пассажиров, 
+            span.assistance-corp-grid__p но не больше четырех ночей. 
+          p.assistance-corp-grid__p Стоимость этого проживания не должна превышать 112,00 евро на одного человека за ночь. Эта услуга предоставляется в случае, если это возможно в данной местности.
+          p.assistance-corp-grid__p Питание, а также другие затраты, связанные с проживанием в отеле, оплачиваются пользователем и пассажирами самостоятельно.
+        
+        
+        .assistance-corp-grid__col
+          .block-title За кордоном
+          ul.assistance-corp-grid__ul
+            li.assistance-corp-grid__li Довгострокові ділові зв'язки з клієнтами;
+            li.assistance-corp-grid__li Наявність одного контактної особи - професійного представника, готового допомогти в вирішенні питань або надання необхідної інформації постійно, а не тільки в момент продажу автомобілів;
+            li.assistance-corp-grid__li Розуміння індивідуальних потреб клієнта. Пропозиція повного спектру послуг в рамках пакету, розробленого за індивідуальним потребам клієнта.
+            li.assistance-corp-grid__li Спеціальні цінові пропозиції, які враховують обсяги і регулярність замовлень;
+            li.assistance-corp-grid__li Спеціальні цінові пропозиції на сервісне обслуговування та запчастини;
+            li.assistance-corp-grid__li Комплектації, які максимально відповідають потребам наших партнерів;
+            li.assistance-corp-grid__li Установка додаткового обладнання на автомобілі, відповідно до індивідуальних потреб клієнта, зі збереженням гарантійних зобов'язань;
+            li.assistance-corp-grid__li Спеціальні пропозиції за програмою Trade-in - заміні вашого парку б / у автомобілів на нові автомобілі Toyota;
+            li.assistance-corp-grid__li Зворотний викуп автомобіля, купленого у нас - Buy-Back, c урахуванням терміну експлуатації і пробігу, по найпривабливішою для Вас ціною;
+            li.assistance-corp-grid__li Своєчасне інформування клієнта про всі нові розробки і розширення модельного ряду Toyota;
+            li.assistance-corp-grid__li Можливість тест-драйву автомобіля, який Вас зацікавив;
+            li.assistance-corp-grid__li Фінансовий сервіс:
+            ul.assistance-corp-grid__ul
+              li.assistance-corp-grid__li Можливість придбання автомобіля Toyota в кредит; 
+              li.assistance-corp-grid__li Можливість оформлення автомобіля Toyota в лізинг; 
+              li.assistance-corp-grid__li Страхування автомобіля; 
+              li.assistance-corp-grid__li Пріоритет при замовленні Ваших автомобілів; 
+              li.assistance-corp-grid__li Спеціальні умови при технічному обслуговуванні; 
+              li.assistance-corp-grid__li Спеціальні умови при придбанні автомобілів Toyota співробітниками Вашої компанії для особистого користування;
+          
+  section.comparison-table
+    .section-title Види допомоги
+    .section-subtitle
+    .table
+      .table__tr-wrapper.table__thead-wrapper
+        .table__tr
+          .table__td.table__title Види допомоги
+          .table__td Допомога на незначній відстані від дому
+          .table__td +50км від дому
+          .table__td За кордоном
+      .table__tr-wrapper       
+        .table__tr
+          .table__td Швидка допомога
+          .table__td.is-checked
+          .table__td
+          .table__td
+      .table__tr-wrapper      
+        .table__tr
+          .table__td Буксування
+          .table__td
+          .table__td.is-checked
+          .table__td.is-checked
+      .table__tr-wrapper     
+        .table__tr
+          .table__td Готель
+          .table__td
+          .table__td.is-checked
+          .table__td
+      .table__tr-wrapper      
+        .table__tr
+          .table__td Зміна автомобіля
+          .table__td.is-checked
+          .table__td.is-checked
+          .table__td
+      .table__tr-wrapper      
+        .table__tr
+          .table__td Продовження мандрівки
+          .table__td
+          .table__td.is-checked
+          .table__td 
+      .table__tr-wrapper   
+        .table__tr
+          .table__td Доставка деталей
+          .table__td
+          .table__td.is-checked
+          .table__td 
+      .table__tr-wrapper   
+        .table__tr
+          .table__td Допоставка водія
+          .table__td
+          .table__td.is-checked
+          .table__td 
+      .table__tr-wrapper   
+        .table__tr
+          .table__td Перегон автомобіля з відновленною можливістю рухатись
+          .table__td
+          .table__td.is-checked
+          .table__td.is-checked
+      .table__tr-wrapper   
+        .table__tr
+          .table__td Повідомлення та поради
+          .table__td.is-checked
+          .table__td.is-checked
+          .table__td 
+      .table__tr-wrapper    
+        .table__tr
+          .table__td Повертання автомобіля диллеру Toyota
+          .table__td
+          .table__td
+          .table__td  
+        
+            
+  section.page-assistance-type
+    .wrapper
+      .accessories-intravel__wrapper
+        h2.accessories-intravel__title Види допомоги
+        p.accessories-intravel__descr Владельцы автомобилей Toyota, которые официально были проданы ПИИ "Тойота-Украина" и его официальным дилером Тойота Центр Киев «Автосамит» на Харьковском шоссе, 179, и для которых закончился срок действия программы Toyota Assistance (3 года, независимо от пробега), теперь имеют возможность стать участниками программы Toyota Assistance Plus.
+        p.accessories-intravel__descr Эта программа предусматривает два вида пакетов услуг, что можно приобрести: "Украина" и "Украина + Европа". 
+        p.accessories-intravel__descr Покупая пакет услуг программы Toyota Assistance Plus, вы получаете следующую поддержку:
+              
+  .stuff-consult
+    .section-title Задайте питання через імейл
+    .section-subtitle Укажите ваше имя и сообщение для консультанта Toyota
+    form.stuff-form
+      .stuff-form__part-left
+        fieldset.textfield
+          input.textfield__input.field-typical(type="text")
+          label.textfield__placeholder(for="") Ваше ім'я
+        fieldset.textfield
+          input.textfield__input.field-typical(type="text")
+          label.textfield__placeholder(for="") Email
+      .stuff-form__part-right
+        fieldset.textfield
+          textarea.textfield__input.textfield__textarea
+          label.textfield__placeholder(for="") Ваше повідомлення
+      button.btn.btn-typical Відправити
+
+
+  
+  //- eof main content
+  
+  include partials/_footer.pug
+  include partials/_scripts.pug

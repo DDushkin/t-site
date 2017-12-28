@@ -1,0 +1,64 @@
+.page-assistance-type{
+  background: url(../img/bg-assistance-type.jpg);
+  background-position: left center;
+  background-size: cover;
+  padding:150px 0;
+  color:white;
+  margin-bottom: 0;
+  @include mobile {
+    padding:50px 0 35px;
+  }
+}
+.page-assistance-intravel{
+  background: url(../img/bg-accessories-intravel.jpg);
+  background-position: left center;
+  background-size: cover;
+  padding:150px 0;
+  color:white;
+  margin-bottom: 0;
+  @include mobile {
+    padding:50px 0 35px;
+  }
+}
+.assistance-card{
+  margin: 200px 0;
+  @include tablet {
+    margin: 100px 0;
+  }
+  &__description{
+    @include tablet {
+      width: 100%;
+    }
+  }
+  &__title{
+    @include tablet {
+      text-align: center;
+      &::before{
+        content: none;
+      }
+    }
+  }
+}
+.assistance-corp-grid{
+  @include row-flex();
+  &__col{
+    @include col();
+    @include size(4); // col count
+    @include tablet {
+        @include size(10);
+        @include shift-left(1);
+    }
+  }
+  &__sub{
+    font-style: italic;
+  }
+  &__ul{
+    padding: 0;
+  }
+  &__li{
+    margin-left: 20px;
+  }
+  &__b{
+    font-weight: 700;
+  }
+}

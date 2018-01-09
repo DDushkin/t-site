@@ -12,6 +12,7 @@
   &__item {
     @include row-flex();
     align-items: center;
+    box-sizing: border-box;
     margin-top: 100px;
   }
   &__slider {
@@ -21,10 +22,37 @@
     img {
       width: 100%;
     }
+
+    .fotorama__nav-wrap {
+      position: static;
+      margin-top: 20px;
+    }
   }
 
   &__text {
     @include col();
     @include size(7);
+    position: relative;
+
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-right: 30px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 122%;
+      height: 100%;
+      background-color: #fafafa;
+      z-index: -1;
+      border-radius: 5px;
+    }
   }
+}
+
+.touch-form {
+  padding: 70px 0;
+  background-color: #F3F4F6; //TODO: change to gradient
 }

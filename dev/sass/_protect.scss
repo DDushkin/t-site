@@ -1,0 +1,55 @@
+.page-protect {
+  @include wrapper();
+}
+
+.protect-info {
+  @include row-flex();
+
+  &__image-wrapper {
+    @include col();
+    @include size(5);
+  }
+  &__image {
+    width: 130%;
+    float: right;
+
+  }
+
+  &__text {
+    @include col();
+    @include size(7);
+    position: relative;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-right: 30px;
+    margin-top: 30px;
+    box-sizing: border-box;
+    // background-color: #fafafa; // moved to after pseudo-element
+    
+    &:after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 122%;
+      height: 100%;
+      // border: 1px solid red;
+      border-radius: 5px;
+      background-color: #fafafa;
+      z-index: -1;
+    }
+
+    .section-title { 
+      //TODO: add modifier for left aligned title
+      // text-align: left;
+    }
+  }
+}
+
+.protect-banner {
+  margin-top: 100px;
+  
+  &__image {
+    width: 100%;
+  }
+}

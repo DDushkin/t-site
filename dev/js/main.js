@@ -149,7 +149,7 @@ $(document).ready(function(){
       return false;
     }
   });
---> 
+
   // 04 slider
    $('.slider').slick({
     slidesToShow: 1,

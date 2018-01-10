@@ -1,0 +1,129 @@
+.page-service-head{
+  color:white;
+  background-image: url(../img/bg-service-head.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  padding-bottom: 0;
+  box-shadow: 0px 0px 14px $shadow50;
+}
+.service-info{
+  padding: 100px 0 200px;
+  @include col();
+  @include size(8); // col count
+  @include shift-left(2);
+  @include tablet {
+    @include size(12); // col count
+    @include shift-left(0);
+    padding: 100px 0 100px;
+  }
+  &__subtitle{
+    margin-bottom: 30px;
+  }
+  &__logo{
+    float: left;
+    margin: 0 20px 0 0;
+    @include mobile {
+      float:none;
+      img {
+        margin: 0 auto;
+        display: block;
+      }
+    }
+  }
+  &__description-list{
+    padding: 20px 0 0 20px;
+  }
+}
+.service-card{
+ margin-bottom: 200px;
+ margin-top: 100px;
+ &__title{
+   @include tablet {
+     text-align: center;
+     &:before{
+       content: none;
+     }
+  }
+  @include mobile {
+    text-align: left;
+  }
+ }
+ &__description{
+       background: none;
+   &-left{
+     background: url(../img/bg-toyota-big-3.svg) no-repeat bottom right white;
+   }
+   @include tablet {
+     width: 100%;
+     margin: 0;
+   }
+ }
+ &__right{
+   padding-left:0;
+ }
+}
+.service-terms{
+  margin-top: 325px;
+  &__title{
+    margin-bottom: 10px;
+  }
+  &__subtitle{
+    @include size(7); // col count
+    @include shift-left(2.5);
+    font-size: 18px;
+  }
+}
+.service-save{
+  margin: 200px 0;
+  &__wraper{
+    @include row-flex();
+    justify-content: space-between;
+          margin: 0;
+  }
+  &__col{
+    @include col();
+          margin: 0;
+    &-left{
+      @include size(3); // col count
+
+      display: flex;
+flex-direction: column;
+justify-content: space-between;
+      &-img{
+        height: 247px;
+        position: relative;
+        img{
+          width: 100%;
+          object-fit: cover;
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+        }
+      }
+    }
+    &-right{
+      @include size(3); // col count
+      display: flex;
+flex-direction: column;
+justify-content: space-between;
+      &-img{
+        height: 247px;
+        position: relative;
+        img{
+          width: 100%;
+          object-fit: cover;
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+        }
+      }
+    }
+    &-mid{
+      @include size(6); // col count
+
+    }
+  }
+}

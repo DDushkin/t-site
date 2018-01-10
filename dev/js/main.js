@@ -11,8 +11,10 @@ $(document).ready(function(){
     // transition: "crossfade"
     // transition: "dissolve"
   });
+
   $(".fotorama__arr--next").appendTo(".fotorama__nav__shaft");
   $(".fotorama__arr--prev").prependTo(".fotorama__nav__shaft");
+
   // eof mainslider init
 
   // footer slider
@@ -206,6 +208,19 @@ $(document).ready(function(){
     $(this).addClass("color-selector__item--active");
   });
   // eof color-selector (04)
+
+  // 17 touch
+    $(".page-touch-listing__slider").fotorama({
+      autoplay: false,
+      loop: true,
+      arrows: "always",
+      margin: 0//,
+      // transition: "crossfade"
+      // transition: "dissolve"
+    });
+    // $(".page-touch-listing__slider .fotorama__arr--next").appendTo(".fotorama__nav__shaft");
+    // $(".page-touch-listing__slider .fotorama__arr--prev").prependTo(".fotorama__nav__shaft");
+  // eof 17 touch
 
   // pagenav tabs (31)
     $(".js-pagenav .pagenav__link").click(function(){

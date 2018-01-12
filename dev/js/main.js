@@ -34,6 +34,37 @@ $(document).ready(function(){
   });
   // eof footer-slider
 
+  // story, offer sliders
+  $('.a-news-grid').slick({
+    dots: false,
+    arrows: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    draggable: true,
+    nextArrow: $(".postnav__arrow--next"),
+    prevArrow: $(".postnav__arrow--prev"),
+    cssEase: 'ease-in-out',
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
+  // eof footer-slider
+
   // fake input placeholder
   $('form').find('input').on('input', function (e) {
     $(e.currentTarget).attr('data-empty', !e.currentTarget.value);
@@ -73,7 +104,7 @@ $(document).ready(function(){
         origin: new google.maps.Point(0, 0),
         // The anchor for this image is the base of the flagpole at (0, 32).
         anchor: new google.maps.Point(0, 58)
-      }; 
+      };
       var image2 = {
         url: 'img/i-footer-info-map-bottom.svg',
         // This marker is 20 pixels wide by 32 pixels high.
@@ -177,7 +208,7 @@ $(document).ready(function(){
 
   });
 
-  // sticky header 
+  // sticky header
   var sc;
   var nav = $("nav");
   var navOffsetY = nav.offset().top;
@@ -190,7 +221,7 @@ $(document).ready(function(){
       nav.removeClass("nav--fixed");
     }
   });
-  
+
   // smooth scroll to anchor  (page 04)
   $(document).on('click', 'a[href^="#"]', function (event) {
     event.preventDefault();

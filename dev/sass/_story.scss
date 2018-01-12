@@ -1,6 +1,9 @@
 .breadcrumbs-story-alone{
   padding-top: 70px;
 }
+.page-story-head{
+  min-height: 210px;
+}
 .story-alone{
   &__content{
     @include col();
@@ -12,19 +15,51 @@
     }
   }
   &__image{
-        width: 100%;
-  }
-  &__text-img{
-    float: left;
-    margin: 0 20px 0 0;
+    height: 600px;
+    position: relative;
     @include tablet {
-      margin: 0 10px 0 0;
+      height: 380px;
     }
     @include mobile {
-      margin: 0;
-      float:none;
-      img{
-        width: 100%;
+      height: 150px;
+    }
+    img{
+      width: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      box-shadow: 4px 4px 14px rgba(77, 79, 83, 0.25);
+      border-radius: 5px;
+    }
+  }
+  &__video{
+    iframe{
+      height: 600px;
+      width: 100%;
+      @include tablet {
+        height: 380px;
+      }
+      @include mobile {
+        height: 245px;
+      }
+    }
+  }
+  &__text{
+    margin: 30px 0;
+    &-img{
+      float: left;
+      margin: 0 20px 0 0;
+      @include tablet {
+        margin: 0 10px 0 0;
+      }
+      @include mobile {
+        margin: 0;
+        float:none;
+        img{
+          width: 100%;
+        }
       }
     }
   }
@@ -78,21 +113,52 @@
   }
 }
 .a-news-grid{
-  @include row-flex();
   padding-bottom: 50px;
   &-item{
     text-decoration: none;
     color: $black;
-    @include col();
+    margin-left: 15px;
+    margin-right: 15px;
     @include size(3); // col count
     @include tablet {
       @include size(4); // col count
     }
     @include mobile {
       width: 100%; // col count
+      margin: 0;
+    }
+    &__date{
+      display: none;
+      @include tablet {
+
+        display: inline-block;
+        margin: 20px 10px 0;
+        &:before{
+          content: "";
+          display: inline-block;
+          height: 18px;
+          width: 6px;
+          margin-right: 10px;
+          background-color: #CC0033;
+          border-radius: 100px;
+        }
+      }
     }
     &__title{
-      margin: 0 15px;
+      margin: 20px 10px 0;
+      display: inline-block;
+      @include tablet {
+        margin: 10px 10px 0;
+        &:after{
+          width: 18px;
+          height: 18px;
+          display: inline-block;
+          content: "";
+          margin-left: 10px; //20px in some cases? (mainpage news)
+          background: url('../img/i-more-arrow.svg') center no-repeat;
+          vertical-align: middle;
+        }
+      }
     }
     &__img{
       width: 100%;

@@ -134,6 +134,7 @@
   &__descr{
     @include size(6.5); // col count
     @include col();
+        position: relative;
     @include tablet {
       margin-top: 20px;
       @include size(10); // col count

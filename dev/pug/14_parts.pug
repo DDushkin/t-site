@@ -1,0 +1,202 @@
+include partials/_mixins.pug
+
+//- title as parameter
+//- example:
+//- head("page title")
++head("14 parts")
+body
+  include partials/_header.pug
+    
+  //- main content
+  section.page-head.page-parts-head
+    .wrapper
+      .breadcrumbs
+        ul.breadcrumbs__list
+          li.breadcrumbs__item Головна
+          li.breadcrumbs__item Запчастини
+        .breadcrumbs__title-wrap
+          h1.breadcrumbs__title Запчастини Toyota
+          
+  .wrapper 
+    .parts-order
+      .parts-order__title.section-title.section-title--simple Ви можете замовити запчастини онлайн
+      .parts-order__subtitle.section-subtitle Вкажіть артикул запчастини для замовлення. Повний список запчастин доступний для завантаження нижче
+      form.parts-order__form
+        fieldset.textfield.parts-order__input
+          input.textfield__input.field-typical(type="text")
+          label.textfield__placeholder(for="") Введіть назву
+        
+        input.parts-order__submit.btn.btn-typical-o(value="ШУКАТИ" type="button")
+          
+          
+  .table__tr-wrapper.table__thead-wrapper.parts-table__thead-wrapper
+    .table__tr.parts-table__tr
+      .table__td.parts-table__td.table__title Артикул
+      .table__td.parts-table__td.table__title Назва
+      .table__td.parts-table__td.table__title Ціна, грн.
+      .table__td.parts-table__td.table__title Кількість
+  .table__tr-wrapper.parts-table__tr-wrapper      
+    .table__tr.parts-table__tr
+      .table__td.parts-table__td.art__td 2.7, 6 A/T
+      .table__td.parts-table__td.name__td Супорт 4595
+      .table__td.parts-table__td.price__td 1 000
+      .table__td.parts-table__td.quant__td 1
+  .table__tr-wrapper.parts-table__tr-wrapper       
+    .table__tr.parts-table__tr
+      .table__td.parts-table__td.art__td 4.0, 6 A/T
+      .table__td.parts-table__td.name__td Супорт 34675
+      .table__td.parts-table__td.price__td 2 500
+      .table__td.parts-table__td.quant__td 1
+  .table__tr-wrapper.parts-table__tr-wrapper      
+    .table__tr.parts-table__tr
+      .table__td.parts-table__td.art__td 2.8 дизель, 6 A/T
+      .table__td.parts-table__td.name__td Супорт 78956
+      .table__td.parts-table__td.price__td 45
+      .table__td.parts-table__td.quant__td 1
+      
+  .parts-table__total 
+    .parts-table__total-price Загалом:
+      span 3545
+    
+    .parts-table__total-btn.btn.btn-typical ЗАМОВИТИ
+  
+  .wrapper              
+    .parts-booklet
+      .parts-booklet__left
+        .parts-booklet__wrap
+          .parts-booklet__title.section-title.section-title--simple Скачайте наши буклеты
+          img.docs__img(src="img/c-docs.png")
+      .parts-booklet__right
+        .parts-booklet__wrap
+          a.parts-booklet__booklet-inline(href="")
+            .parts-booklet__booklet-name.i-inline__pdf Prado буклети
+            .parts-booklet__booklet-size 0.5 Мб
+          a.parts-booklet__booklet-inline(href="")
+            .parts-booklet__booklet-name.i-inline__pdf Yaris буклети
+            .parts-booklet__booklet-size 0.5 Мб
+          a.parts-booklet__booklet-inline(href="")
+            .parts-booklet__booklet-name.i-inline__pdf Corolla буклети
+            .parts-booklet__booklet-size 0.5 Мб
+          a.parts-booklet__booklet-inline(href="")
+            .parts-booklet__booklet-name.i-inline__pdf Auris буклети
+            .parts-booklet__booklet-size 0.5 Мб
+          a.parts-booklet__booklet-inline(href="")
+            .parts-booklet__booklet-name.i-inline__pdf Prado буклети
+            .parts-booklet__booklet-size 0.5 Мб
+          a.parts-booklet__booklet-inline(href="")
+            .parts-booklet__booklet-name.i-inline__pdf Yaris буклети
+            .parts-booklet__booklet-size 0.5 Мб
+          a.parts-booklet__booklet-inline(href="")
+            .parts-booklet__booklet-name.i-inline__pdf Corolla буклети
+            .parts-booklet__booklet-size 0.5 Мб
+          a.parts-booklet__booklet-inline(href="")
+            .parts-booklet__booklet-name.i-inline__pdf Auris буклети
+            .parts-booklet__booklet-size 0.5 Мб
+          a.parts-booklet__booklet-inline(href="")
+            .parts-booklet__booklet-name.i-inline__pdf Prado буклети
+            .parts-booklet__booklet-size 0.5 Мб                    
+          a.parts-booklet__booklet-inline(href="")
+            .parts-booklet__booklet-name.i-inline__pdf Yaris буклети
+            .parts-booklet__booklet-size 0.5 Мб                    
+          a.parts-booklet__booklet-inline(href="")
+            .parts-booklet__booklet-name.i-inline__pdf Corolla буклети
+            .parts-booklet__booklet-size 0.5 Мб
+        
+    
+    .parts-card.card-big
+      .card-big__image.card-big__image-right
+        img(src="img/c-parts.jpg")
+      .parts-card__description.card-big__description.card-big__description-right
+        h2.card-big__title.card-big__title-right.section-title Оригінальні запасні частини
+        .parts-card__right.card-big__info.card-big__info-right
+          p Відповідають найсуворішим нормативам якості та стануть запорукою тривалої експлуатації вашого автомобіля Toyota. 
+          p Для того, щоб бути на 100 % впевненими у своєму автомобілі, ми рекомендуємо використовувати оригінальні запасні частини Toyota. Всі оригінальні вузли та запасні деталі Toyota схвалені до використання конструкторськими бюро, які створили ваш автомобіль. Ці запчастини: 
+          ol 
+            li сконструйовані спеціально для вашого автомобіля; 
+            li відповідають суворим нормативам компанії «Тойота», що висуваються до якості виконання та надійної експлуатації; 
+            li покриваються офіційною гарантією Toyota (щонайменше на 12 місяців з дати встановлення); 
+            li встановлюються лише спеціально підготовленими технічними працівниками. 
+          p Бездоганна репутація компанії «Тойота» у сфері якості має за основу продуману конструкцію, бездоганне виконання та експлуатаційну надійність наших автомобілів. Ці ж принципи поширюються на наші оригінальні запасні частини. Вони виготовляються із якісних матеріалів та у відповідності до таких самих високих виробничих нормативів, які було застосовано до виробництва вузлів та агрегатів вашого автомобіля під час збірки. Крім того, ви завжди зможете покластися на нас: ми гарантуємо оперативну доставку запасних частин та якісне технічне обслуговування. 
+          p Для безпечної та безпроблемної експлуатації обирайте оригінальні запасні частини Toyota! З метою придбання запчастин, будь ласка, звертайтеся до офіційних дилерів Toyota.
+  
+  
+  section.page-parts-nav
+    ul.pagenav.pagenav--smallgap.js-pagenav
+      li.pagenav__item.pagenav__item--active
+        a.pagenav__link(href="#", data-tab=1) Повітряні фільтри
+      li.pagenav__item
+        a.pagenav__link(href="#", data-tab=2) Акумуляторні батареї
+      li.pagenav__item
+        a.pagenav__link(href="#", data-tab=3) Оригінальні лампи
+      li.pagenav__item
+        a.pagenav__link(href="#", data-tab=4) Щітки склоочисника
+      li.pagenav__item
+        a.pagenav__link(href="#", data-tab=5) Оригінальні лобові стекла
+      li.pagenav__item
+        a.pagenav__link(href="#", data-tab=6) Гальмівні диски та колодки
+      li.pagenav__item
+        a.pagenav__link(href="#", data-tab=7) Очисник паливної системи
+
+
+    .tab-wrapper
+      .tab-item.tab-item--active(data-tab=1)
+        .wrapper
+          .parts-news__list
+            .parts-news__item
+              .parts-news__image          
+                img(src="img/c-a-news-1.jpg")
+              .parts-news__descr
+                p.parts-news__title.block-title Toyota Land Cruiser Special Edition
+                p В офіційній дилерській мережі Toyota в Україні триває прийом замовлень на легендарний позашляховик, володар доріг Toyota Land Cruiser у комплектації “Special Edition” (“SE”). LC 200 Special Edition — це ще більше індивідуальності та стилю. Це оригінальні акценти кузова та салону, які підкреслять статусність власника флагмана повноприводної лінійки Toyota.
+                a.available-card__more.btn-more.read-more(href="") Читати далі
+                
+            .parts-news__item
+              .parts-news__image          
+                img(src="img/c-a-news-2.jpg")
+              .parts-news__descr
+                p.parts-news__title.block-title Фотографуючи європейські гірські вершини
+                p Шановні клієнти Toyota в Україні У зв`язку з тим, що кількість випадків шахрайства за допомогою смс розсилок та мережі Інтернет постійно зростає, просимо Вас бути пильними та уважними.
+                a.available-card__more.btn-more.read-more(href="") Читати далі
+                
+            .parts-news__item
+              .parts-news__image          
+                img(src="img/c-a-news-3.jpg")
+              .parts-news__descr
+                p.parts-news__title.block-title Toyota Hybrid заряджає емоціями на Фестивалі вуличної їжі
+                p В офіційній дилерській мережі Toyota в Україні відкрито прийом заявок на нову передньоприводну версію кросовера Toyota C-HR 2017 року з ефективним та економічним турбованим двигуном об’ємом 1,2 літра. Силовий агрегат 1.2 D-4T із варіатором Multidrive S може бути встановлений на передньоприводні автомобілі у трьох комплектаціях:
+                a.available-card__more.btn-more.read-more(href="") Читати далі
+
+
+  
+  section.page-parts-intravel
+    .wrapper
+      .parts-intravel__wrapper
+        h2.parts-intravel__title Безкоштовна допомога під час подорожі
+        p.parts-intravel__descr В рамках своїх зобов'язань щодо забезпечення задоволення потреб клієнта, компанія «Toyota» здійснює обслуговування своїх клієнтів за допомогою служби «Toyota Assistance».
+        p.parts-intravel__descr Добре відоме якість «Toyota» в поєднанні з досвідом і перевагами обслуговування, які пропонуються службою «Toyota Assistance», гарантують Вам душевний спокій під час поїздки на автомобілі. 
+        p.parts-intravel__descr Механическая поломка 
+          span Закончилось топливо 
+          span Разрядился аккумулятор 
+          span Спустило колесо 
+          span Потеря ключей или случайное запирание их в автомобиле
+          
+  section.page-parts-form.bg-cyan
+    .wrapper    
+      .parts-form
+        h2.parts-form__title.section-title Ми будемо раді проконсультуваи вас
+        .parts-form__subtitle.section-subtitle Вкажіть ваше Ім’я та номер телефону
+        form.parts-form__form
+          fieldset.textfield.parts-form__input
+            input.textfield__input.field-typical(type="text")
+            label.textfield__placeholder(for="") Ваше ім'я
+          fieldset.textfield.parts-form__input
+            input.textfield__input.field-typical(type="text")
+            label.textfield__placeholder(for="") Телефон +38 0          
+          input.parts-form__submit.btn.btn-typical(value="ВІДПРАВИТИ" type="button")
+          
+          
+          
+  //- eof main content
+  
+  include partials/_footer.pug
+  include partials/_scripts.pug

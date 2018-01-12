@@ -23,7 +23,10 @@ body {
   color: $black;
   box-sizing: border-box;
 }
-
+.read-more{
+  position: absolute;
+bottom: 0;
+}
 section {
   padding-bottom: 200px;
   @include tablet {
@@ -124,7 +127,7 @@ section {
     &:before {
       display: none;
     }
-  } 
+  }
   &--left { // left aligned text and icon
     text-align: left;
     &:before {
@@ -570,7 +573,7 @@ input[type="radio"] + .checkbox-label:hover::before {
   }
   &__pdf{
     &:before{
-      width: 32px;
+      width: 34px;
       height: 34px;
       display: inline-block;
       content: "";

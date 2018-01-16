@@ -93,9 +93,10 @@ $(document).ready(function(){
       // Get the HTML DOM element that will contain your map
       // We are using a div with id="map" seen below in the <body>
       var mapElement = document.getElementById('map-footer');
-
+      var mapElement1 = document.getElementById('map-contacts');
       // Create the Google Map using our element and options defined above
       var map = new google.maps.Map(mapElement, mapOptions);
+      var map1 = new google.maps.Map(mapElement1, mapOptions);
       var image = {
         url: 'img/i-footer-info-map-top.svg',
         // This marker is 20 pixels wide by 32 pixels high.

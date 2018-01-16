@@ -1,12 +1,10 @@
 <svg width="10" height="24" viewBox="0 0 10 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<title>Facebook</title>
-<desc>Created using Figma</desc>
-<g id="Canvas" transform="translate(-2608 -1797)">
+<g>
 <g id="Facebook">
-<use xlink:href="#path0_fill" transform="translate(2608 1797)" fill="#3B5999"/>
+<use xlink:href="#path0_fill1" fill="#3B5999"/>
 </g>
 </g>
 <defs>
-<path id="path0_fill" fill-rule="evenodd" d="M 5.996 23.99L 1.998 23.99L 1.998 12.6617L 0 12.6617L 0 8.29623L 1.998 8.29623L 1.998 5.67749C 1.998 2.11873 3.126 0 6.331 0L 8.999 0L 8.999 4.36545L 7.332 4.36545C 6.084 4.36545 6.001 4.9748 6.001 6.1135L 5.996 8.29623L 9.018 8.29623L 8.664 12.6617L 5.996 12.6617L 5.996 23.99Z"/>
+<path id="path0_fill1" fill-rule="evenodd" d="M 5.996 23.99L 1.998 23.99L 1.998 12.6617L 0 12.6617L 0 8.29623L 1.998 8.29623L 1.998 5.67749C 1.998 2.11873 3.126 0 6.331 0L 8.999 0L 8.999 4.36545L 7.332 4.36545C 6.084 4.36545 6.001 4.9748 6.001 6.1135L 5.996 8.29623L 9.018 8.29623L 8.664 12.6617L 5.996 12.6617L 5.996 23.99Z"/>
 </defs>
 </svg>

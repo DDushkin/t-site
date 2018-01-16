@@ -23,7 +23,10 @@ body {
   color: $black;
   box-sizing: border-box;
 }
-
+.read-more{
+  position: absolute;
+bottom: 0;
+}
 section {
   padding-bottom: 200px;
   @include tablet {
@@ -124,7 +127,7 @@ section {
     &:before {
       display: none;
     }
-  } 
+  }
   &--left { // left aligned text and icon
     text-align: left;
     &:before {
@@ -570,7 +573,7 @@ input[type="radio"] + .checkbox-label:hover::before {
   }
   &__pdf{
     &:before{
-      width: 32px;
+      width: 34px;
       height: 34px;
       display: inline-block;
       content: "";
@@ -632,6 +635,61 @@ input[type="radio"] + .checkbox-label:hover::before {
       content: "";
       margin-right: 40px;
       background: url('../img/i-car.svg') center no-repeat;
+      vertical-align: middle;
+    }
+  }
+  &__logo{         //28 page
+    &:before{
+      width: 50px;
+      height: 50px;
+      display: block;
+      content: "";
+      margin-right: 40px;
+      background: url('../img/i-logo.svg') center no-repeat;
+      vertical-align: middle;
+    }
+  }
+  &__auto-sale{         //28 page
+    &:before{
+      width: 68px;
+      height: 46px;
+      display: block;
+      content: "";
+      margin-right: 40px;
+      background: url('../img/i-auto-sale.svg') center no-repeat;
+      vertical-align: middle;
+    }
+  }
+  &__parts-sale{         //28 page
+    &:before{
+      width: 68px;
+      height: 46px;
+      display: block;
+      content: "";
+      margin-right: 40px;
+      background: url('../img/i-parts-sale.svg') center no-repeat;
+      vertical-align: middle;
+    }
+  }
+  &__sto{         //28 page
+    &:before{
+      width: 53px;
+      height: 69px;
+      display: block;
+      content: "";
+      margin-right: 40px;
+      background: url('../img/i-sto.svg') center no-repeat;
+      vertical-align: middle;
+    }
+  }
+  &__accesories{         //28 page
+    &:before{
+      width: 64px;
+      height: 46px;
+      display: block;
+      content: "";
+      margin-right: 40px;
+      background: url('../img/i-accesories.svg') center no-repeat;
       vertical-align: middle;
     }
   }

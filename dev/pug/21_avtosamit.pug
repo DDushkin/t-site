@@ -1,0 +1,107 @@
+include partials/_mixins.pug
+
+//- title as parameter
+//- example:
+//- head("page title")
++head("21 avtosamit")
+body
+  include partials/_header.pug
+    
+  //- main content
+  section.page-head.page-avtosamit-head
+    .wrapper
+      .breadcrumbs
+        ul.breadcrumbs__list
+          li.breadcrumbs__item Головна
+          li.breadcrumbs__item Про нас
+          li.breadcrumbs__item Автосалон автосамит
+        .breadcrumbs__title-wrap
+          h1.breadcrumbs__title Автосалон автосамит
+
+      
+  section.page-avtosamit-timeline
+    .wrapper
+      .section-title Про нас
+      .section-subtitle Отримай повний захист автомобіля
+      .avtosamit-timeline
+        
+        .avtosamit-timeline__container.avtosamit-timeline__right
+          .avtosamit-timeline__content
+            p
+              span 2009
+              | — Коллектив Тойота Центр Киев «Автосамит» награжден почетной грамотой «За весомый вклад в реформирование национальной экономики, развитие предпринимательства и формирование рыночной структуры в Украине»
+              
+        .avtosamit-timeline__container.avtosamit-timeline__left
+          .avtosamit-timeline__content
+            p 
+              span 2009 
+              | — Тойота Центр Киев «Автосамит» второй год подряд признан лучшим дилерским центром Toyota в Украине. Компании присуждена премия «Toyota Ichiban European Customer Satisfaction Award» — ежегодная премия Toyota, определяющая лучшие дилерские центры в Европе.
+              
+        .avtosamit-timeline__container.avtosamit-timeline__right
+          .avtosamit-timeline__content
+            p
+              span 2008 
+              | — Победителя национального бизнес рейтинга с присвоением звания Лидер отрасли в основном виде деятельности КВЕД 50.2 «Техническое обслуживание и ремонт автомобилей».
+              
+        .avtosamit-timeline__container.avtosamit-timeline__left
+          .avtosamit-timeline__content
+            p
+              span К
+              | омпании присуждена премия «Toyota Ichiban European Customer Satisfaction Award» — ежегодная премия Toyota, определяющая лучшие дилерские центры в Европе.
+              
+        .avtosamit-timeline__container.avtosamit-timeline__right
+          .avtosamit-timeline__content
+            p
+              span 2008 
+              | — Тойота Центр Киев «Автосамит» признан лучшим дилерским центром Toyota в Украине (преимущество над вторым место в баллах более чем в два раза).
+                
+        .avtosamit-timeline__container.avtosamit-timeline__left
+          .avtosamit-timeline__content
+            p
+              span 2007 
+              | — Тойота Центр Киев «Автосамит» признан дилерским центром, предоставляющим наивысшее качество обслуживания клиентов в официальной дилерской сети компании ПИИ «Тойота Украина».
+                
+        .avtosamit-timeline__container.avtosamit-timeline__right
+          .avtosamit-timeline__content
+            p
+              span 2008 
+              | — Тойота Центр Киев «Автосамит» признан лучшим дилерским центром Toyota в Украине (преимущество над вторым место в баллах более чем в два раза).
+            
+            
+  section.page-avtosamit-photo
+    .photo-grid
+      .photo-grid__col.photo-grid__col--s
+        .photo-grid__item
+          img.photo-grid__img(src="img/c-photo-grid.jpg", alt="")
+        .photo-grid__item
+          img.photo-grid__img(src="img/c-photo-grid.jpg", alt="")
+        .photo-grid__item
+          img.photo-grid__img(src="img/c-photo-grid.jpg", alt="")
+      .photo-grid__col.photo-grid__col--m
+        .photo-grid__item
+          img.photo-grid__img(src="img/c-photo-grid.jpg", alt="")
+        .photo-grid__item
+          img.photo-grid__img(src="img/c-photo-grid.jpg", alt="")
+        .photo-grid__item
+          img.photo-grid__img(src="img/c-photo-grid.jpg", alt="")
+        .photo-grid__item
+          img.photo-grid__img(src="img/c-photo-grid.jpg", alt="")
+            
+  section.page-avtosamit-form.bg-cyan
+    .wrapper    
+      .avtosamit-form
+        h2.avtosamit-form__title.section-title Ми будемо раді проконсультуваи вас
+        .avtosamit-form__subtitle.section-subtitle Вкажіть ваше Ім’я та номер телефону
+        form.avtosamit-form__form
+          fieldset.textfield.avtosamit-form__input
+            input.textfield__input.field-typical(type="text")
+            label.textfield__placeholder(for="") Ваше ім'я
+          fieldset.textfield.avtosamit-form__input
+            input.textfield__input.field-typical(type="text")
+            label.textfield__placeholder(for="") Телефон +38 0          
+          input.avtosamit-form__submit.btn.btn-typical(value="ВІДПРАВИТИ" type="button")
+  
+  //- eof main content
+  
+  include partials/_footer.pug
+  include partials/_scripts.pug

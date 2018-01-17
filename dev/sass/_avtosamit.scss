@@ -1,0 +1,151 @@
+.page-avtosamit-head{
+  color:white;
+  background-image: url(../img/bg-available.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  padding-bottom: 0;
+  box-shadow: 0px 0px 14px $shadow50;
+}
+.page-avtosamit-timeline{
+  padding: 100px 0 150px;
+}
+.page-avtosamit-photo{
+  padding: 0;
+}
+.avtosamit-form{
+  padding: 70px 0;
+
+  &__title{
+    padding-bottom: 10px;
+    margin: 0;
+  }
+  &__subtitle{
+    margin-bottom: 20px;
+  }
+  &__form{
+    @include row-flex();
+    @include size(8); // col count
+    @include shift-left(2);
+    @include tablet {
+      @include size(10);
+      @include shift-left(1);
+    }
+    @include mobile {
+      @include shift-left(0);
+      @include size(12);
+    }
+  }
+  &__input{
+    margin: 0 auto;
+    display: block;
+    width: 30%;
+      @include col();
+      @include size(6);
+      @include mobile {
+        @include shift-left(0);
+        @include size(12);
+        margin-top: 30px;
+      }
+  }
+  &__submit{
+    margin: 30px auto 0;
+    display: block;
+    @include size(4);
+    @include tablet {
+      @include size(6);
+      @include shift-left(3);
+    }
+    @include mobile {
+      @include shift-left(0);
+      @include size(12);
+    }
+  }
+}
+.page-avtosamit-form{
+  padding:0;
+}
+
+
+/* The actual timeline (the vertical ruler) */
+.avtosamit-timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 0px;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      border: 1px dashed rgba(0, 0, 0, 0.5);
+      /* margin-left: -10px; */
+      @include tablet {
+        left: 25.8%;
+      }
+      @include mobile{
+        display: none;
+      }
+    }
+    &__container {
+      /* padding: 0px 33px; */
+      position: relative;
+      background-color: inherit;
+      width: 40%;
+      @include tablet {
+        @include size(6);
+        @include shift-left(3.5);
+      }
+      @include mobile{
+        @include size(12);
+        @include shift-left(0);
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        right: -16%;
+        background-color: #000;
+        border: 1px dashed #000;
+        top: 0px;
+        border-radius: 50%;
+        z-index: 1;
+        @include mobile{
+          display: none;
+        }
+      }
+    }
+    &__left {
+        left: 5%;
+        @include tablet{
+          left: 0%;
+          &::after {
+            left: -15%;
+          }
+        }
+    }
+    &__right {
+      left: 55%;
+      @include tablet{
+        left: 0%;
+      }
+      &::after {
+        left: -15%;
+          @include tablet{
+            left: -15%;
+          }
+        }
+    }
+    &__content {
+      background-color: white;
+      position: relative;
+      border-radius: 6px;
+      margin-bottom: 30px;
+      span{
+        font-size: 36px;
+        font-weight: 700;
+      }
+  }
+}

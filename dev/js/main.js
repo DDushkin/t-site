@@ -176,6 +176,10 @@ $(document).ready(function(){
     });
   });
 
+  // var mySVGsToInject = document.querySelectorAll('img.svg');
+  // SVGInjector(mySVGsToInject);
+
+
   //disable dummy anchor events
   $("a").click(function(){
     if ($(this).attr("href")=="#") {
@@ -250,8 +254,13 @@ $(document).ready(function(){
       // transition: "crossfade"
       // transition: "dissolve"
     });
-    // $(".page-touch-listing__slider .fotorama__arr--next").appendTo(".fotorama__nav__shaft");
-    // $(".page-touch-listing__slider .fotorama__arr--prev").prependTo(".fotorama__nav__shaft");
+
+    // arrow for slider
+    $(".page-touch-listing__slider").each(function(){
+      $(this).find(".fotorama__arr--prev").prependTo($(this).find(".fotorama__nav__shaft"));
+      $(this).find(".fotorama__arr--next").appendTo($(this).find(".fotorama__nav__shaft"));
+    });
+
   // eof 17 touch
 
   // pagenav tabs (31)

@@ -9,6 +9,9 @@
 }
 .page-contacts-content {
   padding: 200px 0;
+  @include tablet {
+    padding: 100px 0;
+  }
 }
 .contacts-card{
   @include row-flex();
@@ -18,6 +21,9 @@
     @include col();
     position: relative;
     height: 870px;
+    @include tablet {
+      display: none;
+    }
     img{
       width: 100%;
       object-fit: cover;
@@ -33,14 +39,25 @@
         margin-top: 20px;
   }
   &__info{
-    @include size(5);
+    @include size(7);
     @include col();
     display: flex;
-flex-wrap: wrap;
+    flex-wrap: wrap;
+    @include tablet {
+      @include size(10);
+      @include shift-left(1);
+    }
+    @include mobile {
+      @include size(12);
+      @include shift-left(0);
+      flex-direction: column;
+    }
+
   }
   &__title{
     font-weight: bold;
     margin-bottom: 5px;
+    letter-spacing: 0.1em;
   }
   &__p{
     margin-top: 5px;
@@ -52,16 +69,29 @@ flex-wrap: wrap;
     margin-bottom: 40px;
     @include size(10);
     @include col();
+    @include mobile {
+      margin-bottom: 20px;
+    }
   }
 }
 #map-contacts{
   height: 735px;
+  @include tablet {
+    height: 385px;
+  }
+  @include mobile {
+    height: 150px;
+  }
 }
 .contacts-map{
   &__text{
   margin-top: 50px;
   @include size(10);
   @include shift-left(1);
+  @include tablet {
+    @include size(12);
+    @include shift-left(0);
+  }
 }
 &__p{
   padding-left: 20px;

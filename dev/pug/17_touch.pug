@@ -14,16 +14,35 @@ body
           h1.breadcrumbs__title Toyota touch
   
   section.page-touch
-    
+
+    .page-touch-listing.page-touch-listing--shift
+      .page-touch-listing__item
+        .page-touch-listing__slider
+          img(src="img/c-touch-slider-2-1.png", alt="")
+          img(src="img/c-touch-slider-2-2.png", alt="")
+          img(src="img/c-touch-slider-2-3.png", alt="")
+        .page-touch-listing__text
+          .section-title.section-title--left Перетворює ваші подорожі на задоволення
+          p Сучасна аудіосистема Тойота Touch® 2 дозволяє насолоджуватись Вашою улюбленою музикою. Все це можливо за допомогою зручного підключення через Bluetooth або USB. Крім того, ваші музичні вподобання доступні на сенсорному екрані, що з легкістю дозволяє вибрати улюблену станцію або насолоджуватися улюбленою музикою.
+
+      .page-touch-listing__item.page-touch-listing__item--reverse
+        .page-touch-listing__slider
+          img(src="img/c-touch-slider-2-2.png", alt="")
+          img(src="img/c-touch-slider-2-1.png", alt="")
+          img(src="img/c-touch-slider-2-3.png", alt="")
+        .page-touch-listing__text
+          .section-title.section-title--left Тепер ще більш зручний у використані
+          p Сучасна аудіосистема Тойота Touch® 2 дозволяє насолоджуватись Вашою улюбленою музикою. Все це можливо за допомогою зручного підключення через Bluetooth або USB. Крім того, ваші музичні вподобання доступні на сенсорному екрані, що з легкістю дозволяє вибрати улюблену станцію або насолоджуватися улюбленою музикою.
+
 
     .page-touch-listing
       .section-title Toyota touch 2 з навігаційним блоком GO
       .section-subtitle 2D та 3D карти у вашому автомобілі
       .page-touch-listing__item
         .page-touch-listing__slider
-          img(src="img/c-touch-slider-2-1.jpg", alt="")
-          img(src="img/c-touch-slider-1-1.jpg", alt="")
-          img(src="img/c-touch-slider-1-2.jpg", alt="")
+          img(src="img/c-touch-slider-2-1.png", alt="")
+          img(src="img/c-touch-slider-2-2.png", alt="")
+          img(src="img/c-touch-slider-2-3.png", alt="")
         .page-touch-listing__text
           .section-title.section-title--simple.section-title--left Навігаційна система
           p Все що потрібно для подорожі Європою: розширені функції з 2D та 3D картами, онлайн сервіси та інші додатки, які знадобляться Вам для планування та здійснення подорожей доступні в оновленому меню.
@@ -32,18 +51,18 @@ body
 
       .page-touch-listing__item
         .page-touch-listing__slider
-          img(src="img/c-touch-slider-1-1.jpg", alt="")
-          img(src="img/c-touch-slider-2-1.jpg", alt="")
-          img(src="img/c-touch-slider-1-2.jpg", alt="")
+          img(src="img/c-touch-slider-2-2.png", alt="")
+          img(src="img/c-touch-slider-2-1.png", alt="")
+          img(src="img/c-touch-slider-2-3.png", alt="")
         .page-touch-listing__text
           .section-title.section-title--simple.section-title--left Зрозуміла навігація
           p Завдяки функції панорамного перегляду вулиць Google Street View™ Toyota Touch 2 з навігаційним блоком Go можливо переглянути зображення вашого поточного місця перебування або призначення та інформацію про погоду.
 
       .page-touch-listing__item
         .page-touch-listing__slider
-          img(src="img/c-touch-slider-1-2.jpg", alt="")
-          img(src="img/c-touch-slider-2-1.jpg", alt="")
-          img(src="img/c-touch-slider-1-1.jpg", alt="")
+          img(src="img/c-touch-slider-2-3.png", alt="")
+          img(src="img/c-touch-slider-2-2.png", alt="")
+          img(src="img/c-touch-slider-2-1.png", alt="")
         .page-touch-listing__text
           .section-title.section-title--simple.section-title--left Уважно слідкуйте за дорогою
           p Функція розпізнавання голосу тепер може бути використана для запуску та управління додатками, що робить навігацію простішою та взаємодіючи з Apple, Siri Eyes Free ще зручнішою. Для цього потрібно натиснути кнопку розпізнавання голосу на кермі, що дозволяє віддавати команди безпосередньо до Siri, а функція перетворення тексту в мову читає ваші вхідні SMS-повідомлення вголос, це дає змогу зосередитися на дорозі та не відволікатись. Крім того ви отримуєте доступ до Toyota Online послуг, завдяки точці доступу до Wi-Fi підключення чи створивши мобільну точку доступу, використовуючи свій смартфон
@@ -51,15 +70,16 @@ body
   .touch-form
     .touch-form__inner
       h2.lising-form__title.section-title Ми будемо раді проконсультувати вас
-      .lising-form__subtitle.section-subtitle Вкажіть ваше Ім’я та номер телефону
-      .lising-form__form
-        fieldset.textfield.lising-form__input
+      .section-subtitle Вкажіть ваше Ім’я та номер телефону
+      form.form.form--double
+        fieldset.textfield
           input.textfield__input.field-typical(type="text")
           label.textfield__placeholder(for="") Ваше ім'я
-        fieldset.textfield.lising-form__input
+        fieldset.textfield
           input.textfield__input.field-typical(type="text")
           label.textfield__placeholder(for="") Телефон
-        input.lising-form__submit.btn.btn-typical(value="ВІДПРАВИТИ" type="button")
+        fieldset.fieldset.fieldset--full
+          input.btn.btn-typical(value="ВІДПРАВИТИ" type="button")
 
   //- eof main content
   

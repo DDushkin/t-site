@@ -726,12 +726,44 @@ input[type="radio"] + .checkbox-label:hover::before {
 
 
 // forms
+.form {
+
+  &--double {
+    @include row-flex();
+    // @include wrapper();
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .textfield {
+      @include col();
+      @include size(4);
+    }
+    .fieldset--full {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-top: 30px;
+    }
+    // align-items: center;
+
+  }
+}
+
 input, fieldset {
   vertical-align: middle;
   display: inline-block;
   font-size: 18px;
 }
-
+.fieldset {
+  border: none;
+  padding: 0;
+  // margin: 0;
+  // width: 100%;
+  &--full {
+    width: 100%;
+  }
+}
 textarea {
   width: 200px;
   height: 100px;

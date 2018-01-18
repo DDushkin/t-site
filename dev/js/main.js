@@ -1,6 +1,4 @@
 $(document).ready(function(){
-  console.log('doc ready'); //TODO: remove
-
   // mainslider init
   // http://fotorama.io/customize/initialization/
   $(".mainslider").fotorama({
@@ -179,7 +177,6 @@ $(document).ready(function(){
   // var mySVGsToInject = document.querySelectorAll('img.svg');
   // SVGInjector(mySVGsToInject);
 
-
   //disable dummy anchor events
   $("a").click(function(){
     if ($(this).attr("href")=="#") {
@@ -238,7 +235,6 @@ $(document).ready(function(){
 
   // color-selector (04)
   $(".color-selector__item").click(function(){
-    // console.log($(this).attr("data-color")); //TODO: remove
     $(".js-color-name").text($(this).attr("data-color"));
     $(".color-selector__item").removeClass("color-selector__item--active");
     $(this).addClass("color-selector__item--active");

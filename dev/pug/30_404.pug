@@ -1,0 +1,24 @@
+include partials/_mixins.pug
++head("30 404")
+body
+  include partials/_header.pug
+    
+  //- main content
+  section.page-error
+    .page-error__inner
+      .error-sign
+        .error-sign__item
+          img(src="img/i-4-decimal.png", alt="").error-sign__img.error-fade
+
+        .error-sign__item.error-sign__item--wide
+          .error-icon
+            include ../img/i-logo-error.svg
+        .error-sign__item
+          img(src="img/i-4-decimal.png", alt="").error-sign__img.error-fade
+      p.page-error__text Такой страницы не существует, не переживайте, ведь можно воспользоваться навигацией сверху!
+      button.btn.btn-typical НА ГЛАВНУЮ
+
+  //- eof main content
+
+  include partials/_footer.pug
+  include partials/_scripts.pug

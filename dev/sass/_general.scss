@@ -832,3 +832,30 @@ textarea {
   }
 }
 //eof forms
+
+
+// animations
+@keyframes fIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes strokeAnimate {
+  0% {
+    stroke-dashoffset: 1500;
+    fill: #fff;
+  }
+  80% {
+    stroke-dashoffset: 0;
+    fill: #fff;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #c03;
+  }
+}
+// eof animations

@@ -291,4 +291,26 @@ if(screen.width > 1023){
       }
     });
   // eof pagenav tabs (31)
+
+
+(function() {
+  var contents = $('.service-terms__item-container');
+  var titles = $('.service-terms__item');
+  titles.on('click', function() {
+    var title = $(this);
+    contents.filter(':visible').slideUp(function() {
+      titles.removeClass('is-opened');
+      $(this).parent('.service-terms__item').removeClass('is-opened');
+    });
+    var content = title.children('.service-terms__item-container');
+    if (!content.is(':visible')) {
+      content.slideDown(function() {
+        $(this).parent('.service-terms__item').addClass('is-opened')
+      });
+    }
+  });
+})();
+
+
+
 });  // eof doc.ready

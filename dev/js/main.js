@@ -31,6 +31,28 @@ $(document).ready(function(){
     variableWidth: true
   });
   // eof footer-slider
+if(screen.width > 1023){
+  $('.test-drive-bigslider').slick({
+   slidesToShow: 1,
+   slidesToScroll: 1,
+   arrows: false,
+   fade: true,
+   asNavFor: '.test-drive-slider__list'
+ });
+ $('.test-drive-slider__list').slick({
+   slidesToShow: 3,
+   slidesToScroll: 1,
+   asNavFor: '.test-drive-bigslider',
+   dots: false,
+   centerMode: true,
+   nextArrow: $(".test-drive-slider__nav--next"),
+   prevArrow: $(".test-drive-slider__nav--prev"),
+   focusOnSelect: true
+ });
+
+   // Get the current slide
+  var currentSlide = $('.test-drive-slider__list').slick('slickCurrentSlide');
+}
 
   // story, offer sliders
   $('.a-news-grid').slick({

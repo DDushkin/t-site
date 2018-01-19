@@ -23,10 +23,32 @@ body
       .testdrive-bages__li.testdrive-bages__city.ico.ico__city 2
       .testdrive-bages__li.testdrive-bages__track.ico.ico__track 3
   section.page-testdrive-video.bg-gradient
-    .wrapper.video-wrapper    
-      iframe.video(src="https://www.youtube.com/embed/B0ddPNsp1Tw?rel=0&amp;showinfo=0", frameborder="0", allowfullscreen)      
-      .test-drive-video-slider
-        
+    .wrapper
+      .test-drive-bigslider
+        .test-drive-bigslider__item    
+          iframe.video(src="https://www.youtube.com/embed/B0ddPNsp1Tw?rel=0&amp;showinfo=0", frameborder="0", allowfullscreen)     
+        .test-drive-bigslider__item    
+          iframe.video(src="https://www.youtube.com/embed/B0ddPNsp1Tw?rel=0&amp;showinfo=0", frameborder="0", allowfullscreen) 
+        .test-drive-bigslider__item    
+          iframe.video(src="https://www.youtube.com/embed/B0ddPNsp1Tw?rel=0&amp;showinfo=0", frameborder="0", allowfullscreen) 
+        .test-drive-bigslider__item    
+          iframe.video(src="https://www.youtube.com/embed/B0ddPNsp1Tw?rel=0&amp;showinfo=0", frameborder="0", allowfullscreen)  
+      .test-drive-slider 
+        .test-drive-slider__nav.test-drive-slider__nav-left
+          a.test-drive-slider__nav--prev(href="#")
+            img(src="img/i-postnav-arrow.svg" alt="")
+        .test-drive-slider__list
+          .test-drive-slider__item
+            iframe.video(src="https://www.youtube.com/embed/B0ddPNsp1Tw?rel=0&amp;showinfo=0", frameborder="0", allowfullscreen)
+          .test-drive-slider__item    
+            iframe.video(src="https://www.youtube.com/embed/B0ddPNsp1Tw?rel=0&amp;showinfo=0", frameborder="0", allowfullscreen)
+          .test-drive-slider__item
+            iframe.video(src="https://www.youtube.com/embed/B0ddPNsp1Tw?rel=0&amp;showinfo=0", frameborder="0", allowfullscreen)
+          .test-drive-slider__item
+            iframe.video(src="https://www.youtube.com/embed/B0ddPNsp1Tw?rel=0&amp;showinfo=0", frameborder="0", allowfullscreen)
+        .test-drive-slider__nav.test-drive-slider__nav-right
+          a.test-drive-slider__nav--next(href="#")
+            img(src="img/i-postnav-arrow-next.svg" alt="")
   .wrapper
     .test-drive-pace
       .test-drive-pace__description

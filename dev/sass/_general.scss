@@ -169,6 +169,9 @@ section {
   margin-bottom: 50px; //TODO: combine with subtitle
   font-style: italic;
   text-align: center;
+  &--left {
+    text-align: left;
+  }
 }
 
 .text-simple { // 04 blue small text

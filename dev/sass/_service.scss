@@ -177,7 +177,7 @@
         color: $black;
         font-weight: bold;
         display: inline-block;
-        @include mobile {
+        @include tablet {
           width: 90%;
         }
       }

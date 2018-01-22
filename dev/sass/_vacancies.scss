@@ -1,0 +1,173 @@
+.page-vacancies-head{
+  background-image: url(../img/bg-vacancies-head.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  padding-bottom: 0;
+  box-shadow: 0px 0px 14px $shadow50;
+  color:$black;
+  .breadcrumbs{
+    padding-top: 70px;
+    &__item:not(:first-child)::before {
+      background: $black;
+    }
+  }
+}
+.is-opened .vacancies-terms__item-head:after{
+  transform: rotate(-90deg);
+}
+.vacancies-terms{
+
+  margin: 100px 0 200px;
+  @include tablet {
+    margin: 70px 0 200px;
+  }
+  &__bold{
+    font-weight: bold;
+  }
+  &__title{
+    margin-bottom: 10px;
+  }
+  &__subtitle{
+    @include size(7); // col count
+    @include shift-left(2.5);
+    font-size: 18px;
+    margin-bottom: 30px;
+    @include tablet {
+      @include size(12); // col count
+      @include shift-left(0);
+    }
+  }
+  &__wraper{
+    @include tablet {
+      @include col();
+      @include size(12); // col count
+    }
+    @include mobile {
+      width: 100%;
+      margin: 0;
+    }
+  }
+  &__item{
+
+    background: #FFFFFF;
+    border: 1px solid #CBCDC9;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.3);
+    margin-bottom: 20px;
+    cursor: pointer;
+    &-head{
+      padding: 22px 0 22px 20px;
+      &:after{
+        display: inline-block;
+        content: "";
+        width: 12px;
+        height: 6px;
+        position: absolute;
+        right: 30px;
+        margin-top: 5px;
+        background: url(../img/i-nav-arrow.svg) center no-repeat;
+        vertical-align: middle;
+        background-size: cover;
+        transition: all .2s;
+        @include mobile {
+          right: 15px;
+          margin-top: 10px;
+        }
+      }
+      &-text{
+        font-size: 18px;
+        letter-spacing: 0.05em;
+        color: $black;
+        font-weight: bold;
+        display: inline-block;
+        @include tablet {
+          width: 90%;
+        }
+      }
+    }
+    &-container{
+      display: flex;
+      ul{
+        padding-left: 20px;
+      }
+      &-text{
+        width: calc(100% / 12 * 8);
+        padding: 0 0 22px 20px;
+        @include tablet {
+          width: calc(100% / 12 * 10);
+        }
+        @include mobile {
+          width: calc(100% / 12 * 12);
+        }
+      }
+      &-img{
+        width: calc(100% / 12 * 4);
+        @include tablet {
+          display: none;
+        }
+      }
+    }
+  }
+}
+// form block
+.vacancies-consult {
+  @include tablet {
+    display: none;
+  }
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: #eeeff1; //TODO: add gradient bg (png) or convert to css
+
+  .section-subtitle {
+    margin-bottom: 30px;
+  }
+}
+.vacancies-form {
+  @include row-flex();
+  @include wrapper();
+
+  .btn {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__part-left {
+    @include col();
+    @include size(4);
+    @include shift-left(2);
+    @include tablet {
+      @include size(6);
+      @include shift-left(0);
+    }
+    @include mobile {
+      @include size(12);
+      margin-bottom: 30px;
+    }
+    .textfield + .textfield {
+      margin-top: 30px;
+    }
+  }
+  &__part-right {
+    @include col();
+    @include size(4);
+    @include shift-right(2);
+    @include tablet {
+      @include size(6);
+      @include shift-right(0);
+    }
+    @include mobile {
+      @include size(12);
+    }
+  }
+  .textfield {
+    width: 100%;
+
+    input, textarea {
+      background-color: #f7f7f7;
+      width: 100%;
+    }
+  }
+}
+// eof form block

@@ -312,5 +312,22 @@ if(screen.width > 1023){
 })();
 
 
+(function() {
+  var contents = $('.vacancies-terms__item-container');
+  var titles = $('.vacancies-terms__item');
+  titles.on('click', function() {
+    var title = $(this);
+    contents.filter(':visible').slideUp(function() {
+      titles.removeClass('is-opened');
+      $(this).parent('.vacancies-terms__item').removeClass('is-opened');
+    });
+    var content = title.children('.vacancies-terms__item-container');
+    if (!content.is(':visible')) {
+      content.slideDown(function() {
+        $(this).parent('.vacancies-terms__item').addClass('is-opened')
+      });
+    }
+  });
+})();
 
 });  // eof doc.ready

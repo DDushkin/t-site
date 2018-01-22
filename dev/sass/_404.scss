@@ -1,13 +1,28 @@
 .page-error {
   padding-bottom: 180px;
+  @include tablet {
+    padding-bottom: 70px;
+  }
+  @include mobile {
+    padding-bottom: 200px;
+  }
 
   &__inner {
     padding-top: 220px;
     text-align: center;
+    @include tablet {
+      padding-top: 100px;
+    }
+    @include mobile {
+      padding-top: 75px;
+    }
   }
   &__text {
     margin-top: 80px;
     margin-bottom: 40px;
+    @include tablet {
+      margin-top: 45px;
+    }
   }
 }
 .error-sign {
@@ -16,6 +31,9 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 70px;
+  @include tablet {
+    margin-bottom: 45px;
+  }
 
   &__item {
     @include col();
@@ -51,12 +69,9 @@
     stroke-dasharray: 1500;
     stroke-dashoffset: 1500;
     transition: all 1.5s;
-
     animation: strokeAnimate 3s 2s forwards;
-    
   }
   #path1_stroke_2x {
     fill: transparent;
   }
-  
 }

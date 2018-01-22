@@ -1,0 +1,117 @@
+include partials/_mixins.pug
+
+//- title as parameter
+//- example:
+//- head("page title")
++head("27 vacancies")
+body
+  include partials/_header.pug
+
+  //- main content
+  section.page-head.page-vacancies-head
+    .wrapper
+      .breadcrumbs
+        ul.breadcrumbs__list
+          li.breadcrumbs__item Головна
+          li.breadcrumbs__item Про нас
+          li.breadcrumbs__item Вакансії
+        .breadcrumbs__title-wrap
+          h1.breadcrumbs__title Вакансії
+
+  .wrapper
+    .vacancies-terms
+      .vacancies-terms__subtitle.section-subtitle Запрошуэмо до нашого дружнього колективу:
+      .vacancies-terms__wraper
+        .vacancies-terms__item
+          .vacancies-terms__item-head
+            .vacancies-terms__item-head-text Интернет-маркетолог
+          .vacancies-terms__item-container
+            .vacancies-terms__item-container-text
+
+        .vacancies-terms__item
+          .vacancies-terms__item-head
+            .vacancies-terms__item-head-text Автослесарь
+          .vacancies-terms__item-container
+            .vacancies-terms__item-container-text
+
+        .vacancies-terms__item
+          .vacancies-terms__item-head
+            .vacancies-terms__item-head-text Уборщик-мерчендайзер
+          .vacancies-terms__item-container
+            .vacancies-terms__item-container-text
+
+        .vacancies-terms__item
+          .vacancies-terms__item-head
+            .vacancies-terms__item-head-text Интернет-маркетолог
+          .vacancies-terms__item-container
+            .vacancies-terms__item-container-text
+
+        .vacancies-terms__item
+          .vacancies-terms__item-head
+            .vacancies-terms__item-head-text Автомойщик
+          .vacancies-terms__item-container
+            .vacancies-terms__item-container-text
+
+        .vacancies-terms__item
+          .vacancies-terms__item-head
+            .vacancies-terms__item-head-text Менеджер
+          .vacancies-terms__item-container
+            .vacancies-terms__item-container-text
+
+        .vacancies-terms__item
+          .vacancies-terms__item-head
+            .vacancies-terms__item-head-text Интернет-маркетолог 
+          .vacancies-terms__item-container
+            .vacancies-terms__item-container-text
+
+        .vacancies-terms__item
+          .vacancies-terms__item-head
+            .vacancies-terms__item-head-text Механік-іллюстратор
+          .vacancies-terms__item-container
+            .vacancies-terms__item-container-text
+              p.vacancies-terms__bold Вимоги:
+              ul 
+               li Освіта: середньо-спеціальна 
+               li Кат. В, С 
+               li Досвід роботи від 2 років 
+               li Знання пневматики, механіки, електроніки, гідравліки. 
+              p Ми будемо раді бачити в нашій команді активних, молодих людей, спрямованих на постійний розвиток та досягнення результату 
+              p.vacancies-terms__bold Функціональні обов'язки: 
+              ul
+               li Технічне обслуговування та ремонт швейного обладнання: 
+               li Виконання налагоджень; 
+               li Випуск автомобілей на лінію; 
+               li Ремонт і проведення ТО складської техніки 
+              p.vacancies-terms__bold Умови роботи: 
+              ul
+               li Високий рівень доходу; 
+               li Графік роботи: пн-пт з 9:00 до 18:00; 
+               li Офіційне працевлаштування, дотримання КЗпП; 
+               li Оплачувані: лікарняні та відпустки; 
+               li Харчування; 
+               li Можливість професійного зростання; 
+               li Соц. забезпечення (корпоративний відпочинок, подарунки на всі державні свята та дні народження, знижку - 20% на всю продукцію представлену в мережі магазинів Папірус); 
+               li Виробництво знаходиться у м. Вишневому.
+            .vacancies-terms__item-container-img(style="background: url(../img/c-vacancies-1.jpg) right bottom no-repeat; background-size: contain;")
+
+.vacancies-consult
+  .section-title Мы будемо раді вам
+  .section-subtitle
+  form.vacancies-form
+    .vacancies-form__part-left
+      fieldset.textfield
+        input.textfield__input.field-typical(type="text")
+        label.textfield__placeholder(for="") Ваше ім'я
+      fieldset.textfield
+        input.textfield__input.field-typical(type="text")
+        label.textfield__placeholder(for="") Email
+    .vacancies-form__part-right
+      fieldset.textfield
+        textarea.textfield__input.textfield__textarea
+        label.textfield__placeholder(for="") Ваше повідомлення
+    button.btn.btn-typical Відправити
+
+//- eof main content
+
+include partials/_footer.pug
+include partials/_scripts.pug

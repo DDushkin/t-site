@@ -4,12 +4,16 @@
 
   &__inner {
     display: flex;
-    // justify-content: center;
     align-items: center;
   }
 
   &__arrow {
     font-size: 0;
+    transition: $tr;
+    will-change: transform;
+    &:active {
+      transform: scale(1.1, 0.85);
+    }
 
     &--prev {
     }
@@ -27,7 +31,6 @@
   &__link {
     color: inherit;
     text-decoration: none;
-    // margin: 0 3px; 
     padding: 3px;
 
     &--active {

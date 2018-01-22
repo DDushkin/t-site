@@ -169,7 +169,7 @@ if(screen.width > 1023){
     }
   });
 
-  //replace svg img to inline //TODO: fix images
+  //replace svg img to inline
   // https://medium.com/@asadalikanwal/controlling-svg-via-css-for-transitions-and-hover-effects-fcd9b48a4562
   $(function() {
     $('img.svg').each(function() {
@@ -199,7 +199,7 @@ if(screen.width > 1023){
   // var mySVGsToInject = document.querySelectorAll('img.svg');
   // SVGInjector(mySVGsToInject);
 
-  //disable dummy anchor events
+  //disable dummy anchor events //TODO: remove
   $("a").click(function(){
     if ($(this).attr("href")=="#") {
       console.log("# click");

@@ -330,4 +330,16 @@ if(screen.width > 1023){
   });
 })();
 
+  // popups
+  // open by element with class as trigger and data as target
+  $(".js-open-popup").click(function(){
+    $("."+$(this).attr("data-popup")).addClass("popup--visible");
+  });
+
+  // close, //TODO: add closing by esc key
+  $(".popup__dim, .popup__close").click(function() {
+    $(this).parents(".popup").removeClass("popup--visible");
+  });
+  // eof popups
+
 });  // eof doc.ready

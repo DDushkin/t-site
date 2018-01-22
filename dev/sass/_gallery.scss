@@ -1,0 +1,11 @@
+.page-gallery {
+
+}
+.gallery {
+  @include wrapper();
+  
+  &__item {
+    margin-bottom: 100px;
+  }
+
+}

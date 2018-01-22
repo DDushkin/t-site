@@ -1,0 +1,35 @@
+include partials/_mixins.pug
++head("26 gallery")
+body
+  include partials/_header.pug
+  
+  //- main content
+  section.page-head.page-head--gallery
+    .wrapper
+      .breadcrumbs
+        ul.breadcrumbs__list
+          li.breadcrumbs__item Головна
+          li.breadcrumbs__item Про нас
+        .breadcrumbs__title-wrap
+          h1.breadcrumbs__title Галерея
+  
+  section.page-gallery
+    .gallery
+      .gallery__item
+        .section-title.section-title--left.section-title--simple Встреча с представителями
+    .postnav
+      .postnav__inner
+        a(href="#").postnav__arrow.postnav__arrow--prev
+          img(src="img/i-postnav-arrow.svg", alt="")
+        .postnav__links-wrapper
+          a(href="#").postnav__link.postnav__link--active 1
+          a(href="#").postnav__link 2
+          a(href="#").postnav__link 3
+          a(href="#").postnav__link 4
+        a(href="#").postnav__arrow.postnav__arrow--next
+          img(src="img/i-postnav-arrow-next.svg", alt="")
+
+  //- eof main content
+  
+  include partials/_footer.pug
+  include partials/_scripts.pug

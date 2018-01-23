@@ -49,21 +49,44 @@
   padding: 120px 0;
   color: #fff;
   background: $black url('../img/bg-footer.png') center bottom no-repeat;
+  @include tablet {
+    padding: 100px 0;
+  }
 
   &__wrapper {
     @include row-flex();
     @include wrapper();
+
+    // @include tablet {
+    //   justify-content: center;
+    // }
   }
   &__item {
     font-size: 14px;
     @include col();
     @include size(3);
 
-    &--small {
+    @include tablet {
+      @include size(4);
+    }
+
+    @include mobile {
+      @include size(12);
+    }
+
+
+    &--small { 
       @include size(2);
     }
     &--big {
       @include size(4);
+      @include tablet {
+        @include size(6);
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-top: 50px;
+      }
     }
   }
   &__heading {
@@ -161,7 +184,7 @@
   @include row-flex();
   @include wrapper();
   padding-top: 65px;
-  padding-bottom: 60px;
+  padding-bottom: 60px; 
 
   &__list {
     @include col();

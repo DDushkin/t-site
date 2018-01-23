@@ -83,7 +83,6 @@ if(screen.width > 1023){
       }
     ]
   });
-  // eof footer-slider
 
   // fake input placeholder
   $('form').find('input').on('input', function (e) {
@@ -367,5 +366,9 @@ if(screen.width > 1023){
     window.sr = ScrollReveal({ reset: false, mobile: false });
     sr.reveal('section>.section-title, section>.section-subtitle', { duration: 500, scale: 1, opacity: 0, distance: '40px' });
   // eof scroll elements reveal
+
+  // drag and drop
+  dragula([document.getElementById("carlist"),document.getElementById("carbox")]);
+  // eof drag and drop
 
 });  // eof doc.ready

@@ -27,6 +27,12 @@ body {
   position: absolute;
   bottom: 0;
 }
+.gu-mirror {
+  opacity: 1;
+  transform: rotate(10deg);
+  transform-origin: 0 0;
+  transition: all .5s;
+}
 section {
   padding-bottom: 200px;
   @include tablet {
@@ -273,6 +279,7 @@ button {
 } // oef breadcrumbs
 .checkbox-label{
   cursor: pointer;
+  user-select: none;
 }
 .is-checked{
   &:after {

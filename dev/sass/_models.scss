@@ -177,6 +177,33 @@
   }
 }
 
+//TODO: add styles
+#carbox {
+  .car-grid-item {
+    cursor: grab;
+
+    .car-grid-item__price,
+    .car-grid-item__link {
+      display: none;
+    }
+    &:hover {
+      .car-grid-item__img {
+        transform: none;
+      }
+      .car-grid-item__heading {
+        padding-top: 0;
+      }
+    }
+  }
+}
+#carlist {
+  .car-grid-item {
+    cursor: grab;
+    &:active {
+      cursor: grabbing;
+    }
+  }
+}
 .available-car-info{
   padding: 100px 0;
   @extend .clearfix;

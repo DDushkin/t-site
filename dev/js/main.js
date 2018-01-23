@@ -362,4 +362,10 @@ if(screen.width > 1023){
   });
   // eof popups
 
+
+  // scroll elements reveal
+    window.sr = ScrollReveal({ reset: false, mobile: false });
+    sr.reveal('.section-title, .section-subtitle', { duration: 500, scale: 1, opacity: 0, distance: '40px' });
+  // eof scroll elements reveal
+
 });  // eof doc.ready

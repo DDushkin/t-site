@@ -179,8 +179,12 @@
 
 //TODO: add styles
 #carbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   .car-grid-item {
     cursor: grab;
+    padding-bottom: 20px;
 
     .car-grid-item__price,
     .car-grid-item__link {

@@ -1,3 +1,76 @@
+.feedback {
+  position: fixed;
+  bottom: 40px;
+  right: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  @include tablet {
+    display: none;
+  }
+
+  &__item {
+    background-color: #fff;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border-radius: 300px;
+    border: 5px solid $black;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 4px 4px 24px rgba(44, 1, 12, 0.3);
+    cursor: pointer;
+    &:hover {
+      .feedback__inner {
+        max-width: 300px;
+        margin-left: 10px;
+        margin-right: 15px;
+      }
+    }
+
+    &--small {
+      margin-right: 20px;
+      height: 60px;
+      border: 2px solid $black;
+
+      .feedback__icon {
+        width: 56px;
+        height: 56px;
+      }
+    }
+  }
+  
+  &__inner {
+    overflow: hidden;
+    max-width: 0px;
+    transition: all .5s;
+    transition-delay: .3s;
+    white-space: nowrap;
+    margin: 0;
+    font-size: 18px;
+  }
+  &__icon {
+    width: 90px;
+    height: 90px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &--testdrive {
+      background-image: url("../img/i-popup-calendar.svg");
+    }
+    &--service {
+      background-image: url("../img/i-popup-tools.svg");
+    }
+    &--to {
+      background-image: url("../img/i-popup-service.svg");
+    }
+    &--call {
+      background-image: url("../img/i-popup-phone.svg");
+    }
+  }
+}
+
 .popup {
   display: none;
   position: fixed;
@@ -54,7 +127,7 @@
   }
 }
 
-// popup appereance 
+// popup appereance animation
 @keyframes reveal {
   0% {
     opacity: 0;

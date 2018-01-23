@@ -112,6 +112,10 @@ section {
   text-align: center;
   font-weight: bold;
 
+  @include tablet {
+    font-size: 26px;
+  }
+
   //icon
   &:before {
     content: "";
@@ -123,7 +127,7 @@ section {
     background-size: contain;
     background-repeat: no-repeat; //TODO: shorthand
 
-    @media (max-width: 1024px) {
+    @include tablet {
       width: 30px;
       height: 20px;
     }
@@ -140,12 +144,11 @@ section {
       margin-left: 0;
     }
   }
-  @media (max-width: 1024px) {
-    font-size: 28px;
-    line-height: 30px;
-    letter-spacing: .1em;
-
-  }
+  // @include tablet {
+  //   font-size: 28px;
+  //   line-height: 30px;
+  //   letter-spacing: .1em;
+  // }
   @include mobile {
     font-size: 24px;
     line-height: 28px;
@@ -166,7 +169,7 @@ section {
 .section-subtitle {
   margin-top: 10px;
   font-size: 14px;
-  margin-bottom: 50px; //TODO: combine with subtitle
+  margin-bottom: 50px;
   font-style: italic;
   text-align: center;
   &--left {
@@ -290,7 +293,7 @@ section {
     }
   }
 }
-.btn{       // просто тело кнопки
+.btn {
   display: inline-block;
   text-transform: uppercase;
   text-decoration: none;
@@ -853,6 +856,7 @@ textarea {
   }
 }
 
+// error sign animation
 @keyframes strokeAnimate {
   0% {
     stroke-dashoffset: 1500;

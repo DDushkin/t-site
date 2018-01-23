@@ -86,8 +86,12 @@
         }
       }
     }
-    &-container{
+    &-content{
       display: flex;
+    }
+    &-container{
+
+      display: none;
       ul{
         padding-left: 20px;
       }

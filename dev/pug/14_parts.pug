@@ -34,25 +34,37 @@ body
       .table__td.parts-table__td.table__title Артикул
       .table__td.parts-table__td.table__title Назва
       .table__td.parts-table__td.table__title Ціна, грн.
-      .table__td.parts-table__td.table__title Кількість
+      .table__td.parts-table__td.table__title Кількість, од.
   .table__tr-wrapper.parts-table__tr-wrapper      
     .table__tr.parts-table__tr
       .table__td.parts-table__td.art__td 2.7, 6 A/T
       .table__td.parts-table__td.name__td Супорт 4595
       .table__td.parts-table__td.price__td 1 000
-      .table__td.parts-table__td.quant__td 1
+      .table__td.parts-table__td.quant__td
+        span.input-count__wrapper
+          a.input-count__decr.incr-btn(data-action="decrease" href="#") –
+          input.input-count__quant.quantity(type="text" name="quantity" value="1")
+          a.input-count__incr.incr-btn(data-action="increase" href="#") &plus;
   .table__tr-wrapper.parts-table__tr-wrapper       
     .table__tr.parts-table__tr
       .table__td.parts-table__td.art__td 4.0, 6 A/T
       .table__td.parts-table__td.name__td Супорт 34675
       .table__td.parts-table__td.price__td 2 500
-      .table__td.parts-table__td.quant__td 1
+      .table__td.parts-table__td.quant__td
+        span.input-count__wrapper
+          a.input-count__decr.incr-btn(data-action="decrease" href="#") –
+          input.input-count__quant.quantity(type="text" name="quantity" value="1")
+          a.input-count__incr.incr-btn(data-action="increase" href="#") &plus;
   .table__tr-wrapper.parts-table__tr-wrapper      
     .table__tr.parts-table__tr
       .table__td.parts-table__td.art__td 2.8 дизель, 6 A/T
       .table__td.parts-table__td.name__td Супорт 78956
       .table__td.parts-table__td.price__td 45
-      .table__td.parts-table__td.quant__td 1
+      .table__td.parts-table__td.quant__td
+        span.input-count__wrapper
+          a.input-count__decr.incr-btn(data-action="decrease" href="#") –
+          input.input-count__quant.quantity(type="text" name="quantity" value="1")
+          a.input-count__incr.incr-btn(data-action="increase" href="#") &plus;
       
   .parts-table__total 
     .parts-table__total-price Загалом:

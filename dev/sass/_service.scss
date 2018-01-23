@@ -122,6 +122,9 @@
   @include tablet {
     margin-top: 125px;
   }
+  &__bold{
+    font-weight: bold;
+  }
   &__title{
     margin-bottom: 10px;
   }
@@ -146,7 +149,7 @@
     }
   }
   &__item{
-    padding: 22px 0 22px 20px;
+
     background: #FFFFFF;
     border: 1px solid #CBCDC9;
     box-sizing: border-box;
@@ -154,6 +157,7 @@
     margin-bottom: 20px;
     cursor: pointer;
     &-head{
+      padding: 22px 0 22px 20px;
       &:after{
         display: inline-block;
         content: "";
@@ -182,8 +186,30 @@
         }
       }
     }
+    &-content{
+      display: flex;
+    }
     &-container{
-      &-text{}
+      display: none;
+      ul{
+        padding-left: 20px;
+      }
+      &-text{
+        width: calc(100% / 12 * 8);
+        padding: 0 0 22px 20px;
+        @include tablet {
+          width: calc(100% / 12 * 10);
+        }
+        @include mobile {
+          width: calc(100% / 12 * 12);
+        }
+      }
+      &-img{
+        width: calc(100% / 12 * 4);
+        @include tablet {
+          display: none;
+        }
+      }
     }
   }
 }

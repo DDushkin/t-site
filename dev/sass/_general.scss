@@ -364,6 +364,34 @@ section {
 }
 
 
+.input-count{
+  &__wrapper{
+    @include size(7);
+    @include row-flex();
+  }
+  &__decr{
+    @include size(3);
+    @include col();
+    color: #CC0033;
+    text-decoration: none;
+    font-size: 24px;
+  }
+  &__quant{
+    @include size(6);
+    @include col();
+    margin: 0 10px;
+    border-color: transparent;
+    text-align: center;
+  }
+  &__incr{
+    @include size(3);
+    @include col();
+    color: #CC0033;
+    text-decoration: none;
+    font-size: 24px;
+  }
+}
+
 /* Ex:
 label.filter-block__switch-label
   input.filter-block__switch-box(type="checkbox")

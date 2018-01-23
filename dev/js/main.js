@@ -357,7 +357,7 @@ if(screen.width > 1023){
   });
 
   // close, //TODO: add closing by esc key
-  $(".popup__dim, .popup__close").click(function() {
+  $(".popup__dim, .popup__close, .popup__cancel").click(function() {
     $(this).parents(".popup").removeClass("popup--visible");
   });
   // eof popups
@@ -365,7 +365,7 @@ if(screen.width > 1023){
 
   // scroll elements reveal
     window.sr = ScrollReveal({ reset: false, mobile: false });
-    sr.reveal('.section-title, .section-subtitle', { duration: 500, scale: 1, opacity: 0, distance: '40px' });
+    sr.reveal('section>.section-title, section>.section-subtitle', { duration: 500, scale: 1, opacity: 0, distance: '40px' });
   // eof scroll elements reveal
 
 });  // eof doc.ready

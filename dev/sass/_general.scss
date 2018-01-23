@@ -33,6 +33,9 @@ section {
     padding-bottom: 100px;
   }
 }
+button {
+  cursor: pointer;
+}
 .clearfix:after {
   content: "";
   display: table;

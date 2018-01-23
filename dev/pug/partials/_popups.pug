@@ -1,26 +1,81 @@
 //- popup call buttons
 .feedback
-  .feedback__item.feedback__item--small
+  .feedback__item.feedback__item--small.js-open-popup(data-popup="js-popup-to")
     .feedback__icon.feedback__icon--testdrive
     span.feedback__inner Запис на тестдрайв
 
-  .feedback__item.feedback__item--small
+  .feedback__item.feedback__item--small.js-open-popup(data-popup="js-popup-to")
     .feedback__icon.feedback__icon--service
     span.feedback__inner Запис на сервіс
 
-  .feedback__item.feedback__item--small
+  .feedback__item.feedback__item--small.js-open-popup(data-popup="js-popup-to")
     .feedback__icon.feedback__icon--to
     span.feedback__inner Запис на ТО
 
-  .feedback__item
+  .feedback__item.js-open-popup(data-popup="js-popup-to")
     .feedback__icon.feedback__icon--call
     span.feedback__inner Замовити двінок або написати листа
 
 //- popups
-.popup.js-popup-simple
+.popup.js-popup-to
   .popup__dim
   .popup__body
-    .popup__header
-      .popup__close ×
+    .popup__close
     .popup__main
-      
+      .section-title Онлайн запис на ТО
+      .section-subtitle.popup__subtitle Перелік послуг нашого автосалону
+      form.popup__form
+        fieldset.textfield
+          input.textfield__input.field-typical(type="text")
+          label.textfield__placeholder(for="") Ваше Ім’я
+        fieldset.textfield
+          input.textfield__input.field-typical(type="text")
+          label.textfield__placeholder(for="") Телефон +38 0
+        input.btn.btn-typical(type="submit", value="Відправити")
+        button.popup__cancel відмінити
+
+.popup.js-popup-order
+  .popup__dim
+  .popup__body
+    .popup__close
+    .popup__main
+      .section-title Замовлення
+      .section-subtitle.popup__subtitle Ваша сума 2545грн.
+      form.popup__form
+        fieldset.textfield
+          input.textfield__input.field-typical(type="text")
+          label.textfield__placeholder(for="") Ваше Ім’я
+        fieldset.textfield
+          input.textfield__input.field-typical(type="text")
+          label.textfield__placeholder(for="") Телефон +38 0
+        input.btn.btn-typical(type="submit", value="Відправити")
+        button.popup__cancel відмінити
+
+.popup.js-popup-callback
+  .popup__dim
+  .popup__body
+    .popup__close
+    .popup__main
+      .section-title Ми раді зателефонувати вам
+      .section-subtitle.popup__subtitle Залиште номер та наш менеджер зателефонує вам
+      form.popup__form
+        fieldset.textfield
+          input.textfield__input.field-typical(type="text")
+          label.textfield__placeholder(for="") Ваше Ім’я
+        fieldset.textfield
+          input.textfield__input.field-typical(type="text")
+          label.textfield__placeholder(for="") Телефон +38 0
+        input.btn.btn-typical(type="submit", value="Відправити")
+        button.popup__cancel передзвоніть
+    .popup__main
+      .section-title Задайте питання через імейл
+      .section-subtitle.popup__subtitle Вкажіть ваше ім’я та повідомлення для консультанта Toyota
+      form.popup__form
+        fieldset.textfield
+          input.textfield__input.field-typical(type="text")
+          label.textfield__placeholder(for="") Ваше Ім’я
+        fieldset.textfield
+          input.textfield__input.field-typical(type="text")
+          label.textfield__placeholder(for="") Телефон +38 0
+        input.btn.btn-typical(type="submit", value="Відправити")
+        button.popup__cancel передзвоніть

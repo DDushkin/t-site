@@ -264,13 +264,100 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.2.3/ofi.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/3.3.6/scrollreveal.min.js"></script>
   <script src="js/main.js"></script>
-  <div class="popup js-popup-simple">
+  <div class="feedback">
+    <div class="feedback__item feedback__item--small js-open-popup" data-popup="js-popup-to">
+      <div class="feedback__icon feedback__icon--testdrive"></div><span class="feedback__inner">Запис на тестдрайв</span>
+    </div>
+    <div class="feedback__item feedback__item--small js-open-popup" data-popup="js-popup-to">
+      <div class="feedback__icon feedback__icon--service"></div><span class="feedback__inner">Запис на сервіс</span>
+    </div>
+    <div class="feedback__item feedback__item--small js-open-popup" data-popup="js-popup-to">
+      <div class="feedback__icon feedback__icon--to"></div><span class="feedback__inner">Запис на ТО</span>
+    </div>
+    <div class="feedback__item js-open-popup" data-popup="js-popup-to">
+      <div class="feedback__icon feedback__icon--call"></div><span class="feedback__inner">Замовити двінок або написати листа</span>
+    </div>
+  </div>
+  <div class="popup js-popup-to">
     <div class="popup__dim"></div>
     <div class="popup__body">
-      <div class="popup__header">
-        <div class="popup__close">×</div>
+      <div class="popup__close"></div>
+      <div class="popup__main">
+        <div class="section-title">Онлайн запис на ТО</div>
+        <div class="section-subtitle popup__subtitle">Перелік послуг нашого автосалону</div>
+        <form class="popup__form">
+          <fieldset class="textfield">
+            <input class="textfield__input field-typical" type="text">
+            <label class="textfield__placeholder" for="">Ваше Ім’я</label>
+          </fieldset>
+          <fieldset class="textfield">
+            <input class="textfield__input field-typical" type="text">
+            <label class="textfield__placeholder" for="">Телефон +38 0</label>
+          </fieldset>
+          <input class="btn btn-typical" type="submit" value="Відправити">
+          <button class="popup__cancel">відмінити</button>
+        </form>
       </div>
-      <div class="popup__main"></div>
+    </div>
+  </div>
+  <div class="popup js-popup-order">
+    <div class="popup__dim"></div>
+    <div class="popup__body">
+      <div class="popup__close"></div>
+      <div class="popup__main">
+        <div class="section-title">Замовлення</div>
+        <div class="section-subtitle popup__subtitle">Ваша сума 2545грн.</div>
+        <form class="popup__form">
+          <fieldset class="textfield">
+            <input class="textfield__input field-typical" type="text">
+            <label class="textfield__placeholder" for="">Ваше Ім’я</label>
+          </fieldset>
+          <fieldset class="textfield">
+            <input class="textfield__input field-typical" type="text">
+            <label class="textfield__placeholder" for="">Телефон +38 0</label>
+          </fieldset>
+          <input class="btn btn-typical" type="submit" value="Відправити">
+          <button class="popup__cancel">відмінити</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="popup js-popup-callback">
+    <div class="popup__dim"></div>
+    <div class="popup__body">
+      <div class="popup__close"></div>
+      <div class="popup__main">
+        <div class="section-title">Ми раді зателефонувати вам</div>
+        <div class="section-subtitle popup__subtitle">Залиште номер та наш менеджер зателефонує вам</div>
+        <form class="popup__form">
+          <fieldset class="textfield">
+            <input class="textfield__input field-typical" type="text">
+            <label class="textfield__placeholder" for="">Ваше Ім’я</label>
+          </fieldset>
+          <fieldset class="textfield">
+            <input class="textfield__input field-typical" type="text">
+            <label class="textfield__placeholder" for="">Телефон +38 0</label>
+          </fieldset>
+          <input class="btn btn-typical" type="submit" value="Відправити">
+          <button class="popup__cancel">передзвоніть</button>
+        </form>
+      </div>
+      <div class="popup__main">
+        <div class="section-title">Задайте питання через імейл</div>
+        <div class="section-subtitle popup__subtitle">Вкажіть ваше ім’я та повідомлення для консультанта Toyota</div>
+        <form class="popup__form">
+          <fieldset class="textfield">
+            <input class="textfield__input field-typical" type="text">
+            <label class="textfield__placeholder" for="">Ваше Ім’я</label>
+          </fieldset>
+          <fieldset class="textfield">
+            <input class="textfield__input field-typical" type="text">
+            <label class="textfield__placeholder" for="">Телефон +38 0</label>
+          </fieldset>
+          <input class="btn btn-typical" type="submit" value="Відправити">
+          <button class="popup__cancel">передзвоніть</button>
+        </form>
+      </div>
     </div>
   </div>
 </body>

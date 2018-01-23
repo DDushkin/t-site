@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  z-index: $layer5;
   @include tablet {
     display: none;
   }
@@ -44,7 +45,7 @@
   &__inner {
     overflow: hidden;
     max-width: 0px;
-    transition: all .5s;
+    transition: all .5s linear;
     transition-delay: .3s;
     white-space: nowrap;
     margin: 0;
@@ -81,6 +82,7 @@
   width: 100vw;
   height: 100vh;
   max-height: 100vh;
+  color: $black;
   overflow: auto;
   z-index: $layer5;
 
@@ -102,19 +104,13 @@
   &__body {
     position: relative;
     background-color: #fff;
-    font-size: 16px;
-    color: #333;
-    width: 400px;
+    width: 690px;
     max-width: 90vw;
-    border-radius: 10px;
+    padding: 70px 30px 65px;
+    box-sizing: border-box;
+    border-radius: 5px;
     z-index: $layertop;
     will-change: transform;
-  }
-  &__header {
-    position: relative;
-    font-weight: 600;
-    padding: 20px;
-    border-bottom: 1px solid #e5e5e5;
   }
   &__close {
     width: 20px;
@@ -124,6 +120,38 @@
     right: -40px;
     top: 0;
     cursor: pointer;
+    background-image: url("../img/i-popup-close.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &__subtitle {
+    margin-bottom: 30px;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+
+    .textfield {
+      margin-bottom: 30px;
+    }
+  }
+  &__cancel {
+    margin-top: 8px;
+    font-size: 14px;
+    letter-spacing: .1em;
+    color: #23171A;
+    font-style: italic;
+    font-family: inherit;
+    transition: all 0.3s;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    display: inline-block;
   }
 }
 
@@ -133,9 +161,9 @@
     opacity: 0;
     transform: translateY(100px);
   }
-  80% {
-    opacity: .8;
-    transform: translateY(-10px);
+  70% {
+    opacity: .9;
+    transform: translateY(-20px);
   }
   100% {
     opacity: 1;

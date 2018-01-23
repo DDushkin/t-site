@@ -1,5 +1,9 @@
 #map-footer {
-  height: 350px; //TODO: mob 489px
+  height: 350px;
+
+  @include mobile {
+    height: 490px;
+  }
 }
 .footer-feedback {
   @include row-flex();
@@ -21,7 +25,6 @@
     margin-left: 20px;
   }
 }
-
 
 
 
@@ -92,15 +95,37 @@
     margin-right: 20px;
     background-color: #fff;
     border-radius: 5px;
+    transition: $tr;
+
     &:last-of-type {
       margin-right: 0;
     }
-    &:hover { // TODO: add hover effect
-
+    &--tw {
+      &:hover {
+        background-color: #55ACEE;
+        svg path {
+          fill: #fff;
+        }
+      }
     }
-
-    object {
-      pointer-events: none;
+    &--fb {
+      &:hover {
+        background-color: #3B5999;
+        svg path {
+          fill: #fff;
+        }
+      }
+    }
+    &--yt {
+      &:hover {
+        background-color: #f00;
+        svg path {
+          fill: #fff;
+        }
+        #path1_fill3 {
+          fill: #f00;
+        }
+      }
     }
   }
 }

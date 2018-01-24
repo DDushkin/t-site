@@ -154,7 +154,34 @@
     display: inline-block;
   }
 }
-
+.loader {
+  // display: flex;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: $layer5;
+  background-color: rgba(255,255,255,.85);
+  &__spinner {
+    width: 95px;
+    height: 95px;
+    background: url('../img/i-loader.png') center no-repeat;
+    // animation: spin 3s infinite linear;
+    will-change: transform;
+  }
+}
+.popup--sending {
+  .loader {
+    display: flex;
+  }
+  .loader__spinner {
+    animation: spin 3s infinite linear;
+  }
+}
 // popup appereance animation
 @keyframes reveal {
   0% {
@@ -168,5 +195,15 @@
   100% {
     opacity: 1;
     transform: translateY(0px);
+  }
+}
+
+// loader spin animation 
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
   }
 }

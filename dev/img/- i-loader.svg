@@ -1,0 +1,20 @@
+<svg width="95" height="95" viewBox="0 0 95 95" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Canvas" transform="translate(-4118 -13896)">
+<g id="Ellipse 2">
+<mask id="mask0_outline_ins">
+<use xlink:href="#path0_fill" fill="white" transform="translate(4118 13896)"/>
+</mask>
+<g mask="url(#mask0_outline_ins)">
+<use xlink:href="#path1_stroke_2x" transform="translate(4118 13896)" fill="url(#paint0_angular)"/>
+</g>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_angular" cx="0.5" cy="0.5" r="0.5" gradientUnits="userSpaceOnUse" gradientTransform="matrix(5.81707e-15 95 -95 -2.89502e-13 95 1.41843e-13)">
+<stop offset="0" stop-color="#CC0033"/>
+<stop offset="1" stop-color="#CC0033" stop-opacity="0"/>
+</radialGradient>
+<path id="path0_fill" d="M 95 47.5C 95 73.7335 73.7335 95 47.5 95C 21.2665 95 0 73.7335 0 47.5C 0 21.2665 21.2665 0 47.5 0C 73.7335 0 95 21.2665 95 47.5Z"/>
+<path id="path1_stroke_2x" d="M 89 47.5C 89 70.4198 70.4198 89 47.5 89L 47.5 101C 77.0472 101 101 77.0472 101 47.5L 89 47.5ZM 47.5 89C 24.5802 89 6 70.4198 6 47.5L -6 47.5C -6 77.0472 17.9528 101 47.5 101L 47.5 89ZM 6 47.5C 6 24.5802 24.5802 6 47.5 6L 47.5 -6C 17.9528 -6 -6 17.9528 -6 47.5L 6 47.5ZM 47.5 6C 70.4198 6 89 24.5802 89 47.5L 101 47.5C 101 17.9528 77.0472 -6 47.5 -6L 47.5 6Z"/>
+</defs>
+</svg>

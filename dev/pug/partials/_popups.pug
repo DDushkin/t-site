@@ -20,6 +20,8 @@
 .popup.js-popup-to
   .popup__dim
   .popup__body
+    .loader
+      .loader__spinner
     .popup__close
     .popup__main
       .section-title Онлайн запис на ТО
@@ -31,7 +33,7 @@
         fieldset.textfield
           input.textfield__input.field-typical(type="text")
           label.textfield__placeholder(for="") Телефон +38 0
-        input.btn.btn-typical(type="submit", value="Відправити")
+        input.btn.btn-typical.js-popup-send(type="submit", value="Відправити")
         button.popup__cancel відмінити
 
 .popup.js-popup-order
@@ -48,7 +50,7 @@
         fieldset.textfield
           input.textfield__input.field-typical(type="text")
           label.textfield__placeholder(for="") Телефон +38 0
-        input.btn.btn-typical(type="submit", value="Відправити")
+        input.btn.btn-typical.js-popup-send(type="submit", value="Відправити")
         button.popup__cancel відмінити
 
 .popup.js-popup-callback
@@ -65,7 +67,7 @@
         fieldset.textfield
           input.textfield__input.field-typical(type="text")
           label.textfield__placeholder(for="") Телефон +38 0
-        input.btn.btn-typical(type="submit", value="Відправити")
+        input.btn.btn-typical.js-popup-send(type="submit", value="Відправити")
         button.popup__cancel передзвоніть
     .popup__main
       .section-title Задайте питання через імейл
@@ -76,6 +78,6 @@
           label.textfield__placeholder(for="") Ваше Ім’я
         fieldset.textfield
           input.textfield__input.field-typical(type="text")
-          label.textfield__placeholder(for="") Телефон +38 0
-        input.btn.btn-typical(type="submit", value="Відправити")
+          label.textfield__placeholder(for="") Email
+        input.btn.btn-typical.js-popup-send(type="submit", value="Відправити")
         button.popup__cancel передзвоніть

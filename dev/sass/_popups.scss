@@ -5,7 +5,8 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  z-index: $layertop;
+  z-index: $layer5;
+
   @include tablet {
     display: none;
   }
@@ -22,6 +23,10 @@
     justify-content: center;
     box-shadow: 4px 4px 24px rgba(44, 1, 12, 0.3);
     cursor: pointer;
+
+    &:last-of-type {
+      margin-bottom: 0px;
+    }
     &:hover {
       .feedback__inner {
         max-width: 300px;
@@ -84,7 +89,13 @@
   max-height: 100vh;
   color: $black;
   overflow: auto;
-  z-index: $layer5;
+  z-index: $layertop;
+
+  &--controls {
+    .popup__body {
+      border-radius: 0 5px 5px 5px;
+    }
+  }
 
   &--visible {
     display: flex;
@@ -101,6 +112,55 @@
     background-color: rgba(0,0,0,.3);
     z-index: $layer5;
   }
+  &__control {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    display: flex;
+  }
+  &__switcher {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+    background-color: #C4C4C4;
+    transition: $tr;
+    user-select: none;
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      // width: calc(100% - 28px);
+      // height: 100%;
+      // height: calc(100% - 14px);
+      // box-shadow: 0px 0px 14px #4D4F53;
+      // box-shadow: 0px 0px 14px #4D4F53 inset;
+    }
+
+    &--active {
+      background-color: #fff;
+
+      &:after {
+
+      }
+    }
+
+    img {
+      max-width: 100%;
+      // position: absolute;
+      // left: 50%;
+      // top: 50%;
+    }
+
+  }
   &__body {
     position: relative;
     background-color: #fff;
@@ -111,6 +171,13 @@
     border-radius: 5px;
     z-index: $layertop;
     will-change: transform;
+  }
+  &__main {
+    display: none;
+
+    &--active {
+      display: block;
+    }
   }
   &__close {
     width: 20px;
@@ -138,7 +205,11 @@
     .textfield {
       margin-bottom: 30px;
     }
+    textarea {
+      width: 100%;
+    }
   }
+
   &__cancel {
     margin-top: 8px;
     font-size: 14px;

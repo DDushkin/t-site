@@ -12,7 +12,7 @@
     .feedback__icon.feedback__icon--to
     span.feedback__inner Запис на ТО
 
-  .feedback__item.js-open-popup(data-popup="js-popup-to")
+  .feedback__item.js-open-popup(data-popup="js-popup-callback")
     .feedback__icon.feedback__icon--call
     span.feedback__inner Замовити двінок або написати листа
 
@@ -53,11 +53,17 @@
         input.btn.btn-typical.js-popup-send(type="submit", value="Відправити")
         button.popup__cancel відмінити
 
-.popup.js-popup-callback
+.popup.popup--controls.js-popup-callback.popup--visible
   .popup__dim
   .popup__body
+    .popup__control
+      .popup__switcher.popup__switcher--active
+        img(src="img/i-popup-phone.svg", alt="")
+      .popup__switcher
+        img(src="img/i-popup-envelope.svg", alt="")
     .popup__close
-    .popup__main
+
+    .popup__main.popup__main--active
       .section-title Ми раді зателефонувати вам
       .section-subtitle.popup__subtitle Залиште номер та наш менеджер зателефонує вам
       form.popup__form
@@ -67,8 +73,9 @@
         fieldset.textfield
           input.textfield__input.field-typical(type="text")
           label.textfield__placeholder(for="") Телефон +38 0
-        input.btn.btn-typical.js-popup-send(type="submit", value="Відправити")
-        button.popup__cancel передзвоніть
+        input.btn.btn-typical.js-popup-send(type="submit", value="Передзвоніть")
+        button.popup__cancel відмінити
+
     .popup__main
       .section-title Задайте питання через імейл
       .section-subtitle.popup__subtitle Вкажіть ваше ім’я та повідомлення для консультанта Toyota
@@ -79,5 +86,8 @@
         fieldset.textfield
           input.textfield__input.field-typical(type="text")
           label.textfield__placeholder(for="") Email
-        input.btn.btn-typical.js-popup-send(type="submit", value="Відправити")
-        button.popup__cancel передзвоніть
+        fieldset.textfield
+          textarea.textfield__input.textfield__textarea
+          label.textfield__placeholder(for="") Ваше повідомлення
+        input.btn.btn-typical.js-popup-send(type="submit", value="Передзвоніть")
+        button.popup__cancel відмінити

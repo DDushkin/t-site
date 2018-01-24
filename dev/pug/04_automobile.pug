@@ -25,14 +25,16 @@ body
     .slider-carousel__item
       img(src="img/automobile-slider-thumb.png", alt="slider thumb")
   ul.pagenav
-    li.pagenav__item.pagenav__item--active
+    //- li.pagenav__item.pagenav__item--active
+    li.pagenav__item
       a.pagenav__link(href="#color-choose") Опис та колір
+      
     li.pagenav__item
-      a.pagenav__link(href="#") Ціна та комплектація
+      a.pagenav__link(href="#model") Ціна та комплектація
     li.pagenav__item
-      a.pagenav__link(href="#") Технічні  характеристики
+      a.pagenav__link(href="#specs") Технічні  характеристики
     li.pagenav__item
-      a.pagenav__link(href="#") Галерея
+      a.pagenav__link(href="#car-photo") Галерея
 
   .wrapper
   section.color-choose#color-choose
@@ -71,11 +73,13 @@ body
       .btn.btn-typical-o ОТРИМАТИ КОНСУЛЬТАЦІЮ
 
     
-  section.variant
+  section.variant#model
     p.section-title.section-title--simple Моделі та комплектації
-  section.specs
+
+  section.specs#specs
     p.section-title.section-title--simple Технічні характеристики
-  section.car-photo
+
+  section.car-photo#car-photo
     p.section-title.section-title--simple Фотографії Land Cruiser Prado
     .photo-grid
       .photo-grid__col.photo-grid__col--s
@@ -97,7 +101,7 @@ body
 
   .docs
     .docs__part
-      .section-title.section-title--simple Cкачайте наши буклеты
+      .section-title.section-title--simple Завантажте наші буклети
       img.docs__img(src="img/c-docs.png", alt="")
       
     .docs__part
@@ -119,7 +123,7 @@ body
     .section-title.section-title--simple Запрошуємо на тестдрайв Toyota
     .video-wrapper__subtitle Єдиний спосіб зрозуміти, що саме робить автомобіль Toyota таким особливим — проїхатися на ньому
     .btn.btn-typical ЗАПИСАТИСЯ НА ТЕСТДРАЙВ
-    //- https://www.youtube.com/watch?v=B0ddPNsp1Tw 
+    //- https://www.youtube.com/watch?v=B0ddPNsp1Tw
     iframe.video(src="https://www.youtube.com/embed/B0ddPNsp1Tw?rel=0&amp;showinfo=0", frameborder="0", allowfullscreen)
 
 

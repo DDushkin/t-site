@@ -9,7 +9,7 @@
   <div class="feedback__item feedback__item--small js-open-popup" data-popup="js-popup-to">
     <div class="feedback__icon feedback__icon--to"></div><span class="feedback__inner">Запис на ТО</span>
   </div>
-  <div class="feedback__item js-open-popup" data-popup="js-popup-to">
+  <div class="feedback__item js-open-popup" data-popup="js-popup-callback">
     <div class="feedback__icon feedback__icon--call"></div><span class="feedback__inner">Замовити двінок або написати листа</span>
   </div>
 </div>
@@ -60,11 +60,15 @@
     </div>
   </div>
 </div>
-<div class="popup js-popup-callback">
+<div class="popup popup--controls js-popup-callback popup--visible">
   <div class="popup__dim"></div>
   <div class="popup__body">
+    <div class="popup__control">
+      <div class="popup__switcher popup__switcher--active"><img src="img/i-popup-phone.svg" alt=""/></div>
+      <div class="popup__switcher"><img src="img/i-popup-envelope.svg" alt=""/></div>
+    </div>
     <div class="popup__close"></div>
-    <div class="popup__main">
+    <div class="popup__main popup__main--active">
       <div class="section-title">Ми раді зателефонувати вам</div>
       <div class="section-subtitle popup__subtitle">Залиште номер та наш менеджер зателефонує вам</div>
       <form class="popup__form">
@@ -76,8 +80,8 @@
           <input class="textfield__input field-typical" type="text"/>
           <label class="textfield__placeholder" for="">Телефон +38 0</label>
         </fieldset>
-        <input class="btn btn-typical js-popup-send" type="submit" value="Відправити"/>
-        <button class="popup__cancel">передзвоніть</button>
+        <input class="btn btn-typical js-popup-send" type="submit" value="Передзвоніть"/>
+        <button class="popup__cancel">відмінити</button>
       </form>
     </div>
     <div class="popup__main">
@@ -92,8 +96,12 @@
           <input class="textfield__input field-typical" type="text"/>
           <label class="textfield__placeholder" for="">Email</label>
         </fieldset>
-        <input class="btn btn-typical js-popup-send" type="submit" value="Відправити"/>
-        <button class="popup__cancel">передзвоніть</button>
+        <fieldset class="textfield">
+          <textarea class="textfield__input textfield__textarea"></textarea>
+          <label class="textfield__placeholder" for="">Ваше повідомлення</label>
+        </fieldset>
+        <input class="btn btn-typical js-popup-send" type="submit" value="Передзвоніть"/>
+        <button class="popup__cancel">відмінити</button>
       </form>
     </div>
   </div>

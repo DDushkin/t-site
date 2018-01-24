@@ -51,6 +51,10 @@ nav {
   background: linear-gradient(180deg, #F0F2F2 0%, #FFFFFF 100%);
   box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5);
 
+  @include tablet {
+    display: none;
+  }
+
   &--fixed {
     position: fixed;
     top: 0;

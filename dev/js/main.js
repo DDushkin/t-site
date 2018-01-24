@@ -304,10 +304,10 @@ if(screen.width > 1023){
           var newVal = parseFloat(oldValue) + 1;
       } else {
           // Don't allow decrementing below 1
-          if (oldValue > 1) {
+          if (oldValue >= 1) {
               var newVal = parseFloat(oldValue) - 1;
           } else {
-              newVal = 1;
+              newVal = 0;
               $button.addClass('inactive');
           }
       }
@@ -316,42 +316,41 @@ if(screen.width > 1023){
   });
 //eof counter
 
-(function() {
-  var contents = $('.service-terms__item-container');
-  var titles = $('.service-terms__item');
-  titles.on('click', function() {
-    var title = $(this);
-    contents.filter(':visible').slideUp(function() {
-      titles.removeClass('is-opened');
-      $(this).parent('.service-terms__item').removeClass('is-opened');
-    });
-    var content = title.children('.service-terms__item-container');
-    if (!content.is(':visible')) {
-      content.slideDown(function() {
-        $(this).parent('.service-terms__item').addClass('is-opened')
+  (function() {
+    var contents = $('.service-terms__item-container');
+    var titles = $('.service-terms__item');
+    titles.on('click', function() {
+      var title = $(this);
+      contents.filter(':visible').slideUp(function() {
+        titles.removeClass('is-opened');
+        $(this).parent('.service-terms__item').removeClass('is-opened');
       });
-    }
-  });
-})();
-
-
-(function() {
-  var contents = $('.vacancies-terms__item-container');
-  var titles = $('.vacancies-terms__item');
-  titles.on('click', function() {
-    var title = $(this);
-    contents.filter(':visible').slideUp(function() {
-      titles.removeClass('is-opened');
-      $(this).parent('.vacancies-terms__item').removeClass('is-opened');
+      var content = title.children('.service-terms__item-container');
+      if (!content.is(':visible')) {
+        content.slideDown(function() {
+          $(this).parent('.service-terms__item').addClass('is-opened')
+        });
+      }
     });
-    var content = title.children('.vacancies-terms__item-container');
-    if (!content.is(':visible')) {
-      content.slideDown(function() {
-        $(this).parent('.vacancies-terms__item').addClass('is-opened')
+  })();
+
+  (function() {
+    var contents = $('.vacancies-terms__item-container');
+    var titles = $('.vacancies-terms__item');
+    titles.on('click', function() {
+      var title = $(this);
+      contents.filter(':visible').slideUp(function() {
+        titles.removeClass('is-opened');
+        $(this).parent('.vacancies-terms__item').removeClass('is-opened');
       });
-    }
-  });
-})();
+      var content = title.children('.vacancies-terms__item-container');
+      if (!content.is(':visible')) {
+        content.slideDown(function() {
+          $(this).parent('.vacancies-terms__item').addClass('is-opened')
+        });
+      }
+    });
+  })();
 
   // popups
   // open by element with class as trigger and data as target
@@ -363,6 +362,17 @@ if(screen.width > 1023){
   $(".popup__dim, .popup__close, .popup__cancel").click(function() {
     $(this).parents(".popup").removeClass("popup--visible");
     return false;
+  });
+
+  $(".popup__switcher").click(function(){
+    if (!$(this).hasClass("popup__switcher--active")) {
+      $(".popup__switcher").removeClass("popup__switcher--active");
+      $(this).addClass("popup__switcher--active");
+    }
+    var currentTab = $(".popup__switcher").index($(this));
+    var currentForm = $(this).parents(".popup");
+    currentForm.find(".popup__main").hide();
+    currentForm.find(".popup__main").eq(currentTab).fadeIn(400);
   });
   // eof popups
 

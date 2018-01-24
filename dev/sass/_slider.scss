@@ -131,6 +131,10 @@
   .footer-slider {
     width: 100%;
     overflow: hidden;
+    
+    @include mobile {
+      display: none;
+    }
 
     &__item {
       width: 301px; // TODO: remove magic numbers

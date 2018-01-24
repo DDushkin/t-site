@@ -113,7 +113,7 @@ button {
 .bg-cyan{
   background: url(../img/bg-models-filter.jpg);    //Странный серый бекграунд
 }
-.section-title {                                  //Заголовок 40px со значком тойота
+.section-title {
   font-size: 40px;
   font-family: $f-td, arial, sans-serif;
   letter-spacing: .1em;
@@ -277,6 +277,7 @@ button {
     }
   }
 } // eof breadcrumbs
+
 .checkbox-label{
   cursor: pointer;
   user-select: none;
@@ -378,6 +379,15 @@ button {
   &__wrapper{
     @include size(7);
     @include row-flex();
+
+    .incr-btn {
+      will-change: transform;
+      transition: all .1s;
+
+      &:active {
+        transform: scale(.9);
+      }
+    }
   }
   &__decr{
     @include size(3);
@@ -385,6 +395,7 @@ button {
     color: #CC0033;
     text-decoration: none;
     font-size: 24px;
+
   }
   &__quant{
     @include size(6);
@@ -400,6 +411,7 @@ button {
     text-decoration: none;
     font-size: 24px;
   }
+
 }
 
 /* Ex:
@@ -811,7 +823,6 @@ input, fieldset {
   border: none;
   padding: 0;
   // margin: 0;
-  // width: 100%;
   &--full {
     width: 100%;
   }

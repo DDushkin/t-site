@@ -43,7 +43,8 @@ nav {
   position: relative;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  // align-items: center;
+  align-items: stretch;
   height: 70px;
   margin: 0;
   padding: 0 50px 0 25px;
@@ -60,6 +61,9 @@ nav {
 
   &__item {
     list-style: none;
+    display: flex;
+    align-items: center;
+
     &:hover {
       .nav__nav-secondary {
         max-height: 80px;

@@ -362,6 +362,7 @@ if(screen.width > 1023){
   // close, //TODO: add closing by esc key
   $(".popup__dim, .popup__close, .popup__cancel").click(function() {
     $(this).parents(".popup").removeClass("popup--visible");
+    return false;
   });
   // eof popups
 
@@ -376,6 +377,7 @@ if(screen.width > 1023){
   // eof drag and drop
 
   // popup loader
+  // ADD form ajax here
   $(".js-popup-send").click(function(){
     var popupSend = $(this).parents(".popup");
     popupSend.addClass("popup--sending");

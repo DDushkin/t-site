@@ -143,15 +143,19 @@
     margin-top: 8px;
     font-size: 14px;
     letter-spacing: .1em;
-    color: #23171A;
+    color: $black;
     font-style: italic;
     font-family: inherit;
-    transition: all 0.3s;
+    transition: $tr;
     border: none;
     background-color: transparent;
     cursor: pointer;
     outline: none;
     display: inline-block;
+    
+    &:hover {
+      color: $blue;
+    }
   }
 }
 .loader {

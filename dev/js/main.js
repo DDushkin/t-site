@@ -91,65 +91,69 @@ if(screen.width > 1023){
   // eof fake input placeholder
 
   // google maps footer
-  //TODO: remove comments
   google.maps.event.addDomListener(window, 'load', init);
     function init() {
-      // Basic options for a simple Google Map
-      // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
       var mapOptions = {
-        // How zoomed in you want the map to start at (always required)
         zoom: 15,
-        disableDefaultUI: true, // disable controls
-
-        // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(50.406626,30.6757033), //TODO: fix position
-
-        // How you would like to style the map.
-        // This is where you would paste any style found on Snazzy Maps.
+        disableDefaultUI: true,
+        center: new google.maps.LatLng(50.406626,30.6757033),
         styles: [{"featureType":"landscape","elementType":"all","stylers":[{"color":"#dfdfdf"}]},{"featureType":"poi.park","elementType":"geometry.fill","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"geometry","stylers":[{"lightness":100},{"visibility":"on"},{"color":"#c64566"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"transit.station.airport","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"transit.station.bus","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#1d71b8"}]}]
       };
 
-      // Get the HTML DOM element that will contain your map
-      // We are using a div with id="map" seen below in the <body>
       var mapElement = document.getElementById('map-footer');
-      var mapElement1 = document.getElementById('map-contacts');
-      // Create the Google Map using our element and options defined above
       var map = new google.maps.Map(mapElement, mapOptions);
-      var map1 = new google.maps.Map(mapElement1, mapOptions);
+
+      var mapElement1;
+      if (mapElement1=document.getElementById("map-contacts")) {
+        var map1 = new google.maps.Map(mapElement1, mapOptions);
+      }
+      // var mapElement1 = document.getElementById('map-contacts');
+      // var map1 = new google.maps.Map(mapElement1, mapOptions);
+
       var image = {
         url: 'img/i-footer-info-map-top.svg',
-        // This marker is 20 pixels wide by 32 pixels high.
         size: new google.maps.Size(41, 58),
-        // The origin for this image is (0, 0).
         origin: new google.maps.Point(0, 0),
-        // The anchor for this image is the base of the flagpole at (0, 32).
         anchor: new google.maps.Point(0, 58)
       };
       var image2 = {
         url: 'img/i-footer-info-map-bottom.svg',
-        // This marker is 20 pixels wide by 32 pixels high.
         size: new google.maps.Size(58, 22),
-        // The origin for this image is (0, 0).
         origin: new google.maps.Point(0, 0),
-        // The anchor for this image is the base of the flagpole at (0, 32).
         anchor: new google.maps.Point(8, 15)
       };
-      // Let's also add a marker while we're at it
       var marker = new google.maps.Marker({
         position: new google.maps.LatLng(50.406626,30.6757033),
         map: map,
         icon: image,
         // animation: google.maps.Animation.DROP, // appear animation
-        title: 'Toyota Автосамит'
+        title: 'Toyota Автосаміт'
       });
       var marker2 = new google.maps.Marker({
         position: new google.maps.LatLng(50.406626,30.6757033),
         map: map,
         icon: image2,
-        // animation: google.maps.Animation.DROP, // appear animation
+        //animation: google.maps.Animation.DROP, // appear animation
         title: ''
       });
+
+      var marker3 = new google.maps.Marker({
+        position: new google.maps.LatLng(50.406626,30.6757033),
+        map: map1,
+        icon: image,
+        // animation: google.maps.Animation.DROP, // appear animation
+        title: 'Toyota Автосаміт'
+      });
+      var marker4 = new google.maps.Marker({
+        position: new google.maps.LatLng(50.406626,30.6757033),
+        map: map1,
+        icon: image2,
+        //animation: google.maps.Animation.DROP, // appear animation
+        title: ''
+      });
+
       marker.setAnimation(google.maps.Animation.BOUNCE);
+      marker3.setAnimation(google.maps.Animation.BOUNCE);
     }
   // eof google maps footer
 

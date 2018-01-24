@@ -7,6 +7,7 @@ var gulp = require('gulp'),
   autoprefixer = require('gulp-autoprefixer'),
   pug = require('gulp-pug'),
   sourcemaps = require('gulp-sourcemaps'),
+  gcmq = require('gulp-group-css-media-queries'),
   browserSync = require('browser-sync'),
   rename = require('gulp-rename'),
   concat = require('gulp-concat'),
@@ -62,6 +63,7 @@ gulp.task('sass', function(){
       cascade: false
     }))
     .pipe(sourcemaps.write())
+    .pipe(gcmq())
     .pipe(gulp.dest('dev/css'))
     .pipe(browserSync.reload({stream: true}))
 });

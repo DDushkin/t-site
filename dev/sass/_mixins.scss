@@ -1,33 +1,25 @@
-$mobile-width: 320px;
-$tablet-width: 768px;
-$desktop-width: 1024px;
-
-/*
-@include mobile {
-
-}
-@include tablet {
-
-}
-@include desktop {
-
-}
-*/
-
-@mixin mobile { // 767 - 320
-  @media (min-width: #{$mobile-width}) and (max-width: #{$tablet-width - 1px}){
-    @content;
-  }
-}
-
-@mixin tablet {  // 1023 - 768
-  @media (max-width: #{$desktop-width - 1px}){
-    @content;
-  }
-}
+// breakpoints
+  $mobile-width: 320px;
+  $tablet-width: 768px;
+  $desktop-width: 1024px;
+// eof breakpoints
 
 @mixin desktop {  // * - 1024
   @media (min-width: #{$desktop-width}) {
     @content;
   }
 }
+
+@mixin tablet {  // 1023 -> 0
+  @media (max-width: #{$desktop-width - 1px}){
+    @content;
+  }
+}
+
+@mixin mobile { // 767 -> 0
+    @media (max-width: #{$tablet-width - 1px}){
+      @content;
+  }
+}
+
+

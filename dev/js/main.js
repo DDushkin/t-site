@@ -371,6 +371,7 @@ if(screen.width > 1023){
   dragula([document.getElementById("carlist"),document.getElementById("carbox")]);
   // eof drag and drop
 
+  // popup loader
   $(".js-popup-send").click(function(){
     var popupSend = $(this).parents(".popup");
     popupSend.addClass("popup--sending");
@@ -379,5 +380,6 @@ if(screen.width > 1023){
     }, 4000);
     return false;
   });
+  // eof popup loader
 
 });  // eof doc.ready

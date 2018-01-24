@@ -276,7 +276,7 @@ button {
       background: $black;
     }
   }
-} // oef breadcrumbs
+} // eof breadcrumbs
 .checkbox-label{
   cursor: pointer;
   user-select: none;
@@ -421,6 +421,9 @@ input[type="checkbox"] + .checkbox-label::before {
     cursor:pointer;
     content:"";
     box-sizing: border-box;
+    border-radius: 7px;
+    border: 3px solid rgba(29, 113, 184, 0);
+    transition: $tr;
 }
 
 input[type="checkbox"]:checked + .checkbox-label::before {
@@ -429,7 +432,6 @@ input[type="checkbox"]:checked + .checkbox-label::before {
 
 input[type="checkbox"] + .checkbox-label:hover::before {
     border: 3px solid rgba(29, 113, 184, 0.5);
-    border-radius: 7px;
 }
 
 input[type="radio"] {

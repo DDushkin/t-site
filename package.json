@@ -16,6 +16,7 @@
     "gulp-cached": "^1.1.1",
     "gulp-changed": "^3.1.1",
     "gulp-concat": "^2.6.1",
+    "gulp-group-css-media-queries": "^1.2.0",
     "gulp-if": "^2.0.2",
     "gulp-jade-inheritance": "^0.5.5",
     "gulp-pug": "^3.3.0",

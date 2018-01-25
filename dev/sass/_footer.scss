@@ -103,9 +103,12 @@
       margin-bottom: 40px;
     }
 
-
-    &--small { 
+    &--small {
       @include size(2);
+
+      @include tablet {
+        @include size(4);
+      }
       @include mobile {
         @include size(12);
       }
@@ -113,7 +116,7 @@
     &--big {
       @include size(4);
       @include tablet {
-        @include size(6);
+        @include size(7);
         margin-left: auto;
         margin-right: auto;
         text-align: center;

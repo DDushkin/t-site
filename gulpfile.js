@@ -116,7 +116,7 @@ gulp.task('browser-sync', function(){
 });
 
 // regenerate smartgrid file
-gulp.task('sg', function(){
+gulp.task('grid', function(){
   smartgrid('dev/sass', sgsettings);
 });
 

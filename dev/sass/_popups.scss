@@ -92,9 +92,17 @@
   z-index: $layertop;
 
   &--controls {
+
     .popup__body {
       border-radius: 0 5px 5px 5px;
     }
+    .popup__main {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
   }
 
   &--visible {
@@ -172,13 +180,7 @@
     z-index: $layertop;
     will-change: transform;
   }
-  &__main {
-    display: none;
-
-    &--active {
-      display: block;
-    }
-  }
+  
   &__close {
     width: 20px;
     height: 20px;

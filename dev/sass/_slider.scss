@@ -131,8 +131,8 @@
   .footer-slider {
     width: 100%;
     overflow: hidden;
-    
-    @include mobile {
+
+    @include tablet {
       display: none;
     }
 

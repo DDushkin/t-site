@@ -4,9 +4,9 @@
 
 .car-grid {
   @include row-flex();
-  @include wrapper(); // outer container 1290px for now
+  @include wrapper();
   margin-top: 20px;
-  margin-bottom: -30px; //TODO:
+  margin-bottom: -30px;
 
   &-item {
     @include col();
@@ -16,25 +16,40 @@
     padding-bottom: 20px;
     border-radius: 10px;
     transition: all .3s;
+
     @include tablet {
       @include size(6);
     }
     @include mobile {
-      @include size(12);
+      // @include size(6);
+      margin-bottom: 10px;
     }
     &:hover {
-      box-shadow: 0px 0px 14px #4D4F53;
-      padding-bottom: 10px;
+      @include desktop {
+        box-shadow: 0px 0px 14px #4D4F53;
+        padding-bottom: 10px;
+      }
+      
     }
     &:hover &__img {
-      transform: scale(1.1);
+      @include desktop {
+        transform: scale(1.1);
+      }
+      
     }
     &:hover &__heading {
-      padding-top: 10px;
+      @include desktop {
+        padding-top: 10px;
+      }
+      
     }
     &__img {
       width: 80%;
       transition: all .3s;
+
+      @include mobile {
+        width: 100%;
+      }
     }
     &__heading {
       margin-top: 10px;
@@ -46,6 +61,9 @@
       cursor: default;
       transition: all .3s;
       text-transform: uppercase;
+      @include mobile {
+        font-size: 18px;
+      }
     }
     &__price {
       margin-top: 0;
@@ -54,9 +72,17 @@
       font-style: italic;
       letter-spacing: .1em;
       cursor: default;
+
+      @include mobile {
+        display: none;
+      }
     }
     &__link {
       margin: 0 10px 0;
+
+      @include tablet {
+        display: none;
+      }
     }
   }
 }
@@ -68,21 +94,40 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
+
+  @include tablet {
+    background-image: none;
+  }
 }
 .services-list-wrapper {
   @include row-flex();
   @include wrapper();
+  @include tablet {
+    justify-content: center;
+    background-image: url(../img/bg-services-toyota.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 .services-list {
   @include col();
   @include size(6);
-  padding-right: 180px;
+  padding-right: 0%;
   background-color: #fff;
   background-image: url(../img/bg-services-toyota.svg);
   background-repeat: no-repeat;
   background-position: center center;
   box-sizing: border-box;
   box-shadow: 10px 10px 40px rgba(77, 79, 83, 0.3);
+
+  @include tablet {
+    box-shadow: none;
+    background-image: none;
+    background-color: transparent;
+  }
+  @include mobile {
+    @include size(12);
+  }
 
   &__item {
     position: relative;
@@ -91,6 +136,19 @@
     margin: 90px 0;
     padding-left: 80px;
     cursor: pointer;
+
+    @include tablet {
+      padding-left: 0;
+      margin: 70px 0;
+    }
+    @include mobile {
+      margin: 90px 0;
+    }
+    &:first-of-type {
+      @include tablet {
+        margin-top: 30px; 
+      }
+    }
 
     &:after {
       content: "";
@@ -102,6 +160,10 @@
       left: 0;
       opacity: .4;
       transition: $tr;
+
+      @include tablet {
+        display: none;
+      }
     }
     &:hover .services-list__icon {
       opacity: 1;
@@ -118,6 +180,10 @@
     vertical-align: middle;
     opacity: .4;
     transition: $tr;
+
+    @include tablet {
+      opacity: 1;
+    }
   }
   &__name {
     display: inline-block;
@@ -126,19 +192,20 @@
     letter-spacing: .1em;
     color: inherit;
     text-decoration: none;
+    @include mobile {
+      font-size: 18px;
+    }
   }
 }
 // eof services
 
 // news
-.btn-wrapper {
-  text-align: center;
-}
+
 .news .btn-typical {
   display: inline-block;
 }
 .news .section-title {
-  margin-bottom: 50px; //TODO: fix
+  margin-bottom: 50px;
 }
 .news-grid {
   @include row-flex();
@@ -174,16 +241,37 @@
       font-size: 24px;
       font-style: $f-td;
       font-weight: bold;
-      // letter-spacing: .1em;
+      letter-spacing: .1em;
+      
+      @include mobile {
+        font-size: 18px;
+        letter-spacing: .1em;
+      }
     }
     &--half {
       @include size(6);
       margin-bottom: 100px;
+
+      @include tablet {
+        @include size(5);
+      }
+      @include mobile {
+        @include size(12);
+        margin-bottom: 30px;
+      }
     }
     &--half  &__text {
       padding-left: 45px;
       position: relative;
       padding-right: 80px;
+
+      @include tablet {
+        margin-top: 15px;
+        padding-right: 0px;
+      }
+      @include mobile {
+        padding-left: 0;
+      }
     }
     &--half  &__date {
       position: absolute;
@@ -191,6 +279,13 @@
       top: 0;
       transform: rotate(90deg) translateY(4px);
       transform-origin: 0 100% ;
+      @include tablet {
+        top: -20px;
+      }
+      @include mobile {
+        position: static;
+        transform: none;
+      }
     }
 
     &--full {
@@ -199,11 +294,25 @@
       flex-direction: row;
       align-items: flex-start;
       margin-bottom: 50px;
+
+      @include tablet {
+        @include size(12);
+      }
+      @include mobile {
+        flex-direction: column;
+        margin-bottom: 30px;
+      }
     }
     &--full &__img {
       width: 28%;
       height: auto;
-      margin-right: 2.8%; //TODO: remove magic numbers
+      margin-right: 2.8%;
+      @include tablet {
+        width: 40%;
+      }
+      @include mobile {
+        width: 100%;
+      }
     }
     &--full &__text {
       display: flex;
@@ -213,16 +322,49 @@
     }
     &--full &__date {
       margin-right: 55px;
+      @include tablet {
+        margin-top: 10px;
+      }
+      @include mobile {
+        margin-right: 0;
+      }
     }
     &--full &__heading {
-      width: 69.2%; //TODO: remove magic numbers
+      width: 69.2%;
+      @include tablet {
+        width: 100%;
+      }
     }
+    &__text {
 
+      p {
+        @include mobile {
+          display: none;
+        }
+      }
+    }
     .btn-more {
       float: right;
       margin-top: auto;
+      @include mobile {
+        display: none;
+        float: none;
+      }
+      // &--mobile {
+      //   display: inline-block;
+      // }
+      // span {
+      //   @include mobile {
+      //     display: none;
+      //   }
+      // }
+      &:after {
+        @include mobile {
+          margin-left: 0;
+          padding: 5px;
+        }
+      }
     }
   }
-
 }
 // eof news

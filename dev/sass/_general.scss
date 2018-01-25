@@ -304,6 +304,10 @@ button {
     }
   }
 }
+
+.btn-wrapper {
+  text-align: center;
+}
 .btn {
   display: inline-block;
   text-transform: uppercase;
@@ -348,7 +352,7 @@ button {
     outline: none;
   }
 }
-.btn-more{
+.btn-more {
   cursor: pointer;
   font-family: $f-td;
   line-height: normal;
@@ -357,7 +361,18 @@ button {
   color: $red;
   font-weight: bold;
   text-decoration: none;
-  &:after{
+
+  &--mobile {
+    display: none;
+    span {
+      display: none;
+    }
+    @include mobile {
+      float: none;
+      display: inline-block !important;
+    }
+  }
+  &:after {
     width: 18px;
     height: 18px;
     display: inline-block;
@@ -366,7 +381,7 @@ button {
     background: url('../img/i-more-arrow.svg') center no-repeat;
     vertical-align: middle;
   }
-  &:focus{
+  &:focus {
     outline: none;
   }
   &:hover {

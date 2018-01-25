@@ -202,10 +202,10 @@ if(screen.width > 1023){
   // var mySVGsToInject = document.querySelectorAll('img.svg');
   // SVGInjector(mySVGsToInject);
 
-  //disable dummy anchor events //TODO: remove
+  //disable dummy anchor events //TODO: remove before deploy
   $("a").click(function(){
     if ($(this).attr("href")=="#") {
-      console.log("# click");
+      console.log("# anchor click");
       return false;
     }
   });
@@ -248,6 +248,12 @@ if(screen.width > 1023){
       nav.removeClass("nav--fixed");
     }
   });
+
+  $(".news-grid-item").each(function(){
+    $(this).find(".btn-more").clone().addClass("btn-more--mobile").appendTo($(this).find(".news-grid-item__heading"));
+    // console.log($(this).find(".btn-more"));
+
+  })
 
   // smooth scroll to anchor  (page 04)
   $(document).on('click', 'a[href^="#"]', function (event) {

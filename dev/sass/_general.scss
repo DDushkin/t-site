@@ -134,7 +134,7 @@ button {
     margin: 0 auto 10px;
     background-image: url("../img/i-toyota.svg");
     background-size: contain;
-    background-repeat: no-repeat; //TODO: shorthand
+    background-repeat: no-repeat;
 
     @include tablet {
       width: 30px;
@@ -325,6 +325,10 @@ button {
   letter-spacing: .1em;
   transition: all .3s;
   user-select: none;
+
+  @include mobile {
+    font-size: 14px;
+  }
 
   &-typical {                    // главная кнопка
     background: $red;

@@ -914,6 +914,121 @@ textarea {
     outline: none;
   }
 }
+
+// new select
+// example (pug):
+// .select
+//   input.select__input(type="text")
+//   .select__placeholder
+//   .select__list
+//     .select__item item 1
+//     .select__item item 2
+//     .select__item item 3
+
+.select {
+  display: inline-block;
+  position: relative;
+  width: 200px; // TODO: remove
+  cursor: pointer;
+  user-select: none;
+  height: 54px;
+  line-height: 54px;
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+  // display: flex;
+  // align-items: flex-start;
+  // justify-content: flex-start;
+
+  &--expanded {
+
+    .select__list {
+      opacity: 1;
+      transform: scale(1,1);
+      pointer-events: all;
+    }
+    .select__placeholder {
+
+      &:before {
+        height: 2px;
+        background-color: #1D71B8;
+      }
+      &:after {
+        transform: rotate(180deg);
+        border-top: 5px solid #1D71B8; 
+      }
+    }
+  }
+  &__label {
+    position: absolute;
+    left: 0;
+    // top: 0;
+    top: -22px; //TODO: fix
+    font-size: 14px;
+    align-self: flex-start;
+    flex-grow: 0;
+    font-style: italic;
+    letter-spacing: .1em;
+  }
+  &__placeholder {
+    position: relative;
+    padding: 5px 10px;
+    padding-right: 20px;
+    color: #B5B7B3;
+    font-style: italic;
+    box-sizing: border-box;
+    line-height: 50px;
+    height: 54px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #23171A;
+      transition: all .3s;
+      will-change: transform;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      right: 10px;
+      top: calc(50% - 4px);
+      border-top: 5px solid black;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      transition: all .3s;
+    }
+  }
+  &__input {
+    display: none;
+  }
+  &__list {
+    position: absolute;
+    top: calc(100% + 3px);
+    left: 0;
+    width: 100%;
+    border: 1px solid #CBCDC9;
+    border-radius: 4px;
+    box-shadow: 0px 0px 14px #4D4F53;
+    transition: all .3s;
+    transform: scale(1,.9);
+    transform-origin: 50% 0;
+    pointer-events: none;
+    opacity: 0;
+    z-index: 5;
+    will-change: transform;
+  }
+  &__item {
+    padding: 5px 17px;
+    transition: all .3s;
+    background-color: #fff;
+
+    &:hover {
+      box-shadow: inset 0px 0px 4px rgba(77, 79, 83, 0.5);
+    }
+  }
+}
 //eof forms
 
 

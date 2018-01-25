@@ -404,4 +404,19 @@ if(screen.width > 1023){
   });
   // eof popup loader
 
+  // select
+    $(".select").each(function(){
+      $(this).find(".select__placeholder").text($(this).find(".select__item").eq(0).text());
+      $(this).find(".select__input").val($(this).find(".select__placeholder").text());
+    })
+    $(".select__placeholder").click(function(){
+      $(this).parents(".select").toggleClass("select--expanded");
+    });
+    $(".select__item").click(function(){
+      $(this).parents(".select").removeClass("select--expanded");
+      $(this).parents(".select").find(".select__placeholder").text($(this).text());
+      $(this).parents(".select").find(".select__input").val($(this).text());
+    });
+  // eof select
+
 });  // eof doc.ready

@@ -15,11 +15,11 @@
     flex-direction: column-reverse;
     align-items: center;
     padding-bottom: 0;
+    margin: 100px 0;
   }
   &__description{
-    //width: 47%;
     @include col();
-    @include size(8.5); // col count
+    @include size(8.5);
     padding:70px 0 52px 168px;
     float:right;
     border-radius: 5px;
@@ -46,9 +46,9 @@
   }
   &__image{
     box-shadow: 4px 4px 14px $shadow25;
-    border-radius: 2px;
+    border-radius: 5px;
     @include col();
-    @include size(5); // col count
+    @include size(5);
     height: 380px;
     position: absolute;
     z-index: 1;
@@ -56,20 +56,21 @@
     @include tablet {
       @include size(12);
       height: 530px;
-      
+      position: relative;
     }
     @include mobile {
       @include size(12);
       height: 215px;
       position: relative;
     }
-    img{
+    img {
       width: 100%;
+      height: 100%;
       object-fit: cover;
       position: absolute;
+      border-radius: 5px;
       top: 0;
       left: 0;
-      height: 100%;
     }
   }
   &__bank{
@@ -77,11 +78,11 @@
   }
   &__logo{
     @include col();
-    @include size(2.5); // col count
+    @include size(2.5);
   }
   &__license{
     @include col();
-    @include size(9.5); // col count
+    @include size(9.5);
   }
 }
 .page-credit-form{
@@ -89,6 +90,7 @@
 }
 .credit-form{
   padding: 70px 0;
+  // @include wrapper();
 
   &__title{
     padding-bottom: 10px;
@@ -133,6 +135,26 @@
       @include size(6);
       @include shift-left(3);
       margin-bottom: 30px;
+    }
+    @include mobile {
+      @include size(12);
+      @include shift-left(0);
+    }
+  }
+  .select {
+    @include col();
+    @include size(3);
+    // display: flex;
+    // align-items: flex-start;
+    // justify-content: flex-start;
+
+    @include tablet {
+      @include size(6);
+      @include shift-left(3);
+      margin-bottom: 30px;
+      &:last-of-type {
+        margin-bottom: 10px;
+      }
     }
     @include mobile {
       @include size(12);
@@ -197,6 +219,10 @@
     font-weight: bold;
     font-size: 24px;
 
+    @include tablet {
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
     @include mobile {
       margin-top: 0px;
       margin-bottom: 50px;

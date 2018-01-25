@@ -42,11 +42,25 @@ body
             input.textfield__input.field-typical(type="text")
             label.textfield__placeholder(for="") Вартість автомобіля
           
-          select.field-typical__select.credit-form__percent
-            option(value="20%") 20%
+          //- select.field-typical__select.credit-form__percent
+          //-   option(value="20%") 20%
+          .select
+            input.select__input(type="text")
+            .select__label Виберіть процент
+            .select__placeholder
+            .select__list
+              .select__item 20%
+              .select__item 25%
+              .select__item 30%
           
-          select.field-typical__select.credit-form__term
-            option(value="12") 12 міс
+          .select
+            input.select__input(type="text")
+            .select__label Строк виплати
+            .select__placeholder
+            .select__list
+              .select__item 12 міс
+              .select__item 24 міс
+              .select__item 36 міс
           p.credit-form__rate Ваша ставка: 
            span.section-title.section-title--simple.percent 12.5%
           fieldset.textfield.credit-form__name

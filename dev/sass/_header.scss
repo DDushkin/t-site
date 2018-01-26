@@ -217,6 +217,12 @@ nav {
       height: auto;
       // height: 100%;
       // overflow: hidden;
+      height: 100%;
+      // width: auto;
+      &:after {
+        display: none;
+      }
+
     }
     .nav-badge__slogan {
       display: none;

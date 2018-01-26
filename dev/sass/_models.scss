@@ -123,6 +123,7 @@
     box-sizing: border-box;
     position: relative;
     &:after {
+      display: none;
       content: "";
       position: absolute;
       top: -17px;
@@ -131,6 +132,7 @@
       border-right: 17px solid transparent;
     }
     &:before {
+      display: none;
       content: "";
       position: absolute;
       top: -22px;

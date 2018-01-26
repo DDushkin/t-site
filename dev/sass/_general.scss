@@ -22,6 +22,9 @@ body {
   font-family: "Toyota Text", "Roboto", Helvetica, Arial, sans-serif;
   color: $black;
   box-sizing: border-box;
+  @include tablet {
+    padding-top: 0 !important;
+  }
 }
 .read-more{
   position: absolute;
@@ -325,6 +328,7 @@ button {
   letter-spacing: .1em;
   transition: all .3s;
   user-select: none;
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
 
   @include mobile {
     font-size: 14px;

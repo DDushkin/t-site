@@ -21,33 +21,16 @@ body
       .filter
         h2.filter__title Скористайтеся фільтром для підбору моделей
         .filter__icons
-          a.filter__item.ico.ico__price80(data-toggle=".filter-price" href="") Підбір по ціні          
-          a.filter__item.ico.ico__bodytype80(data-toggle=".filter-bodytype" href="") По типу кузова          
-          a.filter__item.ico.ico__consumption80(data-toggle=".filter-consumption" href="") Використання пального          
-          a.filter__item.ico.ico__transmission80(data-toggle=".filter-transmission" href="") Коробка передач          
-          a.filter__item.ico.ico__gastype80(data-toggle=".filter-gastype" href="") Вид пального        
+          a.filter__item.ico.ico__price80(data-toggle=".filter-price" href="") Підбір по ціні
+          a.filter__item.ico.ico__bodytype80(data-toggle=".filter-bodytype" href="") По типу кузова
+          a.filter__item.ico.ico__consumption80(data-toggle=".filter-consumption" href="") Використання пального
+          a.filter__item.ico.ico__transmission80(data-toggle=".filter-transmission" href="") Коробка передач
+          a.filter__item.ico.ico__gastype80(data-toggle=".filter-gastype" href="") Вид пального
     .filter-wrapper.filter-price
       .wrapper.filter-block
         .filter-block__title Підбір по ціні: 
-        .filter-block__switches
-          label.filter-block__switch-label
-            input.filter-block__switch-box(type="checkbox")
-            span.checkbox-label Компактні автомобілі 
-          label.filter-block__switch-label 
-            input.filter-block__switch-box(type="checkbox") 
-            span.checkbox-label Сімейні авто 
-          label.filter-block__switch-label
-            input.filter-block__switch-box(type="checkbox")
-            span.checkbox-label Седани 
-          label.filter-block__switch-label 
-            input.filter-block__switch-box(type="checkbox")
-            span.checkbox-label Універсали  
-          label.filter-block__switch-label 
-            input.filter-block__switch-box(type="checkbox")
-            span.checkbox-label Повнопривідні 4х4  
-          label.filter-block__switch-label 
-            input.filter-block__switch-box(type="checkbox")
-            span.checkbox-label Гібридні  
+        .filter-block__switches.filter-block__switches--range
+          input#range
     .filter-wrapper.filter-bodytype
       .wrapper.filter-block
         .filter-block__title Підбір по типу кузова:

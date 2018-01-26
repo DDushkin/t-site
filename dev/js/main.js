@@ -231,7 +231,16 @@ if(screen.width > 1023){
     // autoplaySpeed: 2000,
     variableWidth: true,
     asNavFor: '.slider',
-    focusOnSelect: true
+    focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 1,
+        }
+      }
+    ]
 
   });
 
@@ -243,16 +252,16 @@ if(screen.width > 1023){
     sc = $(document).scrollTop();
     if (sc>navOffsetY) {
       nav.addClass("nav--fixed");
+      $("body").css("padding-top", nav.innerHeight()+"px");
     }
     else {
       nav.removeClass("nav--fixed");
+      $("body").css("padding-top", "0px");
     }
   });
 
   $(".news-grid-item").each(function(){
     $(this).find(".btn-more").clone().addClass("btn-more--mobile").appendTo($(this).find(".news-grid-item__heading"));
-    // console.log($(this).find(".btn-more"));
-
   })
 
   // smooth scroll to anchor  (page 04)
@@ -418,5 +427,17 @@ if(screen.width > 1023){
       $(this).parents(".select").find(".select__input").val($(this).text());
     });
   // eof select
+
+  // 02 range
+    $("#range").ionRangeSlider({
+      grid: true,
+      from: 3,
+      hide_min_max: true,
+      hide_from_to: true,
+      values: [
+        "Від 100 000 грн.", "до 500 000 грн.", "до 1 000 000 грн.","до 2 500 000 грн."
+      ]
+    });
+  // eof 02 range
 
 });  // eof doc.ready

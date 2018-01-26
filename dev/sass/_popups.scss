@@ -8,7 +8,9 @@
   z-index: $layer5;
 
   @include tablet {
-    display: none;
+    // display: none;
+    bottom: 25px;
+    right: 25px;
   }
 
   &__item {
@@ -24,8 +26,19 @@
     box-shadow: 4px 4px 24px rgba(44, 1, 12, 0.3);
     cursor: pointer;
 
+    @include tablet {
+      height: 48px;
+      width: 48px;
+      display: none;
+      border-width: 2px;
+    }
+
     &:last-of-type {
       margin-bottom: 0px;
+
+      @include tablet {
+        display: block;
+      }
     }
     &:hover {
       .feedback__inner {
@@ -55,6 +68,9 @@
     white-space: nowrap;
     margin: 0;
     font-size: 18px;
+    @include tablet {
+      display: none;
+    }
   }
   &__icon {
     width: 90px;
@@ -73,6 +89,13 @@
     }
     &--call {
       background-image: url("../img/i-popup-phone.svg");
+      
+      @include tablet {
+        background-size: 23px 26px;
+        background-position: 40% 40%;
+        width: 48px;
+        height: 48px;
+      }
     }
   }
 }

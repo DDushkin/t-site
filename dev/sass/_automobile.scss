@@ -58,6 +58,8 @@
   padding: 0;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  // align-items: flex-start;
 
   &__item {
     width: 55px;
@@ -183,6 +185,10 @@
   font-size: 0;
   box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5);
 
+  @include mobile {
+    display: none;
+  }
+
   &__col {
     display: flex;
     flex-direction: row;
@@ -243,7 +249,13 @@
   display: flex;
   margin-bottom: 200px;
   border: 1px solid #CBCDC9;
-  box-shadow: 0px 0px 62px rgba(77, 79, 83, 0.3); //TODO: get info
+  box-shadow: 0px 0px 62px rgba(77, 79, 83, 0.3);
+
+  @include tablet {
+    box-shadow: none;
+    justify-content: center;
+    border: none;
+  }
 
   .section-title {
     margin-top: 50px;
@@ -256,6 +268,14 @@
     padding: 20px;
     min-height: 100px;
 
+    @include tablet {
+      @include col();
+      @include size(10);
+    }
+    @include mobile {
+      @include size(12);
+    }
+
     &:after {
       content: "";
       position: absolute;
@@ -266,11 +286,19 @@
       border: 1px solid #CBCDC9;
       border-radius: 3px;
       z-index: -1;
+
+      @include tablet {
+        display: none;
+      }
     }
 
     &:first-of-type {
       border-right: 1px solid #CBCDC9;
       text-align: center;
+
+      @include tablet {
+        display: none;
+      }
     }
   } //eof part
 
@@ -316,9 +344,18 @@
 
 // video-wrapper
 .video-wrapper {
-  min-height: 1000px;
+  min-height: 1000px; //TODO: check
   padding: 70px 0;
   text-align: center;
+  @include tablet {
+    background-image: none;
+    background-color: #fff;
+    color: $black;
+  }
+
+  @include tablet {
+    min-height: 0;
+  }
 
   &__subtitle {
     margin-top: 20px;
@@ -338,7 +375,9 @@
     display: block;
     margin: 0 auto;
     border-radius: 5px;
+
     @include tablet {
+      display: none;
       max-width: 610px;
       height: 344px;
     }

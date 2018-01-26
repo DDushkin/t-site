@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.2.0/css/ion.rangeSlider.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.2.0/css/ion.rangeSlider.skinHTML5.min.css">
     <link href="css/main.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
   </head>
@@ -63,31 +65,14 @@
     <div class="wrapper">
       <div class="filter">
         <h2 class="filter__title">Скористайтеся фільтром для підбору моделей</h2>
-        <div class="filter__icons"><a class="filter__item ico ico__price80" data-toggle=".filter-price" href="">Підбір по ціні          </a><a class="filter__item ico ico__bodytype80" data-toggle=".filter-bodytype" href="">По типу кузова          </a><a class="filter__item ico ico__consumption80" data-toggle=".filter-consumption" href="">Використання пального          </a><a class="filter__item ico ico__transmission80" data-toggle=".filter-transmission" href="">Коробка передач          </a><a class="filter__item ico ico__gastype80" data-toggle=".filter-gastype" href="">Вид пального        </a></div>
+        <div class="filter__icons"><a class="filter__item ico ico__price80" data-toggle=".filter-price" href="">Підбір по ціні</a><a class="filter__item ico ico__bodytype80" data-toggle=".filter-bodytype" href="">По типу кузова</a><a class="filter__item ico ico__consumption80" data-toggle=".filter-consumption" href="">Використання пального</a><a class="filter__item ico ico__transmission80" data-toggle=".filter-transmission" href="">Коробка передач</a><a class="filter__item ico ico__gastype80" data-toggle=".filter-gastype" href="">Вид пального</a></div>
       </div>
     </div>
     <div class="filter-wrapper filter-price">
       <div class="wrapper filter-block">
         <div class="filter-block__title">Підбір по ціні: </div>
-        <div class="filter-block__switches">
-          <label class="filter-block__switch-label">
-            <input class="filter-block__switch-box" type="checkbox"><span class="checkbox-label">Компактні автомобілі </span>
-          </label>
-          <label class="filter-block__switch-label"> 
-            <input class="filter-block__switch-box" type="checkbox"><span class="checkbox-label">Сімейні авто </span>
-          </label>
-          <label class="filter-block__switch-label">
-            <input class="filter-block__switch-box" type="checkbox"><span class="checkbox-label">Седани </span>
-          </label>
-          <label class="filter-block__switch-label"> 
-            <input class="filter-block__switch-box" type="checkbox"><span class="checkbox-label">Універсали  </span>
-          </label>
-          <label class="filter-block__switch-label"> 
-            <input class="filter-block__switch-box" type="checkbox"><span class="checkbox-label">Повнопривідні 4х4  </span>
-          </label>
-          <label class="filter-block__switch-label"> 
-            <input class="filter-block__switch-box" type="checkbox"><span class="checkbox-label">Гібридні  </span>
-          </label>
+        <div class="filter-block__switches filter-block__switches--range">
+          <input id="range">
         </div>
       </div>
     </div>
@@ -314,5 +299,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.2.3/ofi.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/3.3.6/scrollreveal.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.2.0/js/ion.rangeSlider.min.js"></script>
   <script src="js/main.js"></script>
 </body>

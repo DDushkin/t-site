@@ -1,7 +1,7 @@
 // fotorama mainpage
 .mainslider {
   position: relative;
-  clip-path: ellipse(175vw 230vw at 50% calc(100% - 229.7vw)); // TODO: review
+  clip-path: ellipse(175vw 230vw at 50% calc(100% - 229.7vw));
   border-bottom: 1px solid red;
   z-index: $layer5;
 
@@ -157,12 +157,19 @@
     }
 
     &__item {
-      width: 301px; // TODO: remove magic numbers
+      width: 301px;
       height: 176px;
       overflow: hidden;
       position: relative;
-      cursor: pointer;
+      // cursor: pointer;
       outline: none; // to remove blue line between slides
+
+      &:hover {
+
+        img {
+          // transform: scale(1.05);
+        }
+      }
 
       img {
         position: absolute;
@@ -171,8 +178,11 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+        // will-change: transform;
+        // transition: $tr;
       }
-
+      
+      // overlay
       &:after {
         content: "";
         display: block;
@@ -183,7 +193,8 @@
         height: 100%;
         background: rgba(35, 23, 26, 0.4);
         box-shadow: $shadow25;
-        
+        z-index: 2;
+        pointer-events: none;
       }
     }
   }
@@ -203,11 +214,20 @@
 .slider-carousel {
   width: 100%;
   overflow: hidden;
+  
+  @include mobile {
+    display: none;
+  }
 
   &__item {
     width: 360px;
     height: 180px;
     position: relative;
+
+    @include tablet {
+      width: 150px;
+      height: 70px;
+    }
     img {
       position: absolute;
       top: 0;
@@ -219,6 +239,5 @@
       cursor: pointer;
     }
   }
-  
 }
 // eof 04 slider

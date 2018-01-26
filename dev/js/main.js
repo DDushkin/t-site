@@ -1,6 +1,5 @@
 $(document).ready(function(){
   // mainslider init
-  // http://fotorama.io/customize/initialization/
   $(".mainslider").fotorama({
     autoplay: true,
     loop: true,
@@ -12,11 +11,9 @@ $(document).ready(function(){
 
   $(".fotorama__arr--next").appendTo(".fotorama__nav__shaft");
   $(".fotorama__arr--prev").prependTo(".fotorama__nav__shaft");
-
   // eof mainslider init
 
   // footer slider
-  // options http://kenwheeler.github.io/slick/
   $('.footer-slider').slick({
     dots: false,
     infinite: true,
@@ -31,6 +28,7 @@ $(document).ready(function(){
     variableWidth: true
   });
   // eof footer-slider
+
 if(screen.width > 1023){
   $('.test-drive-bigslider').slick({
    slidesToShow: 1,
@@ -167,50 +165,46 @@ if(screen.width > 1023){
     }
   // eof google maps footer
 
-  //toggle filters page 2
-  $("a[data-toggle]").click(function(e) {
-    e.preventDefault();  // prevent navigating
-    var selector = $(this).data("toggle");  // get corresponding element
-    if( $(this).hasClass("toggle-active") ) {  // если уже нажата, то скрыть
-      $(selector).hide();
-      $(this).removeClass("toggle-active");
-    }  else {                                 // если не нажата, то очистить все а потом показать нужное
-      $("div.filter-wrapper").hide();
-      $("a.filter__item").removeClass("toggle-active");
-      $(selector).show();
-      $(this).addClass("toggle-active");
-    }
-  });
+  // toggle filters page 02
+    $("a[data-toggle]").click(function(e) {
+      e.preventDefault();  // prevent navigating
+      var selector = $(this).data("toggle");  // get corresponding element
+      if( $(this).hasClass("toggle-active") ) {  // если уже нажата, то скрыть
+        $(selector).hide();
+        $(this).removeClass("toggle-active");
+      }  else {                                 // если не нажата, то очистить все а потом показать нужное
+        $("div.filter-wrapper").hide();
+        $("a.filter__item").removeClass("toggle-active");
+        $(selector).show();
+        $(this).addClass("toggle-active");
+      }
+    });
+  // eof toggle filters page 02
 
   //replace svg img to inline
-  // https://medium.com/@asadalikanwal/controlling-svg-via-css-for-transitions-and-hover-effects-fcd9b48a4562
   $(function() {
     $('img.svg').each(function() {
-             var $img = $(this);
-             var imgID = $img.attr('id');
-             var imgClass = $img.attr('class');
-             var imgURL = $img.attr('src');
-    $.get(imgURL, function(data) {
-                 // Get the SVG tag, ignore the rest
-                 var $svg = $(data).find('svg');
-    // Add replaced image's ID to the new SVG
-                 if (typeof imgID !== 'undefined') {
-                     $svg = $svg.attr('id', imgID);
-                 }
-                 // Add replaced image's classes to the new SVG
-                 if (typeof imgClass !== 'undefined') {
-                     $svg = $svg.attr('class', imgClass + ' replaced-svg');
-                 }
-    // Remove any invalid XML tags as per http://validator.w3.org
-                 $svg = $svg.removeAttr('xmlns:a');
-    // Replace image with new SVG
-                 $img.replaceWith($svg);
-    }, 'xml');
+      var $img = $(this);
+      var imgID = $img.attr('id');
+      var imgClass = $img.attr('class');
+      var imgURL = $img.attr('src');
+      $.get(imgURL, function(data) {
+        var $svg = $(data).find('svg');
+        if (typeof imgID !== 'undefined') {
+          $svg = $svg.attr('id', imgID);
+        }
+        if (typeof imgClass !== 'undefined') {
+          $svg = $svg.attr('class', imgClass + ' replaced-svg');
+         }
+         $svg = $svg.removeAttr('xmlns:a');
+         $img.replaceWith($svg);
+      }, 'xml');
     });
   });
 
   // var mySVGsToInject = document.querySelectorAll('img.svg');
   // SVGInjector(mySVGsToInject);
+
 
   //disable dummy anchor events //TODO: remove before deploy
   $("a").click(function(){
@@ -251,7 +245,6 @@ if(screen.width > 1023){
         }
       }
     ]
-
   });
 
   // sticky header
@@ -328,7 +321,6 @@ if(screen.width > 1023){
       if ($button.data('action') == "increase") {
           var newVal = parseFloat(oldValue) + 1;
       } else {
-          // Don't allow decrementing below 1
           if (oldValue >= 1) {
               var newVal = parseFloat(oldValue) - 1;
           } else {
@@ -441,7 +433,7 @@ if(screen.width > 1023){
   // 02 range
     $("#range").ionRangeSlider({
       grid: true,
-      from: 3,
+      from: 1,
       hide_min_max: true,
       hide_from_to: true,
       values: [

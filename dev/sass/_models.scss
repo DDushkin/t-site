@@ -279,6 +279,15 @@
   .car-grid-item {
     cursor: grab;
     padding-bottom: 20px;
+    overflow: hidden;
+    padding-bottom: 0;
+    &:active {
+      cursor: -webkit-grabbing;
+      cursor: grabbing;
+    }
+    &:hover {
+      box-shadow: none;
+    }
 
     .car-grid-item__price,
     .car-grid-item__link {
@@ -298,7 +307,7 @@
   .car-grid-item {
     cursor: grab;
     &:active {
-      cursor: grabbing;
+      cursor:-webkit-grabbing;
     }
   }
 }

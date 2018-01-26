@@ -32,10 +32,17 @@ body {
 }
 .gu-mirror {
   opacity: 1;
-  transform: rotate(10deg);
+  overflow: hidden;
+  transform: rotate(-10deg);
+  box-shadow: none;
   transform-origin: 0 0;
   transition: all .5s;
+  cursor: -webkit-grabbing;
 }
+.gu-transit {
+  cursor: -webkit-grabbing;
+}
+
 section {
   padding-bottom: 200px;
   @include tablet {

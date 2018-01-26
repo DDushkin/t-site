@@ -21,13 +21,14 @@
       @include size(6);
     }
     @include mobile {
-      // @include size(6);
       margin-bottom: 10px;
     }
     &:hover {
       @include desktop {
         box-shadow: 0px 0px 14px #4D4F53;
         padding-bottom: 10px;
+        padding-top: 10px;
+        margin-top: -10px;
       }
       
     }

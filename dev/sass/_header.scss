@@ -33,18 +33,118 @@
     @include wrapper();
   }
   @include mobile {
-    // padding: 0 10px;
+    
   }
 }
-.logo-part {
+.logo {
   display: flex;
   align-items: center;
-  &__logo {
+  &__img {
     display: flex;
     flex-direction: column;
   }
 }
+.header__info {
+  display: flex;
+  // width: 50%;
+  // align-items: flex-end;
+  // justify-content: flex-end;
+}
+.lang {
+  display: flex;
+  height: 100%;
+  // justify-content: center;
+  align-items: center;
+  // width: 10px;
+  // overflow: hidden;
+  &:hover {
+    .lang__item {
+      max-width: 50px;
+      padding: 5px;
+    }
+  }
+  &__item {
+    padding: 5px;
+    color: $red;
+    text-decoration: none;
+    overflow: hidden;
+    transition: all .4s;
+    transition-delay: .2s;
 
+    &:first-of-type {
+      padding: 0;
+      max-width: 0;
+    }
+  }
+}
+.header-search {
+  margin: 0 60px;
+  display: flex;
+  align-items: center;
+  &:hover, &:focus {
+    .header-search__input {
+      width: 200px;
+      height: 36px;
+      padding: 5px 10px;
+      color: $black;
+    }
+    .header-search__input-wrapper:after {
+      opacity: 0;
+    }
+  }
+
+  &__input-wrapper {
+    position: relative;
+    &:after {
+      content: "";
+      width: 8px;
+      height: 1px;
+      background-color: $red;
+      position: absolute;
+      // left: 16px;
+      right: -4px;
+      top: 20px;
+      pointer-events: none;
+      transform: rotate(45deg);
+      transition: $tr;
+    }
+  }
+  &__input {
+    font-size: inherit;
+    font-family: inherit;
+    color: transparent;
+    width: 20px;
+    height: 20px;
+    border: 1px solid $red;
+    cursor: pointer;
+    border-radius: 100px;
+    background-color: transparent;
+    box-sizing: border-box;
+    outline: none;
+    transition: all .4s;
+  }
+}
+.header-contact {
+  display: flex;
+  align-items: center;
+  .footer-phone {
+    margin-top: 0;
+    margin-right: 30px;
+
+    &:first-of-type {
+      padding-left: 28px;
+      background-image: url(../img/i-header-phone.svg);
+      background-repeat: no-repeat;
+      background-position: left center;
+    }
+    &:last-of-type {
+      margin-right: 0;
+    }
+    &__number {
+      font-weight: bold;
+    }
+  }
+}
 // navigation
 nav {
   position: relative;

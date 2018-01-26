@@ -1,12 +1,26 @@
 header.header
   .top-bar
-    .logo-part
-      .logo-part__logo
+    .logo
+      .logo__img
         img(src="img/logo-new.svg", alt="site logo")
         img(src="img/logo-text.svg", alt="site address")
       .header-adress
         img.header-adress__icon(src="img/i-header-map-pointer.svg", alt="map pointer")
         span.header-adress__text Київ, Харківське шосе, 179
+    .header__info
+      .lang
+        a.lang__item(href="#") RU
+        a.lang__item(href="#") UA
+      .header-search
+        .header-search__input-wrapper
+          input(type="text").header-search__input
+      .header-contact
+        .footer-phone
+          .footer-phone__heading продаж
+          a.footer-phone__number(href="") (044) 537-54-54
+        .footer-phone
+          .footer-phone__heading сервіс
+          a.footer-phone__number(href="") (044) 537-54-53
   nav
     ul.nav
       li.nav__item
@@ -21,22 +35,45 @@ header.header
         a.nav__item__link.nav__item__link--has-child(href="javascript:void(0);") Сервіс
         ul.nav__nav-secondary
           li.nav__item
-            a.nav__item__link(href="javascript:void(0);") Toyota сервіс
+            a.nav__item__link(href="09_service.html") Toyota сервіс
           li.nav__item
-            a.nav__item__link(href="javascript:void(0);") Ремонт і ТО
+            a.nav__item__link(href="12_repair.html") Ремонт і ТО
           li.nav__item
-            a.nav__item__link(href="javascript:void(0);") Асістанс
+            a.nav__item__link(href="10_assistance.html") Асістанс
           li.nav__item
-            a.nav__item__link(href="javascript:void(0);") Сервісні компанії
+            a.nav__item__link(href="13_service-campaigns.html") Сервісні компанії
 
       li.nav__item
         a.nav__item__link.nav__item__link--has-child(href="javascript:void(0);") Послуги
+        ul.nav__nav-secondary
+          li.nav__item
+            a.nav__item__link(href="javascript:void(0);") Програма лояльності
+          li.nav__item
+            a.nav__item__link(href="18_credit.html") Кредит
+          li.nav__item
+            a.nav__item__link(href="19_lising.html") Лізинг фізичним особам
+          li.nav__item
+            a.nav__item__link(href="20_insurance.html") Страхування
       li.nav__item
-        a.nav__item__link(href="javascript:void(0);") Запчастини
+        a.nav__item__link(href="14_parts.html") Запчастини
       li.nav__item
-        a.nav__item__link(href="javascript:void(0);") Аксесуари
+        a.nav__item__link(href="15_accessories.html") Аксесуари
       li.nav__item
         a.nav__item__link.nav__item__link--has-child(href="#") Про нас
+        ul.nav__nav-secondary
+          li.nav__item
+            a.nav__item__link(href="21_avtosamit.html") Автосалон автосаміт
+          li.nav__item
+            a.nav__item__link(href="31_stuff.html") Співробітники
+          li.nav__item
+            a.nav__item__link(href="26_gallery.html") Галерея
+          li.nav__item
+            a.nav__item__link(href="27_vacancies.html") Вакансії
+          li.nav__item
+            a.nav__item__link(href="28_contacts.html") Контакти
+          li.nav__item
+            a.nav__item__link(href="javascript:void(0);") Служба по роботі з клієнтами
+            
     .nav-badge
       img.nav-badge__logo(src="img/badge-toyota.png", alt="")
       img.nav-badge__slogan(src="img/badge-toyota-slogan.jpg", alt="")

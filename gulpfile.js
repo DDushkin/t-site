@@ -76,7 +76,7 @@ gulp.task('pug', function(){
 
 gulp.task('pug-pages', function() {
   return gulp.src([
-    '!dev/pug/partials/*.pug',
+    // '!dev/pug/partials/*.pug',
     'dev/pug/**/*.pug'
   ])
     .pipe(changed('./', {

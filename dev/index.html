@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.2.0/css/ion.rangeSlider.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.2.0/css/ion.rangeSlider.skinHTML5.min.css">
     <link href="css/main.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
   </head>
@@ -19,9 +21,25 @@
 <body>
   <header class="header">
     <div class="top-bar">
-      <div class="logo-part">
-        <div class="logo-part__logo"><img src="img/logo-new.svg" alt="site logo"><img src="img/logo-text.svg" alt="site address"></div>
+      <div class="logo">
+        <div class="logo__img"><img src="img/logo-new.svg" alt="site logo"><img src="img/logo-text.svg" alt="site address"></div>
         <div class="header-adress"><img class="header-adress__icon" src="img/i-header-map-pointer.svg" alt="map pointer"><span class="header-adress__text">Київ, Харківське шосе, 179</span></div>
+      </div>
+      <div class="header__info">
+        <div class="lang"><a class="lang__item" href="#">RU</a><a class="lang__item" href="#">UA</a></div>
+        <div class="header-search">
+          <div class="header-search__input-wrapper">
+            <input class="header-search__input" type="text">
+          </div>
+        </div>
+        <div class="header-contact">
+          <div class="footer-phone">
+            <div class="footer-phone__heading">продаж</div><a class="footer-phone__number" href="">(044) 537-54-54</a>
+          </div>
+          <div class="footer-phone">
+            <div class="footer-phone__heading">сервіс</div><a class="footer-phone__number" href="">(044) 537-54-53</a>
+          </div>
+        </div>
       </div>
     </div>
     <nav>
@@ -32,16 +50,32 @@
         <li class="nav__item"><a class="nav__item__link" href="javascript:void(0);">Новини</a></li>
         <li class="nav__item"><a class="nav__item__link nav__item__link--has-child" href="javascript:void(0);">Сервіс</a>
           <ul class="nav__nav-secondary">
-            <li class="nav__item"><a class="nav__item__link" href="javascript:void(0);">Toyota сервіс</a></li>
-            <li class="nav__item"><a class="nav__item__link" href="javascript:void(0);">Ремонт і ТО</a></li>
-            <li class="nav__item"><a class="nav__item__link" href="javascript:void(0);">Асістанс</a></li>
-            <li class="nav__item"><a class="nav__item__link" href="javascript:void(0);">Сервісні компанії</a></li>
+            <li class="nav__item"><a class="nav__item__link" href="09_service.html">Toyota сервіс</a></li>
+            <li class="nav__item"><a class="nav__item__link" href="12_repair.html">Ремонт і ТО</a></li>
+            <li class="nav__item"><a class="nav__item__link" href="10_assistance.html">Асістанс</a></li>
+            <li class="nav__item"><a class="nav__item__link" href="13_service-campaigns.html">Сервісні компанії</a></li>
           </ul>
         </li>
-        <li class="nav__item"><a class="nav__item__link nav__item__link--has-child" href="javascript:void(0);">Послуги</a></li>
-        <li class="nav__item"><a class="nav__item__link" href="javascript:void(0);">Запчастини</a></li>
-        <li class="nav__item"><a class="nav__item__link" href="javascript:void(0);">Аксесуари</a></li>
-        <li class="nav__item"><a class="nav__item__link nav__item__link--has-child" href="#">Про нас</a></li>
+        <li class="nav__item"><a class="nav__item__link nav__item__link--has-child" href="javascript:void(0);">Послуги</a>
+          <ul class="nav__nav-secondary">
+            <li class="nav__item"><a class="nav__item__link" href="javascript:void(0);">Програма лояльності</a></li>
+            <li class="nav__item"><a class="nav__item__link" href="18_credit.html">Кредит</a></li>
+            <li class="nav__item"><a class="nav__item__link" href="19_lising.html">Лізинг фізичним особам</a></li>
+            <li class="nav__item"><a class="nav__item__link" href="20_insurance.html">Страхування</a></li>
+          </ul>
+        </li>
+        <li class="nav__item"><a class="nav__item__link" href="14_parts.html">Запчастини</a></li>
+        <li class="nav__item"><a class="nav__item__link" href="15_accessories.html">Аксесуари</a></li>
+        <li class="nav__item"><a class="nav__item__link nav__item__link--has-child" href="#">Про нас</a>
+          <ul class="nav__nav-secondary">
+            <li class="nav__item"><a class="nav__item__link" href="21_avtosamit.html">Автосалон автосаміт</a></li>
+            <li class="nav__item"><a class="nav__item__link" href="31_stuff.html">Співробітники</a></li>
+            <li class="nav__item"><a class="nav__item__link" href="26_gallery.html">Галерея</a></li>
+            <li class="nav__item"><a class="nav__item__link" href="27_vacancies.html">Вакансії</a></li>
+            <li class="nav__item"><a class="nav__item__link" href="28_contacts.html">Контакти</a></li>
+            <li class="nav__item"><a class="nav__item__link" href="javascript:void(0);">Служба по роботі з клієнтами</a></li>
+          </ul>
+        </li>
       </ul>
       <div class="nav-badge"><img class="nav-badge__logo" src="img/badge-toyota.png" alt=""><img class="nav-badge__slogan" src="img/badge-toyota-slogan.jpg" alt=""></div>
     </nav>
@@ -265,6 +299,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.2.3/ofi.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/3.3.6/scrollreveal.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.2.0/js/ion.rangeSlider.min.js"></script>
   <script src="js/main.js"></script>
   <div class="feedback">
     <div class="feedback__item feedback__item--small js-open-popup" data-popup="js-popup-to">

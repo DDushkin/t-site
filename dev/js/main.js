@@ -431,15 +431,21 @@ if(screen.width > 1023){
   // eof select
 
   // 02 range
-    $("#range").ionRangeSlider({
-      grid: true,
-      from: 1,
-      hide_min_max: true,
-      hide_from_to: true,
-      values: [
-        "Від 100 000 грн.", "до 500 000 грн.", "до 1 000 000 грн.","до 2 500 000 грн."
-      ]
-    });
+    if (document.getElementById("range")) {
+      $("#range").ionRangeSlider({
+        grid: true,
+        from: 1,
+        hide_min_max: true,
+        hide_from_to: true,
+        values: [
+          "Від 100 000 грн.",
+          "до 500 000 грн.",
+          "до 1 000 000 грн.",
+          "до 2 500 000 грн."
+        ]
+      });
+    }
+    
   // eof 02 range
 
 });  // eof doc.ready

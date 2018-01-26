@@ -42,6 +42,9 @@
   &__img {
     display: flex;
     flex-direction: column;
+    @include mobile {
+      width: 100px;
+    }
   }
 }
 .header__info {
@@ -131,11 +134,19 @@
     margin-top: 0;
     margin-right: 30px;
 
+    @include mobile {
+      margin-right: 0;
+    }
+
     &:first-of-type {
       padding-left: 28px;
       background-image: url(../img/i-header-phone.svg);
       background-repeat: no-repeat;
       background-position: left center;
+      @include mobile {
+        padding-left: 0;
+        background-image: none;
+      }
     }
     &:last-of-type {
       margin-right: 0;
@@ -195,6 +206,12 @@ nav {
     @include tablet {
       // display: none;
       position: static;
+      box-sizing: border-box;
+    }
+    @include mobile {
+      
+      // padding-left: 0;
+      // padding-right: 0;
     }
     .nav-badge {
       height: auto;
@@ -288,12 +305,18 @@ nav {
   z-index: 60;
 
   @include tablet {
-    position: static;
+    position: relative;
     right: auto;
     left: 0;
     height: auto;
     margin-top: 10px;
     margin-bottom: 5px;
+    width: 60px;
+    padding: 0;
+  }
+  @include mobile {
+    width: 50px;
+    padding: 0;
   }
 
   // hack: partial box shadow
@@ -306,6 +329,11 @@ nav {
     bottom: 0;
     left: 0;
     box-shadow: 0px 7px 14px rgba(77, 79, 83, 0.3);
+
+    @include tablet {
+      display: none;
+    }
+
   }
 
   img {
@@ -437,6 +465,7 @@ nav {
 
   @include tablet {
     display: block;
+    margin-top: 3px;
   }
 
   &__line {

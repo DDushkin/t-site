@@ -53,6 +53,16 @@ if(screen.width > 1023){
    // Get the current slide
   var currentSlide = $('.test-drive-slider__list').slick('slickCurrentSlide');
 }
+  // nav
+  // $(".nav__item__link--has-child").click(function(){
+  //   $(".nav__item__link--has-child").next().hide();
+  //   $(".nav__item__link--has-child--expand").removeClass("nav__item__link--has-child--expand");
+
+  //   $(this).toggleClass("nav__item__link--has-child--expand");
+  //   $(this).next().slideToggle(300);
+  //   console.log("expand");
+  // });
+  // eof nav
 
   // story, offer sliders
   $('.a-news-grid').slick({

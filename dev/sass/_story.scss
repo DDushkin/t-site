@@ -10,7 +10,7 @@
     @include size(8);
     @include shift-left(2);
     @include tablet {
-      @include size(12); // col count
+      @include size(12);
       @include shift-left(0);
     }
   }
@@ -70,9 +70,9 @@
     &-back-btn{
       cursor: pointer;
       @include col();
-      @include size(2); // col count
+      @include size(2);
       @include mobile {
-        @include size(4); // col count
+        @include size(4);
         @include shift-left(4);
         justify-content: space-between;
         padding: 50px 0;
@@ -93,12 +93,12 @@
     &-share{
       @include row-flex();
       @include col();
-      @include size(8); // col count
+      @include size(8);
       @include shift-left(2);
       justify-content: flex-end;
       align-items: center;
       @include mobile {
-        @include size(12); // col count
+        @include size(12);
         @include shift-left(0);
         justify-content: space-between;
       }
@@ -119,12 +119,12 @@
     color: $black;
     margin-left: 15px;
     margin-right: 15px;
-    @include size(3); // col count
+    @include size(3);
     @include tablet {
-      @include size(4); // col count
+      @include size(4);
     }
     @include mobile {
-      width: 100%; // col count
+      width: 100%;
       margin: 0;
     }
     &__date{

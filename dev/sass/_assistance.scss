@@ -1,27 +1,52 @@
-.page-assistance-type{
+.page-assistance-type {
+  position: relative;
+  padding: 150px 0;
+  margin-bottom: 0;
   background: url(../img/bg-assistance-type.jpg);
   background-position: left center;
   background-size: cover;
-  padding:150px 0;
-  color:white;
-  margin-bottom: 0;
+  color: white;
+  
+  &:after {
+    content:"";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 62.5%;
+    opacity: .8;
+    background: linear-gradient(270.26deg, #23171A 20.93%, rgba(35, 23, 26, 0.4566) 83.16%, rgba(35, 23, 26, 0) 99.68%);
+    z-index: 0;
+
+    @include tablet {
+      width: 100%;
+      background: none;
+      background-color: rgba(35, 23, 26, 0.4566);
+    }
+  }
   @include mobile {
-    padding:50px 0 35px;
+    padding: 50px 0 35px;
   }
 }
-.page-assistance-intravel{
+.wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.page-assistance-intravel {
   background: url(../img/bg-accessories-intravel.jpg);
   background-position: left center;
   background-size: cover;
-  padding:150px 0;
-  color:white;
+  padding: 150px 0;
+  color: white;
   margin-bottom: 0;
   @include mobile {
     padding:50px 0 35px;
   }
 }
-.assistance-card{
+.assistance-card {
   margin: 200px 0;
+
   @include tablet {
     margin: 100px 0;
   }
@@ -39,26 +64,40 @@
     }
   }
 }
-.assistance-corp-grid{
+.assistance-corp-grid {
   @include row-flex();
-  &__col{
+  @include wrapper();
+
+  &__col {
     @include col();
-    @include size(4); // col count
+    @include size(4);
     @include tablet {
         @include size(10);
         @include shift-left(1);
     }
+    @include mobile {
+      @include size(12);
+      @include shift-left(0);
+      margin-left: 0;
+      margin-right: 0;
+      width: 100%;
+    }
   }
-  &__sub{
+  &__sub {
     font-style: italic;
   }
-  &__ul{
+  &__ul {
     padding: 0;
   }
-  &__li{
+  &__li {
     margin-left: 20px;
+
+    @include tablet {
+      list-style: none;
+      margin: 1em 0;
+    }
   }
-  &__b{
+  &__b {
     font-weight: 700;
   }
 }

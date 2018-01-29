@@ -1,4 +1,11 @@
 // pagenav
+.page-automobile {
+  .pagenav {
+    @include tablet {
+      display: none;
+    }
+  }
+}
 .pagenav {
   display: flex;
   flex-direction: row;
@@ -128,7 +135,7 @@
 
 .car-card {
   position: relative;
-  padding: 0 20px; // TODO: fix?!
+  padding: 0 20px;
   box-sizing: border-box;
 
   &--big {
@@ -137,7 +144,7 @@
     margin-bottom: 50px;
   }
   &__img {
-    width: 100%; // 95%?
+    width: 100%;
     height: auto;
   }
   &__info {
@@ -161,7 +168,6 @@
     margin: 0;
   }
   &__fuel {
-    // display: inline-block;
     display: flex;
     align-items: center;
     .ico--fuel {
@@ -369,7 +375,7 @@
     margin: 30px 0;
   }
 
-  iframe { //TODO: fix, choose lib for video
+  iframe {
     max-width: 1290px;
     height: 720px;
     display: block;

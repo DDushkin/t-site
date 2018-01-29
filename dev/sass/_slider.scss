@@ -25,6 +25,7 @@
  .mainslider-wrapper {
   position: relative;
   overflow: hidden;
+  z-index: 1;
 
   &__bg { // color circles 
     position: absolute;
@@ -127,8 +128,6 @@
   vertical-align: middle;
   margin-right: 5px;
   margin-left: 5px;
-  // position: absolute;
-  // top: 50%;
   box-shadow: 1px 1px 7px rgba(44, 1, 12, 0.3);
 }
 
@@ -166,7 +165,7 @@
       &:hover {
 
         img {
-          // transform: scale(1.05);
+          // transform: scale(1.05); //TODO: check lags
         }
       }
 

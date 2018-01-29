@@ -67,7 +67,7 @@
       position: relative;
       transform: none;
       max-width: 100%;
-      @include size(12); // col count
+      @include size(12);
     }
     @include mobile {
       height: 215px;
@@ -96,12 +96,12 @@
     }
   }
   &__image{
-    @include size(5); // col count
+    @include size(5);
     @include col();
     position: relative;
     height: 380px;
     @include tablet {
-      @include size(12); // col count
+      @include size(12);
     }
     @include mobile {
       height: 215px;
@@ -132,12 +132,12 @@
     }
   }
   &__descr{
-    @include size(6.5); // col count
+    @include size(6.5);
     @include col();
         position: relative;
     @include tablet {
       margin-top: 20px;
-      @include size(10); // col count
+      @include size(10);
     }
     p{
       margin-top: 0;

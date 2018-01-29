@@ -15,6 +15,7 @@
 html {
   box-sizing: border-box;
   user-select: $red;
+  overflow-x: hidden;
 }
 
 body {
@@ -22,6 +23,8 @@ body {
   font-family: "Toyota Text", "Roboto", Helvetica, Arial, sans-serif;
   color: $black;
   box-sizing: border-box;
+  overflow-x: hidden;
+
   @include tablet {
     padding-top: 0 !important;
   }
@@ -30,7 +33,7 @@ body {
   position: absolute;
   bottom: 0;
 }
-.gu-mirror {
+.gu-mirror { // drag and drop
   opacity: 1;
   overflow: hidden;
   transform: rotate(-10deg);
@@ -57,12 +60,7 @@ button {
   display: table;
   clear: both;
 }
-//TODO: remove before deploy
-// clearfix usage example:
-// selector {
-//   @extend .clearfix;
-//   your styles
-// }
+
 .page-head{
   overflow: hidden;
   position: relative;
@@ -889,6 +887,12 @@ textarea {
   }
   &__textarea {
     height: 130px;
+    transition: $tr;
+
+    &:hover {
+      border-color: #1D71B8;
+      box-shadow: 0px 0px 7px rgba(29, 113, 184, 0.8);
+    }
   }
 }
 .textfield__input:focus + .textfield__placeholder,
@@ -907,7 +911,7 @@ textarea {
   outline: none;
   font-family: inherit;
   font-style: italic;
-  transition: all .3s;
+  transition: $tr;
 
   &:hover {
     border-color: #1D71B8;
@@ -939,7 +943,7 @@ textarea {
 .select {
   display: inline-block;
   position: relative;
-  width: 200px; // TODO: remove
+  //width: 200px; // TODO: remove
   cursor: pointer;
   user-select: none;
   height: 54px;

@@ -326,7 +326,7 @@
   }
   &__form{
     @include row-flex();
-    @include size(8); // col count
+    @include size(8);
     @include shift-left(2);
     @include tablet {
       @include size(10);

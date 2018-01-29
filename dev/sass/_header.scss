@@ -1,5 +1,8 @@
 .header {
   box-sizing: border-box;
+  width: 100%;
+  position: relative;
+  z-index: 3;
 
   &-adress {
     margin-left: 40px;
@@ -84,7 +87,7 @@
   @include tablet {
     display: none;
   }
-  &:hover, &:focus {
+  &:hover {
     .header-search__input {
       width: 200px;
       height: 36px;
@@ -162,8 +165,11 @@
 // navigation
 nav {
   position: relative;
+
   @include tablet {
     @include wrapper();
+    // overflow: hidden;
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -173,7 +179,6 @@ nav {
   position: relative;
   display: flex;
   flex-direction: row;
-  // align-items: center;
   align-items: stretch;
   height: 70px;
   margin: 0;
@@ -181,18 +186,23 @@ nav {
   background: linear-gradient(180deg, #F0F2F2 0%, #FFFFFF 100%);
   box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5);
   transition: $tr;
+  will-change: transform;
 
   @include tablet { // mobile menu
-    display: none; // temporary
+    // display: none;
+    position: absolute;
     width: 300px;
     padding-top: 10px;
     padding-left: 13px;
-    position: absolute;
+    padding-right: 13px;
+    padding-bottom: 30px;
+    transform: translateX(100%);
     right: 0;
     top: 1px;
     height: auto;
     flex-direction: column;
     z-index: $layertop;
+    overflow: hidden;
   }
 
   &--fixed {
@@ -201,7 +211,6 @@ nav {
     left: 0;
     width: 100%;
     z-index: 100;
-    // overflow: hidden;
 
     @include tablet {
       // display: none;
@@ -227,6 +236,51 @@ nav {
     .nav-badge__slogan {
       display: none;
     }
+  } // eof nav--fixed
+
+  &--mobvisible {
+    @include tablet {
+      transform: translateX(0);
+    }
+  }
+
+  &__header { // mobile menu header
+    position: relative;
+    display: none;
+    height: 20px;
+    padding: 20px 0;
+    // border-bottom: 1px solid $black;
+
+
+    @include tablet {
+      display: flex;
+      align-items: center;
+      &:after {
+        content:"";
+        position: absolute;
+        bottom: -1px;
+        left: -5%;
+        width: 110%;
+        height: 1px;
+        background-color: $black;
+      }
+    }
+    
+
+    .lang {
+      font-size: 16px;
+      display: block;
+    }
+    .header-search {
+      display: block;
+      margin: -6px 30px 0;
+      &:hover {
+        width: 170px;
+      }
+    }
+    .header-search__input {
+      max-width: 100%;
+    }
   }
 
   &__item {
@@ -234,10 +288,10 @@ nav {
     display: flex;
     align-items: center;
     @include tablet {
-      padding-top: 13px;
-      padding-bottom: 13px;
+      padding-top: 10px;
+      padding-bottom: 10px;
       flex-direction: column;
-      // justify-content: flex-start;
+      justify-content: flex-start;
       align-items: flex-start;
     }
 
@@ -245,7 +299,7 @@ nav {
       .nav__nav-secondary {
         max-height: 80px;
         @include tablet {
-          max-height: auto;
+          max-height: none;
         }
 
       }
@@ -292,8 +346,22 @@ nav {
       }
     }
   }
-}
+  &__icon {
+    display: none;
 
+    @include tablet {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 15px;
+    }
+  }
+}
+.menu-close {
+  margin-left: auto;
+  // background-color: red;
+  // height: 10px;
+  // width: 10px;
+}
 .nav-badge {
   display: flex;
   flex-direction: column;
@@ -372,21 +440,32 @@ nav {
   z-index: 100;
   justify-content: center;
   transition: all .3s ease-out;
+
   @include tablet {
-    background-color: transparent;
-    max-height: auto;
-    margin-top: 10px;
+    transform: none;
     position: static;
+    // max-height: auto;
+    margin-top: 10px;
     box-shadow: none;
-    box-sizing: border-box;
     padding-left: 70px;
     font-size: 14px;
+    background-color: transparent;
     background-image: none;
+    box-sizing: border-box;
   }
 
   .nav__item__link {
     &:after{
       display: none;
+    }
+  }
+  .nav__item {
+    @include tablet {
+      padding-top: 0;
+      padding-bottom: 10px;
+      &:last-of-type {
+        padding-bottom: 0;
+      }
     }
   }
 }
@@ -408,7 +487,8 @@ nav {
       width: 100%;
       background-color: transparent;
       max-height: auto;
-      margin-top: 10px;
+      // margin-top: 10px;
+      margin-top: 0px;
       position: static;
       text-align: left;
       padding-top: 0;
@@ -425,10 +505,18 @@ nav {
     text-transform: none;
     margin-bottom: 10px;
     cursor: pointer;
+
     @include tablet {
+      margin-bottom: 0;
+      padding-bottom: 10px;
       text-align: left;
       font-weight: normal;
       font-size: 14px;
+      font-family: $f-tt;
+      letter-spacing: normal;
+      &:last-of-type {
+        padding-bottom: 0;
+      }
     }
   }
   &__grid {
@@ -494,7 +582,7 @@ nav {
     margin-top: -5px;
     font-style: italic;
     font-size: 12px;
-    // line-height: 10px;
-    text-align: center;
+    // line-height: 10px
+;    text-align: center;
   }
 }

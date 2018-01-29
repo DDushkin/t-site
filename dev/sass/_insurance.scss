@@ -10,10 +10,10 @@
 .insurance-info{
   padding: 100px 0 200px;
   @include col();
-  @include size(8); // col count
+  @include size(8);
   @include shift-left(2);
   @include tablet {
-    @include size(12); // col count
+    @include size(12);
     @include shift-left(0);
     padding: 100px 0 100px;
   }
@@ -77,7 +77,7 @@
   }
   &__form{
     @include row-flex();
-    @include size(8); // col count
+    @include size(8);
     @include shift-left(2);
   }
   &__input{

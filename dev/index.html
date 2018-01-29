@@ -44,7 +44,16 @@
     </div>
     <nav>
       <ul class="nav">
-        <li class="nav__item"><a class="nav__item__link nav__item__link--has-child" href="#">Автомобілі</a>
+        <div class="nav__header">
+          <div class="lang"><a class="lang__item" href="#">UA</a></div>
+          <div class="header-search">
+            <div class="header-search__input-wrapper">
+              <input class="header-search__input" type="text">
+            </div>
+          </div><a class="nav__mobphone" href="#"><img src="img/i-header-phone.svg" alt=""></a>
+          <div class="menu-close js-menu-close"><img src="img/i-mobmenu-close.svg" alt=""></div>
+        </div>
+        <li class="nav__item"><a class="nav__item__link nav__item__link--has-child" href="#"><img class="nav__icon" src="img/i-mobmenu-1.svg" alt="">Автомобілі</a>
           <div class="nav__nav-secondary nav-auto">
             <div class="nav-auto__switchers">
               <div class="nav-auto__switcher">Модельний ряд</div>
@@ -86,10 +95,10 @@
             </div>
           </div>
         </li>
-        <li class="nav__item"><a class="nav__item__link" href="08_corporate.html">Корпоративним клієнтам</a></li>
-        <li class="nav__item"><a class="nav__item__link" href="javascript:void(0);">Акції</a></li>
-        <li class="nav__item"><a class="nav__item__link" href="22_news.html">Новини</a></li>
-        <li class="nav__item"><a class="nav__item__link nav__item__link--has-child" href="09_service.html">Сервіс</a>
+        <li class="nav__item"><a class="nav__item__link" href="08_corporate.html"> <img class="nav__icon" src="img/i-mobmenu-2.svg" alt="">Корпоративним клієнтам</a></li>
+        <li class="nav__item"><a class="nav__item__link" href="javascript:void(0);"><img class="nav__icon" src="img/i-mobmenu-3.svg" alt="">Акції</a></li>
+        <li class="nav__item"><a class="nav__item__link" href="22_news.html"><img class="nav__icon" src="img/i-mobmenu-4.svg" alt="">Новини</a></li>
+        <li class="nav__item"><a class="nav__item__link nav__item__link--has-child" href="javascript:void(0);"> <img class="nav__icon" src="img/i-mobmenu-6.svg" alt="">Сервіс</a>
           <ul class="nav__nav-secondary">
             <li class="nav__item"><a class="nav__item__link" href="09_service.html">Toyota сервіс</a></li>
             <li class="nav__item"><a class="nav__item__link" href="12_repair.html">Ремонт і ТО</a></li>
@@ -97,7 +106,7 @@
             <li class="nav__item"><a class="nav__item__link" href="13_service-campaigns.html">Сервісні компанії</a></li>
           </ul>
         </li>
-        <li class="nav__item"><a class="nav__item__link nav__item__link--has-child" href="javascript:void(0);">Послуги</a>
+        <li class="nav__item"><a class="nav__item__link nav__item__link--has-child" href="javascript:void(0);"><img class="nav__icon" src="img/i-mobmenu-7.svg" alt="">Послуги</a>
           <ul class="nav__nav-secondary">
             <li class="nav__item"><a class="nav__item__link" href="11_loyalty.html">Програма лояльності</a></li>
             <li class="nav__item"><a class="nav__item__link" href="18_credit.html">Кредит</a></li>
@@ -105,9 +114,9 @@
             <li class="nav__item"><a class="nav__item__link" href="20_insurance.html">Страхування</a></li>
           </ul>
         </li>
-        <li class="nav__item"><a class="nav__item__link" href="14_parts.html">Запчастини</a></li>
-        <li class="nav__item"><a class="nav__item__link" href="15_accessories.html">Аксесуари</a></li>
-        <li class="nav__item"><a class="nav__item__link nav__item__link--has-child" href="#">Про нас</a>
+        <li class="nav__item"><a class="nav__item__link" href="14_parts.html"><img class="nav__icon" src="img/i-mobmenu-5.svg" alt="">Запчастини</a></li>
+        <li class="nav__item"><a class="nav__item__link" href="15_accessories.html"><img class="nav__icon" src="img/i-mobmenu-5.svg" alt="">Аксесуари</a></li>
+        <li class="nav__item"><a class="nav__item__link nav__item__link--has-child" href="#"><img class="nav__icon" src="img/i-mobmenu-8.svg" alt="">Про нас</a>
           <ul class="nav__nav-secondary">
             <li class="nav__item"><a class="nav__item__link" href="21_avtosamit.html">Автосалон автосаміт</a></li>
             <li class="nav__item"><a class="nav__item__link" href="31_stuff.html">Співробітники</a></li>
@@ -355,7 +364,7 @@
     <div class="feedback__item feedback__item--small js-open-popup" data-popup="js-popup-to">
       <div class="feedback__icon feedback__icon--service"></div><span class="feedback__inner">Запис на сервіс</span>
     </div>
-    <div class="feedback__item feedback__item--small js-open-popup" data-popup="js-popup-to">
+    <div class="feedback__item feedback__item--small js-open-popup" data-popup="js-popup-calc">
       <div class="feedback__icon feedback__icon--to"></div><span class="feedback__inner">Запис на ТО</span>
     </div>
     <div class="feedback__item js-open-popup" data-popup="js-popup-callback">
@@ -452,6 +461,119 @@
           <input class="btn btn-typical js-popup-send" type="submit" value="Передзвоніть">
           <button class="popup__cancel">відмінити</button>
         </form>
+      </div>
+    </div>
+  </div>
+  <div class="popup popup--narrow js-popup-calc">
+    <div class="popup__dim"></div>
+    <div class="popup__body">
+      <div class="loader">
+        <div class="loader__spinner"></div>
+      </div>
+      <div class="popup__close"></div>
+      <div class="popup__main">
+        <div class="section-title">Калькулятор ТО</div>
+        <div class="section-subtitle popup__subtitle">Вкажіть данні для розрахунку вартості ТО</div>
+        <form class="popup__form">
+          <div class="select">
+            <input class="select__input" type="text">
+            <div class="select__label">Модель</div>
+            <div class="select__placeholder"></div>
+            <div class="select__list">
+              <div class="select__item">Auris</div>
+              <div class="select__item">Yaris</div>
+            </div>
+          </div>
+          <div class="select">
+            <input class="select__input" type="text">
+            <div class="select__label">Об’єм двигуна, л.</div>
+            <div class="select__placeholder"></div>
+            <div class="select__list">
+              <div class="select__item">1.6</div>
+              <div class="select__item">1.7</div>
+              <div class="select__item">1.8</div>
+            </div>
+          </div>
+          <div class="select">
+            <input class="select__input" type="text">
+            <div class="select__label">Пробіг, км.</div>
+            <div class="select__placeholder"></div>
+            <div class="select__list">
+              <div class="select__item">1000 - 20000</div>
+              <div class="select__item">20000 - 20000</div>
+              <div class="select__item">30000 - 40000</div>
+            </div>
+          </div>
+          <div class="select">
+            <input class="select__input" type="text">
+            <div class="select__label">Рік виготовлення</div>
+            <div class="select__placeholder"></div>
+            <div class="select__list">
+              <div class="select__item">2014</div>
+              <div class="select__item">2015</div>
+              <div class="select__item">2016</div>
+            </div>
+          </div>
+          <input class="btn btn-typical js-popup-send" type="submit" value="Порахувати">
+          <button class="popup__cancel">відмінити</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="popup popup--sidebar js-popup-docs">
+    <div class="popup__dim"></div>
+    <div class="popup__body">
+      <div class="popup__close"></div>
+      <div class="popup__main">
+        <div class="popup__left">
+          <div class="section-title section-title--simple">Завантаження прайсу</div>
+          <div class="section-subtitle popup__subtitle">Ви можете ознайомитись з цінами на брошурах нижче</div>
+          <div class="price-info">
+            <div class="price-info__item"><span>Модель</span><span class="price-info__highlight">AURIS</span></div>
+            <div class="price-info__item"><span>Об’єм двигуна, л.</span><span class="price-info__highlight">1,6</span></div>
+            <div class="price-info__item"><span>Пробіг, км.</span><span class="price-info__highlight">1 000 - 10 000 TO №2</span></div>
+            <div class="price-info__item"><span>Вік, років</span><span class="price-info__highlight">10</span></div>
+          </div>
+          <div class="price-docs">
+            <div class="price-docs__item"><img src="img/i-pdf-small.svg"><a href="#">Auris 1.1 MT</a><span>0.5 Мб</span></div>
+            <div class="price-docs__item"><img src="img/i-pdf-small.svg"><a href="#">Auris 1.1 MT</a><span>0.5 Мб</span></div>
+            <div class="price-docs__item"><img src="img/i-pdf-small.svg"><a href="#">Auris 1.1 MT</a><span>0.5 Мб</span></div>
+          </div>
+          <div class="section-title section-title--simple">Записатися на ТО</div>
+          <form class="popup__form">
+            <fieldset class="textfield">
+              <input class="textfield__input field-typical" type="text">
+              <label class="textfield__placeholder" for="">Ваше Ім’я</label>
+            </fieldset>
+            <fieldset class="textfield">
+              <input class="textfield__input field-typical" type="text">
+              <label class="textfield__placeholder" for="">Телефон +38 0</label>
+            </fieldset>
+            <input class="btn btn-typical js-popup-send" type="submit" value="Відправити">
+            <button class="popup__cancel">відмінити</button>
+          </form>
+        </div>
+        <div class="popup__right">
+          <div class="section-title section-title--simple">1 000 - 10 000 ТО №2</div>
+          <ul>
+            <li>Замена масла и масляного фильтра двигателя </li>
+            <li>Замена фильтр салона </li>
+            <li>Замена топливного фильтра (при наличии индикации на а/м с дизельным двигателем)</li>
+            <li>Шприцевание карданных валов (на внедорожниках)</li>
+            <li>Диагностика тормозной системы</li>
+            <li>Диагностика подвески и рулевого управления</li>
+            <li>Проверка уровней и состояния технических жидкостей</li>
+            <li>Проверка внешних и внутренних осветительных приборов</li>
+            <li>Проверка АКБ</li>
+            <li>Проверка состояния и натяжки приводного ремня</li>
+            <li>Проверка работоспособности электрооборудования салона</li>
+            <li>Проверка эффективности работы системы кондиционирования</li>
+            <li>Проверка герметичности всех агрегатов</li>
+            <li>Проверка выхлопной системы</li>
+            <li>Проверка на предмет механических повреждений днища а/м</li>
+            <li>Проверка и корректировка давления в шинах</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>

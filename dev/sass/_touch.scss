@@ -3,8 +3,6 @@
   padding-bottom: 0;
 }
 
-
-
 .page-touch-listing {
   padding-bottom: 200px;
   &__wrapper {
@@ -45,7 +43,6 @@
     padding-top: 70px;
     padding-bottom: 70px;
     padding-right: 30px;
-    // margin-top: 30px;
 
     &:after {
       content: "";
@@ -66,8 +63,6 @@
       
       .page-touch-listing__text {
           &:after {
-            // right: auto;
-            // left: 0;
             width: 200%;
           }
       }
@@ -85,8 +80,7 @@
   }
 
   .textfield {
-    @include size(4) ;
-    // display: none; 
+    @include size(4);
   }
   .btn {
     margin-left: auto;

@@ -17,9 +17,8 @@
     align-items: center;
   }
   &__description{
-    //width: 47%;
     @include col();
-    @include size(8); // col count
+    @include size(8);
     padding:70px 220px 60px 0px;
     position: absolute;
     background: url(../img/bg-toyota-big-3.svg) no-repeat bottom right white;
@@ -41,9 +40,8 @@
   &__image{
     box-shadow: 4px 4px 14px $shadow25;
     border-radius: 2px;
-    //width: 48%;
     @include col();
-    @include size(5.5); // col count
+    @include size(5.5);
     height: 380px;
     position: relative;
     float:right;
@@ -102,22 +100,22 @@
 }
 .lising-steps{
   @include col();
-  @include size(10); // col count
+  @include size(10);
   @include shift-left(1);
 }
 .lising-steps-list{
   @include row-flex();
   @include col();
-  @include size(7); // col count
+  @include size(7);
   @include shift-left(2);
   align-items: center;
   @include tablet {
-    @include size(12); // col count
+    @include size(12);
     @include shift-left(0);
   }
   &__item{
     @include col();
-    @include size(10); // col count
+    @include size(10);
     margin-top: 40px;
     @include tablet {
       margin-top: 30px;
@@ -128,7 +126,7 @@
   }
   &__icon{
     @include col();
-    @include size(2); // col count
+    @include size(2);
     margin-top: 40px;
     @include tablet {
       margin-top: 30px;
@@ -140,12 +138,12 @@
 }
 .lising-advantage{
   @include col();
-  @include size(8); // col count
+  @include size(8);
   @include shift-left(2);
   margin-top: 100px;
   padding-left: 15px;
   @include tablet {
-    @include size(12); // col count
+    @include size(12);
     @include shift-left(0);
   }
   &__title{
@@ -178,10 +176,10 @@
   }
   &__form{
     @include row-flex();
-    @include size(8); // col count
+    @include size(8);
     @include shift-left(2);
     @include tablet {
-      @include size(12); // col count
+      @include size(12);
       @include shift-left(0);
     }
   }

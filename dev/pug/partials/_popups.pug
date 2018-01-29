@@ -8,7 +8,7 @@
     .feedback__icon.feedback__icon--service
     span.feedback__inner Запис на сервіс
 
-  .feedback__item.feedback__item--small.js-open-popup(data-popup="js-popup-to")
+  .feedback__item.feedback__item--small.js-open-popup(data-popup="js-popup-calc")
     .feedback__icon.feedback__icon--to
     span.feedback__inner Запис на ТО
 
@@ -91,3 +91,119 @@
           label.textfield__placeholder(for="") Ваше повідомлення
         input.btn.btn-typical.js-popup-send(type="submit", value="Передзвоніть")
         button.popup__cancel відмінити
+
+.popup.popup--narrow.js-popup-calc
+  .popup__dim
+  .popup__body
+    .loader
+      .loader__spinner
+    .popup__close
+    .popup__main
+      .section-title Калькулятор ТО
+      .section-subtitle.popup__subtitle Вкажіть данні для розрахунку вартості ТО
+      form.popup__form
+ 
+        .select
+          input.select__input(type="text")
+          .select__label Модель
+          .select__placeholder
+          .select__list
+            .select__item Auris
+            .select__item Yaris
+
+        .select
+          input.select__input(type="text")
+          .select__label Об’єм двигуна, л.
+          .select__placeholder
+          .select__list
+            .select__item 1.6
+            .select__item 1.7
+            .select__item 1.8
+
+        .select
+          input.select__input(type="text")
+          .select__label Пробіг, км.
+          .select__placeholder
+          .select__list
+            .select__item 1000 - 20000
+            .select__item 20000 - 20000
+            .select__item 30000 - 40000
+
+        .select
+          input.select__input(type="text")
+          .select__label Рік виготовлення
+          .select__placeholder
+          .select__list
+            .select__item 2014
+            .select__item 2015
+            .select__item 2016
+        input.btn.btn-typical.js-popup-send(type="submit", value="Порахувати")
+        button.popup__cancel відмінити
+
+.popup.popup--sidebar.js-popup-docs
+  .popup__dim
+  .popup__body
+    .popup__close
+    .popup__main
+      .popup__left
+        .section-title.section-title--simple Завантаження прайсу
+        .section-subtitle.popup__subtitle Ви можете ознайомитись з цінами на брошурах нижче
+
+        .price-info
+          .price-info__item
+            span Модель
+            span.price-info__highlight AURIS
+          .price-info__item
+            span Об’єм двигуна, л.
+            span.price-info__highlight 1,6
+          .price-info__item
+            span Пробіг, км.
+            span.price-info__highlight 1 000 - 10 000 TO №2
+          .price-info__item
+            span Вік, років
+            span.price-info__highlight 10
+
+        .price-docs
+          .price-docs__item
+            img(src="img/i-pdf-small.svg")
+            a(href="#") Auris 1.1 MT
+            span 0.5 Мб
+          .price-docs__item
+            img(src="img/i-pdf-small.svg")
+            a(href="#") Auris 1.1 MT
+            span 0.5 Мб
+          .price-docs__item
+            img(src="img/i-pdf-small.svg")
+            a(href="#") Auris 1.1 MT
+            span 0.5 Мб
+
+        .section-title.section-title--simple Записатися на ТО
+        form.popup__form
+          fieldset.textfield
+            input.textfield__input.field-typical(type="text")
+            label.textfield__placeholder(for="") Ваше Ім’я
+          fieldset.textfield
+            input.textfield__input.field-typical(type="text")
+            label.textfield__placeholder(for="") Телефон +38 0
+          input.btn.btn-typical.js-popup-send(type="submit", value="Відправити")
+          button.popup__cancel відмінити
+
+      .popup__right
+        .section-title.section-title--simple 1 000 - 10 000 ТО №2
+        ul
+          li Замена масла и масляного фильтра двигателя 
+          li Замена фильтр салона 
+          li Замена топливного фильтра (при наличии индикации на а/м с дизельным двигателем)
+          li Шприцевание карданных валов (на внедорожниках)
+          li Диагностика тормозной системы
+          li Диагностика подвески и рулевого управления
+          li Проверка уровней и состояния технических жидкостей
+          li Проверка внешних и внутренних осветительных приборов
+          li Проверка АКБ
+          li Проверка состояния и натяжки приводного ремня
+          li Проверка работоспособности электрооборудования салона
+          li Проверка эффективности работы системы кондиционирования
+          li Проверка герметичности всех агрегатов
+          li Проверка выхлопной системы
+          li Проверка на предмет механических повреждений днища а/м
+          li Проверка и корректировка давления в шинах

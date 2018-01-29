@@ -24,7 +24,6 @@
     padding:50px 20px;
     @include col();
     @include size(5);
-    //width: percentage(5/12);
     position: absolute;
     transform: translateY(15%);
     z-index: 1;
@@ -69,7 +68,6 @@
     border-radius: 2px;
     @include col();
     @include size(8);
-    //width: percentage(8/12);
     height: 600px;
     float: right;
     position: relative;

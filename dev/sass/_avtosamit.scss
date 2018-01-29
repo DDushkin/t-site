@@ -28,7 +28,7 @@
   }
   &__form{
     @include row-flex();
-    @include size(8); // col count
+    @include size(8);
     @include shift-left(2);
     @include tablet {
       @include size(10);
@@ -83,7 +83,6 @@
       bottom: -30px;
       left: 50%;
       border: 1px dashed rgba(0, 0, 0, 0.5);
-      /* margin-left: -10px; */
       @include tablet {
         left: 25.8%;
       }
@@ -92,7 +91,6 @@
       }
     }
     &__container {
-      /* padding: 0px 33px; */
       position: relative;
       background-color: inherit;
       width: 40%;

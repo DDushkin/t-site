@@ -83,22 +83,22 @@
     height: 150px;
   }
 }
-.contacts-map{
-  &__text{
-  margin-top: 50px;
-  @include size(10);
-  @include shift-left(1);
-  @include tablet {
-    @include size(12);
-    @include shift-left(0);
+.contacts-map {
+  &__text {
+    margin-top: 50px;
+    @include size(10);
+    @include shift-left(1);
+    @include tablet {
+      @include size(12);
+      @include shift-left(0);
+    }
   }
-}
-&__p{
-  padding-left: 20px;
-  margin-top: 20px;
-  li{
-    padding-bottom: 20px;
+  &__p {
+    padding-left: 20px;
+    margin-top: 20px;
+    
+    li{
+      padding-bottom: 20px;
+    }
   }
-
-}
 }

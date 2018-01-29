@@ -1,7 +1,5 @@
-<svg width="40" height="30" viewBox="0 0 40 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<title>Group</title>
-<desc>Created using Figma</desc>
-<g id="Canvas" transform="translate(-6918 -150)">
+<svg width="24" height="30" viewBox="0 0 24 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Canvas" transform="translate(-6926 -150)">
 <clipPath id="clip-0" clip-rule="evenodd">
 <path d="M 6918 150L 6958 150L 6958 180L 6918 180L 6918 150Z" fill="#FFFFFF"/>
 </clipPath>

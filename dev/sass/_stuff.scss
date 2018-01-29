@@ -33,7 +33,7 @@
     @include wrapper();
     padding-top: 100px;
     padding-bottom: 50px;
-    justify-content: flex-start; // remove to center items on non-full row
+    justify-content: flex-start;
   }
   .manager-card {
     margin-bottom: 50px;

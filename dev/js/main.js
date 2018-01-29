@@ -1,4 +1,11 @@
 $(document).ready(function(){
+  $(".menu").click(function(){
+    $(".nav").addClass("nav--mobvisible");
+  });
+  $(".js-menu-close").click(function(){
+    $(".nav").removeClass("nav--mobvisible");
+  });
+
   // mainslider init
   $(".mainslider").fotorama({
     autoplay: true,

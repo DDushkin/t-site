@@ -23,8 +23,21 @@ header.header
           a.footer-phone__number(href="") (044) 537-54-53
   nav
     ul.nav
+      .nav__header
+        .lang
+          a.lang__item(href="#") UA
+        .header-search
+          .header-search__input-wrapper
+            input(type="text").header-search__input
+        a.nav__mobphone(href="#")
+          img(src="img/i-header-phone.svg", alt="")
+        .menu-close.js-menu-close
+          img(src="img/i-mobmenu-close.svg", alt="")
+
       li.nav__item
-        a.nav__item__link.nav__item__link--has-child(href="#") Автомобілі
+        a.nav__item__link.nav__item__link--has-child(href="#")
+          img(src="img/i-mobmenu-1.svg", alt="").nav__icon 
+          | Автомобілі
         .nav__nav-secondary.nav-auto
           .nav-auto__switchers
             .nav-auto__switcher Модельний ряд
@@ -73,15 +86,23 @@ header.header
               img.nav-auto__img(src="img/c-list-hilux.png", alt="")
               .nav-auto__heading HILUX
 
-          
+
       li.nav__item
-        a.nav__item__link(href="08_corporate.html") Корпоративним клієнтам
+        a.nav__item__link(href="08_corporate.html") 
+          img(src="img/i-mobmenu-2.svg", alt="").nav__icon
+          | Корпоративним клієнтам
       li.nav__item
-        a.nav__item__link(href="javascript:void(0);") Акції
+        a.nav__item__link(href="javascript:void(0);")
+          img(src="img/i-mobmenu-3.svg", alt="").nav__icon
+          | Акції
       li.nav__item
-        a.nav__item__link(href="22_news.html") Новини
+        a.nav__item__link(href="22_news.html")
+          img(src="img/i-mobmenu-4.svg", alt="").nav__icon
+          | Новини
       li.nav__item
-        a.nav__item__link.nav__item__link--has-child(href="09_service.html") Сервіс
+        a.nav__item__link.nav__item__link--has-child(href="javascript:void(0);") 
+          img(src="img/i-mobmenu-6.svg", alt="").nav__icon 
+          | Сервіс
         ul.nav__nav-secondary
           li.nav__item
             a.nav__item__link(href="09_service.html") Toyota сервіс
@@ -93,7 +114,9 @@ header.header
             a.nav__item__link(href="13_service-campaigns.html") Сервісні компанії
 
       li.nav__item
-        a.nav__item__link.nav__item__link--has-child(href="javascript:void(0);") Послуги
+        a.nav__item__link.nav__item__link--has-child(href="javascript:void(0);")
+          img(src="img/i-mobmenu-7.svg", alt="").nav__icon
+          | Послуги
         ul.nav__nav-secondary
           li.nav__item
             a.nav__item__link(href="11_loyalty.html") Програма лояльності
@@ -104,11 +127,18 @@ header.header
           li.nav__item
             a.nav__item__link(href="20_insurance.html") Страхування
       li.nav__item
-        a.nav__item__link(href="14_parts.html") Запчастини
+        a.nav__item__link(href="14_parts.html")
+          img(src="img/i-mobmenu-5.svg", alt="").nav__icon
+          | Запчастини
       li.nav__item
-        a.nav__item__link(href="15_accessories.html") Аксесуари
+        a.nav__item__link(href="15_accessories.html")
+          img(src="img/i-mobmenu-5.svg", alt="").nav__icon
+          | Аксесуари
+
       li.nav__item
-        a.nav__item__link.nav__item__link--has-child(href="#") Про нас
+        a.nav__item__link.nav__item__link--has-child(href="#")
+          img(src="img/i-mobmenu-8.svg", alt="").nav__icon
+          | Про нас
         ul.nav__nav-secondary
           li.nav__item
             a.nav__item__link(href="21_avtosamit.html") Автосалон автосаміт

@@ -41,7 +41,7 @@ body.page-automobile
 
   .wrapper
   section.color-choose#color-choose
-    p.section-title.section-title--simple Виберіть колір:
+    .section-title.section-title--simple Виберіть колір:
     p.text-simple.text-simple--centered.js-color-name Перлинно-білий перламутр (070) 
 
     ul.color-selector
@@ -75,15 +75,182 @@ body.page-automobile
       .btn.btn-typical-o ЗАПИСАТИСЯ НА ТЕСТДРАЙВ
       .btn.btn-typical-o ОТРИМАТИ КОНСУЛЬТАЦІЮ
 
-    
+
   section.variant#model
-    p.section-title.section-title--simple Моделі та комплектації
+    .section-title.section-title--simple Моделі та комплектації
+    .table.variant-table
+      .table__row
+        .table__col
+        .table__col
+          label.filter-block__switch-label
+            input.filter-block__switch-box(type="checkbox")
+            span.checkbox-label
+          .table__text Порівняти
+          .table__car
+            img(src="img/c-list-lc-prado.png", alt="Land Cruiser Prado")
+            span 30 п.
+        .table__col
+          label.filter-block__switch-label
+            input.filter-block__switch-box(type="checkbox", checked)
+            span.checkbox-label
+          .table__text Порівняти 
+          .table__car.table__car--active
+            img(src="img/c-list-lc-prado.png", alt="Land Cruiser Prado")
+            span 35 п.
+        .table__col
+          label.filter-block__switch-label
+            input.filter-block__switch-box(type="checkbox")
+            span.checkbox-label
+          .table__text Порівняти
+          .table__car
+            img(src="img/c-list-lc-prado.png", alt="Land Cruiser Prado")
+            span 50 п.
+        .table__col
+          label.filter-block__switch-label
+            input.filter-block__switch-box(type="checkbox")
+            span.checkbox-label
+          .table__text Порівняти 
+          .table__car
+            img(src="img/c-list-lc-prado.png", alt="Land Cruiser Prado")
+            span 55 п.
+      .table__group
+        .table__row-wrapper
+          .table__row
+            .table__col
+              .table__heading Комплектації
+            .table__col
+              .table__heading Base
+              .table__text.table__text--small 5 місць
+            .table__col
+              .table__heading Comfort
+              .table__text.table__text--small 5 місць
+            .table__col
+              .table__heading Elegance
+              .table__text.table__text--small 7 місць
+            .table__col
+              .table__heading Prestige Style
+              .table__text.table__text--small 5 місць
+
+        .table__row
+            .table__col
+              span 2.7, 6 A/T
+            .table__col
+              .table__price
+                .table__price-part
+                  .table__text.table__text--line 1 250 000
+                  .table__text.table__text--strong 1 100 001
+                  a(href="18_credit.html").table__link 1й взнос 230 000
+                .table__price-part 
+                  .table__text.table__text--small грн.
+            .table__col
+              img(src="img/i-cross.svg", alt="")
+            .table__col
+              img(src="img/i-cross.svg", alt="")
+            .table__col
+              .table__price
+                .table__price-part
+                  .table__text.table__text--strong 1 100 001
+                  a(href="18_credit.html").table__link 1й взнос 230 000
+                .table__price-part 
+                  .table__text.table__text--small грн.
+
+        .table__row
+            .table__col
+              span 4.0, 6 A/T
+            .table__col
+              img(src="img/i-cross.svg", alt="")
+            .table__col
+              .table__price
+                .table__price-part
+                  .table__text.table__text--line 1 250 000
+                  .table__text.table__text--strong 1 100 001
+                  a(href="18_credit.html").table__link 1й взнос 230 000
+                .table__price-part 
+                  .table__text.table__text--small грн.
+            .table__col
+              .table__price
+                .table__price-part
+                  .table__text.table__text--strong 1 100 001
+                  a(href="18_credit.html").table__link 1й взнос 230 000
+                .table__price-part 
+                  .table__text.table__text--small грн.
+            .table__col
+              img(src="img/i-cross.svg", alt="")
+
+        .table__row
+            .table__col
+              span 2.8 дизель, 6 A/T
+            .table__col
+              img(src="img/i-cross.svg", alt="")
+            .table__col
+              img(src="img/i-cross.svg", alt="")
+            .table__col
+              .table__price
+                .table__price-part
+                  .table__text.table__text--line 1 250 000
+                  .table__text.table__text--strong 1 100 001
+                  a(href="18_credit.html").table__link 1й взнос 230 000
+                .table__price-part 
+                  .table__text.table__text--small грн.
+            .table__col
+              .table__price
+                .table__price-part
+                  .table__text.table__text--strong 1 100 001
+                  a(href="18_credit.html").table__link 1й взнос 230 000
+                .table__price-part 
+                  .table__text.table__text--small грн.
+
+        .table__row
+            .table__col
+              span Краска белый перламутр
+            .table__col
+                  .table__text.table__text--small 45000 грн.
+            .table__col
+                  .table__text.table__text--small 45000 грн.
+            .table__col
+                  .table__text.table__text--small 45000 грн.
+            .table__col
+
+
+      .table__group
+        .table__row-wrapper
+          .table__row
+            .table__col
+              .table__heading Екстер'єр
+            .table__col
+              .table__text.table__text--italic 5 пунктів
+            .table__col
+              .table__text.table__text--italic 5 пунктів
+            .table__col
+              .table__text.table__text--italic 5 пунктів
+            .table__col
+              .table__text.table__text--italic 5 пунктів
+
+        .table__row
+            .table__col
+              .table__text.table__text--medium Боковые подножки
+            .table__col
+              .table__icon
+                //- img(src="img/i-check.svg", alt="")
+                include ../img/i-check.svg
+            .table__col.table__col--highlight
+              .table__icon
+                //- img(src="img/i-check.svg", alt="")
+                include ../img/i-check-border.svg
+            .table__col
+              
+            .table__col
+
+        
+
+
+
 
   section.specs#specs
-    p.section-title.section-title--simple Технічні характеристики
+    .section-title.section-title--simple Технічні характеристики
 
   section.car-photo#car-photo
-    p.section-title.section-title--simple Фотографії Land Cruiser Prado
+    .section-title.section-title--simple Фотографії Land Cruiser Prado
     .photo-grid
       .photo-grid__col.photo-grid__col--s
         .photo-grid__item

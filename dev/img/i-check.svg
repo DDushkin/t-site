@@ -1,0 +1,10 @@
+<svg width="15" height="12" viewBox="0 0 15 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Canvas" transform="translate(-2041 -2806)">
+<g id="Path">
+<use xlink:href="#path0_fill5" transform="translate(2041 2806)" fill="#B5B7B3"/>
+</g>
+</g>
+<defs>
+<path id="path0_fill5" fill-rule="evenodd" d="M 5.625 12L 0 6.17143L 2.38636 3.77143L 5.625 7.02857L 12.6136 0L 15 2.4L 5.625 12Z"/>
+</defs>
+</svg>

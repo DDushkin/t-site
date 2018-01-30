@@ -180,6 +180,173 @@
 } // eof car-card
 
 
+// variant
+.variant-table {
+  margin-top: 50px;
+}
+.table {
+  overflow: auto;
+
+  .filter-block__switch-label {
+    width: auto;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  input[type="checkbox"] + .checkbox-label::before {
+    margin-right: 0;
+  }
+
+  &__group {
+    // padding: 25px 0;
+  }
+  img, svg {
+    user-select: none;
+  }
+
+  &__icon {
+    color: #B5B7B3;
+
+    svg path {
+      stroke: currentColor;
+      fill: currentColor;
+    }
+  }
+  &__row-wrapper {
+    box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5);
+
+    @include tablet {
+      min-width: 1200px;
+    }
+  }
+  &__row {
+    @include row-flex();
+    @include wrapper();
+
+    @include tablet {
+      min-width: 1200px;
+    }
+    
+  }
+  &__col {
+    @include col();
+    @include size(2);
+    min-height: 68px;
+    box-sizing: border-box;
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &:first-of-type {
+      @include size(3);
+      text-align: left;
+      align-items: flex-start;
+    }
+    &--highlight {
+      background-color: $blue;
+      background: linear-gradient(90deg, #1D71B8 0%, #0F82C9 25.41%, #0094DB 49.17%, #0F82C9 74.03%, #1D71B8 99.45%);
+      box-shadow: 0px 0px 14px rgba(77, 79, 83, 0.5);
+
+      .link {
+        color: #fff;
+      }
+      .table__icon  {
+        color: #fff;
+      }
+    }
+  }
+  &__link {
+    color: $blue;
+    font-style: italic;
+    font-size: 12px;
+    text-decoration: none;
+    margin: 7px 0;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__text {
+    font-style: italic;
+    font-size: 14px;
+    letter-spacing: .05em;
+
+    &--small {
+      font-size: 12px;
+      margin: 7px 0;
+    }
+    &--medium {
+      font-size: 14px;
+      margin: 7px 0;
+      font-style: normal;
+    }
+    &--strong {
+      font-weight: bold;
+    }
+    &--italic {
+      font-style: italic;
+      font-size: 14px;
+    }
+    &--line {
+      font-size: 12px;
+      text-decoration: line-through;
+      margin: 7px 0;
+    }
+  }
+  &__heading {
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: .05em;
+  }
+  &__car {
+    position: relative;
+    margin-top: 8px;
+    user-select: none;
+    opacity: .6;
+    transition: $tr;
+    will-change: opacity;
+    margin-bottom: 40px;
+
+    
+    img {
+      max-width: 100%;
+      width: 144px;
+      transition: $tr;
+    }
+    span {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      color: #fff;
+      transform: translate(-50%,-50%);
+    }
+    &--active {
+      opacity: 1;
+
+      img {
+        width: 170px;
+      }
+    }
+  } //eof table__car
+  &__price {
+    display: flex;
+
+  }
+  &__price-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+  }
+
+}
+
+// eof variant
+
+
 
 // photo-grid
 .photo-grid {
@@ -207,7 +374,7 @@
   }
   &__item {
     overflow: hidden;
-    cursor: pointer; //TODO: any events?
+    cursor: pointer;
 
     &:hover .photo-grid__img {
       transform: scale(1.05);

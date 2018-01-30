@@ -190,6 +190,7 @@ if(screen.width > 1023){
 
   //replace svg img to inline
   $(function() {
+    // $('img.svg, .table__icon img').each(function() {
     $('img.svg').each(function() {
       var $img = $(this);
       var imgID = $img.attr('id');

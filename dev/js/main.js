@@ -254,6 +254,9 @@ if(screen.width > 1023){
       }
     ]
   });
+  $(".js-specs-more").click(function(){
+    $(this).parents("section").find(".table__group--hidden").slideDown(400);
+  });
 
   // sticky header
   var sc;

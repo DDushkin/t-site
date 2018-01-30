@@ -185,8 +185,11 @@
   margin-top: 50px;
 }
 .table {
-  overflow: auto;
 
+  @include tablet {
+    overflow: auto;
+  }
+  
   .filter-block__switch-label {
     width: auto;
     padding: 0;
@@ -198,6 +201,10 @@
 
   &__group {
     // padding: 25px 0;
+
+    &--hidden {
+      display: none;
+    }
   }
   img, svg {
     user-select: none;
@@ -207,7 +214,6 @@
     color: #B5B7B3;
 
     svg path {
-      stroke: currentColor;
       fill: currentColor;
     }
   }
@@ -281,6 +287,7 @@
       font-size: 14px;
       margin: 7px 0;
       font-style: normal;
+      letter-spacing: normal;
     }
     &--strong {
       font-weight: bold;
@@ -332,7 +339,6 @@
   } //eof table__car
   &__price {
     display: flex;
-
   }
   &__price-part {
     display: flex;
@@ -341,10 +347,30 @@
     justify-content: center;
     margin: 0 5px;
   }
-
 }
-
 // eof variant
+
+
+
+// specs
+.specs-table {
+  margin-top: 50px;
+}
+.specs-more {
+  margin-top: 30px;
+  color: $red;
+  text-decoration: none;
+  font: $f-td;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: .1em;
+
+  img {
+    transform: rotate(90deg);
+    margin-left: 10px;
+  }
+}
+// eof specs
 
 
 

@@ -21,6 +21,20 @@
       vertical-align: middle;
     }
   }
+  &__callback {
+    margin-left: 35px;
+    font-size: 14px;
+    text-decoration-line: underline;
+    color: $red;
+    align-self: center;
+    font-style: italic;
+
+    @include tablet {
+      display: none;
+    }
+
+
+  }
 }
 
 .top-bar {
@@ -162,6 +176,8 @@
     }
   }
 }
+
+
 // navigation
 nav {
   position: relative;

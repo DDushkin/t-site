@@ -32,8 +32,6 @@
     @include tablet {
       display: none;
     }
-
-
   }
 }
 
@@ -115,13 +113,13 @@
 
   &__input-wrapper {
     position: relative;
+    
     &:after {
       content: "";
       width: 8px;
       height: 1px;
       background-color: $red;
       position: absolute;
-      // left: 16px;
       right: -4px;
       top: 20px;
       pointer-events: none;
@@ -184,7 +182,6 @@ nav {
 
   @include tablet {
     @include wrapper();
-    // overflow: hidden;
     max-width: 100%;
     display: flex;
     justify-content: space-between;
@@ -204,8 +201,7 @@ nav {
   transition: $tr;
   will-change: transform;
 
-  @include tablet { // mobile menu
-    // display: none;
+  @include tablet { // handheld menu
     position: absolute;
     width: 300px;
     padding-top: 10px;
@@ -229,21 +225,16 @@ nav {
     z-index: 100;
 
     @include tablet {
-      // display: none;
       position: static;
       box-sizing: border-box;
     }
     @include mobile {
-      
-      // padding-left: 0;
-      // padding-right: 0;
+
     }
     .nav-badge {
       height: auto;
-      // height: 100%;
-      // overflow: hidden;
       height: 100%;
-      // width: auto;
+
       &:after {
         display: none;
       }
@@ -265,8 +256,6 @@ nav {
     display: none;
     height: 20px;
     padding: 20px 0;
-    // border-bottom: 1px solid $black;
-
 
     @include tablet {
       display: flex;
@@ -374,9 +363,6 @@ nav {
 }
 .menu-close {
   margin-left: auto;
-  // background-color: red;
-  // height: 10px;
-  // width: 10px;
 }
 .nav-badge {
   display: flex;
@@ -460,7 +446,6 @@ nav {
   @include tablet {
     transform: none;
     position: static;
-    // max-height: auto;
     margin-top: 10px;
     box-shadow: none;
     padding-left: 70px;
@@ -503,7 +488,6 @@ nav {
       width: 100%;
       background-color: transparent;
       max-height: auto;
-      // margin-top: 10px;
       margin-top: 0px;
       position: static;
       text-align: left;
@@ -598,7 +582,6 @@ nav {
     margin-top: -5px;
     font-style: italic;
     font-size: 12px;
-    // line-height: 10px
-;    text-align: center;
+    text-align: center;
   }
 }
